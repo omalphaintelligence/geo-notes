@@ -29,13 +29,32 @@
     "subject": "Physical Geography",
     "title": "Geomorphology",
     "emoji": "⛰️",
-    "file": null,
-    "desc": "Neetu Singh Vol-2 – next upload.",
+    "file": "geomorphology.html",
+    "desc": "Relief orders, interior & earthquakes, time scale, folds & faults, drift, plate tectonics, vulcanism, erosion cycles, slopes, isostasy + cultural regions.",
     "topics": [
-      "landforms",
+      "interior",
+      "earthquake",
+      "seismic",
+      "geological time",
+      "fold",
+      "fault",
+      "continental drift",
+      "sea floor spreading",
       "plate tectonics",
-      "weathering"
-    ]
+      "geosyncline",
+      "volcano",
+      "davis",
+      "rejuvenation",
+      "glacial",
+      "karst",
+      "coastal",
+      "aeolian",
+      "isostasy",
+      "cultural realms"
+    ],
+    "mcq": 100,
+    "flashcards": 39,
+    "source": "Neetu Singh Vol-2 L1–18"
   },
   {
     "subject": "Physical Geography",

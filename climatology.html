@@ -133,6 +133,13 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
 #t-quiz .ref b{color:var(--ink);font-family:"Bricolage Grotesque",sans-serif}
 .homebtn{display:inline-block;margin-bottom:12px;text-decoration:none;font:700 .9rem "Bricolage Grotesque",sans-serif;color:var(--ink);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px}
 :root{--atm:#3B6FD8;--tmp:#E8505B;--prs:#1F8FA3;--jet:#6A4FC2;--loc:#D9822B;--mst:#2E9E6E;--air:#8E5BB5;--cyc:#C2414D;--kop:#2E5E8C;--thn:#7A8B2E}
+
+#t-quiz .goto{display:inline-block;margin-left:6px;font:700 .85rem "Bricolage Grotesque",sans-serif;color:var(--qc);text-decoration:underline;cursor:pointer}
+.hl{animation:hl 1.8s ease-out}
+@keyframes hl{0%{box-shadow:0 0 0 5px #E9A23B}100%{box-shadow:0 0 0 0 transparent}}
+.backq{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:0;background:#2E9E6E;color:#fff;border-radius:999px;padding:10px 16px;font:700 .9rem "Bricolage Grotesque",sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.backq[hidden]{display:none}
+@media (prefers-reduced-motion:reduce){.hl{animation:none}}
 </style>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#12324A">
@@ -783,7 +790,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
 <!-- MCQ -->
 <section class="topic" id="t-quiz" style="--c:#2E9E6E">
   <header><h2>100 MCQs</h2></header>
-  <p class="hint" style="margin:0">Option tap karo → turant answer, explanation aur reference. <b>Notes L19–29</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · <b>SS</b> = Savindra Singh, Climatology · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
+  <p class="hint" style="margin:0">Option tap karo → answer, explanation, reference. "📖 Notes me padho" dabao → notes ka wahi hissa khulega. <b>Notes L19–29</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · <b>SS</b> = Savindra Singh, Climatology · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
   <div class="mchips" id="mchips"></div>
   <div class="mstat">
     <span class="mtxt" id="mtxt"></span>
@@ -994,6 +1001,20 @@ Q.forEach(q=>{q[6]=EXTRA.some(e=>q[1].startsWith(e));});
 /* deterministic option shuffle (stable across reloads) */
 Q.forEach((q,i)=>{let x=(i+1)*9301+49297;const rnd=()=>{x=(x*9301+49297)%233280;return x/233280};const idx=[0,1,2,3];for(let k=3;k>0;k--){const j=Math.floor(rnd()*(k+1));[idx[k],idx[j]]=[idx[j],idx[k]];}const opts=idx.map(n=>q[2][n]);q[3]=idx.indexOf(q[3]);q[2]=opts;});
 
+
+/* reference → notes jump */
+let lastQ=null;
+const backBtn=document.createElement("button");backBtn.className="backq";backBtn.textContent="↩ Wapas MCQ pe";backBtn.hidden=true;document.body.appendChild(backBtn);
+backBtn.onclick=()=>{const el=lastQ&&document.getElementById(lastQ);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});backBtn.hidden=true;};
+function goNotes(q,qid){
+  const sec=document.getElementById("t-"+q[0]);if(!sec)return;
+  let target=sec;const kw=q[7]||"";
+  if(kw.startsWith("tab:")){const b=sec.querySelector('[data-tab="'+kw.slice(4)+'"]');if(b)b.click();const p=sec.querySelector('[data-panel="'+kw.slice(4)+'"]');if(p)target=p;}
+  else if(kw){const d=[...sec.querySelectorAll("details")].find(x=>x.querySelector("summary").textContent.toLowerCase().includes(kw.toLowerCase()));if(d){d.open=true;target=d;}}
+  target.scrollIntoView({behavior:"smooth",block:"start"});
+  target.classList.remove("hl");void target.offsetWidth;target.classList.add("hl");
+  lastQ=qid;backBtn.hidden=false;
+}
 let mans=store.get("clmcq-ans",{}),mf="all",mw=false,mu=false;
 function mChips(){const c=$("#mchips");c.innerHTML="";
   const mk=(k,l,col)=>{const b=document.createElement("button");b.textContent=l;b.style.setProperty("--qc",col);b.setAttribute("aria-pressed",mf===k);b.onclick=()=>{mf=k;mChips();mRender();};c.appendChild(b);};
@@ -1018,7 +1039,7 @@ function mRender(){const L=$("#mlist");L.innerHTML="";let shown=0;
     if(done){const e=document.createElement("div");e.className="exp";
       const v=document.createElement("span");v.className="v "+(a===q[3]?"good":"bad");v.textContent=a===q[3]?"Sahi!":"Galat – sahi jawab "+"ABCD"[q[3]]+".";
       e.appendChild(v);e.appendChild(document.createTextNode(q[4]));
-      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));
+      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));const g=document.createElement("a");g.className="goto";g.href="#t-"+q[0];g.textContent="📖 Notes me padho";g.onclick=ev=>{ev.preventDefault();goNotes(q,"mq"+(i+1));};r.appendChild(g);
       e.appendChild(r);d.appendChild(e);}
     L.appendChild(d);});
   if(!shown)L.innerHTML="<p class='hint'>Is filter me koi question nahi.</p>";}
