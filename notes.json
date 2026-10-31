@@ -229,5 +229,32 @@
     "mcq": 100,
     "flashcards": 36,
     "source": "Neetu Singh Vol-3 Part 6"
+  },
+  {
+    "subject": "Human Geography",
+    "title": "Geopolitics & Indian Political Aspects",
+    "emoji": "🗺️",
+    "file": "geopolitics.html",
+    "desc": "Heartland, rimland, boundaries, state reorganisation, borders, SAARC, Indian Ocean, Look East, federation, terrorism & LWE.",
+    "topics": [
+      "mackinder",
+      "heartland",
+      "spykman",
+      "rimland",
+      "boundary",
+      "frontier",
+      "state reorganisation",
+      "loc",
+      "mcmahon",
+      "saarc",
+      "indian ocean",
+      "string of pearls",
+      "look east",
+      "naxal",
+      "lwe"
+    ],
+    "mcq": 88,
+    "flashcards": 35,
+    "source": "Neetu Singh Part 13"
   }
 ]
