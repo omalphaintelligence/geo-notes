@@ -140,6 +140,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
 .backq{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:0;background:#2E9E6E;color:#fff;border-radius:999px;padding:10px 16px;font:700 .9rem "Bricolage Grotesque",sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .backq[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){.hl{animation:none}}
+.pdfbtn{display:inline-block;font:700 .8rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--c,#2F7FD1);border:1.5px solid currentColor;border-radius:999px;padding:3px 10px;text-decoration:none;margin:4px 0;white-space:nowrap}
+.pdfmini{display:inline-block;font:700 .78rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--c,#2F7FD1);text-decoration:none;margin:0 0 6px}
 </style>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#12324A">
@@ -534,7 +536,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
 <!-- MCQ -->
 <section class="topic" id="t-quiz" style="--c:#2E9E6E">
   <header><h2>MCQs</h2></header>
-  <p class="hint" style="margin:0">Option tap karo → answer, explanation, reference. "📖 Notes me padho" dabao → notes ka wahi hissa khulega. <b>Notes L36–42</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · Savindra Singh, NCERT XI/XII · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
+  <p class="hint" style="margin:0">Option tap karo → answer, explanation, reference. "📖 Notes me padho" → notes ka hissa, "📄 PDF p." → original handwritten page. <b>Notes L36–42</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · Savindra Singh, NCERT XI/XII · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
   <div class="mchips" id="mchips"></div>
   <div class="mstat">
     <span class="mtxt" id="mtxt"></span>
@@ -749,6 +751,18 @@ const EXTRA=[];
 Q.forEach(q=>{q[7]=q[6]||"";q[6]=EXTRA.some(e=>q[1].startsWith(e));});
 Q.forEach((q,i)=>{let x=(i+1)*9301+49297;const rnd=()=>{x=(x*9301+49297)%233280;return x/233280};const idx=[0,1,2,3];for(let k=3;k>0;k--){const j=Math.floor(rnd()*(k+1));[idx[k],idx[j]]=[idx[j],idx[k]];}const opts=idx.map(n=>q[2][n]);q[3]=idx.indexOf(q[3]);q[2]=opts;});
 
+
+/* original PDF links */
+const PDFSRC="biogeography-notes.pdf",PMAP={"eco": {"": 3, "Biosphere": 3, "Components": 4}, "lnk": {"": 5, "production": 5, "productivity": 6, "decomposers": 8}, "trb": {"": 9, "Tundra": 10, "Desert": 11, "Forest biomes": 12, "Mediterranean": 16, "Grassland": 17, "Savanna": 18}, "zoo": {"": 22}, "aqu": {"": 23, "Basics": 23, "Fresh water": 25, "Marine": 25}, "sfm": {"": 28, "Weathering": 28, "Soil profile": 29, "processes": 32}, "wsl": {"": 35, "Zonal": 35, "Intrazonal": 39, "USDA": 44}, "hea": {"": 46}, "imp": {"": 53, "natural causes": 55, "IPCC": 58, "Hydrosphere": 59, "Biosphere impact": 64}, "glb": {"": 67, "Phases": 67, "UNFCCC": 70, "Vienna": 73, "CBD": 74, "CITES": 77}};
+function pdfPage(q){const m=PMAP[q[0]]||{};if(q[7]&&m[q[7]])return m[q[7]];if(!q[7]){const t=(q[1]+" "+q[4]).toLowerCase();for(const [k,p] of Object.entries(m)){if(k&&!k.startsWith("tab:")&&k.length>4&&t.includes(k.toLowerCase()))return p;}}return m[""]||1;}
+function pdfLink(p){return "pdf.html?f="+encodeURIComponent(PDFSRC)+"&p="+p+"&t="+encodeURIComponent(document.title.split(" – ")[0]);}
+document.querySelectorAll('section.topic[id^="t-"]').forEach(sec=>{const m=PMAP[sec.id.slice(2)];if(!m)return;
+  const a=document.createElement("a");a.className="pdfbtn";a.href=pdfLink(m[""]);a.textContent="📄 Original p."+m[""];sec.querySelector("header").appendChild(a);
+  Object.entries(m).forEach(([kw,p])=>{if(!kw)return;let box=null;
+    if(kw.startsWith("tab:"))box=sec.querySelector('[data-panel="'+kw.slice(4)+'"]');
+    else{const d=[...sec.querySelectorAll("details")].find(x=>x.querySelector("summary").textContent.toLowerCase().includes(kw.toLowerCase()));if(d)box=d.querySelector(".in");}
+    if(!box||box.querySelector(":scope > .pdfmini"))return;const l=document.createElement("a");l.className="pdfmini";l.href=pdfLink(p);l.textContent="📄 Original notes p."+p;box.insertBefore(l,box.firstChild);});
+});
 /* reference → notes jump */
 let lastQ=null;
 const backBtn=document.createElement("button");backBtn.className="backq";backBtn.textContent="↩ Wapas MCQ pe";backBtn.hidden=true;document.body.appendChild(backBtn);
@@ -786,7 +800,7 @@ function mRender(){const L=$("#mlist");L.innerHTML="";let shown=0;
     if(done){const e=document.createElement("div");e.className="exp";
       const v=document.createElement("span");v.className="v "+(a===q[3]?"good":"bad");v.textContent=a===q[3]?"Sahi!":"Galat – sahi jawab "+"ABCD"[q[3]]+".";
       e.appendChild(v);e.appendChild(document.createTextNode(q[4]));
-      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));const g=document.createElement("a");g.className="goto";g.href="#t-"+q[0];g.textContent="📖 Notes me padho";g.onclick=ev=>{ev.preventDefault();goNotes(q,"mq"+(i+1));};r.appendChild(g);
+      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));const g=document.createElement("a");g.className="goto";g.href="#t-"+q[0];g.textContent="📖 Notes me padho";g.onclick=ev=>{ev.preventDefault();goNotes(q,"mq"+(i+1));};r.appendChild(g);const pl=document.createElement("a");pl.className="goto";pl.href=pdfLink(pdfPage(q));pl.textContent="📄 PDF p."+pdfPage(q);r.appendChild(document.createTextNode(" · "));r.appendChild(pl);
       e.appendChild(r);d.appendChild(e);}
     L.appendChild(d);});
   if(!shown)L.innerHTML="<p class='hint'>Is filter me koi question nahi.</p>";}
