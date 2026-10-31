@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>India: Climate, Biomes, Structure &amp; Soils – Notes + MCQs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EAF3F5; --card:#FFFFFF; --ink:#12324A; --muted:#4D6A7E; --line:#C9DCE3;
+  --topo:#2F7FD1; --salt:#E9A23B; --temp:#E8505B; --curr:#1BA3A3; --tide:#6A4FC2;
+  --dep:#8A6A3F; --law:#2E5E8C; --res:#2E9E6E; --coral:#E2607E; --warn-bg:#FFF4DC; --warn:#8A5A00;
+  --deep1:#BFE0EA; --deep2:#5FA9C9; --deep3:#1F5F86; --deep4:#0E3550;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0C1F2C; --card:#13293A; --ink:#E3EFF4; --muted:#9DB7C6; --line:#24435A;
+  --warn-bg:#3A2E12; --warn:#F2C76B; --deep1:#2A6A88; --deep2:#1F5577; --deep3:#163F5C; --deep4:#0A2536;
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#0C1F2C; --card:#13293A; --ink:#E3EFF4; --muted:#9DB7C6; --line:#24435A;
+  --warn-bg:#3A2E12; --warn:#F2C76B; --deep1:#2A6A88; --deep2:#1F5577; --deep3:#163F5C; --deep4:#0A2536;
+  color-scheme:dark;}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 "Source Serif 4",Georgia,serif}
+h1,h2,h3,h4,.chip,button,.lbl,th{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+header.hero{padding:28px 18px 8px;max-width:920px;margin:0 auto}
+.hero h1{font-size:clamp(2.2rem,8vw,3.6rem);line-height:1;margin:0 0 6px;font-weight:800;letter-spacing:-.02em}
+.hero p{margin:0;color:var(--muted)}
+.profile{margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;overflow-x:auto}
+.profile svg{display:block;width:100%;min-width:560px;height:auto}
+.profile a{cursor:pointer}
+.profile a:hover path,.profile a:focus path{filter:brightness(1.15)}
+.hint{font-size:.85rem;color:var(--muted);margin:6px 4px 0}
+nav.chips{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;padding:10px 14px;scrollbar-width:none}
+nav.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;text-decoration:none;color:#fff;font-weight:700;font-size:.88rem;padding:7px 13px;border-radius:999px;background:var(--c)}
+.chip.done::after{content:" ✓"}
+.progress{max-width:920px;margin:14px auto 0;padding:0 18px;font-family:"Bricolage Grotesque",sans-serif;font-size:.9rem;color:var(--muted)}
+.bar{height:8px;border-radius:8px;background:var(--line);overflow:hidden;margin-top:4px}
+.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--topo),var(--curr),var(--res),var(--coral));transition:width .4s}
+main{max-width:920px;margin:0 auto;padding:6px 14px 60px}
+section.topic{margin:26px 0;background:var(--card);border-radius:20px;border:1px solid var(--line);border-top:8px solid var(--c);padding:6px 18px 18px}
+.topic>header{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topic h2{margin:12px 0 4px;font-size:1.7rem;color:var(--c);line-height:1.15}
+.donebtn{border:2px solid var(--c);color:var(--c);background:transparent;border-radius:999px;padding:6px 14px;font-weight:700;cursor:pointer;font-size:.85rem}
+.donebtn[aria-pressed="true"]{background:var(--c);color:#fff}
+details{border:1px solid var(--line);border-radius:14px;margin:12px 0;background:var(--paper)}
+summary{cursor:pointer;padding:12px 14px;font:700 1.08rem/1.3 "Bricolage Grotesque",sans-serif;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--c);font-size:1.4rem;line-height:1}
+details[open]>summary::after{content:"–"}
+details>.in{padding:0 16px 14px}
+p{margin:.55em 0}
+ul{margin:.4em 0;padding-left:1.2em}
+li{margin:.25em 0}
+b,strong{font-weight:600;color:var(--ink)}
+.k{background:color-mix(in srgb,var(--c) 18%,transparent);padding:0 4px;border-radius:5px;font-weight:600}
+.tw{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:460px;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:color-mix(in srgb,var(--c) 22%,var(--card));font-size:.9rem}
+.warn{background:var(--warn-bg);color:var(--warn);border-left:5px solid #E9A23B;border-radius:10px;padding:9px 12px;margin:10px 0;font-size:.95rem}
+.warn b{color:var(--warn)}
+.tip{border-left:5px solid var(--c);background:color-mix(in srgb,var(--c) 10%,transparent);border-radius:10px;padding:9px 12px;margin:10px 0;font-size:.95rem}
+.lbl{font-weight:700;font-size:.85rem;color:var(--c)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0}
+.pill{border:1px solid var(--line);border-radius:14px;padding:10px 12px;background:var(--card)}
+.pill h4{margin:0 0 4px;font-size:1rem;color:var(--c)}
+.fig{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px;margin:12px 0;overflow-x:auto}
+.fig svg{display:block;width:100%;height:auto;min-width:420px}
+.fig figcaption{font-size:.85rem;color:var(--muted);padding:4px 6px 0}
+svg text{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 6px}
+.tabs button{border:2px solid var(--c);background:transparent;color:var(--c);border-radius:999px;padding:6px 14px;font-weight:700;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--c);color:#fff}
+.panel[hidden]{display:none}
+/* flashcards */
+.fc-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:10px}
+.flash{width:100%;max-width:520px;height:220px;perspective:1000px;cursor:pointer;border:0;background:none;padding:0;color:inherit}
+.flash .face{position:absolute;inset:0;border-radius:18px;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;backface-visibility:hidden;transition:transform .5s;font-size:1.1rem}
+.flash .inner{position:relative;width:100%;height:100%}
+.flash .front{background:var(--c);color:#fff;font:700 1.25rem/1.3 "Bricolage Grotesque",sans-serif}
+.flash .back{background:var(--paper);border:2px solid var(--c);transform:rotateY(180deg)}
+.flash.flip .front{transform:rotateY(180deg)}
+.flash.flip .back{transform:rotateY(360deg)}
+.fc-nav{display:flex;gap:10px;align-items:center;font-family:"Bricolage Grotesque",sans-serif}
+.btn{border:0;border-radius:999px;padding:9px 18px;font-weight:700;cursor:pointer;background:var(--c);color:#fff;font-size:.95rem}
+.btn.ghost{background:transparent;color:var(--c);border:2px solid var(--c)}
+/* quiz */
+.q{border:1px solid var(--line);border-radius:14px;padding:12px;margin:10px 0;background:var(--paper)}
+.q p{margin:0 0 8px;font-weight:600}
+.opts{display:grid;gap:6px}
+.opts button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;font:500 .95rem/1.35 "Bricolage Grotesque",sans-serif}
+.opts button.ok{background:#2E9E6E;color:#fff;border-color:#2E9E6E}
+.opts button.no{background:#E8505B;color:#fff;border-color:#E8505B}
+.score{font:800 1.3rem "Bricolage Grotesque",sans-serif;color:var(--c)}
+:focus-visible{outline:3px solid #E9A23B;outline-offset:2px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
+.themebtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:44px;height:44px;font-size:1.2rem;cursor:pointer}
+#t-quiz .mstat{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0}
+#t-quiz .mtxt{font-family:"Bricolage Grotesque",sans-serif;font-size:.9rem;color:var(--muted)}
+#t-quiz .mtxt b{color:var(--ink)}
+#t-quiz .mbar{flex:1 1 120px;height:8px;border-radius:8px;background:var(--line);overflow:hidden;display:flex}
+#t-quiz .mbar .g{background:#2E9E6E}#t-quiz .mbar .r{background:#E8505B}
+#t-quiz .mchips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+#t-quiz .mchips button,#t-quiz .tool{border:2px solid var(--qc);color:var(--qc);background:transparent;border-radius:999px;padding:4px 11px;font:700 .8rem "Bricolage Grotesque",sans-serif;cursor:pointer}
+#t-quiz .mchips button[aria-pressed="true"],#t-quiz .tool[aria-pressed="true"]{background:var(--qc);color:var(--card)}
+#t-quiz .tool{--qc:var(--ink)}
+#t-quiz .mq{background:var(--paper);border:1px solid var(--line);border-left:7px solid var(--qc);border-radius:14px;padding:12px;margin:12px 0}
+#t-quiz .qh{display:flex;justify-content:space-between;gap:6px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+#t-quiz .num{font:800 1rem "Bricolage Grotesque",sans-serif;color:var(--qc)}
+#t-quiz .tag{font:700 .72rem "Bricolage Grotesque",sans-serif;color:#fff;background:var(--qc);border-radius:999px;padding:2px 9px}
+.xtag{font:700 .72rem "Bricolage Grotesque",sans-serif;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:2px 9px;white-space:nowrap}
+#t-quiz .qt{font-weight:600;margin:0 0 8px}
+#t-quiz .mopts{display:grid;gap:6px}
+#t-quiz .mopts button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;font:500 .95rem/1.4 "Bricolage Grotesque",sans-serif;display:flex;gap:9px}
+#t-quiz .mopts button span{font-weight:800;color:var(--muted)}
+#t-quiz .mopts button:disabled{cursor:default}
+#t-quiz .mopts button.ok{background:#2E9E6E;border-color:#2E9E6E;color:#fff}
+#t-quiz .mopts button.no{background:#E8505B;border-color:#E8505B;color:#fff}
+#t-quiz .mopts button.ok span,#t-quiz .mopts button.no span{color:#fff}
+#t-quiz .exp{margin-top:9px;border-radius:10px;padding:9px 11px;background:color-mix(in srgb,var(--qc) 10%,transparent);font-size:.95rem}
+#t-quiz .v{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;margin-right:4px}
+#t-quiz .v.good{color:#2E9E6E}#t-quiz .v.bad{color:#E8505B}
+#t-quiz .ref{margin-top:6px;border-top:1px dashed var(--line);padding-top:6px;font-size:.85rem;color:var(--muted)}
+#t-quiz .ref b{color:var(--ink);font-family:"Bricolage Grotesque",sans-serif}
+.homebtn{display:inline-block;margin-bottom:12px;text-decoration:none;font:700 .9rem "Bricolage Grotesque",sans-serif;color:var(--ink);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px}
+:root{--sea:#E8505B;--mon:#2E9E6E;--reg:#2F7FD1;--bio:#4F8F3A;--him:#1F8FA3;--for:#2E5E8C;--wld:#B0703F;--epa:#6A4FC2;--geo:#8A6A3F;--ary:#8E5BB5;--soi:#C2814D}
+
+#t-quiz .goto{display:inline-block;margin-left:6px;font:700 .85rem "Bricolage Grotesque",sans-serif;color:var(--qc);text-decoration:underline;cursor:pointer}
+.hl{animation:hl 1.8s ease-out}
+@keyframes hl{0%{box-shadow:0 0 0 5px #E9A23B}100%{box-shadow:0 0 0 0 transparent}}
+.backq{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:0;background:#2E9E6E;color:#fff;border-radius:999px;padding:10px 16px;font:700 .9rem "Bricolage Grotesque",sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.backq[hidden]{display:none}
+@media (prefers-reduced-motion:reduce){.hl{animation:none}}
+</style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#12324A">
+</head>
+<body>
+
+<header class="hero">
+  <a class="homebtn" href="./">← Saare notes</a>
+  <h1>India: Climate, Biomes, Environment, Structure &amp; Soils</h1>
+  <p>Vol‑3 Part 6 notes (Lectures 47–51). Season wheel ya geology strip pe tap karo → seedha topic.</p>
+  <div class="profile" role="img" aria-label="Season wheel and geological systems">
+  <svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(150 150)">
+      <a href="#t-sea" aria-label="Dry winters"><path d="M0 0 L0 -130 A130 130 0 0 1 130 0 Z" fill="#6A9BD8"/></a>
+      <a href="#t-sea" aria-label="Dry summers"><path d="M0 0 L130 0 A130 130 0 0 1 0 130 Z" fill="#E8505B"/></a>
+      <a href="#t-mon" aria-label="Advancing monsoon"><path d="M0 0 L0 130 A130 130 0 0 1 -130 0 Z" fill="#2E9E6E"/></a>
+      <a href="#t-mon" aria-label="Retreating monsoon"><path d="M0 0 L-130 0 A130 130 0 0 1 0 -130 Z" fill="#E9A23B"/></a>
+      <circle r="45" fill="var(--card)"/>
+      <text x="-28" y="5" font-size="13" font-weight="800" fill="var(--ink)">IMD</text>
+      <g font-size="11" font-weight="700" fill="#fff">
+        <text x="25" y="-70">Dry winter</text><text x="25" y="-56" font-size="9">15 Dec–15 Mar</text>
+        <text x="25" y="65">Dry summer</text><text x="25" y="79" font-size="9">15 Mar–15 Jun</text>
+        <text x="-118" y="65">Advancing</text><text x="-118" y="79" font-size="9">15 Jun–15 Sep</text>
+        <text x="-118" y="-70" fill="#12324A">Retreating</text><text x="-118" y="-56" font-size="9" fill="#12324A">15 Sep–15 Dec</text>
+      </g>
+    </g>
+    <g font-size="12" font-weight="700">
+      <text x="330" y="40" fill="var(--ink)" font-size="14">Geological systems (old → young)</text>
+      <a href="#t-geo"><rect x="330" y="60" width="140" height="70" rx="10" fill="#8A6A3F"/><text x="342" y="88" fill="#fff">Archean</text><text x="342" y="106" fill="#fff" font-size="10">Gneiss &amp; Schist, Dharwar</text></a>
+      <a href="#t-geo"><rect x="480" y="60" width="130" height="70" rx="10" fill="#B0703F"/><text x="492" y="88" fill="#fff">Purana</text><text x="492" y="106" fill="#fff" font-size="10">Cuddapah, Vindhyan</text></a>
+      <a href="#t-geo"><rect x="620" y="60" width="120" height="70" rx="10" fill="#C2414D"/><text x="632" y="88" fill="#fff">Dravidian</text><text x="632" y="106" fill="#fff" font-size="10">Haimanta</text></a>
+      <a href="#t-ary"><rect x="750" y="60" width="140" height="70" rx="10" fill="#6A4FC2"/><text x="762" y="88" fill="#fff">Aryan</text><text x="762" y="106" fill="#fff" font-size="10">Gondwana, Deccan, Recent</text></a>
+      <a href="#t-soi"><rect x="330" y="160" width="560" height="56" rx="10" fill="#C9A86A"/><text x="345" y="185" fill="#12324A">Soils (ICAR): alluvial · black · red · laterite · desert · forest · saline · peat</text><text x="345" y="203" fill="#12324A" font-size="10">tap → soils</text></a>
+      <a href="#t-bio"><rect x="330" y="230" width="270" height="50" rx="10" fill="#2E9E6E"/><text x="345" y="260" fill="#fff">Biomes &amp; zoogeography</text></a>
+      <a href="#t-for"><rect x="620" y="230" width="270" height="50" rx="10" fill="#1F8FA3"/><text x="635" y="260" fill="#fff">Forest · wildlife · EPA laws</text></a>
+    </g>
+  </svg>
+  </div>
+  <p class="hint">Har section ke end me "Mark done" dabao. MCQ ke "📖 Notes me padho" se wahi hissa khulega.</p>
+</header>
+
+<nav class="chips" aria-label="Topics">
+  <a class="chip" style="--c:var(--sea)" href="#t-sea" data-t="sea">Winter &amp; summer</a>
+  <a class="chip" style="--c:var(--mon)" href="#t-mon" data-t="mon">Monsoon</a>
+  <a class="chip" style="--c:var(--reg)" href="#t-reg" data-t="reg">Climatic regions</a>
+  <a class="chip" style="--c:var(--bio)" href="#t-bio" data-t="bio">Biomes</a>
+  <a class="chip" style="--c:var(--him)" href="#t-him" data-t="him">Himalayan &amp; zoo zones</a>
+  <a class="chip" style="--c:var(--for)" href="#t-for" data-t="for">Forest laws</a>
+  <a class="chip" style="--c:var(--wld)" href="#t-wld" data-t="wld">Wildlife</a>
+  <a class="chip" style="--c:var(--epa)" href="#t-epa" data-t="epa">EPA &amp; climate</a>
+  <a class="chip" style="--c:var(--geo)" href="#t-geo" data-t="geo">Archean–Dravidian</a>
+  <a class="chip" style="--c:var(--ary)" href="#t-ary" data-t="ary">Aryan &amp; quakes</a>
+  <a class="chip" style="--c:var(--soi)" href="#t-soi" data-t="soi">Soils</a>
+  <a class="chip" style="--c:#E9A23B" href="#t-fc">Flashcards</a>
+  <a class="chip" style="--c:#2E9E6E" href="#t-quiz">MCQs</a>
+</nav>
+
+<div class="progress"><span id="ptext">0 / 11 topics done</span><div class="bar"><span id="pbar"></span></div></div>
+
+<main>
+
+<!-- SEASONS -->
+<section class="topic" id="t-sea" style="--c:var(--sea)">
+  <header><h2>Indian climate: dry winters &amp; dry summers</h2></header>
+  <p>Tropical monsoon climate shaped by relief + latitude; a clear rhythm of seasons. <b>IMD</b> seasons: dry winter (15 Dec–15 Mar), dry summer (15 Mar–15 Jun), advancing monsoon (15 Jun–15 Sep), retreating monsoon (15 Sep–15 Dec).</p>
+  <details open><summary>Dry winters</summary><div class="in">
+    <ul>
+      <li>Low‑sun season; stable air, offshore winds → dry.</li>
+      <li>High pressure over India = <b>sub‑tropical high</b>, about <b>1014–1019 mb</b>.</li>
+      <li>Country mostly dry, but the <b>sub‑tropical westerly jet</b> brings <b>western disturbances</b> to the NW – roughly the area bounded by <b>22°N and 82°E</b>.</li>
+    </ul>
+  </div></details>
+  <details open><summary>Dry summers</summary><div class="in">
+    <ul>
+      <li>Sun and thermal equator move north; the <b>42 °C isotherm</b> shifts from south to north; by June all India is hot.</li>
+      <li>Peninsula (maritime) vs extra‑peninsula (continental) contrast of &gt;10 °C.</li>
+      <li>Weak pressure gradient draws local moist winds → pre‑monsoon showers: <b>tea showers</b> (sub‑Himalayan WB &amp; Assam), <b>mango showers</b>, <b>cherry blossom</b> (Karnataka).</li>
+      <li><b>Kalbaisakhi (nor'westers)</b> – LP over Hooghly plains + moisture → violent storms with heavy rain and sea surges.</li>
+      <li><b>Loo</b> – hot dry wind from Thar–plains pressure contrast; heat stroke up to Rohilkhand plains. Strong loo carries desert dust; scattering gives some relief from extreme heat.</li>
+      <li>Hailstorms in northern plains; local heat waves and cyclones.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> notes place mango showers in Maharashtra; standard texts – Kerala &amp; coastal Karnataka.</div>
+  </div></details>
+  <button class="donebtn" data-done="sea" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- MONSOON -->
+<section class="topic" id="t-mon" style="--c:var(--mon)">
+  <header><h2>Advancing &amp; retreating monsoon</h2></header>
+  <details open><summary>Arabian Sea branch</summary><div class="in">
+    <p>Pressure contrast pulls SE trades in as the SW monsoon. AS branch: rain falls <b>south → north</b> and <b>west → east</b> in the peninsula.</p>
+    <div class="tw"><table>
+      <tr><th>Sub‑branch</th><th>Rain</th><th>Why</th></tr>
+      <tr><td>Western Ghats</td><td>&gt;250 cm</td><td>Continuous orographic barrier; Malabar (taller) wetter than Konkan. Rain falls eastward, with alternating windward/leeward belts; Telangana &amp; Dandakaranya drought‑prone</td></tr>
+      <tr><td>Central Indian (Narmada–Tapi mouths)</td><td>~125 cm</td><td>Barrier not continuous</td></tr>
+      <tr><td>Kathiawar</td><td>~75 cm</td><td>No orographic barrier</td></tr>
+    </table></div>
+    <p>All branches merge over the <b>Sutlej–Yamuna plains</b> – lowest pressure of the monsoon trough.</p>
+  </div></details>
+  <details open><summary>Bay of Bengal branch</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Sub‑branch</th><th>Rain</th><th>Note</th></tr>
+      <tr><td>Meghalayan</td><td>&gt;1000 cm</td><td>Wettest (warm BoB moisture); rain‑shadow interiors ~150 cm; merges with NE branch near Brahmaputra valley</td></tr>
+      <tr><td>NE branch (via Myanmar)</td><td>&gt;250 cm</td><td>Combined flow moves E → W, rain falls westward (slower fall in mountains)</td></tr>
+      <tr><td>Utkal</td><td>~125 cm</td><td>Utkal coast; Chota Nagpur stays drought‑prone tableland</td></tr>
+    </table></div>
+    <p>Advancing monsoon gives <b>&gt;70%</b> of annual rain – except <b>Coromandel coast</b> (winds parallel to coast), Lahaul–Spiti and Leh–Ladakh (continentality + relief).</p>
+  </div></details>
+  <details><summary>Retreating (NE) monsoon</summary><div class="in">
+    <ul>
+      <li>Sun moves south, HP returns over land, <b>NE trades</b> re‑established; pick up moisture over warm BoB → up to <b>200 cm on Coromandel coast</b>. In dry winters NE trades blow but BoB is too cool to give rain.</li>
+      <li><b>Tropical cyclones</b> – second rain mechanism. BoB more prone (continentality). Lower Gangetic plain &amp; Utkal coast more hit than Coromandel.</li>
+      <li>Arabian Sea: Sahyadris shield Konkan; Malabar and <b>Gujarat coast</b> more prone – Gulf of Khambhat most cyclone‑prone; Gulf of Kutch almost free (salt marshes heat less, no LP).</li>
+      <li><b>October heat</b> – hot, humid, oppressive weather in interiors from waterlogged land after good rains.</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="mon" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- CLIMATIC REGIONS -->
+<section class="topic" id="t-reg" style="--c:var(--reg)">
+  <header><h2>Climatic regions of India</h2></header>
+  <details open><summary>Kendrew (genetic, rainfall)</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Region</th><th>Rain</th><th>Areas</th></tr>
+      <tr><td>Per‑moist</td><td>&gt;200 cm</td><td>Malabar coast, NE states, islands (only 3 dry winter months)</td></tr>
+      <tr><td>Sub‑humid</td><td>100–200 cm</td><td>Gangetic plains, Utkal, Konkan, Coromandel, other plateau interiors</td></tr>
+      <tr><td>Semi‑arid</td><td>&lt;100 cm</td><td>True deserts &lt;50 cm (Thar, Rann of Kutch, Leh–Ladakh); semi‑arid 50–100 cm (Sahyadri rain‑shadow, Telangana, Dandakaranya, Chota Nagpur, semi‑circular belt Punjab–Gujarat)</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Köppen in India</summary><div class="in">
+    <p>Empirical (temperature + rain). All Köppen types occur in India except polar. Map types: Amw (west coast), As (Coromandel), Aw (most of peninsula), BShw &amp; BWhw (west), Cwg/Cwa (Ganga plains), Dfc (NE Himalaya), H/E (Himalaya), BWk (Ladakh).</p>
+  </div></details>
+  <details><summary>Thornthwaite in India</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Code</th><th>Meaning</th><th>Area</th></tr>
+      <tr><td>AA′r</td><td>Per‑humid megatherm</td><td>Malabar, southern NE states, islands</td></tr>
+      <tr><td>BA′w</td><td>Humid megatherm, minor winter deficit</td><td>Konkan, Utkal plains</td></tr>
+      <tr><td>BB′w</td><td>Humid mesotherm</td><td>Brahmaputra plains</td></tr>
+      <tr><td>CA′w</td><td>Sub‑humid megatherm</td><td>Most of peninsula</td></tr>
+      <tr><td>CB′w</td><td>Sub‑humid mesotherm</td><td>Most of Gangetic plains</td></tr>
+      <tr><td>DA′w</td><td>Semi‑arid megatherm, minor summer surplus</td><td>Sahyadri rain‑shadow, S part of western semi‑arid belt</td></tr>
+      <tr><td>DB′w</td><td>Semi‑arid mesotherm</td><td>N part of western semi‑arid belt</td></tr>
+      <tr><td>DB′d</td><td>Semi‑arid mesotherm, no surplus ("drier montane")</td><td>SW J&amp;K</td></tr>
+      <tr><td>EA′d</td><td>Arid megatherm</td><td>Thar, Rann of Kutch</td></tr>
+      <tr><td>D′ / E′</td><td>Tundra / Frost</td><td>Himalayas / Trans‑Himalaya</td></tr>
+    </table></div>
+  </div></details>
+  <details open><summary>Stamp (most used)</summary><div class="in">
+    <p>Empirical; divides India by the <b>18 °C January isotherm</b> into extra‑tropical continental (north) and tropical maritime (south) – 11 regions.</p>
+    <div class="tw"><table>
+      <tr><th>No.</th><th>Region</th><th>Key facts</th></tr>
+      <tr><td>1</td><td>Himalayan</td><td>J&amp;K–Arunachal; montane; NW gets western disturbances, Sikkim–Arunachal get monsoon</td></tr>
+      <tr><td>2</td><td>Nominal rainfall (50–100 cm)</td><td>Sutlej–Yamuna plains; most continental – largest range, latest monsoon, earliest retreat, best WD rain, hail</td></tr>
+      <tr><td>3</td><td>Arid (&lt;50 cm)</td><td>W Rajasthan, N Gujarat; permanent HP</td></tr>
+      <tr><td>4</td><td>Moderate rainfall (100–200 cm)</td><td>Chambal, upper &amp; middle Ganga plains; monsoon + WD; loo &amp; hail</td></tr>
+      <tr><td>5</td><td>Transitional (150–200 cm)</td><td>Sub‑Himalayan WB, Brahmaputra plains; no WD</td></tr>
+      <tr><td>6</td><td>Excessive rainfall</td><td>NE India; &gt;250 cm; distinct winters</td></tr>
+      <tr><td>7</td><td>Humid</td><td>Most of BoB coastal belt + drought‑prone tablelands; pre/post‑monsoon cyclones</td></tr>
+      <tr><td>8</td><td>Moderate / nominal</td><td>Sahyadri rain‑shadow + Gujarat coast</td></tr>
+      <tr><td>9</td><td>Konkan coast</td><td>100–200 cm; wetter than Coromandel because of season</td></tr>
+      <tr><td>10</td><td>Malabar coast + islands</td><td>&gt;250 cm; cyclonic effect</td></tr>
+      <tr><td>11</td><td>Coromandel coast</td><td>100–200 cm; cyclonic surges</td></tr>
+    </table></div>
+    <p>Stamp's scheme is judged best for practical, climate‑based planning.</p>
+  </div></details>
+  <button class="donebtn" data-done="reg" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- BIOMES -->
+<section class="topic" id="t-bio" style="--c:var(--bio)">
+  <header><h2>Indian biomes (latitudinal)</h2></header>
+  <p>MoEF: Indian biodiversity mainly tropical; differences driven by rainfall. 5 biomes – latitudinal: tropical evergreen, tropical deciduous, tropical thorny; altitudinal: sub‑tropical montane, Himalayan.</p>
+  <details open><summary>Tropical evergreen (4 types)</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Type</th><th>Where</th><th>Plants</th><th>Animals</th></tr>
+      <tr><td>Moist</td><td>&gt;200 cm: Malabar, islands, south NE states; densest undergrowth</td><td>Toon, dhup, agar, gurjan</td><td>Arboreal: Malabar hornbill, Nilgiri tahr, langurs; elephants, tigers</td></tr>
+      <tr><td>Semi</td><td>Up to 200 cm: Konkan, Brahmaputra valley; sparse undergrowth</td><td>Indian chestnut etc. (notes also list Manas, Betla, Gorumara)</td><td>Elephants, tigers, rhinos; Gangetic dolphin, gharial</td></tr>
+      <tr><td>Dry</td><td>Coromandel coast (dry summers); low canopy</td><td>Indian chestnut</td><td>Nilgai, chowsingha</td></tr>
+      <tr><td>Littoral</td><td>Open forest; ~7516 km coastline: Sundarbans, Chilika, Pulicat, Vembanad, Gulfs of Khambhat &amp; Kutch</td><td>Sundari, nipa, bhendi, keora</td><td>Royal Bengal tiger, swamp deer, humpback dolphin, olive ridley &amp; Asiatic box turtles, crabs, prawns, waterbirds</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Tropical deciduous &amp; thorny</summary><div class="in">
+    <ul>
+      <li><b>Tropical deciduous</b> – largest area (monsoon climate). <b>Moist</b> (150–200 cm): Gangetic plains, Utkal, Narmada–Tapi, Bangalore–Mysore tableland – sal, teak, sandalwood. <b>Dry</b>: semi‑arid belt Punjab–Gujarat, plateau interiors – teak, sal, palas, kendu.</li>
+      <li>Fauna: elephants, tigers, <b>lion (Gir)</b>, chital, sambhar, bustards (Bengal florican, lesser florican, MacQueen's), flamingoes, gharials, dolphins.</li>
+      <li><b>Tropical thorny</b> – deserts &amp; drought‑prone interiors (W Rajasthan, N Gujarat, Sahyadri rain‑shadow, Telangana, Dandakaranya, Chota Nagpur). Xerophytes: babul, Senegal acacia, sabai grass; halophyte Kabuli kikar. Fauna: chinkara, great Indian bustard, blackbuck, vulture, desert fox, flamingoes.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> notes give ~150 cm for dry deciduous; standard range is ~70–100 cm.</div>
+  </div></details>
+  <details><summary>Sub‑tropical montane (southern hills)</summary><div class="in">
+    <ul>
+      <li>Variation mainly from maritime influence. Nilgiris, Anaimalai, Cardamom – <b>west</b> slope windward (advancing monsoon). Javadi &amp; Shevaroy – <b>east</b> slope windward (retreating monsoon).</li>
+      <li>Windward side: rain falls with height; lee side: rain falls as height drops – biggest contrast at the piedmont.</li>
+      <li>Zonation: moist evergreen / dry evergreen (&lt;700 m) → moist deciduous (700–1400 m) → wet montane (&gt;1400 m); lee side dry deciduous and thorny.</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="bio" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- HIMALAYAN -->
+<section class="topic" id="t-him" style="--c:var(--him)">
+  <header><h2>Himalayan biome &amp; zoogeographic zones</h2></header>
+  <details open><summary>Himalayan biome</summary><div class="in">
+    <p>Highest biotic diversity due to height; only the southern sun‑facing slope counts.</p>
+    <div class="grid">
+      <div class="pill"><h4>NE Himalaya</h4>Sikkim, Arunachal; strong maritime effect – moist evergreen &amp; moist deciduous. Red panda, lesser cats, elephant, rhino; Sikkim stag in temperate heights.</div>
+      <div class="pill"><h4>Trans‑Himalaya</h4>J&amp;K, lee of Himadri; low productivity, grazers – gazelle, ibex, yak; brackish lakes host black‑necked crane.</div>
+      <div class="pill"><h4>NW Himalaya (most diverse)</h4>Tropical deciduous (&lt;1500 m: sambhar, goral) → temperate deciduous (1500–3300 m: brown bear, koklas, musk deer) → coniferous/taiga (3300–4500 m: snow leopard, wolf). Treeline ~4500 m; alpine tundra to 6000 m; frost above.</div>
+    </div>
+  </div></details>
+  <details><summary>Zoogeographic zones</summary><div class="in">
+    <p>By Wildlife Institute of India – <b>Rodgers &amp; Panwar</b>: 10 zones – Trans‑Himalaya, Himalaya, Desert, Semi‑arid, Western Ghats (with southern hills), Deccan, Coastal, Gangetic plains, NE states, Islands (Nicobar = equatorial biome). Biodiversity is highest where warm + wet.</p>
+    <div class="warn"><b>Cross‑check:</b> Rodgers &amp; Panwar classification is usually dated 1988 (notes 1986).</div>
+    <div class="tip">Assignment: short note on Deccan zone – location, climate, plants, animals.</div>
+  </div></details>
+  <button class="donebtn" data-done="him" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- FOREST -->
+<section class="topic" id="t-for" style="--c:var(--for)">
+  <header><h2>Environment protection: forest conservation</h2></header>
+  <p>MoEF is the nodal ministry; 3 flagship laws: <b>FCA 1980</b>, <b>Wildlife Protection Act 1972</b>, <b>Environment Protection Act 1986</b>.</p>
+  <details open><summary>Forest status (2014 report)</summary><div class="in">
+    <ul>
+      <li>India 10th most forested, ~1.8% of world forest area; stable despite population pressure.</li>
+      <li>~23% of area forested: forest 20% + tree cover 3%. Order: moderately dense &gt; open (incl. mangroves) &gt; very dense.</li>
+      <li>Mountains hold ~39%; NE states (except Assam) &gt;75% forested; Punjab–Haryana &lt;10%.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> these are 2014 figures; recent ISFR puts forest + tree cover near 25%.</div>
+  </div></details>
+  <details><summary>Indian Forest Act 1927 &amp; FCA 1980</summary><div class="in">
+    <ul>
+      <li><b>1927 Indian Forest Act</b> – first comprehensive, purely regulatory, no participation.</li>
+      <li><b>FCA 1980</b> – stops diversion of forest land; <span class="k">compensatory afforestation</span> by user agency in cash/kind.</li>
+      <li>After Supreme Court intervention, user agency pays for land + destroyed forest resource; in <b>protected areas</b> 5–10 times net present value plus SC approval.</li>
+      <li>Money held by national <b>CAMPA</b> advisory council outside the Consolidated Fund, in the name of state CAMPAs; released as annual plan funds. Up to 5% for monitoring → <b>e‑Green Watch</b> (AP, Karnataka, MP, Sikkim, Tripura).</li>
+    </ul>
+  </div></details>
+  <details><summary>NFP 1988, FRA 2006, REDD+, NEP 2006</summary><div class="in">
+    <ul>
+      <li><b>National Forest Policy 1988</b>: from regulatory → participatory, revenue → conservation. <b>JFM guidelines 1990</b>; social forestry now linked with <b>MGNREGA</b>.</li>
+      <li><b>Forest Rights Act 2006</b> – ends "historical injustice" to STs and other traditional forest dwellers.</li>
+      <li><b>REDD+</b> (India, 2009 per notes) – pays for reducing deforestation plus conservation, sustainable management and more forest cover; involves forest dwellers.</li>
+      <li><b>National Environment Policy 2006</b> – mangrove (open forest) + coral reef protection via IUCN's <b>Mangroves for the Future (MFF)</b> (~5% quality mangroves; priority WB, Gujarat, A&amp;N) and <b>CRZ notification 2011</b> (priority Sundarbans, Navi &amp; Greater Mumbai, Goa, Kerala, A&amp;N).</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="for" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- WILDLIFE -->
+<section class="topic" id="t-wld" style="--c:var(--wld)">
+  <header><h2>Wildlife &amp; biodiversity protection</h2></header>
+  <details open><summary>Wildlife Protection Act 1972</summary><div class="in">
+    <ul>
+      <li>Integrated development of wildlife habitat; 3 aims: support to protected areas, biodiversity protection, recovery programmes.</li>
+      <li>PAs (2003 amendment) by number: wildlife sanctuaries (fully natural) &gt; national parks (semi‑natural) &gt; conservation reserves &gt; community reserves.</li>
+      <li>Critically endangered animals in Schedule/category I – highest protection via <b>Wildlife Crime Control Bureau</b>; fines &amp; jail for hunting tigers, lions, elephants, gharials, antelopes, rhinos.</li>
+      <li>Funding: 100% central for non‑recurring items, and for PAs in mountains, deserts, coasts and with endangered species; otherwise recurring costs shared equally Centre–state.</li>
+      <li>Global recognition: <b>MAB</b> biosphere reserves (notes: 8 of 18 in UNESCO list) and natural World Heritage Sites (notes: 6) – Western Ghats (incl. Radhanagari &amp; Chandoli) added 2012; Achanakmar–Amarkantak BR in MAB list.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> counts are from 2014; more Indian BRs are now in the MAB list (12 by 2020s).</div>
+  </div></details>
+  <details><summary>Biological Diversity Act 2002</summary><div class="in">
+    <ul>
+      <li>In line with CBD; <b>National Biodiversity Authority</b> (autonomous, under MoEF) → State Biodiversity Boards → Biodiversity Management Committees at panchayat level.</li>
+      <li>National strategies from 2008: <b>G‑SHE</b> (Governance for Sustaining Himalayan Ecosystem), <b>GANGES</b> (global advisory network involving NRIs/PIOs for support), <b>TEEB</b> (Economics of Ecosystems &amp; Biodiversity; Like‑Minded Megadiverse Countries – 17 countries, ~70% of global biodiversity).</li>
+    </ul>
+  </div></details>
+  <details><summary>Recovery programmes</summary><div class="in">
+    <div class="grid">
+      <div class="pill"><h4>Flagship</h4><b>Project Tiger</b> and <b>Project Elephant (1992)</b>; separate national authorities; WWF support. Tigers survive in only ~7% of original range; India has &gt;50% of Asian elephants. <b>MIKE</b> (Monitoring Illegal Killing of Elephants, under CITES). Largest TR: Nagarjunasagar–Srisailam; highest elephant density: Bandipur.</div>
+      <div class="pill"><h4>Non‑flagship</h4>Project Vulture, Project Gharial – captive breeding; Project Hangul (Kashmir stag, a red deer sub‑species), Project Snow Leopard – location‑specific; <b>Project Cheetah</b> – reviving a species extinct in the wild in India.</div>
+    </div>
+    <div class="warn"><b>Cross‑check:</b> Project Tiger was launched in 1973 (notes 1972).</div>
+  </div></details>
+  <button class="donebtn" data-done="wld" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- EPA -->
+<section class="topic" id="t-epa" style="--c:var(--epa)">
+  <header><h2>Environment Protection Act 1986 &amp; climate change</h2></header>
+  <p>Climate change mitigation &amp; pollution control with the <b>Central Pollution Control Board</b>. Two key activities: <b>INCCA</b> and <b>NAPCC</b>.</p>
+  <details open><summary>INCCA</summary><div class="in">
+    <ul>
+      <li>Indian Network for Climate Change Assessment – "4×4" assessment for 2030: regions (Himalayas, NE states, Western Ghats, coasts) × sectors (agriculture, water, forests, health).</li>
+      <li>Also: National Carbonaceous Aerosol Programme (chemistry, time variation and spectral effect of aerosols on heat budget), Montreal Protocol compliance, EIA.</li>
+    </ul>
+  </div></details>
+  <details><summary>Montreal Protocol compliance</summary><div class="in">
+    <ul>
+      <li>From Vienna Convention; India a consistent, successful developing country. India produces 9 of 96 listed ODS.</li>
+      <li>Multilateral fund support; <b>ODS Rules 2000</b>; CFC &amp; CTC production/consumption frozen by 2010 (minor pharma exception); <b>HCFC</b> (interim substitute) freeze year 2030.</li>
+    </ul>
+  </div></details>
+  <details><summary>EIA, CREP, CEPI</summary><div class="in">
+    <ul>
+      <li><b>EIA notification 2006</b> – "green certificate" mandatory for big projects replacing habitat or in dense forests; 2009 amendment exempted biomass/biogas power plants; state‑level EIA authorities set up.</li>
+      <li><b>CREP</b> (Charter on Corporate Responsibility for Environmental Protection) – 15 highly polluting industries: metallurgical, petrochemicals, paper‑pulp, pharma, fertiliser.</li>
+      <li><b>CEPI</b> (Comprehensive Environmental Pollution Index, CPCB) – scale 0–100; &gt;70 = critically polluted, no new green certificate; 43 such clusters notified.</li>
+    </ul>
+  </div></details>
+  <details><summary>NAPCC missions</summary><div class="in">
+    <p>Missions under various ministries (notes list 9): National Solar Mission (JNNSM), Enhanced Energy Efficiency, Strategic Knowledge, Sustaining Himalayan Ecosystem, Green India, Water, Sustainable Habitat, Sustainable Agriculture, Clean Coal (notes).</p>
+    <div class="warn"><b>Cross‑check:</b> NAPCC was released in 2008 with 8 missions (notes say 2009, 9 missions).</div>
+  </div></details>
+  <button class="donebtn" data-done="epa" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- GEOLOGY -->
+<section class="topic" id="t-geo" style="--c:var(--geo)">
+  <header><h2>Geological structure: Archean, Purana, Dravidian</h2></header>
+  <p>GSI: 4 systems – <b>Archean</b> (Gneiss &amp; Schist, Dharwar), <b>Purana</b> (Cuddapah, Vindhyan), <b>Dravidian</b> (Haimanta), <b>Aryan</b> (Gondwana, Deccan Trap, Recent). Archean + Purana = Azoic.</p>
+  <details open><summary>Archean system (4000–1400 Ma)</summary><div class="in">
+    <ul>
+      <li><b>Gneiss &amp; Schist series</b> – Indian shield from original cooling; metamorphosed plutonic; basement complex, "backbone of the Himalayas"; covers &gt;2/3 of peninsula. Little economic value except <b>muscovite mica (Koderma)</b>; biotite mica at Nellore. Surface outcrops: Bengal series (Chota Nagpur), Bundelkhand series, Charnockite series (southern hills).</li>
+      <li><b>Dharwar series</b> (upper Archean) – <b>oldest sedimentary rocks</b>; metalliferous.</li>
+    </ul>
+    <div class="tw"><table>
+      <tr><th>Dharwar belt</th><th>Minerals</th></tr>
+      <tr><td>Karnataka (largest)</td><td>Iron – Kudremukh, Shimoga; manganese – Chitradurga, Bellary; gold – Kolar, Raichur (Hutti)</td></tr>
+      <tr><td>Dandakaranya</td><td>Iron – Bailadila, Jagdalpur, Dantewada; bauxite – Koraput</td></tr>
+      <tr><td>Chota Nagpur</td><td>Iron – Noamundi; bauxite – Lohardaga; copper – Ghatsila; manganese – Keonjhar; iron – Badampahar</td></tr>
+      <tr><td>Aravalli</td><td>Copper – Khetri, Alwar, Jhunjhunu; silver – Zawar (Udaipur); lead &amp; zinc – Banswara, Dungarpur</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Purana system (1400–600 Ma)</summary><div class="in">
+    <ul>
+      <li>Fully sedimentary. <b>Cuddapah</b> (lower) – formed with sea transgression → metallic + non‑metallic. Largest in AP: Kurnool, Cuddapah, Anantapur (Ramagiri gold) – manganese, dolomite, gold. Largest manganese node: Nagpur &amp; Bhandara, Bhilai &amp; Durg, Balaghat. Also copper Balaghat; dolomite Seoni, Jabalpur, Raipur, Bilaspur; iron Dalli–Rajhara; limestone Bundi, Sawai Madhopur, Kota.</li>
+      <li><b>Vindhyan</b> (upper) – mainly non‑metallic; as extensive as gneiss but buried under Deccan basalt and plains; shows as Vindhyan Range. Limestone – Satna, Rewa, Katni; diamonds – Panna (MP) and Golconda (AP, lacustrine).</li>
+    </ul>
+  </div></details>
+  <details><summary>Dravidian system (600–300 Ma)</summary><div class="in">
+    <p>Paleozoic; extra‑peninsular (Himalayan material from the peninsula); least studied. <b>Haimanta series</b> (Cambrian): rock salt (Pir Panjal per notes) and anthracite coal at Kalakot (J&amp;K).</p>
+    <div class="warn"><b>Cross‑check:</b> India's Cambrian rock salt is usually linked with the Salt Range (Pakistan) and Mandi (HP).</div>
+  </div></details>
+  <button class="donebtn" data-done="geo" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- ARYAN -->
+<section class="topic" id="t-ary" style="--c:var(--ary)">
+  <header><h2>Aryan system &amp; earthquake zones</h2></header>
+  <details open><summary>Gondwana series (coal)</summary><div class="in">
+    <p>Upper Carboniferous–Permian; coal‑bearing; mostly <b>bituminous</b>; in peninsular river basins (exception: Brahmaputra basin – Sibsagar). Coal = &gt;50% of commercial energy; almost all with Coal India Ltd except Singareni (SCCL).</p>
+    <div class="tw"><table>
+      <tr><th>Valley</th><th>Coalfields</th></tr>
+      <tr><td>Damodar</td><td>Jharia, Bokaro, Giridih, Dhanbad (Jharkhand); Raniganj (WB)</td></tr>
+      <tr><td>Son</td><td>Singrauli, Umaria (MP)</td></tr>
+      <tr><td>Hasdo</td><td>Chirimiri, Korba (Chhattisgarh)</td></tr>
+      <tr><td>Brahmani</td><td>Talcher (Odisha)</td></tr>
+      <tr><td>Wardha</td><td>Pench, Umred, Kamptee, Wardha (Maharashtra)</td></tr>
+      <tr><td>Godavari</td><td>Ramagundam, Kothagudem, Singareni (Telangana/AP)</td></tr>
+    </table></div>
+  </div></details>
+  <details open><summary>Deccan Trap &amp; seismic highways</summary><div class="in">
+    <ul>
+      <li>Indian plate moving north created transform faults → basic lava between <b>upper Cretaceous and Eocene</b>; covered older rocks; original height &gt;1800 m; denuded into <b>regur</b> (black soil).</li>
+      <li>Major: Maharashtra, Gujarat; transitional: Karnataka, MP; minor: Chota Nagpur, Meghalaya, parts of TN. Explains lack of commercial minerals in Maharashtra.</li>
+      <li>Transform faults = <b>seismic highways</b>: Delhi–Haridwar, Aravalli, Narmada, Munger, Kurduwadi, Koyna, Malabar, Bhadrachalam, east coast.</li>
+    </ul>
+  </div></details>
+  <details><summary>Earthquake zones</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Zone</th><th>Risk</th><th>Areas (notes)</th></tr>
+      <tr><td>5</td><td>Very high (plate boundary)</td><td>Shiwaliks, 7 NE states, Kutch, A&amp;N</td></tr>
+      <tr><td>4</td><td>High</td><td>Sikkim, NW Himalaya, Kathiawar</td></tr>
+      <tr><td>3</td><td>Moderate</td><td>Seismic highways (transform faults)</td></tr>
+      <tr><td>2</td><td>Low</td><td>Near seismic highways</td></tr>
+      <tr><td>1</td><td>Very low</td><td>Stable shield – Telangana, Dandakaranya, Chota Nagpur</td></tr>
+    </table></div>
+    <div class="warn"><b>Cross‑check:</b> BIS map since 2002 has 4 zones (II–V). Latur earthquake was in 1993 (notes 1991).</div>
+  </div></details>
+  <details><summary>Recent series (Pliocene–Pleistocene)</summary><div class="in">
+    <ul>
+      <li>Formation of the plains and Rajasthan erg; Karewas of Kashmir (glacial deposits) – best for <b>saffron</b>.</li>
+      <li>Oil – Barmer; gas – Barmer, Tanot (notes also Kishangarh); lignite – Jaisalmer, Palana; Rann of Kutch – salt, lignite at Umarsar.</li>
+      <li>Monazite sands (Kollam–Kottayam) – world's richest thorium; <b>Neyveli</b> lignite (TN).</li>
+      <li>Oil: Ankleshwar, Kalol (Gujarat); Digboi, Duliajan, Naharkatiya (Assam). Gas: Krishna–Godavari basin. Offshore: Hazira, Rawa, Mumbai High (ONGC).</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="ary" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- SOILS -->
+<section class="topic" id="t-soi" style="--c:var(--soi)">
+  <header><h2>Indian soils (ICAR)</h2></header>
+  <p>Diversity of relief, climate, vegetation and rocks → diverse soils. <b>ICAR</b>: alluvial, black, red, forest, desert, laterite, saline‑alkaline, peat/bog.</p>
+  <details open><summary>Alluvial</summary><div class="in">
+    <ul>
+      <li>Largest area; notes: rich in nitrogen, humus, potash; low in phosphorus.</li>
+      <li>Structure: <b>bhabar</b> (coarsest cone), <b>bhangar</b> (old alluvium), <b>khadar</b> (new alluvium).</li>
+      <li>Sutlej–Yamuna plains are <b>pedocal</b> flood plains – more fertile than Brahmaputra <b>pedalfer</b> plains.</li>
+      <li>Extra‑peninsula deltaic soil only with Hooghly. Peninsula: west‑coast deltas coarser, east finer; Godavari–Krishna black alluvium more fertile than Kaveri–Mahanadi red alluvium; Narmada–Tapi lack alluvium (no deposition).</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> standard texts: alluvium is rich in potash but generally poor in nitrogen, phosphorus and humus.</div>
+  </div></details>
+  <details><summary>Black (regur)</summary><div class="in">
+    <ul>
+      <li>Most fertile structural soil, on basalt; rich in lime, magnesium, iron, potash; little phosphorus; poor in nitrogen &amp; humus; high water retention.</li>
+      <li><b>Dark</b> – Maharashtra, Gujarat (most fertile); <b>medium</b> – Karnataka, MP; <b>light</b> – Shillong plateau, east Chota Nagpur, TN plateau.</li>
+    </ul>
+  </div></details>
+  <details><summary>Red &amp; laterite</summary><div class="in">
+    <ul>
+      <li><b>Red</b> – on Archean rocks; most of peninsula; silica + aluminium + iron; technically infertile but responds to inputs – millets, pulses, oilseeds. <b>Red‑yellow</b> (thorny biome: Aravalli, Sahyadri rain‑shadow, Telangana, Dandakaranya, Chota Nagpur); <b>red‑brown</b> (deciduous biome: W Ghats, Bangalore–Mysore, E Ghats).</li>
+      <li><b>Laterite</b> – on Archean base in per‑moist areas; <b>leaching + laterisation</b> → acidic; Malabar, windward Meghalaya. Infertile but commercially fertile for plantations – rubber, spices, coffee.</li>
+    </ul>
+  </div></details>
+  <details><summary>Desert, forest, saline, peat</summary><div class="in">
+    <div class="grid">
+      <div class="pill"><h4>Desert</h4>Climate‑controlled; coarse, mineral‑rich, humus‑less; W Rajasthan (Jaisalmer, Jodhpur, Nagaur, Barmer, Bikaner); farmed with Indira Gandhi Canal; NDDB rates it best for fodder.</div>
+      <div class="pill"><h4>Forest (montane)</h4>Humus &amp; N‑rich, well drained, shallow; northern mountain wall; podzolic, podzol, chestnut; karewas, doons, duars; food crops and horticulture.</div>
+      <div class="pill"><h4>Saline‑alkaline</h4>Halomorphic, infertile; Rann of Kutch salt marshes; salt‑tolerant fodder with NDDB.</div>
+      <div class="pill"><h4>Peat / bog</h4>Infertile; only soil with no commercial use; tarai and littoral areas.</div>
+    </div>
+  </div></details>
+  <button class="donebtn" data-done="soi" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- FLASHCARDS -->
+<section class="topic" id="t-fc" style="--c:#E9A23B">
+  <header><h2>Flashcards</h2></header>
+  <div class="fc-wrap">
+    <button class="flash" id="flash" aria-live="polite"><div class="inner"><div class="face front" id="fq"></div><div class="face back" id="fa"></div></div></button>
+    <div class="fc-nav">
+      <button class="btn ghost" id="fprev" aria-label="Previous card">‹ Prev</button>
+      <span id="fcount"></span>
+      <button class="btn" id="fnext" aria-label="Next card">Next ›</button>
+      <button class="btn ghost" id="fshuf">Shuffle</button>
+    </div>
+  </div>
+</section>
+
+<!-- MCQ -->
+<section class="topic" id="t-quiz" style="--c:#2E9E6E">
+  <header><h2>MCQs</h2></header>
+  <p class="hint" style="margin:0">Option tap karo → answer, explanation, reference. "📖 Notes me padho" dabao → notes ka wahi hissa khulega. <b>Notes L47–51</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · NCERT XI/XII India books, D.R. Khullar · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
+  <div class="mchips" id="mchips"></div>
+  <div class="mstat">
+    <span class="mtxt" id="mtxt"></span>
+    <div class="mbar"><div class="g" id="mg"></div><div class="r" id="mr"></div></div>
+    <button class="tool" id="mwrong" aria-pressed="false">Sirf galat</button>
+    <button class="tool" id="mun" aria-pressed="false">Unattempted</button>
+    <button class="tool" id="mreset">Reset</button>
+  </div>
+  <div id="mlist"></div>
+</section>
+
+</main>
+<footer>Based on uploaded handwritten notes (Geography Vol‑3, Part 6, 2014). Yellow boxes = facts to verify against current/standard sources.</footer>
+<button class="themebtn" id="theme" aria-label="Toggle dark mode">◐</button>
+
+
+
+
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* progress */
+const TOPICS=["sea","mon","reg","bio","him","for","wld","epa","geo","ary","soi"];
+let done=store.get("ic-done",{});
+function paint(){
+  let n=0;
+  $$("[data-done]").forEach(b=>{const on=!!done[b.dataset.done];b.setAttribute("aria-pressed",on);b.textContent=on?"Done ✓":"Mark done";if(on)n++;});
+  $$(".chip[data-t]").forEach(c=>c.classList.toggle("done",!!done[c.dataset.t]));
+  $("#ptext").textContent=n+" / "+TOPICS.length+" topics done";
+  $("#pbar").style.width=(n/TOPICS.length*100)+"%";
+}
+$$("[data-done]").forEach(b=>b.addEventListener("click",()=>{done[b.dataset.done]=!done[b.dataset.done];store.set("ic-done",done);paint();}));
+paint();
+
+/* tabs */
+$$('[role="tab"]').forEach(t=>t.addEventListener("click",()=>{
+  $$('[role="tab"]').forEach(x=>x.setAttribute("aria-selected",x===t));
+  $$(".panel").forEach(p=>p.hidden=p.dataset.panel!==t.dataset.tab);
+}));
+
+/* theme */
+$("#theme").addEventListener("click",()=>{
+  const r=document.documentElement,cur=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+  r.dataset.theme=cur==="dark"?"light":"dark";store.set("ic-theme",r.dataset.theme);
+});
+const th=store.get("ic-theme",null);if(th)document.documentElement.dataset.theme=th;
+
+/* flashcards */
+let cards=[
+["IMD seasons","Winter 15 Dec–15 Mar · Summer –15 Jun · Advancing –15 Sep · Retreating –15 Dec"],
+["Western disturbances","Via STJ; NW of 22°N, 82°E"],
+["Tea showers","Sub-Himalayan WB & Assam"],
+["Kalbaisakhi","Nor'westers of Hooghly plains"],
+["W Ghats / Central / Kathiawar","> 250 / 125 / 75 cm"],
+["Meghalayan branch",">1000 cm"],
+["Monsoon trough lowest pressure","Sutlej–Yamuna plains"],
+["Coromandel rain","Retreating monsoon, up to 200 cm"],
+["October heat","Hot humid post-monsoon"],
+["Kendrew","Per-moist >200, sub-humid 100–200, semi-arid <100"],
+["Stamp divider","18 °C January isotherm"],
+["Thar in Thornthwaite","EA′d"],
+["Largest biome","Tropical deciduous"],
+["Mangrove trees","Sundari, nipa, bhendi, keora"],
+["NW Himalaya treeline","~4500 m"],
+["Zoo zones","Rodgers & Panwar – 10"],
+["3 flagship laws","FCA 1980, WPA 1972, EPA 1986"],
+["CAMPA","Compensatory afforestation fund"],
+["NFP 1988","Regulatory → participatory; JFM 1990"],
+["FRA 2006","Historical injustice to forest dwellers"],
+["MFF","IUCN – Mangroves for the Future"],
+["Biodiversity Act","2002 – NBA, SBB, BMC"],
+["Project Elephant","1992; MIKE under CITES"],
+["Hangul","Kashmir stag"],
+["CEPI critical",">70 of 100"],
+["HCFC freeze","2030"],
+["Oldest sedimentary","Dharwar"],
+["Koderma","Muscovite mica"],
+["Panna diamonds","Vindhyan"],
+["Gondwana","Coal, Carboniferous–Permian"],
+["Deccan Trap","Upper Cretaceous–Eocene; regur"],
+["Monazite","Kollam–Kottayam; thorium"],
+["Karewas","Saffron, Kashmir"],
+["Khadar / Bhangar / Bhabar","New / old alluvium / coarse cone"],
+["Pedocal vs pedalfer","Sutlej–Yamuna vs Brahmaputra"],
+["Laterite","Leaching + laterisation; acidic"]
+];
+
+let fi=0;
+function showCard(){const f=$("#flash");f.classList.remove("flip");$("#fq").textContent=cards[fi][0];$("#fa").textContent=cards[fi][1];$("#fcount").textContent=(fi+1)+"/"+cards.length;}
+$("#flash").addEventListener("click",()=>$("#flash").classList.toggle("flip"));
+$("#fnext").addEventListener("click",()=>{fi=(fi+1)%cards.length;showCard();});
+$("#fprev").addEventListener("click",()=>{fi=(fi-1+cards.length)%cards.length;showCard();});
+$("#fshuf").addEventListener("click",()=>{for(let i=cards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[cards[i],cards[j]]=[cards[j],cards[i]];}fi=0;showCard();});
+showCard();
+
+/* ===== MCQ ===== */
+const T={sea:["Winter & summer","--sea"],mon:["Monsoon","--mon"],reg:["Climatic regions","--reg"],bio:["Biomes","--bio"],him:["Himalayan & zoo","--him"],for:["Forest laws","--for"],wld:["Wildlife","--wld"],epa:["EPA & climate","--epa"],geo:["Archean–Dravidian","--geo"],ary:["Aryan & quakes","--ary"],soi:["Soils","--soi"]};
+const IP="NCERT XI – India: Physical Environment",DK="D.R. Khullar – India: A Comprehensive Geography",IG="NCERT XII – India: People & Economy";
+const Q=[
+["sea","According to IMD, the dry winter season in India is",["15 Dec – 15 Mar","15 Mar – 15 Jun","15 Jun – 15 Sep","15 Sep – 15 Dec"],0,"Dry summer 15 Mar–15 Jun; advancing monsoon 15 Jun–15 Sep; retreating 15 Sep–15 Dec.","Notes L47; "+IP,"Dry winters"],
+["sea","Pressure over India in winter (sub-tropical high) ranges about",["1014–1019 mb","920–940 mb","990–1000 mb","1030–1040 mb"],0,"Stable air with offshore winds keeps winters dry.","Notes L47","Dry winters"],
+["sea","Winter rain in NW India comes from western disturbances guided by the",["Sub-tropical westerly jet","Tropical easterly jet","SW monsoon","NE trades"],0,"Notes: NW part bounded roughly by 22°N and 82°E.","Notes L47; "+IP,"Dry winters"],
+["sea","Pre-monsoon 'tea showers' occur in",["Sub-Himalayan West Bengal and Assam","Kerala","Karnataka","Punjab"],0,"Cherry blossom showers – Karnataka (coffee).","Notes L47; "+IP,"Dry summers"],
+["sea","Kalbaisakhi (nor'westers) are typical of",["Hooghly plains / West Bengal","Rajasthan","Kerala","Punjab"],0,"Violent storms with heavy rain from local LP in the dry summer.","Notes L47; "+IP,"Dry summers"],
+["sea","Loo is a",["Hot dry local wind of north India in summer","Cold winter wind","Monsoon wind","Sea breeze"],0,"Caused by pressure contrast between Thar and plains; heat stroke up to Rohilkhand.","Notes L47; "+IP,"Dry summers"],
+["sea","In dry summers, temperature contrast between peninsula and extra-peninsula is more than",["10 °C","1 °C","30 °C","50 °C"],0,"Maritime peninsula vs continental north.","Notes L47","Dry summers"],
+["mon","The Western Ghats sub-branch of the Arabian Sea monsoon gives",["More than 250 cm","About 75 cm","About 125 cm","Less than 50 cm"],0,"Continuous orographic barrier; Malabar wetter than Konkan.","Notes L47; "+IP,"Arabian"],
+["mon","The Kathiawar sub-branch gives only ~75 cm because",["There is no orographic barrier","It is too cold","It blows offshore","It is blocked by Aravallis"],0,"Central Indian branch gets ~125 cm through Narmada–Tapi mouths.","Notes L47","Arabian"],
+["mon","All monsoon branches finally merge over the",["Sutlej–Yamuna plains","Deccan plateau","Thar desert","Brahmaputra valley"],0,"Site of the lowest pressure of the monsoon trough.","Notes L47","Arabian"],
+["mon","The wettest branch of the advancing monsoon is the",["Meghalayan branch (>1000 cm)","Kathiawar branch","Utkal branch","Central Indian branch"],0,"Bay of Bengal branch rich in moisture.","Notes L47; "+IP,"Bay of Bengal"],
+["mon","Drought-prone Chota Nagpur tableland lies in the zone of the",["Utkal branch","Meghalayan branch","Western Ghats branch","Kathiawar branch"],0,"Utkal branch gives ~125 cm on the coast.","Notes L47","Bay of Bengal"],
+["mon","Which area gets most rain NOT from the advancing monsoon?",["Coromandel coast","Malabar coast","Konkan coast","Meghalaya"],0,"SW winds blow parallel to it; it gets rain from the retreating monsoon.","Notes L47; "+IP,"Bay of Bengal"],
+["mon","Rain on the Coromandel coast in Oct–Dec is mainly due to",["Re-established NE trades over warm BoB and cyclones","SW monsoon","Western disturbances","Loo"],0,"Up to 200 cm.","Notes L47; "+IP,"Retreating"],
+["mon","Per the notes, the most cyclone-prone part of the Gujarat coast is",["Gulf of Khambhat","Gulf of Kutch","Saurashtra west coast","Diu"],0,"Gulf of Kutch is nearly free – salt marshes heat less.","Notes L47","Retreating"],
+["mon","'October heat' refers to",["Hot humid oppressive weather after the monsoon","Cold waves","Hailstorms","Western disturbances"],0,"Waterlogged land after good rains plus clear skies.","Notes L47; "+IP,"Retreating"],
+["mon","Konkan coast is less cyclone-prone than Malabar because of",["Shelter by the Sahyadris","Cold currents","Lack of moisture","Higher latitude"],0,"Malabar and Gujarat coasts are more exposed.","Notes L47","Retreating"],
+["reg","Kendrew's classification of India is based on",["Annual rainfall","Temperature only","Vegetation","Soils"],0,"Per-moist >200, sub-humid 100–200, semi-arid <100 cm.","Notes L48","Kendrew"],
+["reg","According to the notes, which Köppen type is NOT found in India?",["Polar","Tropical","Dry","Temperate"],0,"All other climate groups occur.","Notes L48; "+DK,"Köppen"],
+["reg","In Thornthwaite's scheme for India, AA′r denotes",["Per-humid megatherm – Malabar, south NE, islands","Arid megatherm – Thar","Frost – Trans-Himalaya","Sub-humid mesotherm – Ganga plain"],0,"EA′d = Thar & Rann of Kutch.","Notes L48; "+DK,"Thornthwaite"],
+["reg","EA′d in Thornthwaite's Indian classification covers",["Thar desert and Rann of Kutch","Malabar coast","Brahmaputra plains","Konkan"],0,"Arid megatherm, no surplus.","Notes L48","Thornthwaite"],
+["reg","Stamp's classification uses which isotherm to separate India into two parts?",["18 °C January isotherm","27 °C July isotherm","0 °C January isotherm","42 °C isotherm"],0,"North = extra-tropical continental; south = tropical maritime.","Notes L48; "+DK,"Stamp"],
+["reg","Stamp's 'nominal rainfall' region with the most continental climate is",["Sutlej–Yamuna plains","Malabar coast","Brahmaputra plains","Coromandel"],0,"50–100 cm; largest range, latest onset, earliest retreat.","Notes L48","Stamp"],
+["reg","Stamp's 'transitional' region includes",["Sub-Himalayan West Bengal and Brahmaputra plains","Thar desert","Konkan coast","Deccan"],0,"Transition between peninsula/extra-peninsula and rainfall belts; no WD.","Notes L48","Stamp"],
+["reg","Konkan coast is wetter than Coromandel despite similar annual rain because of",["Season of rainfall","Higher latitude","Mangroves","Lower temperature"],0,"Coromandel also gets cyclonic surges.","Notes L48","Stamp"],
+["reg","Which climatic classification do the notes rate best for planning in India?",["Stamp","Kendrew","Köppen","Thornthwaite"],0,"Most used for practical purposes.","Notes L48","Stamp"],
+["bio","Toon, dhup, agar and gurjan are trees of the",["Moist tropical evergreen biome","Thorny biome","Dry deciduous biome","Alpine biome"],0,"Areas >200 cm: Malabar, islands, south NE.","Notes L48; "+IP,"evergreen"],
+["bio","Malabar hornbill and Nilgiri tahr are associated with",["Moist evergreen biome","Thorny biome","Trans-Himalaya","Littoral biome"],0,"Arboreal adaptation in dense undergrowth.","Notes L48","evergreen"],
+["bio","Sundari, nipa and keora are typical of",["Littoral (mangrove) biome","Thorny biome","Moist deciduous","Wet montane"],0,"Coastline ~7516 km; Sundarbans, Chilika, Pulicat etc.","Notes L48; "+IP,"evergreen"],
+["bio","Dry evergreen biome is found on the",["Coromandel coast","Konkan coast","Brahmaputra valley","Malabar coast"],0,"Reflects dry summers; nilgai, chowsingha.","Notes L48","evergreen"],
+["bio","The largest biome by area in India is",["Tropical deciduous","Tropical evergreen","Thorny","Himalayan"],0,"Matches the dominant monsoon climate.","Notes L48; "+IP,"deciduous"],
+["bio","Sal, teak and sandalwood are typical of",["Moist deciduous biome","Thorny biome","Mangroves","Alpine tundra"],0,"150–200 cm: Gangetic plains, Utkal, Narmada–Tapi, Bangalore–Mysore.","Notes L48; "+IP,"deciduous"],
+["bio","Babul, Senegal acacia and sabai grass are xerophytes of the",["Tropical thorny biome","Moist evergreen","Littoral","Temperate deciduous"],0,"Halophyte: Kabuli kikar.","Notes L48","deciduous"],
+["bio","Great Indian bustard, chinkara and blackbuck belong to the",["Thorny biome","Moist evergreen","NE Himalaya","Littoral"],0,"Deserts and drought-prone interiors.","Notes L48","deciduous"],
+["bio","In Javadi and Shevaroy hills the windward slope faces",["East (retreating monsoon)","West (advancing monsoon)","North","South"],0,"Nilgiris, Anaimalai, Cardamom – west slope windward.","Notes L48","montane"],
+["him","Red panda is a characteristic animal of the",["NE Himalayan biome","Trans-Himalaya","Thorny biome","Littoral"],0,"Sikkim–Arunachal; moist evergreen & deciduous.","Notes L48","Himalayan biome"],
+["him","Black-necked crane is associated with",["Brackish lakes of the Trans-Himalaya","Sundarbans","Western Ghats","Thar"],0,"Trans-Himalaya: gazelle, ibex, yak.","Notes L48","Himalayan biome"],
+["him","In the NW Himalaya the tree line is at about",["4500 m","1500 m","3300 m","6000 m"],0,"Alpine tundra above it up to ~6000 m.","Notes L48; "+IP,"Himalayan biome"],
+["him","Snow leopard and wolf belong to which NW Himalayan zone?",["Coniferous / taiga (3300–4500 m)","Tropical deciduous (<1500 m)","Temperate deciduous (1500–3300 m)","Frost zone"],0,"Brown bear, musk deer – temperate deciduous.","Notes L48","Himalayan biome"],
+["him","India's 10 zoogeographic zones were given by",["Rodgers and Panwar (WII)","Stamp","Kendrew","Thornthwaite"],0,"Usually dated 1988.","Notes L48; "+IP,"Zoogeographic"],
+["him","Nicobar Islands are noted as an example of which biome?",["Equatorial","Thorny","Alpine","Temperate"],0,"Islands are one of the 10 zones.","Notes L48","Zoogeographic"],
+["for","The three flagship environment laws handled by MoEF are",["FCA 1980, WPA 1972, EPA 1986","IFA 1927, FRA 2006, NFP 1988","BDA 2002, NEP 2006, CRZ 2011","WPA 1972, EIA 2006, REDD+"],0,"Each forms a block of environment protection.","Notes L49","status"],
+["for","As per the 2014 report, India's forest + tree cover was about",["23%","10%","33%","50%"],0,"Forest 20% + tree cover 3%; recent ISFR ~25%.","Notes L49; "+IG,"status"],
+["for","Which states have less than 10% forest cover per the notes?",["Punjab and Haryana","Mizoram and Nagaland","Kerala and Goa","Sikkim and Arunachal"],0,"NE states except Assam have >75%.","Notes L49","status"],
+["for","Compensatory afforestation is a provision linked to",["Forest Conservation Act 1980","Indian Forest Act 1927","Wildlife Protection Act 1972","Biodiversity Act 2002"],0,"User agency pays for diverted forest land.","Notes L49","FCA"],
+["for","In protected areas, user agencies pay about",["5–10 times net present value plus SC approval","Half the land price","Nothing","Only tree value"],0,"Funds managed through CAMPA.","Notes L49","FCA"],
+["for","e-Green Watch is funded from",["Up to 5% of CAMPA funds for monitoring","World Bank loan","GST","MGNREGA"],0,"Started in AP, Karnataka, MP, Sikkim, Tripura.","Notes L49","FCA"],
+["for","National Forest Policy 1988 shifted forest management from",["Regulatory to participatory","Participatory to regulatory","Conservation to revenue","Local to colonial"],0,"Led to JFM guidelines in 1990.","Notes L49; "+IG,"NFP"],
+["for","Forest Rights Act 2006 addresses",["Historical injustice to forest dwellers","Industrial pollution","Coastal zones","Ozone depletion"],0,"Rights for STs and other traditional forest dwellers.","Notes L49; "+IG,"NFP"],
+["for","Mangroves for the Future (MFF) is an initiative of",["IUCN","UNEP","WWF","FAO"],0,"Linked with NEP 2006 and CRZ 2011.","Notes L49","NFP"],
+["wld","Under the 2003 amendment, the most numerous protected areas are",["Wildlife sanctuaries","National parks","Conservation reserves","Community reserves"],0,"Order: sanctuaries > national parks > conservation > community reserves.","Notes L49","Wildlife Protection"],
+["wld","Wildlife Crime Control Bureau protects animals listed in",["Schedule / category I","Schedule V","CITES appendix III","Red list only"],0,"Critically endangered species get highest protection.","Notes L49","Wildlife Protection"],
+["wld","100% central assistance under WPA is given for",["Non-recurring items","All recurring items everywhere","Only salaries","Only tourism"],0,"Also PAs in mountains, deserts, coasts and with endangered species.","Notes L49","Wildlife Protection"],
+["wld","Western Ghats became a World Heritage Site in",["2012","2002","2016","1987"],0,"Includes Radhanagari and Chandoli.","Notes L49","Wildlife Protection"],
+["wld","National Biodiversity Authority was set up under the",["Biological Diversity Act 2002","WPA 1972","EPA 1986","FCA 1980"],0,"With State Boards and BMCs at panchayat level.","Notes L49; "+IG,"Biological"],
+["wld","G-SHE stands for",["Governance for Sustaining Himalayan Ecosystem","Green Strategy for Habitat & Environment","Global Shelter for Habitat Ecology","Gangetic System for Habitat"],0,"One of the 2008 strategies with GANGES and TEEB.","Notes L49","Biological"],
+["wld","Like-Minded Megadiverse Countries hold about what share of global biodiversity?",["70%","10%","30%","95%"],0,"17 countries; linked to TEEB.","Notes L49","Biological"],
+["wld","Project Elephant was launched in",["1992","1973","1985","2002"],0,"Project Tiger 1973 (notes 1972).","Notes L49; "+IG,"Recovery"],
+["wld","MIKE programme relates to",["Monitoring illegal killing of elephants","Mangrove mapping","Tiger census","Vulture breeding"],0,"Under CITES.","Notes L49","Recovery"],
+["wld","India's largest tiger reserve per the notes is",["Nagarjunasagar–Srisailam","Corbett","Sundarbans","Ranthambore"],0,"Bandipur has highest elephant density.","Notes L49","Recovery"],
+["wld","Project Hangul protects",["Kashmir stag","Snow leopard","Gharial","Great Indian bustard"],0,"A red deer sub-species; location-specific project.","Notes L49","Recovery"],
+["wld","Which project tries to bring back a species extinct in the wild in India?",["Project Cheetah","Project Vulture","Project Gharial","Project Snow Leopard"],0,"Vulture and gharial projects use captive breeding.","Notes L49","Recovery"],
+["epa","INCCA's '4×4' assessment covers four regions, which include",["Himalayas, NE states, Western Ghats, coasts","Thar, Deccan, Ganga plain, islands","Only metro cities","Only forests"],0,"Four sectors: agriculture, water, forests, health; projected for 2030.","Notes L50","INCCA"],
+["epa","Under Montreal Protocol compliance, India froze CFC and CTC by",["2010","2000","2030","1990"],0,"HCFC freeze year 2030; ODS Rules 2000.","Notes L50","Montreal"],
+["epa","India produces how many of the 96 listed ozone-depleting substances (notes)?",["9","1","50","96"],0,"India seen as a consistent, successful developing country.","Notes L50","Montreal"],
+["epa","The EIA notification that made green certificates key is from",["2006","1986","1994","2011"],0,"2009 amendment exempted biomass/biogas plants.","Notes L50","EIA"],
+["epa","Under CEPI, a critically polluted area scores above",["70","30","50","90"],0,"Scale 0–100 by CPCB; 43 clusters notified.","Notes L50","EIA"],
+["epa","CREP identified how many highly polluting industries?",["15","5","43","100"],0,"Metallurgy, petrochemicals, paper-pulp, pharma, fertiliser.","Notes L50","EIA"],
+["epa","NAPCC was released in 2008 with how many missions?",["8","5","12","20"],0,"Notes say 2009 and list 9 (adding Clean Coal).","Notes L50; "+IG,"NAPCC"],
+["geo","The four geological systems of India are",["Archean, Purana, Dravidian, Aryan","Azoic, Paleozoic, Mesozoic, Cenozoic","Gondwana, Vindhyan, Cuddapah, Dharwar","Himalayan, Peninsular, Coastal, Island"],0,"As classified by GSI.","Notes L50; "+IP,"Archean"],
+["geo","The oldest sedimentary rocks of India belong to the",["Dharwar series","Vindhyan series","Gondwana series","Recent series"],0,"Upper Archean; metalliferous.","Notes L50; "+IP,"Archean"],
+["geo","Koderma is known for",["Muscovite mica","Coal","Bauxite","Gold"],0,"From the Gneiss & Schist series; biotite mica at Nellore.","Notes L50","Archean"],
+["geo","Kolar and Hutti (Raichur) are associated with",["Gold in Dharwar rocks","Coal in Gondwana","Oil in Recent series","Diamonds in Vindhyan"],0,"Karnataka has the largest Dharwar expanse.","Notes L50; "+IP,"Archean"],
+["geo","Bailadila iron ore lies in",["Dandakaranya (Chhattisgarh)","Aravalli","Chota Nagpur","Karnataka"],0,"Koraput (Odisha) – bauxite.","Notes L50","Archean"],
+["geo","Zawar mines near Udaipur are known for",["Silver (with lead-zinc)","Coal","Mica","Diamond"],0,"Aravalli Dharwar belt; Khetri copper.","Notes L50","Archean"],
+["geo","Cuddapah series has both metallic and non-metallic minerals because of",["Sea transgression during formation","Volcanic activity","Glaciation","Wind deposition"],0,"Named after Cuddapah (AP).","Notes L50","Purana"],
+["geo","Diamonds of Panna are found in the",["Vindhyan series","Dharwar series","Gondwana series","Deccan trap"],0,"Golconda diamonds – lacustrine, AP.","Notes L50; "+IP,"Purana"],
+["geo","Satna, Rewa and Katni are known for limestone of the",["Vindhyan series","Dharwar series","Recent series","Haimanta series"],0,"Vindhyan is mainly non-metallic.","Notes L50","Purana"],
+["geo","Haimanta series belongs to the",["Dravidian system","Aryan system","Purana system","Archean system"],0,"Cambrian; anthracite at Kalakot (J&K).","Notes L50","Dravidian"],
+["ary","Most of India's coal belongs to the",["Gondwana series","Dharwar series","Vindhyan series","Recent series"],0,"Upper Carboniferous–Permian; mainly bituminous.","Notes L51; "+IP,"Gondwana"],
+["ary","Jharia, Bokaro and Raniganj coalfields lie in the",["Damodar valley","Son valley","Godavari valley","Wardha valley"],0,"Son – Singrauli; Godavari – Singareni.","Notes L51; "+IG,"Gondwana"],
+["ary","Korba coalfield lies in the",["Hasdo valley","Brahmani valley","Damodar valley","Son valley"],0,"Talcher – Brahmani (Odisha).","Notes L51","Gondwana"],
+["ary","The only major Gondwana coal outside peninsular basins (notes) is in",["Brahmaputra basin – Sibsagar","Thar","Kashmir","Kerala"],0,"All other coal is in peninsular river basins.","Notes L51","Gondwana"],
+["ary","Deccan Trap lava erupted between",["Upper Cretaceous and Eocene","Cambrian and Ordovician","Pleistocene and Holocene","Archean"],0,"Original height >1800 m; weathered into regur.","Notes L51; "+IP,"Deccan"],
+["ary","Koyna and Latur lie along what the notes call",["Seismic highways (transform faults)","Plate boundary","Stable shield","Rift valleys"],0,"Moderate-risk zone in peninsula.","Notes L51","Deccan"],
+["ary","Per the notes, the very-low-risk earthquake zone covers",["Telangana, Dandakaranya, Chota Nagpur","Kutch and NE states","Shiwaliks","A&N islands"],0,"Stable shield; BIS now has 4 zones (II–V).","Notes L51","Earthquake"],
+["ary","Monazite sands of Kerala (Kollam–Kottayam) are rich in",["Thorium","Uranium only","Gold","Coal"],0,"World's richest thorium deposits.","Notes L51; "+IG,"Recent"],
+["ary","Neyveli (Tamil Nadu) is famous for",["Lignite","Anthracite","Iron ore","Diamonds"],0,"Recent series sediments.","Notes L51; "+IG,"Recent"],
+["ary","Karewas of Kashmir are best known for",["Saffron","Tea","Rubber","Cotton"],0,"Glacial deposits of the Recent series.","Notes L51; "+IP,"Recent"],
+["ary","Mumbai High is an offshore field of",["Oil and natural gas","Coal","Lignite","Thorium"],0,"Operated by ONGC; Hazira, Rawa – gas.","Notes L51; "+IG,"Recent"],
+["soi","The soil classification used in the notes for India is by",["ICAR","GSI","IMD","NBA"],0,"8 types.","Notes L51; "+IP,"Alluvial"],
+["soi","New alluvium in the northern plains is called",["Khadar","Bhangar","Bhabar","Regur"],0,"Bhangar = old alluvium; bhabar = coarse cone.","Notes L51; "+IP,"Alluvial"],
+["soi","Sutlej–Yamuna flood plains are more fertile than Brahmaputra plains because they are",["Pedocal","Pedalfer","Laterite","Saline"],0,"Brahmaputra plains are pedalfer (leached).","Notes L51","Alluvial"],
+["soi","Black soil is known for",["High water retention and lime, iron, magnesium","High humus and nitrogen","Acidic nature","Sandy texture"],0,"Poor in N and humus; little P.","Notes L51; "+IP,"Black"],
+["soi","Dark (most fertile) black soil is found in",["Maharashtra and Gujarat","Karnataka and MP","Shillong plateau","Tamil Nadu plateau"],0,"Medium – Karnataka & MP; light – Shillong, E Chota Nagpur, TN.","Notes L51","Black"],
+["soi","Red soil gets its colour from",["Iron oxides; it is rich in silica, aluminium, iron","Lime","Humus","Salt"],0,"On Archean rocks; responds well to inputs.","Notes L51; "+IP,"Red"],
+["soi","Laterite soil is acidic due to",["Leaching and laterisation in per-moist areas","Salt deposition","Basalt weathering","Wind action"],0,"Commercially used for rubber, spices, coffee.","Notes L51; "+IP,"Red"],
+["soi","Desert soil of Rajasthan is irrigated mainly by the",["Indira Gandhi Canal","Bhakra Canal","Sharda Canal","Kosi Canal"],0,"NDDB rates it best for fodder crops.","Notes L51","Desert"],
+["soi","Which soil type has no commercial use per the notes?",["Peat / bog","Saline-alkaline","Desert","Laterite"],0,"Found in tarai and littoral areas.","Notes L51","Desert"],
+["soi","Saline-alkaline (halomorphic) soils occur notably in",["Rann of Kutch","Malabar","Shillong","Doon valley"],0,"Salt-tolerant fodder with NDDB support.","Notes L51","Desert"]
+];
+const EXTRA=["NAPCC was released in 2008"];
+Q.forEach(q=>{q[7]=q[6]||"";q[6]=EXTRA.some(e=>q[1].startsWith(e));});
+Q.forEach((q,i)=>{let x=(i+1)*9301+49297;const rnd=()=>{x=(x*9301+49297)%233280;return x/233280};const idx=[0,1,2,3];for(let k=3;k>0;k--){const j=Math.floor(rnd()*(k+1));[idx[k],idx[j]]=[idx[j],idx[k]];}const opts=idx.map(n=>q[2][n]);q[3]=idx.indexOf(q[3]);q[2]=opts;});
+
+/* reference → notes jump */
+let lastQ=null;
+const backBtn=document.createElement("button");backBtn.className="backq";backBtn.textContent="↩ Wapas MCQ pe";backBtn.hidden=true;document.body.appendChild(backBtn);
+backBtn.onclick=()=>{const el=lastQ&&document.getElementById(lastQ);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});backBtn.hidden=true;};
+function goNotes(q,qid){
+  const sec=document.getElementById("t-"+q[0]);if(!sec)return;
+  let target=sec;const kw=q[7]||"";
+  if(kw.startsWith("tab:")){const b=sec.querySelector('[data-tab="'+kw.slice(4)+'"]');if(b)b.click();const p=sec.querySelector('[data-panel="'+kw.slice(4)+'"]');if(p)target=p;}
+  else if(kw){const d=[...sec.querySelectorAll("details")].find(x=>x.querySelector("summary").textContent.toLowerCase().includes(kw.toLowerCase()));if(d){d.open=true;target=d;}}
+  target.scrollIntoView({behavior:"smooth",block:"start"});
+  target.classList.remove("hl");void target.offsetWidth;target.classList.add("hl");
+  lastQ=qid;backBtn.hidden=false;
+}
+let mans=store.get("icmcq-ans",{}),mf="all",mw=false,mu=false;
+function mChips(){const c=$("#mchips");c.innerHTML="";
+  const mk=(k,l,col)=>{const b=document.createElement("button");b.textContent=l;b.style.setProperty("--qc",col);b.setAttribute("aria-pressed",mf===k);b.onclick=()=>{mf=k;mChips();mRender();};c.appendChild(b);};
+  mk("all","Sab ("+Q.length+")","var(--ink)");
+  Object.entries(T).forEach(([k,[l,v]])=>mk(k,l+" ("+Q.filter(q=>q[0]===k).length+")","var("+v+")"));}
+function mStats(){let r=0,w=0;Q.forEach((q,i)=>{if(mans[i]!==undefined)mans[i]===q[3]?r++:w++;});
+  $("#mtxt").innerHTML="<b>"+r+"</b> sahi · <b>"+w+"</b> galat · "+(Q.length-r-w)+" baaki";
+  $("#mg").style.width=r+"%";$("#mr").style.width=w+"%";}
+function mRender(){const L=$("#mlist");L.innerHTML="";let shown=0;
+  Q.forEach((q,i)=>{
+    if(mf!=="all"&&q[0]!==mf)return;
+    const a=mans[i],done=a!==undefined;
+    if(mw&&!(done&&a!==q[3]))return; if(mu&&done)return; shown++;
+    const d=document.createElement("div");d.className="mq";d.style.setProperty("--qc","var("+T[q[0]][1]+")");d.id="mq"+(i+1);
+    d.innerHTML="<div class='qh'><span class='num'>Q"+(i+1)+"</span><span><span class='tag'>"+T[q[0]][0]+"</span>"+(q[6]?" <span class='xtag'>Textbook extra</span>":"")+"</span></div><p class='qt'></p><div class='mopts'></div>";
+    d.querySelector(".qt").textContent=q[1];
+    const o=d.querySelector(".mopts");
+    q[2].forEach((op,j)=>{const b=document.createElement("button");b.innerHTML="<span>"+"ABCD"[j]+"</span>";b.appendChild(document.createTextNode(op));
+      if(done){b.disabled=true;if(j===q[3])b.className="ok";else if(j===a)b.className="no";}
+      b.onclick=()=>{mans[i]=j;store.set("icmcq-ans",mans);const y=d.getBoundingClientRect().top;mRender();mStats();const nn=document.getElementById("mq"+(i+1));if(nn)window.scrollBy(0,nn.getBoundingClientRect().top-y);};
+      o.appendChild(b);});
+    if(done){const e=document.createElement("div");e.className="exp";
+      const v=document.createElement("span");v.className="v "+(a===q[3]?"good":"bad");v.textContent=a===q[3]?"Sahi!":"Galat – sahi jawab "+"ABCD"[q[3]]+".";
+      e.appendChild(v);e.appendChild(document.createTextNode(q[4]));
+      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));const g=document.createElement("a");g.className="goto";g.href="#t-"+q[0];g.textContent="📖 Notes me padho";g.onclick=ev=>{ev.preventDefault();goNotes(q,"mq"+(i+1));};r.appendChild(g);
+      e.appendChild(r);d.appendChild(e);}
+    L.appendChild(d);});
+  if(!shown)L.innerHTML="<p class='hint'>Is filter me koi question nahi.</p>";}
+$("#mwrong").onclick=e=>{mw=!mw;mu=false;e.target.setAttribute("aria-pressed",mw);$("#mun").setAttribute("aria-pressed",false);mRender();};
+$("#mun").onclick=e=>{mu=!mu;mw=false;e.target.setAttribute("aria-pressed",mu);$("#mwrong").setAttribute("aria-pressed",false);mRender();};
+$("#mreset").onclick=()=>{if(confirm("Saare MCQ answers reset karein?")){mans={};store.set("icmcq-ans",mans);mRender();mStats();}};
+mChips();mRender();mStats();
+</script>
+</body>
+</html>
