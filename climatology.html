@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Climatology – Notes + 100 MCQs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EAF3F5; --card:#FFFFFF; --ink:#12324A; --muted:#4D6A7E; --line:#C9DCE3;
+  --topo:#2F7FD1; --salt:#E9A23B; --temp:#E8505B; --curr:#1BA3A3; --tide:#6A4FC2;
+  --dep:#8A6A3F; --law:#2E5E8C; --res:#2E9E6E; --coral:#E2607E; --warn-bg:#FFF4DC; --warn:#8A5A00;
+  --deep1:#BFE0EA; --deep2:#5FA9C9; --deep3:#1F5F86; --deep4:#0E3550;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0C1F2C; --card:#13293A; --ink:#E3EFF4; --muted:#9DB7C6; --line:#24435A;
+  --warn-bg:#3A2E12; --warn:#F2C76B; --deep1:#2A6A88; --deep2:#1F5577; --deep3:#163F5C; --deep4:#0A2536;
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#0C1F2C; --card:#13293A; --ink:#E3EFF4; --muted:#9DB7C6; --line:#24435A;
+  --warn-bg:#3A2E12; --warn:#F2C76B; --deep1:#2A6A88; --deep2:#1F5577; --deep3:#163F5C; --deep4:#0A2536;
+  color-scheme:dark;}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 "Source Serif 4",Georgia,serif}
+h1,h2,h3,h4,.chip,button,.lbl,th{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+header.hero{padding:28px 18px 8px;max-width:920px;margin:0 auto}
+.hero h1{font-size:clamp(2.2rem,8vw,3.6rem);line-height:1;margin:0 0 6px;font-weight:800;letter-spacing:-.02em}
+.hero p{margin:0;color:var(--muted)}
+.profile{margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;overflow-x:auto}
+.profile svg{display:block;width:100%;min-width:560px;height:auto}
+.profile a{cursor:pointer}
+.profile a:hover path,.profile a:focus path{filter:brightness(1.15)}
+.hint{font-size:.85rem;color:var(--muted);margin:6px 4px 0}
+nav.chips{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;padding:10px 14px;scrollbar-width:none}
+nav.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;text-decoration:none;color:#fff;font-weight:700;font-size:.88rem;padding:7px 13px;border-radius:999px;background:var(--c)}
+.chip.done::after{content:" ✓"}
+.progress{max-width:920px;margin:14px auto 0;padding:0 18px;font-family:"Bricolage Grotesque",sans-serif;font-size:.9rem;color:var(--muted)}
+.bar{height:8px;border-radius:8px;background:var(--line);overflow:hidden;margin-top:4px}
+.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--topo),var(--curr),var(--res),var(--coral));transition:width .4s}
+main{max-width:920px;margin:0 auto;padding:6px 14px 60px}
+section.topic{margin:26px 0;background:var(--card);border-radius:20px;border:1px solid var(--line);border-top:8px solid var(--c);padding:6px 18px 18px}
+.topic>header{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topic h2{margin:12px 0 4px;font-size:1.7rem;color:var(--c);line-height:1.15}
+.donebtn{border:2px solid var(--c);color:var(--c);background:transparent;border-radius:999px;padding:6px 14px;font-weight:700;cursor:pointer;font-size:.85rem}
+.donebtn[aria-pressed="true"]{background:var(--c);color:#fff}
+details{border:1px solid var(--line);border-radius:14px;margin:12px 0;background:var(--paper)}
+summary{cursor:pointer;padding:12px 14px;font:700 1.08rem/1.3 "Bricolage Grotesque",sans-serif;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--c);font-size:1.4rem;line-height:1}
+details[open]>summary::after{content:"–"}
+details>.in{padding:0 16px 14px}
+p{margin:.55em 0}
+ul{margin:.4em 0;padding-left:1.2em}
+li{margin:.25em 0}
+b,strong{font-weight:600;color:var(--ink)}
+.k{background:color-mix(in srgb,var(--c) 18%,transparent);padding:0 4px;border-radius:5px;font-weight:600}
+.tw{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:460px;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:color-mix(in srgb,var(--c) 22%,var(--card));font-size:.9rem}
+.warn{background:var(--warn-bg);color:var(--warn);border-left:5px solid #E9A23B;border-radius:10px;padding:9px 12px;margin:10px 0;font-size:.95rem}
+.warn b{color:var(--warn)}
+.tip{border-left:5px solid var(--c);background:color-mix(in srgb,var(--c) 10%,transparent);border-radius:10px;padding:9px 12px;margin:10px 0;font-size:.95rem}
+.lbl{font-weight:700;font-size:.85rem;color:var(--c)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0}
+.pill{border:1px solid var(--line);border-radius:14px;padding:10px 12px;background:var(--card)}
+.pill h4{margin:0 0 4px;font-size:1rem;color:var(--c)}
+.fig{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px;margin:12px 0;overflow-x:auto}
+.fig svg{display:block;width:100%;height:auto;min-width:420px}
+.fig figcaption{font-size:.85rem;color:var(--muted);padding:4px 6px 0}
+svg text{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 6px}
+.tabs button{border:2px solid var(--c);background:transparent;color:var(--c);border-radius:999px;padding:6px 14px;font-weight:700;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--c);color:#fff}
+.panel[hidden]{display:none}
+/* flashcards */
+.fc-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:10px}
+.flash{width:100%;max-width:520px;height:220px;perspective:1000px;cursor:pointer;border:0;background:none;padding:0;color:inherit}
+.flash .face{position:absolute;inset:0;border-radius:18px;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;backface-visibility:hidden;transition:transform .5s;font-size:1.1rem}
+.flash .inner{position:relative;width:100%;height:100%}
+.flash .front{background:var(--c);color:#fff;font:700 1.25rem/1.3 "Bricolage Grotesque",sans-serif}
+.flash .back{background:var(--paper);border:2px solid var(--c);transform:rotateY(180deg)}
+.flash.flip .front{transform:rotateY(180deg)}
+.flash.flip .back{transform:rotateY(360deg)}
+.fc-nav{display:flex;gap:10px;align-items:center;font-family:"Bricolage Grotesque",sans-serif}
+.btn{border:0;border-radius:999px;padding:9px 18px;font-weight:700;cursor:pointer;background:var(--c);color:#fff;font-size:.95rem}
+.btn.ghost{background:transparent;color:var(--c);border:2px solid var(--c)}
+/* quiz */
+.q{border:1px solid var(--line);border-radius:14px;padding:12px;margin:10px 0;background:var(--paper)}
+.q p{margin:0 0 8px;font-weight:600}
+.opts{display:grid;gap:6px}
+.opts button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;font:500 .95rem/1.35 "Bricolage Grotesque",sans-serif}
+.opts button.ok{background:#2E9E6E;color:#fff;border-color:#2E9E6E}
+.opts button.no{background:#E8505B;color:#fff;border-color:#E8505B}
+.score{font:800 1.3rem "Bricolage Grotesque",sans-serif;color:var(--c)}
+:focus-visible{outline:3px solid #E9A23B;outline-offset:2px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
+.themebtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:44px;height:44px;font-size:1.2rem;cursor:pointer}
+#t-quiz .mstat{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0}
+#t-quiz .mtxt{font-family:"Bricolage Grotesque",sans-serif;font-size:.9rem;color:var(--muted)}
+#t-quiz .mtxt b{color:var(--ink)}
+#t-quiz .mbar{flex:1 1 120px;height:8px;border-radius:8px;background:var(--line);overflow:hidden;display:flex}
+#t-quiz .mbar .g{background:#2E9E6E}#t-quiz .mbar .r{background:#E8505B}
+#t-quiz .mchips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+#t-quiz .mchips button,#t-quiz .tool{border:2px solid var(--qc);color:var(--qc);background:transparent;border-radius:999px;padding:4px 11px;font:700 .8rem "Bricolage Grotesque",sans-serif;cursor:pointer}
+#t-quiz .mchips button[aria-pressed="true"],#t-quiz .tool[aria-pressed="true"]{background:var(--qc);color:var(--card)}
+#t-quiz .tool{--qc:var(--ink)}
+#t-quiz .mq{background:var(--paper);border:1px solid var(--line);border-left:7px solid var(--qc);border-radius:14px;padding:12px;margin:12px 0}
+#t-quiz .qh{display:flex;justify-content:space-between;gap:6px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+#t-quiz .num{font:800 1rem "Bricolage Grotesque",sans-serif;color:var(--qc)}
+#t-quiz .tag{font:700 .72rem "Bricolage Grotesque",sans-serif;color:#fff;background:var(--qc);border-radius:999px;padding:2px 9px}
+.xtag{font:700 .72rem "Bricolage Grotesque",sans-serif;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:2px 9px;white-space:nowrap}
+#t-quiz .qt{font-weight:600;margin:0 0 8px}
+#t-quiz .mopts{display:grid;gap:6px}
+#t-quiz .mopts button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;font:500 .95rem/1.4 "Bricolage Grotesque",sans-serif;display:flex;gap:9px}
+#t-quiz .mopts button span{font-weight:800;color:var(--muted)}
+#t-quiz .mopts button:disabled{cursor:default}
+#t-quiz .mopts button.ok{background:#2E9E6E;border-color:#2E9E6E;color:#fff}
+#t-quiz .mopts button.no{background:#E8505B;border-color:#E8505B;color:#fff}
+#t-quiz .mopts button.ok span,#t-quiz .mopts button.no span{color:#fff}
+#t-quiz .exp{margin-top:9px;border-radius:10px;padding:9px 11px;background:color-mix(in srgb,var(--qc) 10%,transparent);font-size:.95rem}
+#t-quiz .v{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;margin-right:4px}
+#t-quiz .v.good{color:#2E9E6E}#t-quiz .v.bad{color:#E8505B}
+#t-quiz .ref{margin-top:6px;border-top:1px dashed var(--line);padding-top:6px;font-size:.85rem;color:var(--muted)}
+#t-quiz .ref b{color:var(--ink);font-family:"Bricolage Grotesque",sans-serif}
+.homebtn{display:inline-block;margin-bottom:12px;text-decoration:none;font:700 .9rem "Bricolage Grotesque",sans-serif;color:var(--ink);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px}
+:root{--atm:#3B6FD8;--tmp:#E8505B;--prs:#1F8FA3;--jet:#6A4FC2;--loc:#D9822B;--mst:#2E9E6E;--air:#8E5BB5;--cyc:#C2414D;--kop:#2E5E8C;--thn:#7A8B2E}
+</style>
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#12324A">
+</head>
+<body>
+
+<header class="hero">
+  <a class="homebtn" href="../">← Saare notes</a>
+  <h1>Climatology</h1>
+  <p>Geography optional notes (Vol‑2, Lectures 19–29), colour‑coded aur tappable. Layer diagram pe tap karo → seedha topic.</p>
+  <div class="profile" role="img" aria-label="Atmosphere layers with temperature curve">
+  <svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+    <a href="#t-atm" aria-label="Exosphere"><rect x="0" y="0" width="900" height="45" fill="#1B2A4A"/></a>
+    <a href="#t-atm" aria-label="Ionosphere"><rect x="0" y="45" width="900" height="55" fill="#2C3F6B"/></a>
+    <a href="#t-atm" aria-label="Mesosphere"><rect x="0" y="100" width="900" height="50" fill="#3E5C93"/></a>
+    <a href="#t-atm" aria-label="Stratosphere"><rect x="0" y="150" width="900" height="60" fill="#5C82BE"/></a>
+    <a href="#t-tmp" aria-label="Troposphere"><rect x="0" y="210" width="900" height="90" fill="#8DB5E2"/></a>
+    <rect x="0" y="170" width="900" height="22" fill="#E9A23B" opacity=".35"/>
+    <path d="M560 300 L470 210 L560 150 L460 100 L620 45 L560 0" fill="none" stroke="#FFD166" stroke-width="4" stroke-linejoin="round"/>
+    <g font-size="14" font-weight="700" fill="#fff">
+      <text x="16" y="28">Exosphere · 400–10,000 km</text>
+      <text x="16" y="78">Ionosphere · 80–400 km</text>
+      <text x="16" y="130">Mesosphere · 50–80 km</text>
+      <text x="16" y="200">Stratosphere · 18–50 km</text>
+      <text x="16" y="186" font-size="11" fill="#12324A">Ozonosphere 20–35 km</text>
+      <text x="16" y="262" fill="#12324A">Troposphere · 0–18 km (8 km poles)</text>
+      <text x="16" y="282" font-size="11" font-weight="500" fill="#12324A">Weather &amp; climate yahin · 6.5 °C/km drop</text>
+      <text x="640" y="230" fill="#12324A" font-size="12">temperature curve</text>
+    </g>
+    <g stroke="#fff" stroke-dasharray="5 4" opacity=".7"><line x1="0" y1="210" x2="900" y2="210"/><line x1="0" y1="150" x2="900" y2="150"/><line x1="0" y1="100" x2="900" y2="100"/></g>
+  </svg>
+  </div>
+  <p class="hint">Har section ke end me "Mark done" dabao — progress save hota hai.</p>
+</header>
+
+<nav class="chips" aria-label="Topics">
+  <a class="chip" style="--c:var(--atm)" href="#t-atm" data-t="atm">Atmosphere</a>
+  <a class="chip" style="--c:var(--tmp)" href="#t-tmp" data-t="tmp">Temperature</a>
+  <a class="chip" style="--c:var(--prs)" href="#t-prs" data-t="prs">Pressure &amp; winds</a>
+  <a class="chip" style="--c:var(--jet)" href="#t-jet" data-t="jet">Jets &amp; monsoon</a>
+  <a class="chip" style="--c:var(--loc)" href="#t-loc" data-t="loc">Local winds</a>
+  <a class="chip" style="--c:var(--mst)" href="#t-mst" data-t="mst">Moisture</a>
+  <a class="chip" style="--c:var(--air)" href="#t-air" data-t="air">Air masses</a>
+  <a class="chip" style="--c:var(--cyc)" href="#t-cyc" data-t="cyc">Cyclones</a>
+  <a class="chip" style="--c:var(--kop)" href="#t-kop" data-t="kop">Köppen</a>
+  <a class="chip" style="--c:var(--thn)" href="#t-thn" data-t="thn">Thornthwaite</a>
+  <a class="chip" style="--c:#E9A23B" href="#t-fc">Flashcards</a>
+  <a class="chip" style="--c:#2E9E6E" href="#t-quiz">100 MCQs</a>
+</nav>
+
+<div class="progress"><span id="ptext">0 / 10 topics done</span><div class="bar"><span id="pbar"></span></div></div>
+
+<main>
+
+<section class="topic" style="--c:var(--ink)">
+  <header><h2>Study plan</h2></header>
+  <div class="grid">
+    <div class="pill"><h4>1. Insolation</h4>Angle, seasons, atmosphere</div>
+    <div class="pill"><h4>2. Temperature</h4>Distribution, inversion, heat budget</div>
+    <div class="pill"><h4>3. Pressure &amp; circulation</h4>Monsoon ★, jet streams ★</div>
+    <div class="pill"><h4>4. Atmospheric moisture</h4>Hydrological cycle, precipitation</div>
+    <div class="pill"><h4>5. Cyclones ★</h4>Tropical &amp; temperate</div>
+    <div class="pill"><h4>6. Air masses ★</h4>Source, types, weather</div>
+    <div class="pill"><h4>7. Climatic classification</h4>Köppen, Trewartha, Thornthwaite</div>
+  </div>
+</section>
+
+<!-- ATMOSPHERE -->
+<section class="topic" id="t-atm" style="--c:var(--atm)">
+  <header><h2>Atmosphere &amp; insolation</h2></header>
+  <details open><summary>Composition</summary><div class="in">
+    <div class="grid">
+      <div class="pill"><h4>Gases</h4><b>Major</b> – N₂, O₂: <i>inactive</i>, no role in weather.<br><b>Trace</b> – CO₂, O₃, water vapour.</div>
+      <div class="pill"><h4>Aerosols</h4>Dust particles.</div>
+      <div class="pill"><h4>Active constituents</h4><b>Stable</b>: CO₂, O₃.<br><b>Variable</b>: water vapour, aerosols.</div>
+    </div>
+  </div></details>
+  <details><summary>Structure (layers)</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Layer</th><th>Height</th><th>Temperature trend</th><th>Key point</th></tr>
+      <tr><td>Troposphere</td><td>0–18 km (equator), 8 km (poles)</td><td>Falls 6.5 °C/km</td><td>Only layer of weather &amp; climate</td></tr>
+      <tr><td>Stratosphere</td><td>18–50 km</td><td>Rises</td><td>Ozone absorption; ozonosphere 20–35 km</td></tr>
+      <tr><td>Mesosphere</td><td>50–80 km</td><td>Falls</td><td>Rarefied ozone; noctilucent clouds</td></tr>
+      <tr><td>Ionosphere</td><td>80–400 km</td><td>Rises</td><td>Ions (charged particles)</td></tr>
+      <tr><td>Exosphere</td><td>400–10,000 km</td><td>Notes: falls (rarefied air)</td><td>Outer atmosphere</td></tr>
+    </table></div>
+    <p>Transition levels are called <b>"pauses"</b> (tropopause etc.). Atmospheric temperature studies cover troposphere + stratosphere.</p>
+    <div class="warn"><b>Cross‑check:</b> standard texts show temperature rising very high in the thermosphere/exosphere (sparse but energetic molecules), not falling.</div>
+  </div></details>
+  <details><summary>Insolation</summary><div class="in">
+    <ul>
+      <li>Earth = oblate ellipsoid; mean sun distance ≈ 149.6 million km. Only a small fraction of solar output reaches earth = <span class="k">insolation</span>.</li>
+      <li>Total received is nearly constant (minor change at perihelion/aphelion); its <b>distribution</b> varies.</li>
+      <li><b>Perihelion</b> ~3 Jan (147 million km); <b>Aphelion</b> ~4 July (152 million km).</li>
+    </ul>
+    <div class="grid">
+      <div class="pill"><h4>Angle of rays</h4>Direct rays travel less distance, cover less area → more insolation (low latitudes). Slanting rays → less (high latitudes).</div>
+      <div class="pill"><h4>Season cycle</h4>Axial tilt + revolution shift the thermal equator. NH high‑sun: 21 Mar–23 Sep (summer solstice 21 June). SH high‑sun: 23 Sep–21 Mar (21 Dec).</div>
+      <div class="pill"><h4>Atmosphere</h4><b>Scattering</b> by aerosols, <b>absorption</b> by water vapour, <b>reflection</b> by clouds.</div>
+    </div>
+  </div></details>
+  <details><summary>Heat budget (100 units)</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Incoming 100</th><th>Units</th></tr>
+      <tr><td>Scattered to space</td><td>6</td></tr>
+      <tr><td>Reflected by clouds</td><td>27</td></tr>
+      <tr><td>Reflected by surface</td><td>2</td></tr>
+      <tr><td><b>Albedo total</b></td><td><b>35</b></td></tr>
+      <tr><td>Absorbed by atmosphere</td><td>14</td></tr>
+      <tr><td>Absorbed by surface</td><td><b>51</b></td></tr>
+    </table></div>
+    <p>Surface radiates 51: 17 directly to space, 34 absorbed by atmosphere. Atmosphere radiates 48 (14 + 34) to space. 35 + 17 + 48 = 100.</p>
+    <ul>
+      <li><b>Planetary heat budget:</b> atmosphere acts as a blanket; slightly more than half the insolation reaches the surface. At night <b>greenhouse gases</b> (CO₂) block outgoing radiation → regulate night temperature.</li>
+      <li><b>Latitudinal heat budget:</b> low latitudes don't overheat because <b>global circulation</b> (atmospheric + gyre/ocean currents) transfers heat poleward.</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="atm" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- TEMPERATURE -->
+<section class="topic" id="t-tmp" style="--c:var(--tmp)">
+  <header><h2>Atmospheric temperature</h2></header>
+  <p>Heat in the air = air temperature – fundamental element of weather; regulated by insolation and in turn regulates pressure. <b>Principal source: outgoing long‑wave terrestrial radiation</b>; incoming short‑wave solar radiation is secondary.</p>
+  <p>Controls: <span class="k">latitude · land–water · ocean currents &amp; winds · cloud cover · altitude</span>.</p>
+  <details open><summary>Latitude – 5 thermal zones (Greek)</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Zone</th><th>Notes' limits</th><th>Temperature</th></tr>
+      <tr><td>Torrid</td><td>30°N–30°S</td><td>Highest</td></tr>
+      <tr><td>Temperate (2)</td><td>30°–60° N &amp; S</td><td>Moderate</td></tr>
+      <tr><td>Frigid (2)</td><td>60°–90° N &amp; S</td><td>Lowest</td></tr>
+    </table></div>
+    <div class="warn"><b>Cross‑check:</b> usual textbook limits are the Tropics (23½°) and Arctic/Antarctic Circles (66½°).</div>
+  </div></details>
+  <details><summary>Land–water &amp; temperature anomaly</summary><div class="in">
+    <ul>
+      <li>Thermal zones assume uniform surface; actually water (mobile, translucent) moderates while land shows extremes.</li>
+      <li>Deviation from normal for a latitude = <span class="k">temperature anomaly</span>: +ve (above normal) or –ve.</li>
+      <li>High‑sun season: land +ve vs water; low‑sun season: land –ve vs water.</li>
+    </ul>
+    <div class="tw"><table>
+      <tr><th>Latitude</th><th>+ve anomaly</th><th>–ve anomaly</th></tr>
+      <tr><td>0–45° (lower)</td><td>Land (high sun), Water (low sun)</td><td>Water (high sun), Land (low sun)</td></tr>
+      <tr><td>45–90° (higher)</td><td>Water (high sun), Land (low sun)</td><td>Land (high sun), Water (low sun)</td></tr>
+    </table></div>
+    <p><b>Isotherms</b> (lines of equal temperature) run parallel to latitudes but bend at coasts: summer isotherms bend <b>towards equator</b> going land → water; winter isotherms bend <b>towards poles</b>.</p>
+  </div></details>
+  <details><summary>Currents, winds, clouds</summary><div class="in">
+    <ul>
+      <li>Warm <b>NAD</b> + onshore westerlies keep <b>European plains</b> warmer than the <b>Manchurian plains</b> at the same latitude.</li>
+      <li>Seasonal example: <b>blizzards</b> (cold polar winds + powdery snow) give lower‑latitude USA polar winters.</li>
+      <li><b>Cloud cover:</b> cloudy day → cooler; cloudy night → warmer.</li>
+    </ul>
+  </div></details>
+  <details><summary>Vertical distribution &amp; inversion ★</summary><div class="in">
+    <ul>
+      <li>Temperature falls with height at <span class="k">normal lapse rate 6.5 °C/km</span> – moving away from the source (terrestrial radiation).</li>
+      <li>Tropopause: <b>18 km at equator</b> (warm rising convection), <b>8 km at poles</b> (subsiding). Due to NLR, the <b>lowest tropopause temperature is over the equator</b>.</li>
+      <li><span class="k">Temperature inversion</span> = temperature rising with height.</li>
+    </ul>
+    <div class="grid">
+      <div class="pill"><h4>Air convergence</h4>Near 60°, cold and warm air meet → front; warm air rises over cold → inversion; precondition for <b>temperate cyclones</b>.</div>
+      <div class="pill"><h4>Adiabatic changes</h4>Temperature change from vertical movement: rising air cools, sinking air warms. Condensation releases latent heat → multi‑level inversions.</div>
+      <div class="pill"><h4>Air drainage</h4>After sunset cold air drains from mountain walls to valley floor; next forenoon walls warm, valley cold → inversion. Walls favoured for settlement &amp; farming. Strongest on long, clear, calm winter nights.</div>
+    </div>
+    <div class="tip">Air = poor conductor of heat. Fog = near‑ground cloud. Exam line: "Vertical distribution of temperature – write about inversion."</div>
+  </div></details>
+  <button class="donebtn" data-done="tmp" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- PRESSURE -->
+<section class="topic" id="t-prs" style="--c:var(--prs)">
+  <header><h2>Pressure, winds &amp; global circulation</h2></header>
+  <details open><summary>Pressure systems</summary><div class="in">
+    <ul>
+      <li>Pressure = weight of the air column on the surface; regulates and is regulated by global circulation.</li>
+      <li><b>LP systems</b> – rising convection (thermal direct or indirect); <b>troughs</b> (large) and <b>cyclones</b> (small).</li>
+      <li><b>HP systems</b> – subsiding convection; <b>wedges</b> (large) and <b>anticyclones</b> (small).</li>
+      <li>Mean sea‑level pressure = <span class="k">1013.25 mb</span>; studied horizontally in climatology.</li>
+      <li>LP → disturbances; HP → stability.</li>
+    </ul>
+  </div></details>
+  <details open><summary>7 pressure belts</summary><div class="in">
+    <figure class="fig">
+      <svg viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="12" font-weight="700">
+          <rect x="20" y="10" width="520" height="26" fill="#6A9BD8"/><text x="30" y="28" fill="#fff">Polar High (90°N) – thermal direct, continuous</text>
+          <rect x="20" y="40" width="520" height="26" fill="#C2414D"/><text x="30" y="58" fill="#fff">Sub‑Polar Low (60°N) – indirect, cellular: Aleutian, Icelandic</text>
+          <rect x="20" y="70" width="520" height="26" fill="#E9A23B"/><text x="30" y="88" fill="#12324A">Sub‑Tropical High (30°N) – indirect, cellular: Hawaiian, Azores</text>
+          <rect x="20" y="110" width="520" height="30" fill="#E8505B"/><text x="30" y="130" fill="#fff">Equatorial Low (0°) – thermal direct, continuous</text>
+          <rect x="20" y="154" width="520" height="26" fill="#E9A23B"/><text x="30" y="172" fill="#12324A">Sub‑Tropical High (30°S) – near cellular</text>
+          <rect x="20" y="184" width="520" height="26" fill="#C2414D"/><text x="30" y="202" fill="#fff">Sub‑Polar Low (60°S) – continuous</text>
+          <rect x="20" y="214" width="520" height="26" fill="#6A9BD8"/><text x="30" y="232" fill="#fff">Polar High (90°S)</text>
+        </g>
+      </svg>
+      <figcaption>3 thermal direct + 4 thermal indirect (dynamic) belts; positions shift with the apparent movement of the sun.</figcaption>
+    </figure>
+    <ul>
+      <li>Continuous belts: both polar highs, SH sub‑polar low (homogeneous relief), equatorial low (rising convection gives similar wet conditions over land &amp; water).</li>
+      <li>SH sub‑tropical high is <b>near cellular</b>; <b>truly cellular</b> = NH sub‑tropical high &amp; sub‑polar low, due to unequal land–water.</li>
+      <li><b>High sun:</b> tropical land gets +ve anomaly (LP) → STH survives as ocean cells – <b>Hawaiian High</b> (Pacific), <b>Azores High</b> (Atlantic).</li>
+      <li><b>Low sun:</b> temperate land –ve anomaly → SPL survives as ocean cells – <b>Aleutian Low</b> (Pacific), <b>Icelandic Low</b> (Atlantic).</li>
+    </ul>
+  </div></details>
+  <details><summary>Wind (advection) &amp; its forces</summary><div class="in">
+    <ul>
+      <li>Convection creates pressure difference: rising → LP on ground/HP aloft; subsiding → HP on ground. Horizontal compensating flow = <b>advection (wind)</b>, always HP → LP. HP = divergence, LP = convergence.</li>
+      <li>Classification – <b>surface</b>: prevailing, seasonal (monsoon), local; <b>upper air</b>: polar night jet, polar front jet, subtropical jet.</li>
+    </ul>
+    <div class="grid">
+      <div class="pill"><h4>Pressure gradient force</h4>Genesis of wind; sets direction (wind named after where it comes from) and speed – steeper barometric slope → faster wind.</div>
+      <div class="pill"><h4>Coriolis force</h4><b>Ferrel's law</b>: right in NH, left in SH. Affects only direction; increases with latitude and wind speed. 0° = 0%, 30° = 50%, 60° = 86.6%, 90° = 100%.</div>
+      <div class="pill"><h4>Friction</h4>Surface drag changes direction &amp; speed of surface winds. <b>Ekman spiral</b>: veering (clockwise), backing (anticlockwise).</div>
+    </div>
+    <div class="tip"><b>Surface gradient wind</b> = PGF + Coriolis + Friction. <b>Geostrophic wind</b> (upper air) = PGF + Coriolis. Geostrophic winds absent in equatorial belt.</div>
+  </div></details>
+  <details><summary>Prevailing (planetary) winds</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Wind</th><th>From → to</th><th>Direction</th><th>Key effect</th></tr>
+      <tr><td>Trades</td><td>STH → Equatorial Low</td><td>NE (NH), SE (SH)</td><td>ITCZ, monsoon; doldrums (calm)</td></tr>
+      <tr><td>Westerlies</td><td>STH → SPL</td><td>SW (NH), NW (SH)</td><td>Polar fronts, temperate cyclones; NW westerlies fastest (less friction)</td></tr>
+      <tr><td>Polar easterlies</td><td>Polar High → SPL</td><td>NE (NH), SE (SH)</td><td>Polar front with westerlies</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Tri‑cellular meridional circulation</summary><div class="in">
+    <p>Each surface wind has an opposite upper‑air "anti‑wind".</p>
+    <div class="grid">
+      <div class="pill"><h4>Hadley cell (0–30°)</h4>Thermal direct; rising warm air at equator, sinking at STH; NE trades + anti‑trades. Wet equator, dry sub‑tropics.</div>
+      <div class="pill"><h4>Ferrel cell (30–60°)</h4>Thermal indirect; SW westerlies + anti‑westerlies; sinking at STH, rising at SPL. Wet temperate belt.</div>
+      <div class="pill"><h4>Polar cell (60–90°)</h4>Thermal direct; sinking cold polar air; NE polar winds + anti‑polar; dry; lowest height.</div>
+    </div>
+    <div class="warn"><b>Cross‑check:</b> notes write the middle cell as "Flohn cell" – standard name is <b>Ferrel cell</b>.</div>
+  </div></details>
+  <button class="donebtn" data-done="prs" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- JETS & MONSOON -->
+<section class="topic" id="t-jet" style="--c:var(--jet)">
+  <header><h2>Jet streams &amp; monsoon ★</h2></header>
+  <details open><summary>Jet streams (geostrophic flow)</summary><div class="in">
+    <ul>
+      <li>Studied after 1945: strong westerlies near tropopause; no friction → geostrophic, parallel to isobars; form latitudinal <b>garlands</b>; fast cores = jet streams.</li>
+      <li>Notes: six garland systems globally except equator; jets "missing" in SH due to water dominance.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> subtropical and polar‑front jets exist in both hemispheres; SH jets are often stronger and more zonal.</div>
+    <div class="tw"><table>
+      <tr><th></th><th>Polar night jet</th><th>Sub‑tropical jet (STJ)</th><th>Polar front jet (PFJ)</th></tr>
+      <tr><td>Type</td><td>Thermal direct</td><td>Thermal direct</td><td>Thermal indirect</td></tr>
+      <tr><td>Location</td><td>60–90°; lowest tropopause (~8 km), highest isobaric level</td><td>~30–35°; highest tropopause (12–15 km), lowest isobaric level</td><td>Mid‑latitudes, over ground polar front</td></tr>
+      <tr><td>Garland</td><td>Smallest; no Rossby waves</td><td>Largest; best‑developed Rossby waves</td><td>Life cycle 15–20 days: genesis (no Rossby) → maturity (Rossby) → decay; re‑forms within a week</td></tr>
+      <tr><td>Weather</td><td>Dry polar; &gt;300 km/h during 6‑month polar night</td><td>Dry globally; but in winter carries <b>western disturbances</b> from the Mediterranean to SW &amp; South Asia</td><td>Wet; temperate cyclones; confines polar deserts to 80–90°</td></tr>
+    </table></div>
+    <div class="tip">STJ expanse: ~10–35° in winter, ~20–45° in summer (except South &amp; SE Asia). Over India: TEJ (N–S) in summer → LP → wet; STJ (S–N) in winter → HP → dry.</div>
+  </div></details>
+  <details><summary>Exceptional bend of ITCZ &amp; TEJ</summary><div class="in">
+    <ul>
+      <li>High‑sun season shifts the thermal equator/ITCZ north. Only over the <b>northern Indian Ocean basin</b> does continentality bend the ITCZ far north onto the <b>northern plains of India</b>.</li>
+      <li>This displaces the STJ from South &amp; SE Asia, and a seasonal upper‑air easterly develops – the <span class="k">Tropical Easterly Jet (TEJ)</span>, regulator of the monsoon.</li>
+      <li>Winter: Hadley cell with STJ aloft and NE trades below. Summer: <b>Modified Hadley cell</b> with TEJ aloft and SW monsoon below.</li>
+    </ul>
+  </div></details>
+  <details><summary>Monsoon mechanism – classical</summary><div class="in">
+    <p>Arab scholars called the seasonal wind reversal <b>"mausim"</b>.</p>
+    <div class="grid">
+      <div class="pill"><h4>Thermal concept (Halley)</h4>Differential heating of land &amp; water. Winter: STH over India → offshore NE trades, dry. Summer: LP over India → onshore SW monsoon, rain. Likened to land/sea breeze – fails to explain rain deep in the interior.</div>
+      <div class="pill"><h4>ITCZ concept (Flohn)</h4>Continentality bends ITCZ to N India; SE trades cross the equator (SE monsoon in coastal Somalia &amp; Yemen), get deflected between ~40–60°E and become the <b>SW monsoon</b> over India &amp; Indo‑China. Also explains absence of west‑margin climate there.</div>
+    </div>
+    <div class="warn"><b>Cross‑check:</b> notes write "Hadley's thermal concept"; the classical thermal theory is by <b>Edmond Halley (1686)</b>.</div>
+  </div></details>
+  <details><summary>Modern: MONEX, Tibetan Plateau, vortices</summary><div class="in">
+    <ul>
+      <li>Late‑1960s droughts → <b>MONEX</b> (monsoon experiment); results by mid‑1970s. Accepts ITCZ bend and SW monsoon = SE trades; adds <b>Tibetan Plateau</b> role and <b>vortices</b>.</li>
+      <li><b>Tibetan Plateau:</b> ground LP marks northern limit of low pressure; HP builds vertically above → displaces STJ to Central Asia → Modified Hadley cell with TEJ = <span class="k">N–S alignment</span> (IMD nomenclature). Keeps the gradient between <b>Mascarene High</b> and <b>Tibetan Low</b> for ~4 months, pulling SE trade branches as SW monsoon.</li>
+      <li>Different branches explain periodicity, unpredictability in amount, variable onset &amp; retreat (variable moisture capacity).</li>
+      <li><b>Vortex development:</b> LP over India (monsoon trough + Tibetan low) pulls the Indian Ocean equatorial trough north; it weakens and splits on the coast into LP cells – <span class="k">Malabar vortex</span> (first showers on Malabar coast) and <span class="k">Utkal vortex</span> (moist winds into Odisha plains). Vortex + monsoon trough → <b>sudden burst</b> of monsoon. Branches: Arabian Sea &amp; Bay of Bengal.</li>
+    </ul>
+  </div></details>
+  <details><summary>ENSO &amp; teleconnections</summary><div class="in">
+    <ul>
+      <li>MONEX explained minor traits, not weakening/failure → explained by teleconnection with <b>El Niño &amp; Southern Oscillation</b> in the Pacific (Walker).</li>
+      <li><b>Walker cell (normal):</b> pressure pattern in S Pacific sustains strong SE trades → good SW monsoon.</li>
+      <li><b>El Niño:</b> modified Walker cell weakens or reverses SE trades → weak monsoon.</li>
+      <li>Successful monsoon needs <b>N–S alignment</b> (Modified Hadley) + <b>E–W alignment</b> (Walker cell). La Niña = re‑established Peruvian current.</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="jet" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- LOCAL WINDS -->
+<section class="topic" id="t-loc" style="--c:var(--loc)">
+  <header><h2>Local winds</h2></header>
+  <p>Surface gradient winds that explain weather of specific places. 4 categories:</p>
+  <div class="grid">
+    <div class="pill"><h4>Land &amp; sea breeze</h4>Coastal differential heating: sea breeze by day, land breeze by night.</div>
+    <div class="pill"><h4>Katabatic &amp; anabatic</h4>Mountain &amp; valley breezes: katabatic (downslope, night, air drainage); anabatic (upslope, day).</div>
+    <div class="pill"><h4>Depression winds</h4>Cold‑dry polar outbreaks (winter) and warm winds with dust devils (high sun).</div>
+    <div class="pill"><h4>Descending winds</h4>Adiabatically warmed downslope winds – favourable or unfavourable.</div>
+  </div>
+  <div class="tw"><table>
+    <tr><th>Wind</th><th>Type</th><th>Where</th><th>Note</th></tr>
+    <tr><td>Blizzard</td><td>Cold polar outbreak</td><td>Canada → USA</td><td>Strongest; no orographic barrier</td></tr>
+    <tr><td>Purga</td><td>Cold polar outbreak</td><td>Siberia → China</td><td>Broken barrier, weaker</td></tr>
+    <tr><td>Pampero</td><td>Cold polar outbreak</td><td>Antarctica → Argentina</td><td>Weakest (Southern Ocean in between)</td></tr>
+    <tr><td>Harmattan</td><td>Hot dry (dust devil)</td><td>Upper Guinea (W Africa)</td><td>Lowers humidity – "doctor wind"</td></tr>
+    <tr><td>Sirocco</td><td>Hot dry</td><td>Sahara → S Europe</td><td>Picks moisture over Mediterranean → rain in S Europe; favourable</td></tr>
+    <tr><td>Khamsin</td><td>Hot dry</td><td>Coastal Libya &amp; Egypt</td><td>Heat stroke; only unfavourable one (Indian <b>Loo</b> same class)</td></tr>
+    <tr><td>Chinook</td><td>Descending, warm</td><td>Canada (Rockies)</td><td>"Snow eater"; favourable</td></tr>
+    <tr><td>Foehn</td><td>Descending, warm</td><td>Switzerland (Alps)</td><td>Favourable</td></tr>
+    <tr><td>Shamoon</td><td>Descending, hot</td><td>Iran</td><td>Unfavourable</td></tr>
+    <tr><td>Santa Ana</td><td>Descending, hot dry</td><td>California</td><td>Forest fires</td></tr>
+  </table></div>
+  <div class="tip">All katabatic winds are descending winds, but not vice versa.</div>
+  <button class="donebtn" data-done="loc" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- MOISTURE -->
+<section class="topic" id="t-mst" style="--c:var(--mst)">
+  <header><h2>Moisture, condensation &amp; precipitation</h2></header>
+  <details open><summary>Humidity</summary><div class="in">
+    <p>Water vapour in the troposphere = moisture; in a given air column = <b>humidity</b>. Source: <b>evaporation</b> (WMO: includes transpiration &amp; sublimation); rate depends on air temperature and humidity. Sequence: evaporation → condensation → precipitation.</p>
+    <div class="tw"><table>
+      <tr><th>Measure</th><th>Unit</th><th>Use</th></tr>
+      <tr><td>Absolute</td><td>g/m³</td><td>Not used climatologically – air volume keeps changing</td></tr>
+      <tr><td>Specific</td><td>g/kg</td><td>Air masses; equatorial ≈18 g/kg, arctic ≈0.2 g/kg</td></tr>
+      <tr><td>Relative</td><td>%</td><td>Most used; separates unsaturated, saturated, supersaturated air; dew point</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Condensation forms</summary><div class="in">
+    <p>Supersaturated air + <b>hygroscopic nuclei</b> → condensation (vapour to liquid/solid). Cooling below dew point by <b>contact cooling</b> or <b>adiabatic cooling</b>.</p>
+    <div class="grid">
+      <div class="pill"><h4>At ground</h4><b>Dew</b> (above 0 °C, low latitude/altitude), <b>frost</b> (below 0 °C). Complete hydrological cycle without precipitation. Contact cooling, low‑sun season.</div>
+      <div class="pill"><h4>Near ground – Fog</h4>Near‑surface cloud; cold dense air settling. Types: <b>radiation</b> (commonest), <b>advection</b> (European plains – warm moist westerlies over cold ground), <b>frontal</b> (mid‑latitude), <b>precipitation fog</b> (vapour added by frontal rain; "arctic smoke").</div>
+      <div class="pill"><h4>Atmospheric – Clouds</h4>Visible aggregates of ice crystals &amp; droplets; adiabatic cooling, all year. Polar regions: few clouds (air too dense to rise).</div>
+    </div>
+  </div></details>
+  <details><summary>Clouds</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Basis</th><th>Types</th></tr>
+      <tr><td>Shape</td><td>Globular – Cumulus; Sheet – Stratus; Fibrous – Cirrus</td></tr>
+      <tr><td>Height</td><td>High (6–12 km): Ci, Cc, Cs · Middle (3–6 km, "alto"): Ac, As · Low (&lt;3 km): St, Sc, Ns · Vertical: Cu, Cb (anvil top pushed east by jet stream)</td></tr>
+      <tr><td>Weather</td><td>Bad (nimbus): Cb, Ns · Fair: cirrus family · Rain: Cu, St, Sc, Ac, As</td></tr>
+    </table></div>
+    <p>All bad‑weather clouds are rain‑bearing. Total 10 basic cloud types.</p>
+  </div></details>
+  <details><summary>Precipitation – form &amp; process</summary><div class="in">
+    <ul>
+      <li>Precipitation = falling of moisture from cloud base; needs a raindrop‑forming process: merger of droplets and growth of ice crystals at the expense of droplets (ice has lower vapour pressure) – <span class="k">Bergeron process</span>.</li>
+      <li><b>Rain</b> (with drizzle = immature, small drops) – commonest in low–mid latitudes.</li>
+      <li><b>Snow</b> (frozen form; mid–high latitudes) with <b>sleet</b> (partly melted snow, mid‑latitude winter) and <b>glaze</b>.</li>
+      <li><b>Hail</b> – ice balls; need strong updraft → lower latitudes (not deserts); crop hazard.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> notes call glaze "crystallised snow"; standard: glaze = ice coating from freezing rain; sleet = ice pellets (US) or rain–snow mix (UK).</div>
+  </div></details>
+  <details><summary>Precipitation types</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Type</th><th>Instability</th><th>Form</th><th>Typical of</th></tr>
+      <tr><td>Convectional</td><td>Absolute</td><td>Rain, hail</td><td>Equatorial climate</td></tr>
+      <tr><td>Orographic</td><td>Conditional</td><td>Rain, snow; windward wet, leeward rain‑shadow</td><td>Monsoon climate</td></tr>
+      <tr><td>Frontal</td><td>Conditional</td><td>Snow, rain</td><td>Mid &amp; high latitudes</td></tr>
+      <tr><td>Cyclonic</td><td>Absolute</td><td>Rain, hail</td><td>Tropical marginal seas (tropical cyclones)</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Stability &amp; instability</summary><div class="in">
+    <ul>
+      <li><b>NLR</b> 6.5 °C/km ≠ <b>ELR</b> (actual rate of a given air column).</li>
+      <li><b>ALR</b> = cooling rate of rising air: <span class="k">DALR 10 °C/km</span> (unsaturated) and <span class="k">WALR ~5 °C/km</span> (saturated; "retarded" by latent heat release).</li>
+      <li><b>Stability</b> – subsiding air (HP, clear sky); ELR less than ALR → air stops rising.</li>
+      <li><b>Absolute instability</b> – ELR &gt; DALR: tornadoes, thunderstorms, tropical cyclones, convectional rain.</li>
+      <li><b>Conditional instability</b> – WALR &lt; ELR &lt; DALR: forced rise in orographic &amp; frontal conditions.</li>
+    </ul>
+  </div></details>
+  <details><summary>Hydrological cycles</summary><div class="in">
+    <div class="grid">
+      <div class="pill"><h4>Atmospheric</h4>Falling moisture re‑evaporates (adiabatic warming) before reaching ground.</div>
+      <div class="pill"><h4>Daily</h4>Equatorial: forenoon evaporation, afternoon rain – within 24 h.</div>
+      <div class="pill"><h4>Delayed / elongated</h4>Moisture stored in biosphere and cryosphere (ice).</div>
+    </div>
+  </div></details>
+  <button class="donebtn" data-done="mst" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- AIR MASSES -->
+<section class="topic" id="t-air" style="--c:var(--air)">
+  <header><h2>Air masses ★</h2></header>
+  <ul>
+    <li>3‑D masses homogeneous in <b>temperature &amp; humidity</b>, acquired from the surface; act as thermal engines of weather. Strongest in winter.</li>
+    <li><b>Source area</b> – where properties are acquired; almost any surface except mountains. In source = <span class="k">barotropic</span>; after advection and modification (conduction, convection) = <span class="k">baroclinic</span>.</li>
+    <li>Classified by latitude (T, P), relief (c, m), temperature (k cold, w warm), stability (s, u) → <b>16 types</b>. Globally 4 major ones used.</li>
+    <li>Europe has no truly cold air mass – always under warm NAD.</li>
+  </ul>
+  <div class="tw"><table>
+    <tr><th>Rank</th><th>Air mass</th><th>Source &amp; nature</th><th>Weather effect</th></tr>
+    <tr><td>1</td><td><b>cP</b></td><td>Canada, Siberia; cold dry; extends in winter</td><td>Cold winters in USA &amp; China; Arctic front on coasts → winter precipitation. Canadian stronger (polar outbreaks, warm currents at coast) than Siberian. Squall line where cooled cT (USA) meets warm mT (Gulf of Mexico) → <b>tornadoes</b>.</td></tr>
+    <tr><td>2</td><td><b>mT</b></td><td>0–45° oceans; warm moist</td><td>Permanent: <b>mE</b> (equatorial; absolute instability, convectional rain), Azores &amp; Hawaiian Highs (trades → ITCZ; westerlies → polar front). Temporary (marginal seas): summer monsoon rain from Gulf of Mexico, Bay of Bengal, S China Sea; <b>mM</b> (Mediterranean) works in winter with onshore westerlies.</td></tr>
+    <tr><td>3</td><td><b>mP</b></td><td>Open N Pacific &amp; N Atlantic; cold moist</td><td>Polar &amp; Arctic fronts; only conditional instability.</td></tr>
+    <tr><td>4</td><td><b>cT</b></td><td>Tropical land; warm dry</td><td>Dry tropical winters; west‑margin deserts dry all year.</td></tr>
+  </table></div>
+  <div class="tip">Specific humidity falls as latitude rises. mP = wet, cold, no absolute instability.</div>
+  <button class="donebtn" data-done="air" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- CYCLONES -->
+<section class="topic" id="t-cyc" style="--c:var(--cyc)">
+  <header><h2>Cyclones ★</h2></header>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="tc">Temperate</button>
+    <button role="tab" aria-selected="false" data-tab="tr">Tropical</button>
+    <button role="tab" aria-selected="false" data-tab="cm">Compare</button>
+  </div>
+  <div class="panel" data-panel="tc">
+    <ul>
+      <li>Also called <b>extra‑tropical / wave cyclone</b>; tied to the NH polar front (max contrast of air masses: warm westerlies vs cold polar winds).</li>
+      <li>Rain from sub‑tropics to sub‑polar areas; life <b>15–20 days</b> (notes); no turbulent weather, not a hazard.</li>
+      <li><b>Polar front theory – Bjerknes</b>: 6 stages.</li>
+    </ul>
+    <div class="grid">
+      <div class="pill"><h4>1. Frontogenesis</h4>Contrasting air meets near 60°; stable (stationary) front lasts long; air masses intrude into each other.</div>
+      <div class="pill"><h4>2. Division of front</h4>Cold air pushes to lower latitude, meets LP on its left (<b>Buys Ballot law</b>) → cyclonic circulation begins.</div>
+      <div class="pill"><h4>3. Quick shift of cold front</h4>Dense cold air rapidly takes ground.</div>
+      <div class="pill"><h4>4. Closing of warm sector</h4>Warm air loses ground contact as it marches over cold air at higher latitude.</div>
+      <div class="pill"><h4>5. Occlusion</h4>Cold air occupies the whole area; warm air lifted. Frontal decay begins, wet phase ends.</div>
+      <div class="pill"><h4>6. Frontolysis</h4>Front dies; same cold air everywhere on ground.</div>
+    </div>
+    <div class="tw"><table>
+      <tr><th></th><th>Cold front</th><th>Warm front</th></tr>
+      <tr><td>Formed by</td><td>Advancing cold air</td><td>Advancing warm air</td></tr>
+      <tr><td>Location</td><td>Lower latitudes</td><td>Higher latitudes</td></tr>
+      <tr><td>Slope</td><td>Steep ~1:40</td><td>Gentle 1:80 to 1:200</td></tr>
+      <tr><td>Weather</td><td>Sudden rise, one episode; low clouds (Cu/Cb); narrow belt, heavy short rain; slightly turbulent</td><td>Gradual rise; Ci → As → Sc → St; wide belt, long quiet rain</td></tr>
+    </table></div>
+    <ul>
+      <li><b>Stable front weather:</b> quiet; short warming at high‑latitude margin, long cooling at low‑latitude margin; dew in lower latitudes.</li>
+      <li><b>Warm front weather</b> gives <b>taiga</b> (≈30 cm, all year) and <b>tundra</b> (≈20 cm, summer) climates.</li>
+      <li><b>Occluded front:</b> moderate rain for 2–3 days on both sides.</li>
+      <li><b>Squall line</b> – occasional extra front a few km ahead of the cold front in the USA warm sector (cT vs mT with polar outbreak) → <b>tornadoes</b>: absolute + conditional instability, LP funnel from ground to troposphere.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> typical extra‑tropical cyclone life is about a week; Vilhelm &amp; Jacob Bjerknes (Bergen school) gave the polar front theory. Notes also say SH has no temperate cyclones – SH Southern Ocean actually has very active ones.</div>
+  </div>
+  <div class="panel" data-panel="tr" hidden>
+    <ul>
+      <li>Thermal direct LP of low latitudes; shapes rain of tropical east margins. Also "tropical disturbances".</li>
+      <li>Formed by heating of marginal seas; carried by trades; <b>eastern margins of land</b> most hit; life <b>4–7 days</b>.</li>
+      <li>Need: temperature <b>25–27 °C</b>, pressure <b>920–940 mb</b>, moist air → tropical marginal seas, <b>8°–35° N/S</b>.</li>
+      <li>Absent at the equator: no Coriolis force and no land–water contrast.</li>
+      <li>Rotation: <b>anticlockwise in NH, clockwise in SH</b>.</li>
+    </ul>
+    <div class="tw"><table>
+      <tr><th>Category (notes)</th><th>Wind speed</th></tr>
+      <tr><td>Tropical storm</td><td>50–80 km/h</td></tr>
+      <tr><td>Tropical cyclone</td><td>80–120 km/h</td></tr>
+      <tr><td>Hurricane (super cyclone)</td><td>120–200+ km/h</td></tr>
+    </table></div>
+    <div class="tw"><table>
+      <tr><th>Region</th><th>Local name</th></tr>
+      <tr><td>Gulf of Mexico, Gulf of California</td><td>Hurricane</td></tr>
+      <tr><td>Bay of Bengal, Arabian Sea, Mozambique Channel</td><td>Cyclone</td></tr>
+      <tr><td>South China Sea</td><td>Typhoon</td></tr>
+      <tr><td>Gulf of Carpentaria (Australia)</td><td>Willy‑willy</td></tr>
+    </table></div>
+    <figure class="fig">
+      <svg viewBox="0 0 560 170" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="540" y2="140" stroke="var(--muted)"/>
+        <g fill="var(--cyc)" opacity=".85">
+          <path d="M205 140 C200 60 230 30 250 30 L250 140Z"/><path d="M355 140 C360 60 330 30 310 30 L310 140Z"/>
+        </g>
+        <g fill="var(--line)"><ellipse cx="120" cy="90" rx="50" ry="20"/><ellipse cx="440" cy="90" rx="50" ry="20"/></g>
+        <path d="M262 40 L280 130 L298 40" fill="none" stroke="#E9A23B" stroke-width="3" stroke-dasharray="5 4"/>
+        <g font-size="12" font-weight="700" fill="var(--ink)">
+          <text x="258" y="160">Eye</text><text x="180" y="22">Eye wall (Cb)</text><text x="300" y="22">Eye wall</text>
+          <text x="80" y="160">← Rain zone</text><text x="400" y="160">Rain zone →</text>
+          <text x="214" y="70" font-size="10" fill="#fff">heaviest</text>
+        </g>
+      </svg>
+      <figcaption>Eye = calm, clear, rainless, warmest, lowest pressure; sinking air under a blocking anticyclone adds adiabatic heat and intensifies the storm.</figcaption>
+    </figure>
+    <ul>
+      <li><b>Rain zone:</b> strong winds, heavy rain &amp; hail, lightning; intensity falls outward; heaviest in the <b>eye wall</b> (Cb).</li>
+      <li><b>Hazard:</b> winds, rain and onshore <b>storm surge</b> pushing saline water into fertile deltas, coastal flooding.</li>
+      <li><b>Decay over land:</b> moisture supply cut, more friction, blocking anticyclones fill the LP.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> SST threshold usually given as &gt;26.5–27 °C; IMD categories use different speed bands.</div>
+  </div>
+  <div class="panel" data-panel="cm" hidden>
+    <div class="tw"><table>
+      <tr><th></th><th>Temperate</th><th>Tropical</th></tr>
+      <tr><td>Cause</td><td>Front (air‑mass contrast)</td><td>Heating of marginal seas</td></tr>
+      <tr><td>Nature</td><td>Thermal indirect, frontal</td><td>Thermal direct, non‑frontal</td></tr>
+      <tr><td>Latitude</td><td>Sub‑tropics to sub‑polar</td><td>8°–35°</td></tr>
+      <tr><td>Life</td><td>15–20 days (notes)</td><td>4–7 days</td></tr>
+      <tr><td>Movement</td><td>West → east with westerlies</td><td>East → west with trades</td></tr>
+      <tr><td>Weather</td><td>Quiet, wide rain; not a hazard</td><td>Violent; hazard</td></tr>
+    </table></div>
+  </div>
+  <button class="donebtn" data-done="cyc" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- KOPPEN -->
+<section class="topic" id="t-kop" style="--c:var(--kop)">
+  <header><h2>Climatic classification: Köppen &amp; Trewartha</h2></header>
+  <p>Climate = aggregate of weather over large space &amp; long time. Three approaches:</p>
+  <div class="grid">
+    <div class="pill"><h4>Genetic</h4>One element, e.g. thermal or precipitation zones.</div>
+    <div class="pill"><h4>Empirical</h4>Absolute temperature &amp; precipitation values – Köppen, Trewartha.</div>
+    <div class="pill"><h4>Applied</h4>Relative – temperature efficiency &amp; precipitation effectiveness – Thornthwaite. More logical.</div>
+  </div>
+  <details open><summary>Köppen – level 1 (6 capital letters)</summary><div class="in">
+    <p>Inspired by De Candolle's vegetation classification; notes date Köppen's scheme to 1931 with altitude (H) added in 1936. Bases: temperature (A, C, D, E), precipitation (B), vegetation names.</p>
+    <div class="tw"><table>
+      <tr><th>Symbol</th><th>Climate</th><th>Vegetation</th></tr>
+      <tr><td>A</td><td>Tropical</td><td>Megatherm</td></tr>
+      <tr><td>B</td><td>Dry</td><td>Xerophytes</td></tr>
+      <tr><td>C</td><td>Sub‑tropical</td><td>Mesotherm</td></tr>
+      <tr><td>D</td><td>Temperate (cold)</td><td>Microtherm</td></tr>
+      <tr><td>E</td><td>Polar</td><td>Hekistotherm</td></tr>
+      <tr><td>H</td><td>Montane</td><td>Montane</td></tr>
+    </table></div>
+    <div class="warn"><b>Cross‑check:</b> Köppen's first scheme was 1900 (revised 1918, final 1936); H highland group was added later by others (e.g. Trewartha).</div>
+  </div></details>
+  <details><summary>Level 2 &amp; 3 symbols</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Symbol</th><th>Meaning</th><th>Used with</th></tr>
+      <tr><td>W / S</td><td>Desert / Steppe</td><td>B only</td></tr>
+      <tr><td>T / F</td><td>Tundra / Frost</td><td>E only</td></tr>
+      <tr><td>f</td><td>Rain well distributed through year</td><td>A, C, D</td></tr>
+      <tr><td>m</td><td>~70% rain in 3 months (monsoon)</td><td>A</td></tr>
+      <tr><td>s</td><td>Dry summer, winter rain</td><td>C, D</td></tr>
+      <tr><td>w</td><td>Dry winter, summer rain</td><td>A, C, D</td></tr>
+      <tr><td>h / k</td><td>Hot (&gt;18 °C) / less warm (&lt;18 °C)</td><td>B only</td></tr>
+      <tr><td>a / b</td><td>Long hot summer (&gt;20 °C) / warm summer (&lt;20 °C)</td><td>C, D</td></tr>
+      <tr><td>c / d</td><td>Short cool summer / long cold winter</td><td>C, D</td></tr>
+    </table></div>
+    <div class="warn"><b>Cross‑check:</b> standard thresholds: a = warmest month ≥22 °C; d = coldest month &lt; –38 °C; h/k uses mean annual 18 °C.</div>
+  </div></details>
+  <details><summary>A – Tropical</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Type</th><th>Where</th><th>Features</th></tr>
+      <tr><td><b>Af</b> Equatorial</td><td>10°N–10°S; Amazon</td><td>Annual range &lt;5 °C; rain up to 300 cm; no seasons; mE air mass</td></tr>
+      <tr><td><b>Am</b> Monsoon</td><td>Tropical east margin; India, Indo‑China</td><td>Rain up to 200 cm; tropical cyclones; dry low‑sun (cT), wet high‑sun (mT)</td></tr>
+      <tr><td><b>Aw</b> Savanna</td><td>Tropical continental; Africa</td><td>Rain up to 100 cm; larger annual range</td></tr>
+    </table></div>
+    <p>Coastal Somalia gets SE monsoon; Cameroon &amp; Angola = savanna belt.</p>
+  </div></details>
+  <details><summary>B – Dry</summary><div class="in">
+    <p>Evaporation always exceeds precipitation. BW (BWh, BWk) and BS (BSh, BSk).</p>
+    <div class="grid">
+      <div class="pill"><h4>BWh – tropical desert</h4>West margins under permanent STH; cT, offshore winds. Summer mT encroachment → up to 50 cm. Sahara best example; Atacama driest, with cold current effect.</div>
+      <div class="pill"><h4>BWk – mid‑latitude desert</h4>Continental interiors; 0–20 cm. Kalahari, Patagonia (piedmont), Gurbantünggüt in China (intermontane).</div>
+      <div class="pill"><h4>BS – steppe</h4>Temperate continental; 25–75 cm, frontal, dependable. <b>BSh</b> (warmer): Prairies (USA), Pampas, Veld, Downs. <b>BSk</b> (cooler): Canadian Prairies, European steppes, Canterbury Plains (NZ).</div>
+    </div>
+    <div class="warn"><b>Cross‑check:</b> notes give Atacama 12 cm; most of Atacama gets only a few mm a year.</div>
+  </div></details>
+  <details><summary>C – Sub‑tropical</summary><div class="in">
+    <p>Controlled by warm anticyclones (STH cells).</p>
+    <div class="grid">
+      <div class="pill"><h4>Cs – Mediterranean</h4>Sub‑tropical west margin; long hot dry summer; winter rain from onshore westerlies (mT); 50–75 cm. Mediterranean shores (not Egypt, Libya), central California.</div>
+      <div class="pill"><h4>Cf – European / wet west marine</h4>Westerlies all year; 125–130 cm, wettest west margin. <b>Cfb</b> NW Europe warmer (NAD); <b>Cfc</b> British Columbia, S Chile (cold currents).</div>
+      <div class="pill"><h4>Cw – China type</h4>Sub‑tropical east margin; up to 150 cm summer rain from onshore winds; N Chinese plains, Appalachian piedmont; weak polar outbreak gives minor winter rain; tropical cyclones in lower parts.</div>
+    </div>
+    <p>East margin sequence Am → Cw → Dw; west margin BWh → Cs → Cf.</p>
+  </div></details>
+  <details><summary>D – Temperate (cold)</summary><div class="in">
+    <div class="grid">
+      <div class="pill"><h4>Dw – Manchurian / Laurentian</h4>Temperate east margin; up to 100 cm from onshore summer winds and polar outbreak fronts; winter restricted; Manchuria (NE China).</div>
+      <div class="pill"><h4>Df – Taiga / Boreal</h4>60–70°N, N Eurasia &amp; Canada; Dfa N European Plain, Dfb Siberian plain, Dfc Siberian plateau, Dfd eastern mountains; warm‑front rain ≈30 cm all year. Not in SH.</div>
+    </div>
+    <div class="warn"><b>Cross‑check:</b> standard texts class the Laurentian type as Dfa/Dfb, not Dw.</div>
+  </div></details>
+  <details><summary>E – Polar &amp; H – Montane</summary><div class="in">
+    <ul>
+      <li><b>ET – Tundra:</b> sub‑polar; brief summer melts surface ice over permafrost → waterlogged; up to 80°, northern limit Franz Josef Land; summer frontal rain ≈20 cm; only NH.</li>
+      <li><b>EF – Frost:</b> Greenland &amp; Antarctica; cold polar desert, absolutely stable; 6 months night, 6 months day.</li>
+      <li>Season cycle applies 10°–80°; none at equator &amp; poles.</li>
+      <li><b>H – Montane (1936):</b> depends on latitude, altitude, sun‑facing slopes (south in NH, north in SH), maritime influence (wet windward, dry leeward).</li>
+    </ul>
+  </div></details>
+  <details><summary>Trewartha &amp; appraisal of Köppen</summary><div class="in">
+    <ul>
+      <li><b>Trewartha</b> (American): empirical; modified symbols; improved China‑type notation; less used than Köppen. Scheme: Ar, Aw, BWh/BWk/BS, Cs, Cfw, Do, Dc, E, Ft, Fi.</li>
+      <li><b>Köppen limitations:</b> unclear/flexible symbols; absolute values; De Candolle symbols don't describe climate fully – 'f' covers 300 cm (Af) and ~10 cm (Df); a, b, c, d used in relative sense.</li>
+      <li><b>Thornthwaite's criticism:</b> equatorial areas aren't the hottest despite high sun (heavy rain); similar rainfall yields deserts in tropics but forests in sub‑polar areas.</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="kop" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- THORNTHWAITE -->
+<section class="topic" id="t-thn" style="--c:var(--thn)">
+  <header><h2>Precipitation regions &amp; Thornthwaite</h2></header>
+  <details open><summary>Global precipitation distribution</summary><div class="in">
+    <p>World average ≈ <span class="k">1000 mm</span> (WMO), unequal in space &amp; time. Controls: latitude, nature of circulation, continentality, orographic barriers. Continental interiors are always drier than coasts.</p>
+    <div class="tw"><table>
+      <tr><th>Region</th><th>Latitude / position</th><th>Air mass</th><th>Rain</th></tr>
+      <tr><td>(a) Wet equatorial</td><td>10°N–10°S</td><td>mE all year; absolute instability</td><td>~300 cm</td></tr>
+      <tr><td>(b) Trade wind belt</td><td>10–30°, east margins</td><td>mT summer, cT winter; orographic + cyclonic surges</td><td>100–250 cm</td></tr>
+      <tr><td>(c) Tropical desert</td><td>10–30°, west margins</td><td>cT; erratic mT</td><td>up to 50 cm</td></tr>
+      <tr><td>(d) Moist mid‑latitude sub‑tropical</td><td>30–60°, east margins</td><td>mT (China type), mP (Manchurian)</td><td>100–150 cm; falls poleward, winter share rises</td></tr>
+      <tr><td>(e) Mid‑latitude desert &amp; steppe</td><td>30–60°, interiors</td><td>cT &amp; cP</td><td>0–75 cm, rising poleward; prairies sub‑humid 50–75, steppes semi‑arid 25–50</td></tr>
+      <tr><td>(f) Westerly belt</td><td>30–60°, west margins</td><td>mT; onshore westerlies</td><td>50–130 cm; Mediterranean winter rain, Europe all year</td></tr>
+      <tr><td>(g) Polar &amp; arctic deserts</td><td>Beyond 60°</td><td>Cold dry; warm‑front conditional instability</td><td>Taiga 30 cm, tundra 20 cm</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Thornthwaite 1931</summary><div class="in">
+    <p>American; applied scheme using relative temperature and precipitation. 5 humidity provinces with lab‑calculated moisture index:</p>
+    <div class="tw"><table>
+      <tr><th>Symbol</th><th>Climate</th><th>Vegetation</th></tr>
+      <tr><td>A</td><td>Per‑humid</td><td>Rain forest</td></tr>
+      <tr><td>B</td><td>Humid</td><td>Forest</td></tr>
+      <tr><td>C</td><td>Sub‑humid</td><td>Savanna (grassland)</td></tr>
+      <tr><td>D</td><td>Semi‑arid</td><td>Steppe</td></tr>
+      <tr><td>E</td><td>Arid</td><td>Desert</td></tr>
+    </table></div>
+    <p>Improved in 1936 &amp; 1938 but never as popular as Köppen.</p>
+  </div></details>
+  <details><summary>Thornthwaite 1948 – potential evapotranspiration</summary><div class="in">
+    <ul>
+      <li>Published as "An Approach toward a Rational Classification of Climate". Introduced <span class="k">potential evapotranspiration (PE)</span> – moisture that would evaporate/transpire if available; reveals real moisture left in air or soil.</li>
+      <li>Data for PE being scarce, he used <b>4 indices</b>: humidity provinces (moisture index), seasonal variation of humidity, thermal efficiency regions, seasonal variation of thermal efficiency.</li>
+    </ul>
+    <div class="grid">
+      <div class="pill"><h4>1. Humidity provinces (9)</h4>A per‑humid · B4–B1 humid · C2 moist sub‑humid · C1 dry sub‑humid · D semi‑arid · E arid.</div>
+      <div class="pill"><h4>2. Seasonal humidity</h4>Humid climates – aridity index: r (no deficit), s/w (minor summer/winter deficit), s2/w2 (major). Arid climates – humidity index: d (no surplus), s/w (minor winter/summer surplus), s2/w2 (major).</div>
+      <div class="pill"><h4>3. Thermal efficiency (9)</h4>A′ megatherm · B′4–B′1 mesotherm · C′2–C′1 microtherm · D′ tundra · E′ frost.</div>
+      <div class="pill"><h4>4. Summer concentration of TE</h4>a′ … d′: % of annual TE in summer; rises with latitude. Not applied to E′.</div>
+    </div>
+    <ul>
+      <li>About <b>125</b> climate types possible, but only ~<b>32</b> mappable on a world map → limited global value, good for smaller areas such as India.</li>
+      <li>Methodological improvement over Köppen; best for <b>applied climatology</b> – agricultural planning (crop stand), water resources, regional, rural &amp; urban planning; soil moisture and sub‑surface reservoirs.</li>
+    </ul>
+    <div class="tip">Rice → tropical/warm climate; grown in Japan thanks to warm Kuroshio. Wheat → winters in India, China, USA.</div>
+  </div></details>
+  <button class="donebtn" data-done="thn" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- FLASHCARDS -->
+<section class="topic" id="t-fc" style="--c:#E9A23B">
+  <header><h2>Flashcards</h2></header>
+  <div class="fc-wrap">
+    <button class="flash" id="flash" aria-live="polite"><div class="inner"><div class="face front" id="fq"></div><div class="face back" id="fa"></div></div></button>
+    <div class="fc-nav">
+      <button class="btn ghost" id="fprev" aria-label="Previous card">‹ Prev</button>
+      <span id="fcount"></span>
+      <button class="btn" id="fnext" aria-label="Next card">Next ›</button>
+      <button class="btn ghost" id="fshuf">Shuffle</button>
+    </div>
+  </div>
+</section>
+
+<!-- MCQ -->
+<section class="topic" id="t-quiz" style="--c:#2E9E6E">
+  <header><h2>100 MCQs</h2></header>
+  <p class="hint" style="margin:0">Option tap karo → turant answer, explanation aur reference. <b>Notes L19–29</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · <b>SS</b> = Savindra Singh, Climatology · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
+  <div class="mchips" id="mchips"></div>
+  <div class="mstat">
+    <span class="mtxt" id="mtxt"></span>
+    <div class="mbar"><div class="g" id="mg"></div><div class="r" id="mr"></div></div>
+    <button class="tool" id="mwrong" aria-pressed="false">Sirf galat</button>
+    <button class="tool" id="mun" aria-pressed="false">Unattempted</button>
+    <button class="tool" id="mreset">Reset</button>
+  </div>
+  <div id="mlist"></div>
+</section>
+
+</main>
+<footer>Based on uploaded handwritten notes (Geography Vol‑2, 2014). Yellow boxes = facts to verify against standard texts. MCQ "Textbook extra" tag = fact from outside these notes.</footer>
+<button class="themebtn" id="theme" aria-label="Toggle dark mode">◐</button>
+
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* progress */
+const TOPICS=["atm","tmp","prs","jet","loc","mst","air","cyc","kop","thn"];
+let done=store.get("cl-done",{});
+function paint(){
+  let n=0;
+  $$("[data-done]").forEach(b=>{const on=!!done[b.dataset.done];b.setAttribute("aria-pressed",on);b.textContent=on?"Done ✓":"Mark done";if(on)n++;});
+  $$(".chip[data-t]").forEach(c=>c.classList.toggle("done",!!done[c.dataset.t]));
+  $("#ptext").textContent=n+" / "+TOPICS.length+" topics done";
+  $("#pbar").style.width=(n/TOPICS.length*100)+"%";
+}
+$$("[data-done]").forEach(b=>b.addEventListener("click",()=>{done[b.dataset.done]=!done[b.dataset.done];store.set("cl-done",done);paint();}));
+paint();
+
+/* tabs */
+$$('[role="tab"]').forEach(t=>t.addEventListener("click",()=>{
+  $$('[role="tab"]').forEach(x=>x.setAttribute("aria-selected",x===t));
+  $$(".panel").forEach(p=>p.hidden=p.dataset.panel!==t.dataset.tab);
+}));
+
+/* theme */
+$("#theme").addEventListener("click",()=>{
+  const r=document.documentElement,cur=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+  r.dataset.theme=cur==="dark"?"light":"dark";store.set("cl-theme",r.dataset.theme);
+});
+const th=store.get("cl-theme",null);if(th)document.documentElement.dataset.theme=th;
+
+/* flashcards */
+let cards=[
+["Weather layer","Troposphere (0–18 km equator, 8 km poles)"],
+["Ozonosphere","20–35 km in stratosphere"],
+["Albedo in heat budget","35 units (6 + 27 + 2)"],
+["Surface absorbs","51 of 100 units"],
+["Normal lapse rate","6.5 °C/km"],
+["DALR / WALR","10 °C/km / ~5 °C/km"],
+["3 causes of inversion","Air convergence, adiabatic changes, air drainage"],
+["MSL pressure","1013.25 mb"],
+["Thermal direct belts","Equatorial Low + 2 Polar Highs"],
+["High‑sun STH cells","Hawaiian High, Azores High"],
+["Low‑sun SPL cells","Aleutian Low, Icelandic Low"],
+["Coriolis at 30° / 60°","50% / 86.6% of max"],
+["Geostrophic wind","PGF + Coriolis (no friction)"],
+["Ferrel's law","Right in NH, left in SH"],
+["Thermally indirect cell","Ferrel cell (30–60°)"],
+["STJ height & role","12–15 km; winter western disturbances"],
+["TEJ cause","Exceptional bend of ITCZ over N India"],
+["Thermal monsoon theory","Halley (1686)"],
+["Flohn's idea","SW monsoon = deflected SE trades"],
+["MONEX additions","Tibetan Plateau + vortices"],
+["Malabar / Utkal vortex","First showers Kerala / moisture into Odisha"],
+["Monsoon alignments","N–S (Modified Hadley) + E–W (Walker)"],
+["Blizzard / Purga / Pampero","USA / Siberia–China / Argentina"],
+["Doctor wind","Harmattan (W Africa)"],
+["Snow eater","Chinook"],
+["Commonest fog","Radiation fog"],
+["Bergeron process","Ice crystals grow at expense of droplets"],
+["Absolute instability","ELR > DALR"],
+["Conditional instability","WALR < ELR < DALR"],
+["Barotropic vs baroclinic","In source vs modified after advection"],
+["Most important air mass (notes)","cP"],
+["Polar front theory","Bjerknes; 6 stages"],
+["Cold vs warm front slope","~1:40 vs 1:80–1:200"],
+["TC zone","8°–35° N/S; none at equator"],
+["Willy‑willy / Typhoon","Australia / South China Sea"],
+["Köppen bases","Temperature, precipitation, vegetation"],
+["Cs / Cf / Cw","Mediterranean / Wet west marine / China type"],
+["Thornthwaite 1948 key idea","Potential evapotranspiration"],
+["Thornthwaite types","~125 possible, ~32 mappable"],
+["World mean precipitation","~1000 mm"]
+];
+
+let fi=0;
+function showCard(){const f=$("#flash");f.classList.remove("flip");$("#fq").textContent=cards[fi][0];$("#fa").textContent=cards[fi][1];$("#fcount").textContent=(fi+1)+"/"+cards.length;}
+$("#flash").addEventListener("click",()=>$("#flash").classList.toggle("flip"));
+$("#fnext").addEventListener("click",()=>{fi=(fi+1)%cards.length;showCard();});
+$("#fprev").addEventListener("click",()=>{fi=(fi-1+cards.length)%cards.length;showCard();});
+$("#fshuf").addEventListener("click",()=>{for(let i=cards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[cards[i],cards[j]]=[cards[j],cards[i]];}fi=0;showCard();});
+showCard();
+
+/* ===== 100 MCQ ===== */
+const T={atm:["Atmosphere","--atm"],tmp:["Temperature","--tmp"],prs:["Pressure & winds","--prs"],jet:["Jets & monsoon","--jet"],loc:["Local winds","--loc"],mst:["Moisture","--mst"],air:["Air masses","--air"],cyc:["Cyclones","--cyc"],kop:["Köppen","--kop"],thn:["Thornthwaite","--thn"]};
+const N1="NCERT XI FPG – Composition & Structure of Atmosphere",N2="NCERT XI FPG – Solar Radiation, Heat Balance & Temperature",N3="NCERT XI FPG – Atmospheric Circulation & Weather Systems",N4="NCERT XI FPG – Water in the Atmosphere",N5="NCERT XI FPG – World Climate & Climate Change",SS="SS – Climatology",IG="NCERT XI India Physical Env. – Climate";
+/* [topic, question, options (correct first; shuffled later), 0, explanation, reference] */
+const Q=[
+["atm","Almost all weather phenomena occur in the",["Troposphere","Stratosphere","Mesosphere","Ionosphere"],0,"Notes: weather and climate are confined to the troposphere, which holds nearly all water vapour and dust.","Notes L19; "+N1],
+["atm","Height of the tropopause over the equator is about",["18 km","8 km","50 km","80 km"],0,"Warm rising convection lifts it to ~18 km at the equator; subsidence keeps it ~8 km at the poles.","Notes L19; "+N1],
+["atm","The ozonosphere lies roughly between",["20–35 km","0–8 km","50–80 km","400–1000 km"],0,"Densest natural ozone is in the stratosphere at about 20–35 km; its UV absorption warms that layer.","Notes L20; "+N1],
+["atm","Noctilucent clouds are associated with the",["Mesosphere","Troposphere","Stratosphere","Exosphere"],0,"They are evidence of very low temperature in the mesosphere (50–80 km).","Notes L20; "+N1],
+["atm","Temperature rises with height in the ionosphere because of",["Electrically charged particles (ions)","Ozone absorption","Water vapour","Cloud cover"],0,"Notes attribute the rise to ions absorbing energy in the 80–400 km layer.","Notes L20; "+N1],
+["atm","According to the notes, which gases play no role in weather mechanisms?",["Nitrogen and oxygen","Carbon dioxide and ozone","Water vapour","Aerosols"],0,"Major gases N₂ and O₂ are 'inactive'; active ones are CO₂, O₃ (stable) and water vapour, aerosols (variable).","Notes L19"],
+["atm","The earth is at perihelion around",["3 January","4 July","21 June","23 September"],0,"Nearest position (~147 million km) on ~3 Jan; aphelion (~152 million km) on ~4 July.","Notes L19; "+N2],
+["atm","In the heat budget of 100 units, the earth's surface absorbs about",["51 units","35 units","14 units","17 units"],0,"35 units are reflected (albedo), 14 absorbed by the atmosphere, 51 by the surface.","Notes L20; "+N2],
+["atm","The earth's planetary albedo in the heat budget is about",["35 units","51 units","14 units","48 units"],0,"6 scattered + 27 reflected by clouds + 2 reflected by surface = 35.","Notes L20; "+N2],
+["atm","Cloudy nights are warmer than clear nights because clouds",["Block outgoing terrestrial radiation","Add solar heat","Increase wind","Remove water vapour"],0,"Clouds and greenhouse gases trap long‑wave radiation from the ground, reducing night cooling.","Notes L19–20; "+N2],
+["tmp","According to the notes, the principal source of atmospheric temperature is",["Outgoing long‑wave terrestrial radiation","Incoming short‑wave solar radiation directly","Volcanic heat","Ocean currents"],0,"Air is heated mainly from below by terrestrial radiation; incoming solar radiation is the secondary/indirect source.","Notes L19; "+N2],
+["tmp","The normal lapse rate is",["6.5 °C per km","10 °C per km","5 °C per km","1 °C per km"],0,"Average fall of temperature with height in the troposphere.","Notes L19; "+N2],
+["tmp","Going from land to water, summer isotherms bend",["Towards the equator","Towards the poles","Do not bend","Eastward only"],0,"Water is cooler than land in summer, so the isotherm shifts equatorward over oceans; in winter it shifts poleward.","Notes L19; "+N2],
+["tmp","European plains are warmer than the Manchurian plains at the same latitude because of",["North Atlantic Drift with onshore westerlies","Monsoon winds","Higher altitude","More cloud cover"],0,"Warm NAD water carried inland by westerlies moderates European climate.","Notes L19"],
+["tmp","Temperature inversion means",["Temperature increases with height","Temperature decreases with height","No change of pressure","Rain at night"],0,"Normal pattern is a fall with height; the reverse is inversion.","Notes L19; "+N2],
+["tmp","Air drainage inversion is best developed",["On long, clear, calm winter nights in valleys","On cloudy summer afternoons","Over open oceans","At the equator at noon"],0,"Cold dense air drains from slopes to valley floors after sunset; clear sky and calm air strengthen it.","Notes L19; "+N2],
+["tmp","A rising air column cools mainly by",["Adiabatic expansion","Conduction","Radiation to space","Mixing with ozone"],0,"Adiabatic change = temperature change due to vertical movement, without adding or removing heat.","Notes L19"],
+["tmp","The lowest tropopause temperature is found over the",["Equator","Poles","Sub‑tropical highs","Mid‑latitudes"],0,"Tropopause is highest (18 km) at the equator, so applying the lapse rate gives the coldest tropopause there.","Notes L19; "+SS],
+["tmp","Inversion produced by air convergence near 60° is the precondition for",["Temperate cyclones","Tropical cyclones","Monsoon bursts","Land breeze"],0,"Warm air rising over cold air at the polar front creates inversion and starts temperate cyclonic circulation.","Notes L19"],
+["prs","Standard mean sea‑level pressure is",["1013.25 mb","1000 mb","920 mb","1050 mb"],0,"Average air pressure at sea level.","Notes L20; "+N3],
+["prs","Which pressure belts are thermally induced (thermal direct)?",["Equatorial Low and Polar Highs","Sub‑tropical Highs","Sub‑polar Lows","All seven"],0,"3 thermal direct belts; the 2 STH and 2 SPL belts are thermal indirect (dynamic).","Notes L20; "+N3],
+["prs","The Hawaiian and Azores Highs are cells of the",["Sub‑tropical high belt","Equatorial low","Sub‑polar low","Polar high"],0,"In the high‑sun season, land heating breaks the NH STH belt into oceanic cells.","Notes L20; "+SS],
+["prs","The Aleutian and Icelandic Lows develop strongly in the",["Low‑sun (winter) season","High‑sun season","Monsoon only","Equinox only"],0,"Cold continents (–ve anomaly) break the sub‑polar low into oceanic LP cells in winter.","Notes L20; "+SS],
+["prs","Coriolis deflection at 30° latitude is about what share of its maximum?",["50%","0%","86.6%","100%"],0,"Coriolis varies with sine of latitude: 0° = 0, 30° = 50%, 60° = 86.6%, 90° = 100%.","Notes L21; "+N3],
+["prs","Geostrophic winds result from a balance of",["Pressure gradient force and Coriolis force","Friction and Coriolis","Pressure gradient and friction","Gravity and friction only"],0,"Upper‑air winds without friction blow parallel to isobars. Surface gradient winds include friction too.","Notes L21; "+N3],
+["prs","Ferrel's law states that moving air is deflected",["To the right in NH and left in SH","To the left in NH and right in SH","Towards the equator","Towards low pressure only"],0,"This is the effect of the Coriolis force on wind direction.","Notes L21; "+N3],
+["prs","Highest‑velocity prevailing winds per the notes are the",["NW westerlies of the Southern Hemisphere","NE trades","Polar easterlies","Doldrums"],0,"Less frictional drag over the water‑dominated SH lets westerlies blow fastest ('roaring forties').","Notes L21; "+N3],
+["prs","Which cell of the tri‑cellular circulation is thermally indirect?",["Ferrel cell","Hadley cell","Polar cell","Walker cell"],0,"Mid‑latitude cell: air sinks at the warm STH and rises at the colder SPL. Notes call it 'Flohn cell'.","Notes L21; "+N3],
+["prs","The Hadley cell links which two belts?",["Equatorial Low and Sub‑tropical High","Sub‑tropical High and Sub‑polar Low","Sub‑polar Low and Polar High","Equatorial Low and Polar High"],0,"Rising air at the equator, sinking at ~30°; NE trades at surface with anti‑trades aloft.","Notes L21; "+N3],
+["prs","The Ekman spiral explains the effect of",["Friction on wind direction with height","Ozone on temperature","Latent heat on clouds","Tides on currents"],0,"Frictional drag turns surface wind; veering and backing change with height.","Notes L21"],
+["jet","Jet streams are best described as",["Fast geostrophic westerly winds near the tropopause","Surface trade winds","Local mountain winds","Ocean currents"],0,"Strong upper‑air flows parallel to isobars, forming latitudinal garlands.","Notes L21; "+N3],
+["jet","The sub‑tropical jet stream flows at about",["12–15 km","5–6 km","8 km","25 km"],0,"Highest tropopause level; forms the largest garland with well‑developed Rossby waves.","Notes L21; "+SS],
+["jet","Western disturbances reaching NW India in winter are steered by the",["Sub‑tropical westerly jet","Tropical easterly jet","Polar night jet","Somali jet"],0,"STJ carries Mediterranean disturbances to SW and South Asia in winter.","Notes L21; "+IG],
+["jet","The polar front jet is linked with",["Temperate cyclones and wet weather","Tropical cyclones","Desert formation","Monsoon burst"],0,"It is a thermal indirect jet over the ground polar front, with a 15–20 day life cycle.","Notes L22; "+SS],
+["jet","The polar night jet is characterised by",["Smallest garland and no Rossby waves","Largest garland and strongest Rossby waves","Flow at 12–15 km","Easterly direction"],0,"At 60–90°, there is no land–water contrast, so no Rossby waves; speed can exceed 300 km/h.","Notes L21"],
+["jet","The Tropical Easterly Jet over India develops because of",["The exceptional northward bend of the ITCZ in summer","Winter cooling of Tibet","El Niño","Westerly disturbances"],0,"Continentality pulls the ITCZ onto the northern plains, displacing the STJ; an upper easterly jet forms.","Notes L22; "+IG],
+["jet","The thermal concept of the monsoon is credited to",["Edmond Halley","Hermann Flohn","Gilbert Walker","Vilhelm Bjerknes"],0,"Halley (1686) explained monsoon by differential heating of land and sea. Notes write 'Hadley'.","Notes L22; "+SS],
+["jet","Flohn explained the SW monsoon as",["Deflected SE trades crossing the equator","Land and sea breezes","Westerly disturbances","Polar outbreaks"],0,"SE trades cross the equator (SE monsoon in Somalia/Yemen) and turn into SW monsoon between ~40–60°E.","Notes L22; "+SS],
+["jet","MONEX added which two aspects to monsoon theory?",["Role of the Tibetan Plateau and vortex development","El Niño and La Niña","Halley's and Flohn's ideas","Jet stream speed and ocean salinity"],0,"MONEX accepted the ITCZ bend and highlighted the Tibetan Plateau and Malabar/Utkal vortices.","Notes L22–23"],
+["jet","The Malabar vortex is responsible for",["First monsoon showers on the Malabar coast","Winter rain in Punjab","Cyclones in Bay of Bengal","Drought in Rajasthan"],0,"An LP cell split from the equatorial trough; with the monsoon trough it causes the sudden burst.","Notes L23"],
+["jet","El Niño weakens the Indian monsoon mainly by",["Modifying the Walker cell and weakening SE trades","Strengthening the STJ","Cooling the Arabian Sea","Raising Tibetan pressure"],0,"A successful monsoon needs N–S alignment (modified Hadley) plus E–W alignment (Walker cell).","Notes L23; "+IG],
+["jet","According to MONEX, the monsoon pressure gradient is maintained between",["Mascarene High and Tibetan Low","Azores High and Icelandic Low","Hawaiian High and Aleutian Low","Siberian High and Equatorial Low"],0,"The TEJ‑linked N–S alignment keeps this gradient for about 4 months.","Notes L22"],
+["loc","Katabatic winds are",["Downslope winds, typical at night","Upslope winds by day","Sea breezes","Trade winds"],0,"Mountain breeze from cold air drainage; anabatic winds are daytime upslope valley breezes.","Notes L23; "+N3],
+["loc","Blizzards affecting the USA originate from",["Canada","Siberia","Antarctica","Sahara"],0,"Strongest polar outbreak – no orographic barrier across the plains.","Notes L23; "+SS],
+["loc","Purga is a cold wind of",["Siberia (into China)","Argentina","Canada","Switzerland"],0,"Polar outbreak from Siberia, weakened by a broken mountain barrier.","Notes L23"],
+["loc","Pampero blows in",["Argentina","USA","Russia","Egypt"],0,"Weakest polar outbreak (sourced from Antarctica across the Southern Ocean).","Notes L23"],
+["loc","Harmattan is called the 'doctor wind' because it",["Brings dry air relieving humid, oppressive weather","Brings rain","Melts snow","Causes fog"],0,"Hot dry wind of Upper Guinea that lowers humidity, pleasant for people and livestock.","Notes L23; "+N3],
+["loc","The Indian 'Loo' belongs to the same category as",["Khamsin","Chinook","Blizzard","Bora"],0,"Hot dry dusty winds causing heat stroke – Khamsin of Libya & Egypt.","Notes L23"],
+["loc","Chinook is known as the",["Snow eater","Doctor wind","Brick fielder","Black roller"],0,"Adiabatically warmed descending wind of the Rockies that melts snow; favourable.","Notes L23; "+N3],
+["loc","Santa Ana winds are notorious for",["Forest fires in California","Rain in Southern Europe","Snowfall in Canada","Dust storms in India"],0,"Hot dry descending winds – unfavourable, like Shamoon of Iran.","Notes L23"],
+["loc","Sirocco brings rainfall to",["Southern Europe","Northern India","Argentina","Japan"],0,"Hot Saharan wind picks up moisture over the Mediterranean.","Notes L23; "+SS],
+["mst","Which humidity measure is most used in climatology?",["Relative humidity","Absolute humidity","Specific humidity","Mixing ratio"],0,"RH (%) distinguishes unsaturated, saturated and supersaturated air and links to dew point.","Notes L23; "+N4],
+["mst","Specific humidity is expressed in",["g/kg","g/m³","%","mb"],0,"Mass of vapour per unit mass of air; used for air masses.","Notes L23; "+N4],
+["mst","Absolute humidity is not used climatologically because",["Air volume keeps changing with height and temperature","It is always zero","It cannot be measured","It equals RH"],0,"It is per unit volume (g/m³), which varies with small changes in the air column.","Notes L23"],
+["mst","Frost forms instead of dew when",["Temperature is below freezing point","Temperature is above 10 °C","Wind is strong","Sky is cloudy"],0,"Below 0 °C vapour deposits as ice crystals; above it, as droplets (dew).","Notes L24; "+N4],
+["mst","The commonest type of fog is",["Radiation fog","Advection fog","Frontal fog","Precipitation fog"],0,"Forms by contact cooling of ground air on clear long nights in the low‑sun season.","Notes L24; "+N4],
+["mst","Advection fog is common over European plains when",["Warm moist westerlies move over a cold surface","Cold air moves over warm sea","Sun heats the ground","Air rises over mountains"],0,"Contact cooling of moving warm air condenses it near the ground.","Notes L24"],
+["mst","The Bergeron process explains raindrop formation by",["Growth of ice crystals at the expense of water droplets","Collision of dust","Evaporation from oceans","Lightning"],0,"Saturation vapour pressure over ice is lower than over water, so ice crystals grow.","Notes L24; "+SS],
+["mst","Convectional precipitation is associated with",["Absolute instability, equatorial climate","Conditional instability, monsoon","Stable air","Polar highs"],0,"Warm moist air rises freely, cools adiabatically; rain and hail.","Notes L24; "+N4],
+["mst","Orographic precipitation is linked to",["Conditional instability and rain‑shadow on leeward side","Absolute instability","Polar deserts","Anticyclones"],0,"Mountains force air to rise; windward wet, leeward dry; typical of monsoon climate.","Notes L24; "+N4],
+["mst","The dry adiabatic lapse rate is about",["10 °C/km","6.5 °C/km","5 °C/km","2 °C/km"],0,"Unsaturated rising air cools at ~10 °C/km; saturated air ~5 °C/km due to latent heat release.","Notes L24; "+SS],
+["mst","Absolute instability exists when the environmental lapse rate is",["Greater than the DALR","Less than the WALR","Between WALR and DALR","Equal to zero"],0,"Rising air stays warmer than surroundings – thunderstorms, tornadoes, tropical cyclones.","Notes L25; "+SS],
+["mst","Conditional instability occurs when ELR lies",["Between WALR and DALR","Above DALR","Below WALR","Equal to NLR exactly"],0,"Air becomes unstable only after saturation; applies to orographic and frontal lifting.","Notes L25; "+SS],
+["mst","The daily hydrological cycle is typical of",["Equatorial climate","Tundra","Mediterranean climate","Hot deserts"],0,"Forenoon evaporation and afternoon convectional rain complete the cycle within 24 hours.","Notes L25"],
+["air","Homogeneity of an air mass is judged by",["Temperature and humidity","Pressure and wind","Ozone and dust","Altitude only"],0,"Both properties are acquired from the source surface.","Notes L25; "+N3],
+["air","An air mass that has been modified after leaving its source is",["Baroclinic","Barotropic","Geostrophic","Adiabatic"],0,"In the source it is barotropic; after adapting to new areas it becomes baroclinic.","Notes L25"],
+["air","The 16‑type classification of air masses (T/P, c/m, k/w, s/u) is associated with",["Bergeron","Köppen","Thornthwaite","Flohn"],0,"Combines latitude, surface, temperature and stability symbols.","Notes L25; "+SS],
+["air","In the notes' order of importance, the first air mass is",["Continental polar (cP)","Maritime tropical (mT)","Maritime polar (mP)","Continental tropical (cT)"],0,"cP from Canada and Siberia brings cold winters to USA and China and forms Arctic fronts.","Notes L25"],
+["air","Tornadoes in the USA arise from contrast between",["Cooled cT air of USA and warm mT air of the Gulf of Mexico","mP and mE","cP and mM","Two cP masses"],0,"Polar outbreaks sharpen the contrast, producing squall lines and tornadoes.","Notes L25–26"],
+["air","Maritime Mediterranean (mM) air mass is effective in",["Winter, with onshore westerlies","Summer monsoon","Spring only","All seasons equally"],0,"Unlike other tropical marginal seas, the Mediterranean gives winter rain.","Notes L25"],
+["air","Maritime polar (mP) air masses involve",["Only conditional instability","Absolute instability","Absolute stability always","No moisture"],0,"Cold moist air of the open N Pacific and N Atlantic; feeds polar and Arctic fronts.","Notes L25"],
+["air","The Canadian cP air mass is stronger than the Siberian one partly because",["It meets warm ocean currents at the coast and has strong polar outbreaks","It is warmer","It is over the tropics","It has no westerlies"],0,"Siberian air meets a positive temperature anomaly of marginal seas instead.","Notes L25"],
+["cyc","Polar front theory of temperate cyclones was given by",["Bjerknes (Bergen school)","Flohn","Halley","Thornthwaite"],0,"Vilhelm and Jacob Bjerknes described the cyclone life cycle on the polar front.","Notes L26; "+N3],
+["cyc","The first stage of a temperate cyclone is",["Frontogenesis (stationary front)","Occlusion","Frontolysis","Closing of warm sector"],0,"Contrasting air masses meet near 60° and form a stable front.","Notes L26"],
+["cyc","Compared with a warm front, a cold front has",["Steeper slope and short, heavy rain","Gentler slope and long drizzle","No clouds","No rain"],0,"Notes: cold front ~1:40, warm front 1:80–1:200.","Notes L26; "+N3],
+["cyc","Occlusion occurs when",["Cold air occupies the whole area and lifts warm air off the ground","Warm air covers the whole area","The front first forms","A tropical cyclone forms"],0,"It marks the beginning of frontal decay.","Notes L26; "+N3],
+["cyc","Tropical cyclones are absent close to the equator because",["Coriolis force is negligible there","Sea is too cold","Winds are too strong","There is no moisture"],0,"Notes add the absence of land–water contrast.","Notes L26; "+N3],
+["cyc","The eye of a tropical cyclone is",["Calm, cloudless, with lowest pressure","Zone of heaviest rain","Coldest part","Zone of strongest wind"],0,"Sinking air under a blocking anticyclone warms adiabatically and intensifies the system.","Notes L27; "+N3],
+["cyc","Heaviest rainfall in a tropical cyclone occurs in the",["Eye wall","Eye","Outer margin","Anticyclone aloft"],0,"Towering Cb clouds in the transition zone around the eye.","Notes L27; "+N3],
+["cyc","Willy‑willies is the local name of tropical cyclones in",["Australia","Philippines","Caribbean","Bay of Bengal"],0,"Notes link them to the Gulf of Carpentaria region.","Notes L26; "+N3],
+["cyc","Tropical cyclones in the South China Sea are called",["Typhoons","Hurricanes","Willy‑willies","Tornadoes"],0,"Hurricanes – Gulf of Mexico/California; cyclones – Indian Ocean.","Notes L26; "+N3],
+["cyc","Tropical cyclones weaken after landfall mainly because",["Moisture supply is cut and friction increases","Coriolis increases","Temperature rises","Pressure falls further"],0,"Notes also mention blocking anticyclones filling up the LP.","Notes L27"],
+["cyc","In the NH, tropical cyclones rotate",["Anticlockwise","Clockwise","Not at all","East to west only"],0,"Coriolis gives anticlockwise circulation in NH and clockwise in SH.","Notes L26; "+N3],
+["kop","Köppen's classification uses",["Temperature, precipitation and vegetation","Only pressure","Only winds","Soil and relief only"],0,"Inspired by De Candolle's vegetation zones; A, C, D, E are temperature‑based, B precipitation‑based.","Notes L27–28; "+N5],
+["kop","In Köppen's scheme, group B is defined by",["Evaporation exceeding precipitation","Temperature above 18 °C","Snow cover","Altitude"],0,"Dry climates: BW (desert) and BS (steppe).","Notes L27; "+N5],
+["kop","The symbol 'm' in Köppen's scheme refers to",["Monsoon: most rain in a few months","Mild winter","Mountain","Maritime"],0,"Notes: ~70% of annual rain in 3 months.","Notes L27; "+N5],
+["kop","The Mediterranean climate is denoted",["Cs","Cw","Cf","BSh"],0,"'s' = dry summer, winter rain from onshore westerlies.","Notes L28; "+N5],
+["kop","Cfb in NW Europe is warmer than Cfc in British Columbia due to",["North Atlantic Drift","Labrador current","Monsoon","Altitude"],0,"Cold currents make Cfc areas cooler.","Notes L28"],
+["kop","The equatorial (Af) climate has an annual temperature range of",["Less than 5 °C","10–15 °C","20–30 °C","More than 40 °C"],0,"Uniform heat, rain up to ~300 cm, no seasons; Amazon basin.","Notes L27; "+N5],
+["kop","Per the notes, the Am (monsoon) climate is best represented in",["India and Indo‑China","Amazon basin","Sahara","Siberia"],0,"Tropical east margins with rain up to 200 cm and tropical cyclones.","Notes L27"],
+["kop","Which is a BSk (cool steppe) example in the notes?",["Canterbury Plains of New Zealand","Pampas of Argentina","Veld of South Africa","Downs of Australia"],0,"Notes list Canadian Prairies, European steppes and Canterbury Plains as BSk.","Notes L28"],
+["kop","According to the notes, the northern limit of the tundra (ET) climate is",["Franz Josef Land","Iceland","Greenland coast","Svalbard south"],0,"Tundra extends up to ~80° and is found only in NH.","Notes L28"],
+["kop","A major criticism of Köppen's scheme is",["Use of absolute values and flexible symbols","Too few climate types","Ignoring temperature","No use of letters"],0,"E.g. 'f' covers 300 cm in Af and ~10 cm in Df; a, b, c, d used relatively.","Notes L29; "+SS],
+["thn","Thornthwaite's 1948 scheme introduced the concept of",["Potential evapotranspiration","Lapse rate","Air masses","Jet streams"],0,"Moisture that would evaporate/transpire if available – basis of his applied classification.","Notes L29; "+SS],
+["thn","Thornthwaite's 1931 scheme had how many humidity provinces?",["Five","Three","Nine","Seven"],0,"A per‑humid to E arid, each with a vegetation type and moisture index.","Notes L29"],
+["thn","In 1948, Thornthwaite recognised how many humidity provinces?",["Nine","Five","Twelve","Four"],0,"A, B4–B1, C2, C1, D, E.","Notes L29"],
+["thn","In Thornthwaite's thermal efficiency scheme, A′ denotes",["Megatherm","Microtherm","Tundra","Frost"],0,"A′ megatherm, B′ mesotherm, C′ microtherm, D′ tundra, E′ frost.","Notes L29"],
+["thn","Thornthwaite's scheme is most useful for",["Applied climatology like agricultural and water planning","Naming jet streams","Classifying ocean currents","Measuring ozone"],0,"Theoretical ~125 types but only ~32 mappable; good for smaller regions like India.","Notes L29; "+SS],
+["thn","Average global precipitation (WMO) is about",["1000 mm","250 mm","3000 mm","100 mm"],0,"Unequally distributed in space and time.","Notes L28"],
+["thn","In the mid‑latitude desert & steppe region, precipitation",["Increases with latitude","Decreases with latitude","Is uniform","Is over 200 cm"],0,"0–75 cm: prairies sub‑humid (50–75), steppes semi‑arid (25–50).","Notes L29"]
+];
+/* textbook-extra flags */
+const EXTRA=["The thermal concept of the monsoon","The 16","Polar front theory"];
+Q.forEach(q=>{q[6]=EXTRA.some(e=>q[1].startsWith(e));});
+/* deterministic option shuffle (stable across reloads) */
+Q.forEach((q,i)=>{let x=(i+1)*9301+49297;const rnd=()=>{x=(x*9301+49297)%233280;return x/233280};const idx=[0,1,2,3];for(let k=3;k>0;k--){const j=Math.floor(rnd()*(k+1));[idx[k],idx[j]]=[idx[j],idx[k]];}const opts=idx.map(n=>q[2][n]);q[3]=idx.indexOf(q[3]);q[2]=opts;});
+
+let mans=store.get("clmcq-ans",{}),mf="all",mw=false,mu=false;
+function mChips(){const c=$("#mchips");c.innerHTML="";
+  const mk=(k,l,col)=>{const b=document.createElement("button");b.textContent=l;b.style.setProperty("--qc",col);b.setAttribute("aria-pressed",mf===k);b.onclick=()=>{mf=k;mChips();mRender();};c.appendChild(b);};
+  mk("all","All 100","var(--ink)");
+  Object.entries(T).forEach(([k,[l,v]])=>mk(k,l+" ("+Q.filter(q=>q[0]===k).length+")","var("+v+")"));}
+function mStats(){let r=0,w=0;Q.forEach((q,i)=>{if(mans[i]!==undefined)mans[i]===q[3]?r++:w++;});
+  $("#mtxt").innerHTML="<b>"+r+"</b> sahi · <b>"+w+"</b> galat · "+(Q.length-r-w)+" baaki";
+  $("#mg").style.width=r+"%";$("#mr").style.width=w+"%";}
+function mRender(){const L=$("#mlist");L.innerHTML="";let shown=0;
+  Q.forEach((q,i)=>{
+    if(mf!=="all"&&q[0]!==mf)return;
+    const a=mans[i],done=a!==undefined;
+    if(mw&&!(done&&a!==q[3]))return; if(mu&&done)return; shown++;
+    const d=document.createElement("div");d.className="mq";d.style.setProperty("--qc","var("+T[q[0]][1]+")");d.id="mq"+(i+1);
+    d.innerHTML="<div class='qh'><span class='num'>Q"+(i+1)+"</span><span><span class='tag'>"+T[q[0]][0]+"</span>"+(q[6]?" <span class='xtag'>Textbook extra</span>":"")+"</span></div><p class='qt'></p><div class='mopts'></div>";
+    d.querySelector(".qt").textContent=q[1];
+    const o=d.querySelector(".mopts");
+    q[2].forEach((op,j)=>{const b=document.createElement("button");b.innerHTML="<span>"+"ABCD"[j]+"</span>";b.appendChild(document.createTextNode(op));
+      if(done){b.disabled=true;if(j===q[3])b.className="ok";else if(j===a)b.className="no";}
+      b.onclick=()=>{mans[i]=j;store.set("clmcq-ans",mans);const y=d.getBoundingClientRect().top;mRender();mStats();const nn=document.getElementById("mq"+(i+1));if(nn)window.scrollBy(0,nn.getBoundingClientRect().top-y);};
+      o.appendChild(b);});
+    if(done){const e=document.createElement("div");e.className="exp";
+      const v=document.createElement("span");v.className="v "+(a===q[3]?"good":"bad");v.textContent=a===q[3]?"Sahi!":"Galat – sahi jawab "+"ABCD"[q[3]]+".";
+      e.appendChild(v);e.appendChild(document.createTextNode(q[4]));
+      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));
+      e.appendChild(r);d.appendChild(e);}
+    L.appendChild(d);});
+  if(!shown)L.innerHTML="<p class='hint'>Is filter me koi question nahi.</p>";}
+$("#mwrong").onclick=e=>{mw=!mw;mu=false;e.target.setAttribute("aria-pressed",mw);$("#mun").setAttribute("aria-pressed",false);mRender();};
+$("#mun").onclick=e=>{mu=!mu;mw=false;e.target.setAttribute("aria-pressed",mu);$("#mwrong").setAttribute("aria-pressed",false);mRender();};
+$("#mreset").onclick=()=>{if(confirm("Saare MCQ answers reset karein?")){mans={};store.set("clmcq-ans",mans);mRender();mStats();}};
+mChips();mRender();mStats();
+</script>
+</body>
+</html>

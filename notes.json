@@ -5,7 +5,22 @@
     "emoji": "🌊",
     "file": "notes/oceanography.html",
     "desc": "Submarine relief, salinity, temperature, currents, tides, deposits, UNCLOS, resources, coral reefs.",
-    "topics": ["bathymetry","shelf","ridge","trench","salinity","thermocline","gyre","el nino","tides","ooze","unclos","eez","coral","atoll"],
+    "topics": [
+      "bathymetry",
+      "shelf",
+      "ridge",
+      "trench",
+      "salinity",
+      "thermocline",
+      "gyre",
+      "el nino",
+      "tides",
+      "ooze",
+      "unclos",
+      "eez",
+      "coral",
+      "atoll"
+    ],
     "mcq": 100,
     "flashcards": 35,
     "source": "Neetu Singh Vol-2 L30–36"
@@ -16,14 +31,40 @@
     "emoji": "⛰️",
     "file": null,
     "desc": "Neetu Singh Vol-2 – next upload.",
-    "topics": ["landforms","plate tectonics","weathering"]
+    "topics": [
+      "landforms",
+      "plate tectonics",
+      "weathering"
+    ]
   },
   {
     "subject": "Physical Geography",
     "title": "Climatology",
     "emoji": "🌦️",
-    "file": null,
-    "desc": "Neetu Singh Vol-2 – next upload.",
-    "topics": ["monsoon","pressure belts","jet stream","cyclones"]
+    "file": "notes/climatology.html",
+    "desc": "Atmosphere, temperature, pressure & winds, jet streams, monsoon, local winds, moisture, air masses, cyclones, Köppen & Thornthwaite.",
+    "topics": [
+      "insolation",
+      "heat budget",
+      "inversion",
+      "pressure belts",
+      "coriolis",
+      "jet stream",
+      "monsoon",
+      "itcz",
+      "el nino",
+      "local winds",
+      "humidity",
+      "fog",
+      "clouds",
+      "air masses",
+      "cyclone",
+      "front",
+      "koppen",
+      "thornthwaite"
+    ],
+    "mcq": 100,
+    "flashcards": 40,
+    "source": "Neetu Singh Vol-2 L19–29"
   }
 ]
