@@ -1,0 +1,29 @@
+[
+  {
+    "subject": "Physical Geography",
+    "title": "Oceanography",
+    "emoji": "🌊",
+    "file": "notes/oceanography.html",
+    "desc": "Submarine relief, salinity, temperature, currents, tides, deposits, UNCLOS, resources, coral reefs.",
+    "topics": ["bathymetry","shelf","ridge","trench","salinity","thermocline","gyre","el nino","tides","ooze","unclos","eez","coral","atoll"],
+    "mcq": 100,
+    "flashcards": 35,
+    "source": "Neetu Singh Vol-2 L30–36"
+  },
+  {
+    "subject": "Physical Geography",
+    "title": "Geomorphology",
+    "emoji": "⛰️",
+    "file": null,
+    "desc": "Neetu Singh Vol-2 – next upload.",
+    "topics": ["landforms","plate tectonics","weathering"]
+  },
+  {
+    "subject": "Physical Geography",
+    "title": "Climatology",
+    "emoji": "🌦️",
+    "file": null,
+    "desc": "Neetu Singh Vol-2 – next upload.",
+    "topics": ["monsoon","pressure belts","jet stream","cyclones"]
+  }
+]
