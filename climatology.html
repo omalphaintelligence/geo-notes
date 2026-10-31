@@ -140,6 +140,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
 .backq{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:0;background:#2E9E6E;color:#fff;border-radius:999px;padding:10px 16px;font:700 .9rem "Bricolage Grotesque",sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .backq[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){.hl{animation:none}}
+.pdfbtn{display:inline-block;font:700 .8rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--c,#2F7FD1);border:1.5px solid currentColor;border-radius:999px;padding:3px 10px;text-decoration:none;margin:4px 0;white-space:nowrap}
+.pdfmini{display:inline-block;font:700 .78rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--c,#2F7FD1);text-decoration:none;margin:0 0 6px}
 </style>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#12324A">
@@ -790,7 +792,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
 <!-- MCQ -->
 <section class="topic" id="t-quiz" style="--c:#2E9E6E">
   <header><h2>100 MCQs</h2></header>
-  <p class="hint" style="margin:0">Option tap karo → answer, explanation, reference. "📖 Notes me padho" dabao → notes ka wahi hissa khulega. <b>Notes L19–29</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · <b>SS</b> = Savindra Singh, Climatology · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
+  <p class="hint" style="margin:0">Option tap karo → answer, explanation, reference. "📖 Notes me padho" → notes ka hissa, "📄 PDF p." → original handwritten page. <b>Notes L19–29</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · <b>SS</b> = Savindra Singh, Climatology · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
   <div class="mchips" id="mchips"></div>
   <div class="mstat">
     <span class="mtxt" id="mtxt"></span>
@@ -1002,6 +1004,18 @@ Q.forEach(q=>{q[6]=EXTRA.some(e=>q[1].startsWith(e));});
 Q.forEach((q,i)=>{let x=(i+1)*9301+49297;const rnd=()=>{x=(x*9301+49297)%233280;return x/233280};const idx=[0,1,2,3];for(let k=3;k>0;k--){const j=Math.floor(rnd()*(k+1));[idx[k],idx[j]]=[idx[j],idx[k]];}const opts=idx.map(n=>q[2][n]);q[3]=idx.indexOf(q[3]);q[2]=opts;});
 
 
+
+/* original PDF links */
+const PDFSRC="climatology-notes.pdf",PMAP={"atm": {"": 2, "Composition": 2, "Structure": 2, "Insolation": 3, "Heat budget": 14}, "tmp": {"": 5, "Latitude": 6, "Land": 7, "Currents": 8, "Vertical": 9}, "prs": {"": 16, "Pressure systems": 16, "7 pressure": 17, "Wind": 19, "Prevailing": 21, "Tri": 23}, "jet": {"": 24, "Jet streams": 26, "Exceptional bend": 29, "classical": 31, "MONEX": 33, "ENSO": 38}, "loc": {"": 39}, "mst": {"": 41, "Humidity": 41, "Condensation": 44, "Clouds": 47, "form": 48, "types": 49, "Stability": 51, "Hydrological": 54}, "air": {"": 54}, "cyc": {"": 60, "tab:tc": 60, "tab:tr": 66, "tab:cm": 60}, "kop": {"": 69, "level 1": 70, "Level 2": 71, "A – Tropical": 72, "B – Dry": 73, "C – Sub": 76, "D – Temperate": 77, "E – Polar": 79, "Trewartha": 80}, "thn": {"": 81, "Global precipitation": 81, "Thornthwaite 1931": 85, "1948": 86}};
+function pdfPage(q){const m=PMAP[q[0]]||{};if(q[7]&&m[q[7]])return m[q[7]];if(!q[7]){const t=(q[1]+" "+q[4]).toLowerCase();for(const [k,p] of Object.entries(m)){if(k&&!k.startsWith("tab:")&&k.length>4&&t.includes(k.toLowerCase()))return p;}}return m[""]||1;}
+function pdfLink(p){return "pdf.html?f="+encodeURIComponent(PDFSRC)+"&p="+p+"&t="+encodeURIComponent(document.title.split(" – ")[0]);}
+document.querySelectorAll('section.topic[id^="t-"]').forEach(sec=>{const m=PMAP[sec.id.slice(2)];if(!m)return;
+  const a=document.createElement("a");a.className="pdfbtn";a.href=pdfLink(m[""]);a.textContent="📄 Original p."+m[""];sec.querySelector("header").appendChild(a);
+  Object.entries(m).forEach(([kw,p])=>{if(!kw)return;let box=null;
+    if(kw.startsWith("tab:"))box=sec.querySelector('[data-panel="'+kw.slice(4)+'"]');
+    else{const d=[...sec.querySelectorAll("details")].find(x=>x.querySelector("summary").textContent.toLowerCase().includes(kw.toLowerCase()));if(d)box=d.querySelector(".in");}
+    if(!box||box.querySelector(":scope > .pdfmini"))return;const l=document.createElement("a");l.className="pdfmini";l.href=pdfLink(p);l.textContent="📄 Original notes p."+p;box.insertBefore(l,box.firstChild);});
+});
 /* reference → notes jump */
 let lastQ=null;
 const backBtn=document.createElement("button");backBtn.className="backq";backBtn.textContent="↩ Wapas MCQ pe";backBtn.hidden=true;document.body.appendChild(backBtn);
@@ -1039,7 +1053,7 @@ function mRender(){const L=$("#mlist");L.innerHTML="";let shown=0;
     if(done){const e=document.createElement("div");e.className="exp";
       const v=document.createElement("span");v.className="v "+(a===q[3]?"good":"bad");v.textContent=a===q[3]?"Sahi!":"Galat – sahi jawab "+"ABCD"[q[3]]+".";
       e.appendChild(v);e.appendChild(document.createTextNode(q[4]));
-      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));const g=document.createElement("a");g.className="goto";g.href="#t-"+q[0];g.textContent="📖 Notes me padho";g.onclick=ev=>{ev.preventDefault();goNotes(q,"mq"+(i+1));};r.appendChild(g);
+      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));const g=document.createElement("a");g.className="goto";g.href="#t-"+q[0];g.textContent="📖 Notes me padho";g.onclick=ev=>{ev.preventDefault();goNotes(q,"mq"+(i+1));};r.appendChild(g);const pl=document.createElement("a");pl.className="goto";pl.href=pdfLink(pdfPage(q));pl.textContent="📄 PDF p."+pdfPage(q);r.appendChild(document.createTextNode(" · "));r.appendChild(pl);
       e.appendChild(r);d.appendChild(e);}
     L.appendChild(d);});
   if(!shown)L.innerHTML="<p class='hint'>Is filter me koi question nahi.</p>";}

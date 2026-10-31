@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Original notes</title>
+<meta name="theme-color" content="#12324A">
+<link rel="manifest" href="manifest.json">
+<style>
+:root{--bg:#EAF3F5;--card:#fff;--ink:#12324A;--muted:#4D6A7E;--line:#C9DCE3;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1F2C;--card:#13293A;--ink:#E3EFF4;--muted:#9DB7C6;--line:#24435A;color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font:500 15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:6px;align-items:center;padding:8px 10px;flex-wrap:wrap}
+.bar button,.bar a{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 12px;font:700 .9rem system-ui,sans-serif;cursor:pointer;text-decoration:none;min-width:40px;text-align:center}
+.bar .t{flex:1 1 140px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar input{width:56px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;padding:6px;font:700 .9rem system-ui;text-align:center}
+#wrap{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:10px;text-align:center}
+canvas{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.15);border-radius:4px;max-width:none}
+.msg{padding:30px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="bar">
+  <button id="back" aria-label="Back">←</button>
+  <span class="t" id="title">Original notes</span>
+  <button id="prev" aria-label="Previous page">‹</button>
+  <input id="pg" inputmode="numeric" aria-label="Page number"><span id="tot"></span>
+  <button id="next" aria-label="Next page">›</button>
+  <button id="zo" aria-label="Zoom out">−</button>
+  <button id="zi" aria-label="Zoom in">+</button>
+  <a id="raw" target="_blank" rel="noopener" aria-label="Open full PDF">⤓</a>
+</div>
+<div id="wrap"><p class="msg" id="msg">PDF load ho raha hai…</p><canvas id="cv"></canvas></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+const qs=new URLSearchParams(location.search);
+const file=qs.get("f")||"",title=qs.get("t")||"Original notes";
+let page=Math.max(1,parseInt(qs.get("p")||"1",10)),zoom=1,doc=null,busy=false,pending=null;
+const $=s=>document.querySelector(s);
+$("#title").textContent=title+" · PDF";document.title=title+" – original PDF";
+$("#raw").href=file;
+$("#back").onclick=()=>{if(history.length>1)history.back();else location.href="./";};
+function setUrl(){const u=new URL(location.href);u.searchParams.set("p",page);history.replaceState(null,"",u);}
+async function render(n){
+  if(!doc)return; if(busy){pending=n;return;} busy=true;
+  page=Math.min(Math.max(1,n),doc.numPages); $("#pg").value=page; setUrl();
+  const p=await doc.getPage(page);
+  const wrapW=$("#wrap").clientWidth-20, v1=p.getViewport({scale:1});
+  const scale=(wrapW/v1.width)*zoom, dpr=window.devicePixelRatio||1;
+  const vp=p.getViewport({scale:scale*dpr}), cv=$("#cv");
+  cv.width=vp.width; cv.height=vp.height; cv.style.width=(vp.width/dpr)+"px"; cv.style.height=(vp.height/dpr)+"px";
+  await p.render({canvasContext:cv.getContext("2d"),viewport:vp}).promise;
+  $("#wrap").scrollTop=0; busy=false;
+  if(pending!==null){const x=pending;pending=null;render(x);}
+}
+$("#prev").onclick=()=>render(page-1);
+$("#next").onclick=()=>render(page+1);
+$("#pg").onchange=e=>render(parseInt(e.target.value,10)||1);
+$("#zi").onclick=()=>{zoom=Math.min(zoom*1.25,4);render(page);};
+$("#zo").onclick=()=>{zoom=Math.max(zoom/1.25,0.5);render(page);};
+document.addEventListener("keydown",e=>{if(e.key==="ArrowRight")render(page+1);if(e.key==="ArrowLeft")render(page-1);});
+let sx=null;$("#wrap").addEventListener("touchstart",e=>{if(e.touches.length===1&&zoom<=1)sx=e.touches[0].clientX;},{passive:true});
+$("#wrap").addEventListener("touchend",e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>60)render(page+(dx<0?1:-1));});
+window.addEventListener("resize",()=>render(page));
+if(!file||!/^[\w.-]+\.pdf$/.test(file)){$("#msg").textContent="PDF file nahi mili.";}
+else if(!window.pdfjsLib){$("#msg").textContent="PDF viewer load nahi hua (internet check karo). ⤓ se seedha PDF kholo.";}
+else{
+  pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+  pdfjsLib.getDocument({url:file,disableAutoFetch:true,rangeChunkSize:262144}).promise.then(d=>{doc=d;$("#tot").textContent="/ "+d.numPages;$("#msg").remove();render(page);})
+  .catch(()=>{$("#msg").textContent="Ye PDF repo me nahi mili: "+file+" – GitHub pe upload karo.";});
+}
+</script>
+</body>
+</html>
