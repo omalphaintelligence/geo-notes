@@ -85,5 +85,68 @@
     "mcq": 100,
     "flashcards": 40,
     "source": "Neetu Singh Vol-2 L19–29"
+  },
+  {
+    "subject": "Human Geography",
+    "title": "Geographical Thought",
+    "emoji": "🧭",
+    "file": "geographical-thought.html",
+    "desc": "Social Darwinism, neo-environmentalism, neo-determinism, cultural determinism, possibilism, probabilism, quantitative revolution.",
+    "topics": [
+      "ratzel",
+      "semple",
+      "huntington",
+      "griffith taylor",
+      "vidal de la blache",
+      "sauer",
+      "spate",
+      "determinism",
+      "possibilism",
+      "quantitative revolution",
+      "christaller",
+      "von thunen"
+    ],
+    "mcq": 51,
+    "flashcards": 28,
+    "source": "Neetu Singh Part 11"
+  },
+  {
+    "subject": "Human Geography",
+    "title": "मानव भूगोल चिंतन",
+    "emoji": "🗺️",
+    "file": "manav-bhugol-chintan.html",
+    "desc": "विचार-यात्रा, वाद-रेखा, नोट्स, विद्वान – Determinism से Systems Analysis तक (हिंदी)।",
+    "topics": [
+      "determinism",
+      "possibilism",
+      "quantitative revolution",
+      "behaviouralism",
+      "humanism",
+      "radicalism",
+      "systems analysis",
+      "geographical thought",
+      "hindi",
+      "विद्वान"
+    ],
+    "mcq": 90,
+    "source": "हिंदी नोट्स"
+  },
+  {
+    "subject": "UGC-NET PYQ",
+    "title": "भूगोल PYQ एटलस",
+    "emoji": "📝",
+    "file": "pyq-atlas.html",
+    "desc": "UGC-NET भूगोल PYQ (2023–2024) 10 इकाइयों में, हर उत्तर नोट्स से जुड़ा।",
+    "topics": [
+      "ugc net",
+      "pyq",
+      "previous year",
+      "geomorphology",
+      "climatology",
+      "oceanography",
+      "geographical thought",
+      "hindi"
+    ],
+    "source": "UGC-NET 2023–24"
   }
 ]
