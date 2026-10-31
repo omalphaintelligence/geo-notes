@@ -25,3 +25,13 @@ Live: https://omalphaintelligence.github.io/geo-notes/
 
 ## Notes page me "← Saare notes" button
 Har notes file ke `<header>` ke andar ye line ho: `<a class="homebtn" href="./">← Saare notes</a>`
+
+## Book tab
+Book chapters `notes.json` me `"tab": "book"` ke saath jaate hain:
+```json
+{ "tab": "book", "subject": "Physical Geography", "chapter": 22, "title": "Glaciers & Glaciated Topography", "file": "ch22-glaciers.html" }
+```
+`subject` = book ka naam (Book tab me sub-tab ban jata hai), `chapter` se order set hota hai.
+
+## Original PDF links
+Har notes page me `PDFSRC` (PDF ka naam) aur `PMAP` (topic → page number) hota hai. PDF repo ke root me rakho; `pdf.html?f=<file>.pdf&p=<page>` us page ko kholta hai.
