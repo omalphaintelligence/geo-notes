@@ -50,12 +50,15 @@ a.card:hover{border-color:var(--c)}
 footer{text-align:center;color:var(--muted);font-size:.85rem;padding:10px 16px 30px}
 .themebtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:44px;height:44px;font-size:1.2rem;cursor:pointer}
 :focus-visible{outline:3px solid #E9A23B;outline-offset:2px}
+.mtabs{display:flex;gap:8px;margin:16px 0 0}.mtabs button{flex:1;border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:14px;padding:10px;font:800 1rem "Bricolage Grotesque",sans-serif;cursor:pointer}.mtabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.chno{font:800 .8rem "Bricolage Grotesque",sans-serif;color:var(--c)}
 </style>
 </head>
 <body>
 <header>
   <h1>Geography<br>Notes</h1>
   <p>Saare interactive notes, flashcards aur MCQs ek jagah. Offline bhi chalega.</p>
+  <div class="mtabs" id="mainTabs" role="tablist"><button role="tab" data-mt="notes">📒 Notes</button><button role="tab" data-mt="book">📖 Book</button></div>
   <input class="search" id="q" type="search" placeholder="Topic search karo… (jaise tides, coral, monsoon)" aria-label="Search notes">
   <div class="chips" id="chips"></div>
 </header>
@@ -67,28 +70,30 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:10px 16px 3
 const $=s=>document.querySelector(s);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const COLORS=["#2F7FD1","#E8505B","#1BA3A3","#6A4FC2","#E9A23B","#2E9E6E","#E2607E","#8A6A3F","#2E5E8C"];
-let DATA=[],sub="all";
+let DATA=[],sub="all",mt=(location.hash==="#book")?"book":(store.get("hub-tab","notes"));
+const inTab=n=>(n.tab||"notes")===mt;
+function setTab(t){mt=t;sub="all";store.set("hub-tab",t);history.replaceState(null,"",t==="book"?"#book":"#");document.querySelectorAll("#mainTabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.mt===t));$("#q").placeholder=t==="book"?"Chapter search karo… (jaise glacier, cirque)":"Topic search karo… (jaise tides, coral, monsoon)";chips();render();}
 
 function colorOf(s){const subs=[...new Set(DATA.map(n=>n.subject))];return COLORS[subs.indexOf(s)%COLORS.length];}
 function chips(){
   const c=$("#chips");c.innerHTML="";
-  const subs=[...new Set(DATA.map(n=>n.subject))];
+  const subs=[...new Set(DATA.filter(inTab).map(n=>n.subject))];
   const mk=(k,l,col)=>{const b=document.createElement("button");b.className="chip";b.textContent=l;b.style.setProperty("--c",col);b.setAttribute("aria-pressed",sub===k);b.onclick=()=>{sub=k;chips();render();};c.appendChild(b);};
-  mk("all","Sab","var(--ink)");
+  mk("all",mt==="book"?"Saari books":"Sab","var(--ink)");
   subs.forEach(s=>mk(s,s,colorOf(s)));
 }
 function render(){
   const term=$("#q").value.trim().toLowerCase();
   const L=$("#list");L.innerHTML="";
   const groups={};
-  DATA.forEach(n=>{
+  DATA.filter(inTab).sort((a,b)=>(a.chapter||0)-(b.chapter||0)).forEach(n=>{
     if(sub!=="all"&&n.subject!==sub)return;
     const hay=(n.title+" "+n.subject+" "+(n.topics||[]).join(" ")+" "+(n.desc||"")).toLowerCase();
     if(term&&!hay.includes(term))return;
     (groups[n.subject]=groups[n.subject]||[]).push(n);
   });
   const keys=Object.keys(groups);
-  if(!keys.length){L.innerHTML="<p class='empty'>Kuch nahi mila. Doosra word try karo.</p>";return;}
+  if(!keys.length){L.innerHTML=mt==="book"&&!term?"<p class='empty'>Abhi koi book chapter nahi.</p>":"<p class='empty'>Kuch nahi mila. Doosra word try karo.</p>";return;}
   keys.forEach(s=>{
     const col=colorOf(s);
     const h=document.createElement("h2");h.style.setProperty("--c",col);
@@ -102,6 +107,7 @@ function render(){
       el.innerHTML="<div class='emo'></div><h3></h3><p></p><div class='meta'></div>";
       el.querySelector(".emo").textContent=n.emoji||"📘";
       el.querySelector("h3").textContent=n.title;
+      if(n.chapter){const c=document.createElement("div");c.className="chno";c.textContent="Chapter "+n.chapter;el.insertBefore(c,el.querySelector("h3"));}
       el.querySelector("p").textContent=n.desc||"";
       const m=el.querySelector(".meta");
       const tags=soon?["Jald aa raha"]:[...(n.mcq?[n.mcq+" MCQs"]:[]),...(n.flashcards?[n.flashcards+" flashcards"]:[]),...(n.source?[n.source]:[])];
@@ -111,7 +117,8 @@ function render(){
     L.appendChild(h);L.appendChild(g);
   });
 }
-fetch("notes.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{DATA=d;chips();render();})
+document.querySelectorAll("#mainTabs button").forEach(b=>b.onclick=()=>setTab(b.dataset.mt));
+fetch("notes.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{DATA=d;setTab(mt);})
   .catch(()=>{$("#list").innerHTML="<div class='err'>notes.json load nahi hua. Check karo ki file repo ke root me hai aur JSON sahi hai (comma/bracket).</div>";});
 $("#q").addEventListener("input",render);
 $("#theme").onclick=()=>{const r=document.documentElement,cur=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");r.dataset.theme=cur==="dark"?"light":"dark";store.set("hub-theme",r.dataset.theme);};

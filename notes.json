@@ -148,5 +148,31 @@
       "hindi"
     ],
     "source": "UGC-NET 2023–24"
+  },
+  {
+    "tab": "book",
+    "subject": "Physical Geography",
+    "chapter": 22,
+    "title": "Glaciers & Glaciated Topography",
+    "emoji": "🏔️",
+    "file": "ch22-glaciers.html",
+    "desc": "Snow line, glacier types, movement, cirques & theories, horns, fiords, moraines, drumlins, eskers, glossary.",
+    "topics": [
+      "glacier",
+      "snow line",
+      "cirque",
+      "arete",
+      "horn",
+      "fiord",
+      "moraine",
+      "drumlin",
+      "esker",
+      "kame",
+      "roche moutonnee",
+      "ahlmann"
+    ],
+    "mcq": 74,
+    "flashcards": 35,
+    "source": "Book pp. 312–323"
   }
 ]
