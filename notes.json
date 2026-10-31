@@ -3,7 +3,7 @@
     "subject": "Physical Geography",
     "title": "Oceanography",
     "emoji": "🌊",
-    "file": "notes/oceanography.html",
+    "file": "oceanography.html",
     "desc": "Submarine relief, salinity, temperature, currents, tides, deposits, UNCLOS, resources, coral reefs.",
     "topics": [
       "bathymetry",
@@ -41,7 +41,7 @@
     "subject": "Physical Geography",
     "title": "Climatology",
     "emoji": "🌦️",
-    "file": "notes/climatology.html",
+    "file": "climatology.html",
     "desc": "Atmosphere, temperature, pressure & winds, jet streams, monsoon, local winds, moisture, air masses, cyclones, Köppen & Thornthwaite.",
     "topics": [
       "insolation",
