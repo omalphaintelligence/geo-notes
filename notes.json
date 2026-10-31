@@ -87,6 +87,33 @@
     "source": "Neetu Singh Vol-2 L19–29"
   },
   {
+    "subject": "Physical Geography",
+    "title": "Biogeography",
+    "emoji": "🌿",
+    "file": "biogeography.html",
+    "desc": "Ecology, productivity, world biomes, zoo realms, aquatic ecosystem, soil processes & world soils, human adaptations, impact, conventions.",
+    "topics": [
+      "ecology",
+      "biome",
+      "tundra",
+      "taiga",
+      "savanna",
+      "chernozem",
+      "laterite",
+      "podzol",
+      "usda",
+      "milankovitch",
+      "ipcc",
+      "kyoto",
+      "cbd",
+      "cites",
+      "ramsar"
+    ],
+    "mcq": 104,
+    "flashcards": 40,
+    "source": "Neetu Singh Vol-3 Part 4"
+  },
+  {
     "subject": "Human Geography",
     "title": "Geographical Thought",
     "emoji": "🧭",
@@ -174,5 +201,33 @@
     "mcq": 74,
     "flashcards": 35,
     "source": "Book pp. 312–323"
+  },
+  {
+    "subject": "Geography of India",
+    "title": "India: Climate, Biomes, Structure & Soils",
+    "emoji": "🇮🇳",
+    "file": "india-climate-soils.html",
+    "desc": "Seasons, monsoon branches, climatic regions, biomes, forest & wildlife laws, EPA, geological systems, earthquake zones, soils.",
+    "topics": [
+      "indian climate",
+      "monsoon",
+      "kendrew",
+      "stamp",
+      "biome",
+      "mangrove",
+      "fca",
+      "wpa",
+      "campa",
+      "napcc",
+      "dharwar",
+      "gondwana",
+      "deccan trap",
+      "soil",
+      "regur",
+      "laterite"
+    ],
+    "mcq": 100,
+    "flashcards": 36,
+    "source": "Neetu Singh Vol-3 Part 6"
   }
 ]

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biogeography – Notes + MCQs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EAF3F5; --card:#FFFFFF; --ink:#12324A; --muted:#4D6A7E; --line:#C9DCE3;
+  --topo:#2F7FD1; --salt:#E9A23B; --temp:#E8505B; --curr:#1BA3A3; --tide:#6A4FC2;
+  --dep:#8A6A3F; --law:#2E5E8C; --res:#2E9E6E; --coral:#E2607E; --warn-bg:#FFF4DC; --warn:#8A5A00;
+  --deep1:#BFE0EA; --deep2:#5FA9C9; --deep3:#1F5F86; --deep4:#0E3550;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0C1F2C; --card:#13293A; --ink:#E3EFF4; --muted:#9DB7C6; --line:#24435A;
+  --warn-bg:#3A2E12; --warn:#F2C76B; --deep1:#2A6A88; --deep2:#1F5577; --deep3:#163F5C; --deep4:#0A2536;
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#0C1F2C; --card:#13293A; --ink:#E3EFF4; --muted:#9DB7C6; --line:#24435A;
+  --warn-bg:#3A2E12; --warn:#F2C76B; --deep1:#2A6A88; --deep2:#1F5577; --deep3:#163F5C; --deep4:#0A2536;
+  color-scheme:dark;}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 "Source Serif 4",Georgia,serif}
+h1,h2,h3,h4,.chip,button,.lbl,th{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+header.hero{padding:28px 18px 8px;max-width:920px;margin:0 auto}
+.hero h1{font-size:clamp(2.2rem,8vw,3.6rem);line-height:1;margin:0 0 6px;font-weight:800;letter-spacing:-.02em}
+.hero p{margin:0;color:var(--muted)}
+.profile{margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;overflow-x:auto}
+.profile svg{display:block;width:100%;min-width:560px;height:auto}
+.profile a{cursor:pointer}
+.profile a:hover path,.profile a:focus path{filter:brightness(1.15)}
+.hint{font-size:.85rem;color:var(--muted);margin:6px 4px 0}
+nav.chips{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;padding:10px 14px;scrollbar-width:none}
+nav.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;text-decoration:none;color:#fff;font-weight:700;font-size:.88rem;padding:7px 13px;border-radius:999px;background:var(--c)}
+.chip.done::after{content:" ✓"}
+.progress{max-width:920px;margin:14px auto 0;padding:0 18px;font-family:"Bricolage Grotesque",sans-serif;font-size:.9rem;color:var(--muted)}
+.bar{height:8px;border-radius:8px;background:var(--line);overflow:hidden;margin-top:4px}
+.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--topo),var(--curr),var(--res),var(--coral));transition:width .4s}
+main{max-width:920px;margin:0 auto;padding:6px 14px 60px}
+section.topic{margin:26px 0;background:var(--card);border-radius:20px;border:1px solid var(--line);border-top:8px solid var(--c);padding:6px 18px 18px}
+.topic>header{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topic h2{margin:12px 0 4px;font-size:1.7rem;color:var(--c);line-height:1.15}
+.donebtn{border:2px solid var(--c);color:var(--c);background:transparent;border-radius:999px;padding:6px 14px;font-weight:700;cursor:pointer;font-size:.85rem}
+.donebtn[aria-pressed="true"]{background:var(--c);color:#fff}
+details{border:1px solid var(--line);border-radius:14px;margin:12px 0;background:var(--paper)}
+summary{cursor:pointer;padding:12px 14px;font:700 1.08rem/1.3 "Bricolage Grotesque",sans-serif;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--c);font-size:1.4rem;line-height:1}
+details[open]>summary::after{content:"–"}
+details>.in{padding:0 16px 14px}
+p{margin:.55em 0}
+ul{margin:.4em 0;padding-left:1.2em}
+li{margin:.25em 0}
+b,strong{font-weight:600;color:var(--ink)}
+.k{background:color-mix(in srgb,var(--c) 18%,transparent);padding:0 4px;border-radius:5px;font-weight:600}
+.tw{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:460px;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:color-mix(in srgb,var(--c) 22%,var(--card));font-size:.9rem}
+.warn{background:var(--warn-bg);color:var(--warn);border-left:5px solid #E9A23B;border-radius:10px;padding:9px 12px;margin:10px 0;font-size:.95rem}
+.warn b{color:var(--warn)}
+.tip{border-left:5px solid var(--c);background:color-mix(in srgb,var(--c) 10%,transparent);border-radius:10px;padding:9px 12px;margin:10px 0;font-size:.95rem}
+.lbl{font-weight:700;font-size:.85rem;color:var(--c)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0}
+.pill{border:1px solid var(--line);border-radius:14px;padding:10px 12px;background:var(--card)}
+.pill h4{margin:0 0 4px;font-size:1rem;color:var(--c)}
+.fig{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px;margin:12px 0;overflow-x:auto}
+.fig svg{display:block;width:100%;height:auto;min-width:420px}
+.fig figcaption{font-size:.85rem;color:var(--muted);padding:4px 6px 0}
+svg text{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 6px}
+.tabs button{border:2px solid var(--c);background:transparent;color:var(--c);border-radius:999px;padding:6px 14px;font-weight:700;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--c);color:#fff}
+.panel[hidden]{display:none}
+/* flashcards */
+.fc-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:10px}
+.flash{width:100%;max-width:520px;height:220px;perspective:1000px;cursor:pointer;border:0;background:none;padding:0;color:inherit}
+.flash .face{position:absolute;inset:0;border-radius:18px;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;backface-visibility:hidden;transition:transform .5s;font-size:1.1rem}
+.flash .inner{position:relative;width:100%;height:100%}
+.flash .front{background:var(--c);color:#fff;font:700 1.25rem/1.3 "Bricolage Grotesque",sans-serif}
+.flash .back{background:var(--paper);border:2px solid var(--c);transform:rotateY(180deg)}
+.flash.flip .front{transform:rotateY(180deg)}
+.flash.flip .back{transform:rotateY(360deg)}
+.fc-nav{display:flex;gap:10px;align-items:center;font-family:"Bricolage Grotesque",sans-serif}
+.btn{border:0;border-radius:999px;padding:9px 18px;font-weight:700;cursor:pointer;background:var(--c);color:#fff;font-size:.95rem}
+.btn.ghost{background:transparent;color:var(--c);border:2px solid var(--c)}
+/* quiz */
+.q{border:1px solid var(--line);border-radius:14px;padding:12px;margin:10px 0;background:var(--paper)}
+.q p{margin:0 0 8px;font-weight:600}
+.opts{display:grid;gap:6px}
+.opts button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;font:500 .95rem/1.35 "Bricolage Grotesque",sans-serif}
+.opts button.ok{background:#2E9E6E;color:#fff;border-color:#2E9E6E}
+.opts button.no{background:#E8505B;color:#fff;border-color:#E8505B}
+.score{font:800 1.3rem "Bricolage Grotesque",sans-serif;color:var(--c)}
+:focus-visible{outline:3px solid #E9A23B;outline-offset:2px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
+.themebtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:44px;height:44px;font-size:1.2rem;cursor:pointer}
+#t-quiz .mstat{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0}
+#t-quiz .mtxt{font-family:"Bricolage Grotesque",sans-serif;font-size:.9rem;color:var(--muted)}
+#t-quiz .mtxt b{color:var(--ink)}
+#t-quiz .mbar{flex:1 1 120px;height:8px;border-radius:8px;background:var(--line);overflow:hidden;display:flex}
+#t-quiz .mbar .g{background:#2E9E6E}#t-quiz .mbar .r{background:#E8505B}
+#t-quiz .mchips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+#t-quiz .mchips button,#t-quiz .tool{border:2px solid var(--qc);color:var(--qc);background:transparent;border-radius:999px;padding:4px 11px;font:700 .8rem "Bricolage Grotesque",sans-serif;cursor:pointer}
+#t-quiz .mchips button[aria-pressed="true"],#t-quiz .tool[aria-pressed="true"]{background:var(--qc);color:var(--card)}
+#t-quiz .tool{--qc:var(--ink)}
+#t-quiz .mq{background:var(--paper);border:1px solid var(--line);border-left:7px solid var(--qc);border-radius:14px;padding:12px;margin:12px 0}
+#t-quiz .qh{display:flex;justify-content:space-between;gap:6px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+#t-quiz .num{font:800 1rem "Bricolage Grotesque",sans-serif;color:var(--qc)}
+#t-quiz .tag{font:700 .72rem "Bricolage Grotesque",sans-serif;color:#fff;background:var(--qc);border-radius:999px;padding:2px 9px}
+.xtag{font:700 .72rem "Bricolage Grotesque",sans-serif;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:2px 9px;white-space:nowrap}
+#t-quiz .qt{font-weight:600;margin:0 0 8px}
+#t-quiz .mopts{display:grid;gap:6px}
+#t-quiz .mopts button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;font:500 .95rem/1.4 "Bricolage Grotesque",sans-serif;display:flex;gap:9px}
+#t-quiz .mopts button span{font-weight:800;color:var(--muted)}
+#t-quiz .mopts button:disabled{cursor:default}
+#t-quiz .mopts button.ok{background:#2E9E6E;border-color:#2E9E6E;color:#fff}
+#t-quiz .mopts button.no{background:#E8505B;border-color:#E8505B;color:#fff}
+#t-quiz .mopts button.ok span,#t-quiz .mopts button.no span{color:#fff}
+#t-quiz .exp{margin-top:9px;border-radius:10px;padding:9px 11px;background:color-mix(in srgb,var(--qc) 10%,transparent);font-size:.95rem}
+#t-quiz .v{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;margin-right:4px}
+#t-quiz .v.good{color:#2E9E6E}#t-quiz .v.bad{color:#E8505B}
+#t-quiz .ref{margin-top:6px;border-top:1px dashed var(--line);padding-top:6px;font-size:.85rem;color:var(--muted)}
+#t-quiz .ref b{color:var(--ink);font-family:"Bricolage Grotesque",sans-serif}
+.homebtn{display:inline-block;margin-bottom:12px;text-decoration:none;font:700 .9rem "Bricolage Grotesque",sans-serif;color:var(--ink);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px}
+:root{--eco:#2E9E6E;--lnk:#1F8FA3;--trb:#4F8F3A;--zoo:#B0703F;--aqu:#2F7FD1;--sfm:#8A6A3F;--wsl:#A0522D;--hea:#D9822B;--imp:#C2414D;--glb:#6A4FC2}
+
+#t-quiz .goto{display:inline-block;margin-left:6px;font:700 .85rem "Bricolage Grotesque",sans-serif;color:var(--qc);text-decoration:underline;cursor:pointer}
+.hl{animation:hl 1.8s ease-out}
+@keyframes hl{0%{box-shadow:0 0 0 5px #E9A23B}100%{box-shadow:0 0 0 0 transparent}}
+.backq{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:0;background:#2E9E6E;color:#fff;border-radius:999px;padding:10px 16px;font:700 .9rem "Bricolage Grotesque",sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.backq[hidden]{display:none}
+@media (prefers-reduced-motion:reduce){.hl{animation:none}}
+</style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#12324A">
+</head>
+<body>
+
+<header class="hero">
+  <a class="homebtn" href="./">← Saare notes</a>
+  <h1>Biogeography</h1>
+  <p>Vol‑3 Part 4 notes (Lectures 36–42). Latitude chart pe kisi biome pe tap karo → seedha uska topic.</p>
+  <div class="profile" role="img" aria-label="World biomes by latitude">
+  <svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+    <g font-size="12" font-weight="700">
+      <a href="#t-trb"><rect x="90" y="10" width="560" height="34" fill="#BFD7E4"/><text x="320" y="32" fill="#12324A">Tundra (70–80°)</text></a>
+      <a href="#t-trb"><rect x="90" y="46" width="560" height="34" fill="#2E5E8C"/><text x="320" y="68" fill="#fff">Taiga (60–70°)</text></a>
+      <a href="#t-trb"><rect x="90" y="82" width="170" height="44" fill="#4F8F3A"/><text x="100" y="108" fill="#fff">Deciduous</text></a>
+      <a href="#t-trb"><rect x="262" y="82" width="216" height="44" fill="#C9B458"/><text x="320" y="108" fill="#12324A">Grassland (45–60°)</text></a>
+      <a href="#t-trb"><rect x="480" y="82" width="170" height="44" fill="#4F8F3A"/><text x="490" y="108" fill="#fff">Deciduous</text></a>
+      <a href="#t-trb"><rect x="90" y="128" width="170" height="44" fill="#8E5BB5"/><text x="100" y="154" fill="#fff">Mediterranean</text></a>
+      <a href="#t-trb"><rect x="262" y="128" width="216" height="44" fill="#E9A23B"/><text x="320" y="154" fill="#12324A">Desert (30–45° int.)</text></a>
+      <a href="#t-trb"><rect x="480" y="128" width="170" height="44" fill="#6FA35A"/><text x="490" y="154" fill="#fff">China type</text></a>
+      <a href="#t-trb"><rect x="90" y="174" width="170" height="44" fill="#E9A23B"/><text x="100" y="200" fill="#12324A">Desert (W margin)</text></a>
+      <a href="#t-trb"><rect x="262" y="174" width="216" height="44" fill="#D9C27A"/><text x="320" y="200" fill="#12324A">Savanna (10–30°)</text></a>
+      <a href="#t-trb"><rect x="480" y="174" width="170" height="44" fill="#3E8A55"/><text x="490" y="200" fill="#fff">Monsoon deciduous</text></a>
+      <a href="#t-trb"><rect x="90" y="220" width="560" height="40" fill="#1F6B3A"/><text x="270" y="245" fill="#fff">Equatorial rain forest (0–10°)</text></a>
+      <g fill="var(--muted)" font-size="11"><text x="40" y="32">80°</text><text x="40" y="68">70°</text><text x="40" y="108">60°</text><text x="40" y="154">45°</text><text x="40" y="200">30°</text><text x="40" y="245">10°</text><text x="98" y="285">West margin ←</text><text x="300" y="285">Continental interior</text><text x="545" y="285">→ East margin</text></g>
+      <a href="#t-wsl"><rect x="680" y="20" width="200" height="60" rx="12" fill="#8A6A3F"/><text x="695" y="55" fill="#fff">🟫 World soils</text></a>
+      <a href="#t-aqu"><rect x="680" y="95" width="200" height="60" rx="12" fill="#2F7FD1"/><text x="695" y="130" fill="#fff">🌊 Aquatic ecosystem</text></a>
+      <a href="#t-glb"><rect x="680" y="170" width="200" height="60" rx="12" fill="#C2414D"/><text x="695" y="205" fill="#fff">🌍 Conventions</text></a>
+    </g>
+  </svg>
+  </div>
+  <p class="hint">Har section ke end me "Mark done" dabao. MCQ ke "📖 Notes me padho" se wahi hissa khulega.</p>
+</header>
+
+<nav class="chips" aria-label="Topics">
+  <a class="chip" style="--c:var(--eco)" href="#t-eco" data-t="eco">Ecology basics</a>
+  <a class="chip" style="--c:var(--lnk)" href="#t-lnk" data-t="lnk">Linkages &amp; productivity</a>
+  <a class="chip" style="--c:var(--trb)" href="#t-trb" data-t="trb">Terrestrial biomes</a>
+  <a class="chip" style="--c:var(--zoo)" href="#t-zoo" data-t="zoo">Zoo realms</a>
+  <a class="chip" style="--c:var(--aqu)" href="#t-aqu" data-t="aqu">Aquatic</a>
+  <a class="chip" style="--c:var(--sfm)" href="#t-sfm" data-t="sfm">Soil formation</a>
+  <a class="chip" style="--c:var(--wsl)" href="#t-wsl" data-t="wsl">World soils</a>
+  <a class="chip" style="--c:var(--hea)" href="#t-hea" data-t="hea">Human adaptations</a>
+  <a class="chip" style="--c:var(--imp)" href="#t-imp" data-t="imp">Human impact</a>
+  <a class="chip" style="--c:var(--glb)" href="#t-glb" data-t="glb">Conventions</a>
+  <a class="chip" style="--c:#E9A23B" href="#t-fc">Flashcards</a>
+  <a class="chip" style="--c:#2E9E6E" href="#t-quiz">MCQs</a>
+</nav>
+
+<div class="progress"><span id="ptext">0 / 10 topics done</span><div class="bar"><span id="pbar"></span></div></div>
+
+<main>
+
+<section class="topic" style="--c:var(--ink)">
+  <header><h2>Syllabus map</h2></header>
+  <div class="grid">
+    <div class="pill"><h4>1. Principles of ecology</h4>Odum's hierarchy, components, linkages</div>
+    <div class="pill"><h4>2. Ecosystems / biomes</h4>Terrestrial (5), aquatic (2); plants &amp; zoogeography</div>
+    <div class="pill"><h4>3. Soil</h4>Edaphic factor</div>
+    <div class="pill"><h4>4–5. Humans</h4>Ecological adaptations, impact on environment</div>
+    <div class="pill"><h4>6–7. Global concerns</h4>Earth Summit 1992; UNFCCC, UNCCD, CBD</div>
+  </div>
+  <p>Diversity is studied at three levels: <b>genetic, species, ecosystem</b>.</p>
+</section>
+
+<!-- ECOLOGY -->
+<section class="topic" id="t-eco" style="--c:var(--eco)">
+  <header><h2>Principles of ecology</h2></header>
+  <details open><summary>Biosphere &amp; Odum's hierarchy</summary><div class="in">
+    <ul>
+      <li><b>Biosphere</b> = narrow life zone where lithosphere, hydrosphere and atmosphere meet; complex mix of habitats and links.</li>
+      <li><b>Odum</b>: 6 levels of biological systems – <b>gene → cell → organ → organism → population → ecological system</b> (biotic community + abiotic). At every level biotic parts interact with abiotic parts to produce food, energy and matter.</li>
+    </ul>
+  </div></details>
+  <details open><summary>Components of an ecosystem</summary><div class="in">
+    <div class="grid">
+      <div class="pill"><h4>Autotrophs (producers)</h4><b>Chemotrophs</b> – chemosynthesis, no sunlight; self‑feeders that can't support heterotrophs. <b>Phototrophs</b> – green plants, photosynthesis; primary producers supporting consumers.</div>
+      <div class="pill"><h4>Heterotrophs (consumers)</h4>Primary consumers (herbivores), secondary consumers (carnivores), decomposers.</div>
+      <div class="pill"><h4>Abiotic</h4>Inorganic – sunlight, water, soil/water nutrients; organic – carbohydrates, fats.</div>
+    </div>
+  </div></details>
+  <button class="donebtn" data-done="eco" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- LINKAGES -->
+<section class="topic" id="t-lnk" style="--c:var(--lnk)">
+  <header><h2>Ecosystem linkages &amp; productivity</h2></header>
+  <details open><summary>Abiotic → biotic: production</summary><div class="in">
+    <p>Producers + abiotic parts make food, energy, matter (chemosynthesis &amp; mainly photosynthesis). Controls: <b>sunlight, water</b> (major); <b>season cycle, age of vegetation</b> (minor).</p>
+  </div></details>
+  <details open><summary>Biotic → biotic: productivity &amp; food pyramid</summary><div class="in">
+    <ul>
+      <li><b>Productivity</b> = stored energy per unit time and area; in biogeography <b>dry g/m²/yr</b>. Biosphere average ~<b>320</b>; wet tropics up to ~<b>2000</b>; deserts as low as ~<b>3</b>.</li>
+      <li><b>Primary</b> (producers) and <b>secondary</b> (consumers); each <b>gross</b> or <b>net</b> (gross minus respiration loss).</li>
+      <li>Feeding/ecological capacity <b>falls up the trophic levels</b>; pyramid has only 4–5 levels; largest <b>biomass</b> at level 1 (phototrophs).</li>
+      <li>Relations: prey–predator, parasitism (one gains, one loses); <b>symbiosis</b> – commensalism (one gains, other neutral), mutualism (both gain); <b>competition</b> (within a trophic level) – inter‑specific weak (goat vs giraffe), intra‑specific strong (goat vs goat).</li>
+    </ul>
+  </div></details>
+  <details><summary>Biotic → abiotic: decomposers</summary><div class="in">
+    <p>Decomposers turn excreta and dead remains into abiotic matter, completing the <b>nutrient cycle</b>: <b>humification</b> (making humus) → <b>mineralisation</b> (back to soil nutrients).</p>
+  </div></details>
+  <button class="donebtn" data-done="lnk" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- TERRESTRIAL BIOMES -->
+<section class="topic" id="t-trb" style="--c:var(--trb)">
+  <header><h2>Terrestrial biomes</h2></header>
+  <p>Biomes split by 1st‑order relief into terrestrial and aquatic. Terrestrial ones depend on climate (sunlight + rain → production). Less productive: <b>desert, tundra</b>; productive: <b>forest, savanna, grassland</b>. Sunlight is the prime regulator – so desert is more productive than tundra. Biodiversity falls with latitude.</p>
+  <details open><summary>Tundra</summary><div class="in">
+    <ul>
+      <li>Sub‑polar; long cold winters, short summers; surface ice melts over permafrost → waterlogged. ~20 cm summer warm‑front rain (NH).</li>
+      <li>Very short growing season – floating plants, <b>mosses, lichens</b>. Animals migrate in summer: insects, birds (Siberian crane), polar bear, antelope (NH); penguins in SH.</li>
+    </ul>
+  </div></details>
+  <details><summary>Desert</summary><div class="in">
+    <ul>
+      <li>Limited by water; wide habitat range but low productivity → <b>maximum niche diversity</b>, low biodiversity.</li>
+      <li>Xerophytes: deep roots (<b>phreatophytes</b>), water‑storing <b>succulents</b> – mesquite, aloe vera, thorny bushes, cactus, sabai grass, acacia, senegal; date palm in oases.</li>
+      <li>Animals: thick skin in cold plateau deserts (Tibetan yak, antelope, gazelle); in hot deserts big ears and <b>nocturnal</b> habit – camels, rodents, kangaroo rats.</li>
+    </ul>
+  </div></details>
+  <details><summary>Forest biomes</summary><div class="in">
+    <p>Most productive; &gt;70% of the biosphere's biomass.</p>
+    <div class="tw"><table>
+      <tr><th>Forest</th><th>Plants</th><th>Animals &amp; notes</th></tr>
+      <tr><td><b>Equatorial rain forest</b> ("abode of vegetation")</td><td>Densest, most diverse; mixed stand of deciduous species makes it evergreen; very tall trees (intra‑specific competition); shallow roots, broad thin leaves; layered strata, epiphytes (liana); dark, gloomy. Rosewood, ebony, ironwood, balsam (lightest hardwood)</td><td>No big land animals; insects, reptiles (pythons, snakes), arboreal apes. Lumbering weak (impure stands). Selvas (Amazon); Congo</td></tr>
+      <tr><td><b>Taiga</b></td><td>Open, no undergrowth, pure softwood stands; shallow roots, needle leaves, conical shape; pine, spruce, fir (~35 m); <b>larch</b> = deciduous conifer</td><td>Polar bear, antelope; hibernation and migration</td></tr>
+      <tr><td><b>Tropical monsoon deciduous</b></td><td>Closed forest with undergrowth; teak, sal, sandalwood</td><td>Tigers, elephants, lions, rhinos, monkeys</td></tr>
+      <tr><td><b>Temperate deciduous</b></td><td>Open; hardwoods oak, chestnut, walnut. Wetter margins = <b>laurel vegetation</b> (temperate rain forest) with redwood (tallest tree), kauri (NZ), evergreen oak (Japan); mixed deciduous in China type</td><td>Squirrels, rabbits, wolves, foxes</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Mediterranean (sclerophyll)</summary><div class="in">
+    <p>Adapted to long hot dry summers: short stunted evergreen trees &amp; bushes, deep roots, small thick glossy leaves. Citrus, fig, olive, maquis, chaparral (California). Small animals – rabbits, foxes.</p>
+  </div></details>
+  <details><summary>Grassland</summary><div class="in">
+    <ul>
+      <li>Temperate continental interiors; 25–75 cm rain – enough for grass, not trees.</li>
+      <li><b>Steppes</b> – short grass (10–20 cm), semi‑arid (25–50 cm). <b>Prairies</b> – taller grass (40–60 cm), sub‑humid (50–75 cm). Notes' examples: N American prairies, Eurasian steppes, Veld, Downs, Pampas, Canterbury plains.</li>
+      <li>Grazers only: squirrels, rabbits, prairie dogs, <b>bison</b> (largest temperate herbivore).</li>
+    </ul>
+  </div></details>
+  <details><summary>Savanna</summary><div class="in">
+    <ul>
+      <li>Tropical continental interiors; transition forest ↔ desert; "woodland" of trees, xerophytes and tall grasses (1.8–3 m: bamboos, runners, tufts).</li>
+      <li><b>Vertical feeding pattern</b> → maximum animal diversity → "<b>abode of wildlife</b>"; most protected areas. Elephants, tigers, zebras, giraffes, buffaloes, monkeys; Australian marsupials – kangaroo, koala, platypus.</li>
+      <li><b>Ecotone</b> = transition zone between two biomes.</li>
+    </ul>
+    <div class="tip">Extreme adaptability: tundra, taiga, desert, ERF. Answer frame for any biome: location, climate, phototrophs, heterotrophs, soil.</div>
+  </div></details>
+  <button class="donebtn" data-done="trb" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- ZOO REALMS -->
+<section class="topic" id="t-zoo" style="--c:var(--zoo)">
+  <header><h2>Zoogeographical realms</h2></header>
+  <p>Regional study of animals (with location, climate, plants).</p>
+  <div class="tw"><table>
+    <tr><th>Darlington (modern, 3)</th><th>Wallace realms (classical)</th></tr>
+    <tr><td>Megagea</td><td>Ethiopian (Africa), Nearctic (Anglo‑America), Palearctic (Eurasia), Oriental (India)</td></tr>
+    <tr><td>Neogea</td><td>Neotropical (Latin America)</td></tr>
+    <tr><td>Notogea</td><td>Australian / Malaya‑Oceanian</td></tr>
+  </table></div>
+  <p><b>Wallacea</b> = ecotone overlap in the East Indies between Oriental and Australian realms.</p>
+  <button class="donebtn" data-done="zoo" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- AQUATIC -->
+<section class="topic" id="t-aqu" style="--c:var(--aqu)">
+  <header><h2>Aquatic ecosystem</h2></header>
+  <details open><summary>Basics &amp; habitats</summary><div class="in">
+    <ul>
+      <li>Controlled by sunlight, dissolved oxygen, nutrients; 3‑D (latitude, region, depth). Production depends on depth; respiration does not.</li>
+      <li>Life‑styles: <b>plankton</b> (drifting), <b>nekton</b> (swimming), <b>benthos</b> (attached).</li>
+      <li><b>Photic</b> (limnetic) vs <b>aphotic</b> (profundal). <b>Critical depth</b> – where production = respiration; above it more biodiversity. <b>Bloom</b> = spring of aquatic life near this depth.</li>
+      <li>Pelagic (off the bottom) vs benthic (on the bottom).</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> notes put max photic/critical depth at ~2000 m; usually the photic zone is ~200 m deep.</div>
+  </div></details>
+  <details><summary>Fresh water</summary><div class="in">
+    <ul>
+      <li>Fewer nutrients than sea. <b>Running water</b> less productive (current limits plankton); in middle &amp; lower courses; always photic. <b>Standing water</b> (ponds, lakes, reservoirs) has clear limnetic &amp; profundal levels. Lower latitudes more productive in both.</li>
+    </ul>
+  </div></details>
+  <details><summary>Marine</summary><div class="in">
+    <ul>
+      <li>Horizontal: intertidal, neritic, oceanic. Vertical: pelagic – epipelagic (200 m), mesopelagic (1000 m), bathypelagic (4000 m); benthic; hadal (&gt;4000 m).</li>
+      <li><b>Intertidal (littoral)</b>: on‑shore – coconut palm, white &amp; screw pines (shallow roots, tall, crown leaves); off‑shore – <b>mangroves</b>, sundari, nipa (dense roots, short). Seaweeds give most diversity.</li>
+      <li>Neritic zone and upwelling zones = most productive (photic + land nutrients); safe breeding grounds. Epipelagic most productive oceanic layer.</li>
+      <li>Hydrothermal vents in benthic zone – chemosynthesis by chemotrophs (worms, clams).</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="aqu" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- SOIL FORMATION -->
+<section class="topic" id="t-sfm" style="--c:var(--sfm)">
+  <header><h2>Weathering, soil horizons &amp; soil processes</h2></header>
+  <details open><summary>Weathering (in situ)</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Physical (disintegration)</th><th>Chemical (decomposition – agent: water)</th></tr>
+      <tr><td><b>Spalling</b> – simple breaking (temperature, insects)<br><b>Shattering</b> – blast‑like breaking (temperature + rain)<br><b>Exfoliation</b> – onion peeling (temperature + structure)<br><b>Block separation</b> – joints widened by frost/vegetation</td>
+          <td><b>Oxidation</b> – rusting of iron‑rich rocks<br><b>Solution</b> – salt, gypsum dissolve<br><b>Carbonation</b> – CaCO₃ dissolved<br><b>Hydration</b> – chemical union with water (hydroxyl)</td></tr>
+    </table></div>
+  </div></details>
+  <details open><summary>Soil profile</summary><div class="in">
+    <ul>
+      <li>Soil = minerals + humus. <b>Bulk‑increasing minerals</b> Si, Al, Fe (no role in fertility); <b>principal nutrients</b> Ca, N, P, K (+ humus).</li>
+    </ul>
+    <div class="tw"><table>
+      <tr><th>Horizon</th><th>Nature</th></tr>
+      <tr><td>OO / O</td><td>Excessive organic / excessive decayed – infertile; zones of eluviation</td></tr>
+      <tr><td>A (A1, A2, A3)</td><td>Top soil; fine, mineral &amp; humus‑rich; <b>A1</b> dark decayed organic = perfect soil; waterlogging makes it a zone of <b>eluviation</b></td></tr>
+      <tr><td>B (B1, B2, B3)</td><td>Sub‑soil; coarse, mineral‑rich, humus‑poor; <b>B2</b> true subsoil; zone of <b>illuviation</b> (capillary rise in dry climate, percolation in wet)</td></tr>
+      <tr><td>C</td><td>Weathered rock</td></tr>
+      <tr><td>D</td><td>Parent rock – source of minerals</td></tr>
+    </table></div>
+  </div></details>
+  <details><summary>Soil‑forming processes</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Process</th><th>What happens</th><th>Effect</th></tr>
+      <tr><td>Leaching</td><td>Humus percolates down in humid waterlogged areas</td><td>A loses humus → infertile</td></tr>
+      <tr><td>Laterisation</td><td>Silica percolates; Al &amp; Fe concentrate (order of removal Si &gt; Al &gt; Fe)</td><td>Acidic, infertile</td></tr>
+      <tr><td>Calcification</td><td>Capillary rise in drier climate concentrates calcium</td><td>Moderate → fertile; excessive → alkaline, infertile</td></tr>
+      <tr><td>Podzolisation</td><td>No water movement; silica stays in A</td><td>Infertile (taiga podzol)</td></tr>
+      <tr><td>Gleying</td><td>Leaching + laterisation + mineralisation in warm humid areas; thick O layer</td><td>Infertile</td></tr>
+      <tr><td>Humification</td><td>Humus production</td><td>Only process that always raises fertility</td></tr>
+    </table></div>
+  </div></details>
+  <button class="donebtn" data-done="sfm" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- WORLD SOILS -->
+<section class="topic" id="t-wsl" style="--c:var(--wsl)">
+  <header><h2>World soil types</h2></header>
+  <details open><summary>Zonal soils</summary><div class="in">
+    <p>Controlled by climate and its processes: <b>pedocal</b> (Ca‑rich), <b>pedalfer</b> (Al‑Fe rich), tundra.</p>
+    <div class="tw"><table>
+      <tr><th>Group</th><th>Soils</th></tr>
+      <tr><td>Pedocal</td><td><b>Desert soil</b> – coarse, mineral‑rich, humus‑less, responds to inputs. <b>Chernozem</b> (steppe) – most fertile natural soil; fullest A1 → "black earth"; world's bread baskets. <b>Chestnut</b> – weaker chernozem</td></tr>
+      <tr><td>Long‑grass (transitional)</td><td><b>Prairie</b> soil (weaker calcification, less fertile than chernozem); <b>red‑yellow</b> savanna soil (no calcification, some leaching/laterisation)</td></tr>
+      <tr><td>Pedalfer (forest)</td><td><b>Laterite</b> (ERF; leaching + laterisation, acidic, OO layer); <b>podzol</b> (taiga; weak decomposition, podzolisation); <b>podzolic</b> (hardwood deciduous; most widespread fertile forest soil – monsoon podzolic less fertile than temperate)</td></tr>
+      <tr><td>Tundra</td><td>Technically not a soil (no weathering); seasonal waterlogging supports floating plants</td></tr>
+    </table></div>
+    <p>Fertility order: steppe &gt; prairie &gt; red‑yellow &gt; podzolic.</p>
+  </div></details>
+  <details><summary>Intrazonal &amp; azonal soils</summary><div class="in">
+    <ul>
+      <li><b>Intrazonal – infertile:</b> <b>halomorphic</b> (saline‑alkaline from excessive calcification: Etosha Pan – Namibia, Makgadikgadi – Botswana, Rann of Kutch, Australian salt crust); <b>hydromorphic</b> (waterlogged: Mackenzie, Ob, Lena lower courses) incl. <b>peat/bog</b> via gleying – Pantanal, Gran Chaco, Pripet Marshes, Okavango.</li>
+      <li><b>Intrazonal – fertile (calcimorphic):</b> <b>regur</b> (on basalt; "cotton soil": Borborema, Kordofan, Ethiopian Highlands, Deccan); <b>rendzina</b> (on limestone; humus‑rich: Anatolia, Sarawak, Sabah); <b>brown forest soil</b> (wet monsoon margins; young, coarse, shallow).</li>
+      <li><b>Azonal:</b> <b>montane</b> ("scree soils", well drained, humus‑rich, shallow) and <b>gradational</b> (no horizons) in rising fertility: glacial &lt; loess &lt; alluvial. Loess – NW Hwang Ho (China), Adobe (Sacramento, USA), Limon (German–Belgian upland).</li>
+      <li>Alluvial fertility varies with texture (deltaic clay &gt; flood plain), process (pedalfer Amazon &lt; pedocal Nile), composition (red alluvium Amazon &lt; black alluvium Nile).</li>
+    </ul>
+  </div></details>
+  <details><summary>USDA comprehensive classification (1960)</summary><div class="in">
+    <p>~10,000 soil types in 6 levels: order, sub‑order, great group, group, family, series. 10 orders used by biogeographers:</p>
+    <div class="tw"><table>
+      <tr><th>Order</th><th>Equivalent</th></tr>
+      <tr><td>Oxisol</td><td>Laterite</td></tr>
+      <tr><td>Spodosol</td><td>Podzol (taiga)</td></tr>
+      <tr><td>Alfisol</td><td>Podzolic</td></tr>
+      <tr><td>Ultisol</td><td>Red‑yellow (savanna, per notes)</td></tr>
+      <tr><td>Mollisol</td><td>Temperate grassland – chernozem etc.</td></tr>
+      <tr><td>Aridisol</td><td>Desert</td></tr>
+      <tr><td>Vertisol</td><td>Regur, rendzina</td></tr>
+      <tr><td>Entisol</td><td>Gradational – alluvial, glacial, loess</td></tr>
+      <tr><td>Inceptisol</td><td>Brown forest soil</td></tr>
+      <tr><td>Histosol</td><td>Peat/bog (O horizon)</td></tr>
+    </table></div>
+    <div class="warn"><b>Cross‑check:</b> notes group ultisol with grassland; standard texts treat ultisols as humid forest soils (red‑yellow podzolic).</div>
+  </div></details>
+  <button class="donebtn" data-done="wsl" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- HUMAN ADAPTATIONS -->
+<section class="topic" id="t-hea" style="--c:var(--hea)">
+  <header><h2>Human ecological adaptations (environmental regions)</h2></header>
+  <div class="tw"><table>
+    <tr><th>Region</th><th>Setting</th><th>Human adaptation</th></tr>
+    <tr><td>Equatorial</td><td>10°N–10°S; oxisol; evergreen forest</td><td>Hunting‑gathering (Pygmies – Congo, Amazon tribes); intensive rice (Java); plantations – rubber (Malaysia), coffee (Brazil), spices (India), cocoa (Ghana)</td></tr>
+    <tr><td>Monsoon</td><td>10–30°, east margins; alfisol</td><td>Shifting cultivation – Conuco (Venezuela), Roca (Brazil), Tamrai (Thailand), Jhum/Podu (India), Chena (Sri Lanka); intensive paddy; cotton, cane; livestock</td></tr>
+    <tr><td>Savanna</td><td>10–30°, interiors; ultisol/red‑yellow</td><td>Livestock: Maasai nomadic herding; ranching (Brazil, Australia), sheep (Australia)</td></tr>
+    <tr><td>Desert</td><td>10–30° W margins, 30–45° interiors; aridisol</td><td>Nomads – Bedouins (camels), Kazakhs (horses); irrigated farming without paddy – Nile, Mesopotamia, Indus, Turan; Gulf oil</td></tr>
+    <tr><td>Mediterranean</td><td>30–45°, W margins; winter rain</td><td>Horticulture – "gardens of the world"</td></tr>
+    <tr><td>China type</td><td>30–45°, E margins; summer rain</td><td>Intensive paddy + aquaculture; commercial farming in US piedmont</td></tr>
+    <tr><td>European</td><td>45–60°, W margins; rain all year</td><td>Commercial crops + livestock; richest fishing grounds</td></tr>
+    <tr><td>Manchurian</td><td>45–60°, E margins</td><td>Mixed commercial farming, aquaculture, softwood lumbering</td></tr>
+    <tr><td>Taiga</td><td>60–70°N only; spodosol</td><td>Commercial softwood lumbering (Canada, Siberia)</td></tr>
+    <tr><td>Grassland</td><td>45–60°, interiors; mollisol</td><td>Extensive wheat farming – N American bread basket, Eurasian wheat triangle</td></tr>
+    <tr><td>Sub‑polar</td><td>Long winters, ~20 cm rain</td><td>Trapping (Inuit; polar bear, seal); placer gold (Alaska), iron (Sweden), oil &amp; gas (Sakhalin)</td></tr>
+  </table></div>
+  <button class="donebtn" data-done="hea" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- HUMAN IMPACT -->
+<section class="topic" id="t-imp" style="--c:var(--imp)">
+  <header><h2>Human impact on environment</h2></header>
+  <p>Since the industrial revolution humans modify or destroy natural systems: <b>atmosphere</b> (GHGs, ozone depletion → climate change), <b>hydrosphere</b> (pollution, eutrophication, channelisation), <b>biosphere</b> (desertification, deforestation, biodiversity loss).</p>
+  <details open><summary>Climate change – natural causes</summary><div class="in">
+    <ul>
+      <li><b>Solar output variation</b> – notes: solar flares → warmer, sunspot phases → colder.</li>
+      <li><b>Milankovitch cycle</b> – <b>eccentricity</b> (orbit shape; notes ~91,000 yrs), <b>obliquity</b> (tilt 22.1°–24.5°; notes ~42,000 yrs; "wobbling"), <b>precession</b> (notes ~12,000 yrs: axis points to Vega instead of Polaris, NH summer in December).</li>
+      <li><b>Volcanic dust</b> – ash acts as aerosol, cools; notes link Tertiary vulcanism to the Pleistocene ice age and Icelandic ash to Europe's cold winters of 2010–11.</li>
+      <li><b>Continental drift</b> – regional climate change.</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> more sunspots actually mean slightly higher solar output; standard Milankovitch periods ≈100,000 / 41,000 / 23,000–26,000 years.</div>
+  </div></details>
+  <details><summary>Human‑induced factors (IPCC)</summary><div class="in">
+    <ul>
+      <li><b>IPCC</b> (UNEP + WMO): present change is human‑induced – long‑lived GHGs CO₂, CH₄, N₂O; ozone‑depleting halogenated hydrocarbons.</li>
+      <li>AR4 (2007): 11 of 12 years in 1995–2006 among warmest on record.</li>
+      <li>AR3 "climate sensitivity": by 2100 surface temperature could rise up to <b>5.8 °C</b> above ~15 °C; sea level up to <b>0.9 m</b>; oceans absorb &gt;90% of added heat (to ~3000 m).</li>
+    </ul>
+  </div></details>
+  <details><summary>Hydrosphere impact</summary><div class="in">
+    <ul>
+      <li>Water quality: <b>visible</b> pollutants (developing world – Amazon, Ganga, Chang Jiang, Indus, Nile) vs <b>invisible</b> (developed world's "clean‑looking" rivers – Mississippi–Missouri, Danube, Rhine, Thames).</li>
+      <li><b>Eutrophication</b> – nutrient overload blooms block light; IUCN list: Fort Peck &amp; Sakakawea (USA), Kainji (Nigeria), Nasser (Egypt), Zeya (Russia), Dongting &amp; Poyang (China).</li>
+      <li>IUCN: &gt;95% of discharge untreated in developing world; 70–75% treated in developed. Oil spills, nuclear dumping = disasters in the making.</li>
+      <li><b>Channelisation</b>: Amu &amp; Syr Darya diverted (Turkmenistan, Tajikistan, Kazakhstan) → <b>Aral Sea</b> nearly dead, region desertifying; lower Amazon tamed up to <b>Manaus</b> → ERF thinning, habitat loss.</li>
+    </ul>
+  </div></details>
+  <details><summary>Biosphere impact</summary><div class="in">
+    <ul>
+      <li>CBD lists 5 causes of biodiversity loss: <b>over‑exploitation, habitat destruction, invasive alien species, climate change, nutrient overload &amp; pollution</b>.</li>
+      <li>Deforestation: temperate hardwood forests lost most area; ERF lost most diversity. Hunting controlled via IUCN Red Book conventions.</li>
+      <li><b>Desertification</b> (UNCCD): biotic potential destroyed → desert‑like land; causes – deforestation, unsustainable farming, over‑grazing. <b>Sahel</b> (Mali, Mauritania, Niger, Chad) most desertified.</li>
+      <li>Invasive species: rabbits in Australia, eucalyptus in India (social forestry).</li>
+    </ul>
+  </div></details>
+  <button class="donebtn" data-done="imp" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- CONVENTIONS -->
+<section class="topic" id="t-glb" style="--c:var(--glb)">
+  <header><h2>Global environmental concerns &amp; conventions</h2></header>
+  <details open><summary>Phases of environment education</summary><div class="in">
+    <div class="tw"><table>
+      <tr><th>Phase</th><th>Nature</th><th>Milestone</th></tr>
+      <tr><td>Classical</td><td>Information only</td><td>—</td></tr>
+      <tr><td>Modern</td><td>Information + concern</td><td>Stockholm Conference 1972 (notes: UNEP &amp; UNESCO); Sierra Club – sustainability: "no blind opposition to development, but opposition to blind development"; Club of Rome – "Limits to Growth", earth as a spaceship</td></tr>
+      <tr><td>Contemporary</td><td>Information + concern + action</td><td>Earth Summit, Rio 1992 – Agenda 21; poverty as key cause; 3 conventions: UNFCCC, CBD, UNCCD</td></tr>
+    </table></div>
+    <div class="warn"><b>Cross‑check:</b> Stockholm 1972 was the UN Conference on the Human Environment; UNEP was created after it.</div>
+  </div></details>
+  <details><summary>UNFCCC &amp; Kyoto</summary><div class="in">
+    <ul>
+      <li>Umbrella convention on GHGs; in force <b>1994</b>; voluntary target – 1990 levels by 2000.</li>
+      <li>Annex 1 (industrial + transition economies – cut emissions), Annex 2 (developed – cut + fund low‑carbon tech), others (developing – no cuts).</li>
+      <li><b>COP3, 1997 – Kyoto Protocol</b>: notes 6–8% below 1990 by 2008–12; <b>CDM</b>. <b>COP6 part II, Bonn 2001</b> – flexible mechanism (carbon sinks, buying credits); carbon trading with <b>CERs</b>.</li>
+      <li>Kyoto implemented 2005 (<b>COP11/MOP1, Montreal</b>). COP15 Copenhagen – TEEB &amp; REDD+; COP16 Cancún – <b>MRV</b>. COP18 Doha 2012 – 2nd commitment period (8 years).</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> Kyoto's overall target was ~5.2% below 1990 (country targets varied).</div>
+  </div></details>
+  <details><summary>Vienna Convention &amp; Montreal Protocol</summary><div class="in">
+    <p>Vienna Convention 1985 → <b>Montreal Protocol</b> signed 1987, in force 1989; legally binding phase‑out of ODS; <b>multilateral fund</b> (UNEP, UNDP, UNIDO, World Bank). IPCC AR4: ozone has stabilised – a success.</p>
+  </div></details>
+  <details><summary>CBD &amp; its protocols</summary><div class="in">
+    <ul>
+      <li>From Earth Summit; in force <b>1993</b>; genetic, species, ecosystem diversity. Objectives: <b>conservation, sustainable use, fair &amp; equitable benefit sharing</b>. COPs every 2 years; COP9 Bonn 2008 – the 5 threats.</li>
+      <li><b>Cartagena Protocol on Biosafety</b> (2000) – safe handling of LMOs; advance informed agreement; Biosafety Clearing House.</li>
+      <li><b>Nagoya Protocol</b> (COP10, 2010) – access to genetic resources &amp; benefit sharing. <b>Aichi targets</b> – 5 strategic goals (mainstreaming, reduce pressures, improve status, enhance benefits, participatory planning). COP11 Hyderabad – "Hyderabad pledge".</li>
+      <li>2004 Programme of Work on Protected Areas – ~6000 new PAs (~13% land, 6% aquatic).</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> Aichi targets were for 2011–2020; COP11 Hyderabad was in 2012.</div>
+  </div></details>
+  <details><summary>CITES, CMS, Ramsar</summary><div class="in">
+    <ul>
+      <li><b>CITES</b> – from an IUCN resolution, in force <b>1975</b>; protects Red‑listed species from international trade (~30,000 per notes). Red Book: extinct, extinct in wild; critical, endangered, threatened; least concern.</li>
+      <li><b>CMS / Bonn Convention</b> – migratory species: MoUs (Siberian crane, 7 marine turtles incl. olive ridley) and binding agreements (European bats, gorillas, African‑Eurasian waterbirds).</li>
+      <li><b>Ramsar</b> (wetlands) – national action with international cooperation; ~2000 sites (notes).</li>
+    </ul>
+    <div class="warn"><b>Cross‑check:</b> CMS in force 1983 (notes 1985); Ramsar signed 1971 (notes 1981); Ramsar sites now ~2500.</div>
+  </div></details>
+  <button class="donebtn" data-done="glb" aria-pressed="false">Mark done</button>
+</section>
+
+<!-- FLASHCARDS -->
+<section class="topic" id="t-fc" style="--c:#E9A23B">
+  <header><h2>Flashcards</h2></header>
+  <div class="fc-wrap">
+    <button class="flash" id="flash" aria-live="polite"><div class="inner"><div class="face front" id="fq"></div><div class="face back" id="fa"></div></div></button>
+    <div class="fc-nav">
+      <button class="btn ghost" id="fprev" aria-label="Previous card">‹ Prev</button>
+      <span id="fcount"></span>
+      <button class="btn" id="fnext" aria-label="Next card">Next ›</button>
+      <button class="btn ghost" id="fshuf">Shuffle</button>
+    </div>
+  </div>
+</section>
+
+<!-- MCQ -->
+<section class="topic" id="t-quiz" style="--c:#2E9E6E">
+  <header><h2>MCQs</h2></header>
+  <p class="hint" style="margin:0">Option tap karo → answer, explanation, reference. "📖 Notes me padho" dabao → notes ka wahi hissa khulega. <b>Notes L36–42</b> = isi notes ka lecture · <b>NCERT XI FPG</b> = Fundamentals of Physical Geography · Savindra Singh, NCERT XI/XII · <span class="xtag">Textbook extra</span> = notes se bahar ka fact.</p>
+  <div class="mchips" id="mchips"></div>
+  <div class="mstat">
+    <span class="mtxt" id="mtxt"></span>
+    <div class="mbar"><div class="g" id="mg"></div><div class="r" id="mr"></div></div>
+    <button class="tool" id="mwrong" aria-pressed="false">Sirf galat</button>
+    <button class="tool" id="mun" aria-pressed="false">Unattempted</button>
+    <button class="tool" id="mreset">Reset</button>
+  </div>
+  <div id="mlist"></div>
+</section>
+
+</main>
+<footer>Based on uploaded handwritten notes (Geography Vol‑3, Part 4 Biogeography, 2014). Yellow boxes = facts to verify against standard sources.</footer>
+<button class="themebtn" id="theme" aria-label="Toggle dark mode">◐</button>
+
+
+
+
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* progress */
+const TOPICS=["eco","lnk","trb","zoo","aqu","sfm","wsl","hea","imp","glb"];
+let done=store.get("bg-done",{});
+function paint(){
+  let n=0;
+  $$("[data-done]").forEach(b=>{const on=!!done[b.dataset.done];b.setAttribute("aria-pressed",on);b.textContent=on?"Done ✓":"Mark done";if(on)n++;});
+  $$(".chip[data-t]").forEach(c=>c.classList.toggle("done",!!done[c.dataset.t]));
+  $("#ptext").textContent=n+" / "+TOPICS.length+" topics done";
+  $("#pbar").style.width=(n/TOPICS.length*100)+"%";
+}
+$$("[data-done]").forEach(b=>b.addEventListener("click",()=>{done[b.dataset.done]=!done[b.dataset.done];store.set("bg-done",done);paint();}));
+paint();
+
+/* tabs */
+$$('[role="tab"]').forEach(t=>t.addEventListener("click",()=>{
+  $$('[role="tab"]').forEach(x=>x.setAttribute("aria-selected",x===t));
+  $$(".panel").forEach(p=>p.hidden=p.dataset.panel!==t.dataset.tab);
+}));
+
+/* theme */
+$("#theme").addEventListener("click",()=>{
+  const r=document.documentElement,cur=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+  r.dataset.theme=cur==="dark"?"light":"dark";store.set("bg-theme",r.dataset.theme);
+});
+const th=store.get("bg-theme",null);if(th)document.documentElement.dataset.theme=th;
+
+/* flashcards */
+let cards=[
+["Odum's hierarchy","Gene → cell → organ → organism → population → ecological system"],
+["Chemotrophs","Producers without sunlight"],
+["Productivity unit","Dry g/m²/yr; avg 320"],
+["Net productivity","Gross – respiration"],
+["Commensalism vs mutualism","One gains / both gain"],
+["Strongest competition","Intra-specific"],
+["Max niche diversity","Desert"],
+["Abode of vegetation","Equatorial rain forest"],
+["Abode of wildlife","Savanna"],
+["Deciduous conifer","Larch"],
+["Lightest hardwood","Balsam"],
+["Laurel vegetation","Temperate rain forest; redwood"],
+["Sclerophyll","Mediterranean; maquis, chaparral"],
+["Largest grassland herbivore","Bison"],
+["Ecotone","Transition between biomes"],
+["Darlington realms","Megagea, Neogea, Notogea"],
+["Wallacea","East Indies overlap"],
+["Plankton / nekton / benthos","Drift / swim / attached"],
+["Critical depth","Production = respiration"],
+["Exfoliation","Onion peeling"],
+["Bulk minerals","Si, Al, Fe"],
+["Zone of illuviation","Horizon B"],
+["Perfect horizon","A1"],
+["Only fertility-raising process","Humification"],
+["Chernozem","Most fertile; black earth"],
+["Laterite / podzol / podzolic","ERF / taiga / hardwood deciduous"],
+["Rendzina","On limestone"],
+["Gradational fertility","Glacial < loess < alluvial"],
+["Oxisol / Spodosol / Alfisol","Laterite / podzol / podzolic"],
+["Mollisol / Aridisol / Histosol","Grassland / desert / peat"],
+["Shifting cultivation names","Conuco, Roca, Tamrai, Jhum, Chena"],
+["Milankovitch","Eccentricity, obliquity, precession"],
+["IPCC","UNEP + WMO"],
+["Aral Sea","Amu & Syr Darya diverted"],
+["Sahel","Mali, Mauritania, Niger, Chad"],
+["Limits to Growth","Club of Rome"],
+["Kyoto","COP3 1997; CDM"],
+["Cartagena","Biosafety – LMOs"],
+["Nagoya","Access & benefit sharing"],
+["Bonn Convention","CMS – migratory species"]
+];
+
+let fi=0;
+function showCard(){const f=$("#flash");f.classList.remove("flip");$("#fq").textContent=cards[fi][0];$("#fa").textContent=cards[fi][1];$("#fcount").textContent=(fi+1)+"/"+cards.length;}
+$("#flash").addEventListener("click",()=>$("#flash").classList.toggle("flip"));
+$("#fnext").addEventListener("click",()=>{fi=(fi+1)%cards.length;showCard();});
+$("#fprev").addEventListener("click",()=>{fi=(fi-1+cards.length)%cards.length;showCard();});
+$("#fshuf").addEventListener("click",()=>{for(let i=cards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[cards[i],cards[j]]=[cards[j],cards[i]];}fi=0;showCard();});
+showCard();
+
+/* ===== MCQ ===== */
+const T={eco:["Ecology basics","--eco"],lnk:["Linkages","--lnk"],trb:["Terrestrial biomes","--trb"],zoo:["Zoo realms","--zoo"],aqu:["Aquatic","--aqu"],sfm:["Soil formation","--sfm"],wsl:["World soils","--wsl"],hea:["Human adaptations","--hea"],imp:["Human impact","--imp"],glb:["Conventions","--glb"]};
+const SB="Savindra Singh – Biogeography / Environmental Geography",N12="NCERT XII – Fundamentals of Human Geography",N11="NCERT XI FPG – Life on the Earth / Biodiversity";
+const Q=[
+["eco","Odum identified how many levels in the hierarchy of biological systems?",["Six","Four","Eight","Ten"],0,"Gene, cell, organ, organism, population, ecological system.","Notes L36; "+SB,"Biosphere"],
+["eco","The highest level in Odum's hierarchy is the",["Ecological system","Population","Organism","Organ"],0,"Biotic community interacting with abiotic components.","Notes L36","Biosphere"],
+["eco","Producers that make food without sunlight are",["Chemotrophs","Phototrophs","Herbivores","Decomposers"],0,"They are self-feeders but cannot support heterotroph communities.","Notes L36; "+N11,"Components"],
+["eco","Primary producers that support the big range of consumers are",["Phototrophs (green plants)","Chemotrophs","Carnivores","Decomposers"],0,"They need sunlight for photosynthesis.","Notes L36; "+N11,"Components"],
+["eco","Herbivores are",["Primary consumers","Secondary consumers","Producers","Decomposers"],0,"Carnivores are secondary consumers.","Notes L36; "+N11,"Components"],
+["eco","Biosphere is best described as",["A narrow zone where lithosphere, hydrosphere and atmosphere meet and sustain life","The upper atmosphere","The ocean floor only","The earth's core"],0,"Varied habitats plus complex inter-links.","Notes L36; "+N11,"Biosphere"],
+["lnk","Major factors determining production are",["Sunlight and water","Season and vegetation age","Soil colour and wind","Altitude and rock type"],0,"Season cycle and age of vegetation are minor factors.","Notes L36","production"],
+["lnk","Biogeographers express productivity in",["Dry g/m²/yr","kg/ha/day","Calories/person","mm/year"],0,"Stored energy per unit area and time.","Notes L36; "+SB,"productivity"],
+["lnk","Average biospheric productivity per the notes is about",["320 dry g/m²/yr","3 dry g/m²/yr","2000 dry g/m²/yr","10,000 dry g/m²/yr"],0,"Wet tropics ~2000; deserts as low as ~3.","Notes L36","productivity"],
+["lnk","Net productivity equals",["Gross productivity minus respiratory loss","Gross plus respiration","Biomass minus consumers","Production of decomposers"],0,"Applies at both primary and secondary levels.","Notes L36; "+N11,"productivity"],
+["lnk","In a food pyramid the largest biomass is at",["Trophic level 1 (producers)","Top carnivores","Decomposers","Middle level"],0,"Feeding capacity falls up the pyramid; usually 4–5 levels.","Notes L36; "+N11,"productivity"],
+["lnk","A relation where one gains and the other is unaffected is",["Commensalism","Mutualism","Parasitism","Competition"],0,"Mutualism – both gain.","Notes L36; "+N11,"productivity"],
+["lnk","The strongest competition is",["Intra-specific (goat vs goat)","Inter-specific (goat vs giraffe)","Between producers and decomposers","Between trophic levels"],0,"Competition applies within a trophic level.","Notes L36","productivity"],
+["lnk","Conversion of dead remains to humus and then to soil nutrients involves",["Humification and mineralisation","Photosynthesis and respiration","Leaching and laterisation","Calcification and gleying"],0,"Completes the nutrient cycle.","Notes L36","decomposers"],
+["trb","Among terrestrial biomes, the less productive ones are",["Desert and tundra","Forest and savanna","Grassland and forest","Savanna and grassland"],0,"Desert is still more productive than tundra due to more sunlight.","Notes L37","Tundra"],
+["trb","Mosses and lichens with a very short growing season characterise the",["Tundra","Taiga","Savanna","Steppe"],0,"Waterlogged soil over permafrost in summer.","Notes L37; "+N11,"Tundra"],
+["trb","The desert biome has maximum",["Niche diversity","Biodiversity","Biomass","Productivity"],0,"Wide habitat range but low productivity.","Notes L37","Desert"],
+["trb","Plants with deep-seated roots in deserts are called",["Phreatophytes","Epiphytes","Hydrophytes","Halophytes"],0,"Succulents store moisture.","Notes L37","Desert"],
+["trb","Nocturnal habit and big ears are adaptations of animals of",["Hot deserts","Taiga","Tundra","Equatorial forest"],0,"Camels, rodents, kangaroo rats.","Notes L37","Desert"],
+["trb","Forests account for what share of the biosphere's biomass per the notes?",["More than 70%","About 10%","About 30%","Less than 5%"],0,"Most productive and widespread terrestrial biome.","Notes L37","Forest biomes"],
+["trb","The 'abode of vegetation' is the",["Equatorial rain forest","Savanna","Taiga","Steppe"],0,"Savanna is the 'abode of wildlife'.","Notes L37","Forest biomes"],
+["trb","Commercial lumbering is weak in equatorial rain forests because of",["Impure (mixed) stands of trees","Lack of trees","Cold climate","Softwood"],0,"Many species mixed together.","Notes L37; "+N12,"Forest biomes"],
+["trb","The lightest hardwood that floats on water is",["Balsam","Ebony","Rosewood","Ironwood"],0,"From equatorial rain forests.","Notes L37","Forest biomes"],
+["trb","Equatorial rain forests have",["No big land animals; arboreal apes, reptiles, insects","Many grazing herds","Polar bears","Bison"],0,"Dense dark forest suits arboreal life.","Notes L37","Forest biomes"],
+["trb","The only deciduous conifer mentioned in the notes is",["Larch","Pine","Spruce","Fir"],0,"Other conifers are evergreen.","Notes L37; "+N11,"Forest biomes"],
+["trb","Taiga forests have",["No undergrowth and pure softwood stands","Dense undergrowth","Broad thin leaves","Mixed hardwood"],0,"Needle leaves, conical shape, shallow roots.","Notes L37; "+N11,"Forest biomes"],
+["trb","Laurel vegetation with redwood trees refers to",["Temperate rain forest at wetter margins of temperate deciduous forests","Equatorial forest","Mediterranean scrub","Tundra"],0,"Kauri (NZ), evergreen oak (Japan) too.","Notes L37","Forest biomes"],
+["trb","Sclerophyll vegetation belongs to the",["Mediterranean climate","Monsoon climate","Equatorial climate","Tundra"],0,"Small thick glossy leaves; maquis, chaparral.","Notes L37; "+N12,"Mediterranean"],
+["trb","Chaparral vegetation is native to",["California","Australia","South Africa","Chile"],0,"Mediterranean type.","Notes L37","Mediterranean"],
+["trb","Temperate grasslands get rainfall of about",["25–75 cm","150–200 cm","300 cm","Below 10 cm"],0,"Enough for grass, not trees.","Notes L37; "+N12,"Grassland"],
+["trb","The largest herbivore of temperate grasslands is the",["Bison","Elephant","Giraffe","Kangaroo"],0,"Others: prairie dogs, squirrels, rabbits.","Notes L37","Grassland"],
+["trb","Savanna is called the 'abode of wildlife' because of",["Vertical feeding pattern giving maximum diversity","Dense evergreen canopy","Cold climate","Lack of grass"],0,"Elephants, zebras, giraffes, buffaloes etc.","Notes L37","Savanna"],
+["trb","A transition zone between two biomes is called",["Ecotone","Ecocline","Niche","Habitat"],0,"Occurs latitudinally and regionally.","Notes L37; "+N11,"Savanna"],
+["trb","Marsupials like kangaroo and koala are typical of",["Australian savanna","African savanna","Pampas","Taiga"],0,"Platypus is also cited.","Notes L37","Savanna"],
+["zoo","Darlington divided the world into how many zoogeographic realms?",["Three","Six","Four","Eight"],0,"Megagea, Neogea, Notogea.","Notes L37",""],
+["zoo","Megagea includes",["Ethiopian, Nearctic, Palearctic and Oriental","Neotropical only","Australian only","Antarctic only"],0,"Neogea = Neotropical; Notogea = Australian.","Notes L37",""],
+["zoo","The Oriental realm corresponds to",["India / South Asia","Africa","Eurasia","Anglo-America"],0,"Ethiopian = Africa; Palearctic = Eurasia; Nearctic = Anglo-America.","Notes L37",""],
+["zoo","Wallacea is",["Overlap zone in the East Indies between Oriental and Australian realms","A desert","A mountain range","An ocean current"],0,"An ecotone.","Notes L37",""],
+["aqu","Organisms that drift in water are",["Plankton","Nekton","Benthos","Neuston"],0,"Nekton swim; benthos attached.","Notes L38; "+N11,"Basics"],
+["aqu","The depth where production equals respiration is the",["Critical depth","Thermocline","CCD","Snow line"],0,"Above it biodiversity is higher.","Notes L38","Basics"],
+["aqu","In aquatic habitats, 'bloom' is compared to",["Spring","Winter","Drought","Night"],0,"Linked to the critical depth.","Notes L38","Basics"],
+["aqu","Running water ecosystems are less productive because",["Flow restricts growth of plankton","They are too cold","They lack oxygen","They are aphotic"],0,"Lower-latitude rivers are more productive.","Notes L38","Fresh water"],
+["aqu","The most productive marine habitats are",["Neritic zone and upwelling zones","Abyssal plains","Hadal zone","Mid-ocean gyres"],0,"Photic plus land nutrients; safe breeding grounds.","Notes L38; "+N11,"Marine"],
+["aqu","Mangroves, sundari and nipa belong to",["Off-shore littoral","On-shore littoral","Pelagic zone","Benthic zone"],0,"On-shore: coconut palm, screw pine.","Notes L38","Marine"],
+["aqu","Production in the deep benthic zone near hydrothermal vents is by",["Chemosynthesis","Photosynthesis","Humification","Calcification"],0,"Chemotrophs like worms and clams.","Notes L38","Marine"],
+["aqu","The epipelagic zone extends to about",["200 m","1000 m","4000 m","10,000 m"],0,"Mesopelagic ~1000 m; bathypelagic ~4000 m.","Notes L38","Marine"],
+["sfm","Onion-peeling disintegration of rocks is",["Exfoliation","Spalling","Shattering","Carbonation"],0,"Due to temperature + structure.","Notes L38; "+N11,"Weathering"],
+["sfm","The only agent of chemical weathering per the notes is",["Water","Wind","Frost","Insects"],0,"Oxidation, solution, carbonation, hydration.","Notes L38","Weathering"],
+["sfm","Rusting of iron-rich rocks is",["Oxidation","Hydration","Carbonation","Solution"],0,"Chemical decomposition.","Notes L38; "+N11,"Weathering"],
+["sfm","Which minerals are 'bulk-increasing' with no role in fertility?",["Silica, aluminium, iron","Calcium, nitrogen","Phosphorus, potash","Humus"],0,"Principal nutrients: Ca, N, P, K.","Notes L38","Soil profile"],
+["sfm","The true sub-soil horizon is",["B2","A1","C","D"],0,"Horizon B is the zone of illuviation.","Notes L38","Soil profile"],
+["sfm","Horizon B is called the zone of",["Illuviation","Eluviation","Weathering","Parent rock"],0,"Material collects by capillary rise or percolation.","Notes L38","Soil profile"],
+["sfm","The 'perfect' soil horizon with dark decayed organic matter is",["A1","A3","B1","C"],0,"Fully developed soil with best texture and humus.","Notes L38","Soil profile"],
+["sfm","Percolation of silica leaving iron and aluminium behind is",["Laterisation","Calcification","Podzolisation","Humification"],0,"Produces acidic, infertile soil.","Notes L39","processes"],
+["sfm","Calcification occurs mainly in",["Drier climates through capillary action","Humid waterlogged areas","Tundra","Rain forests"],0,"Moderate calcification makes soil fertile.","Notes L39; "+SB,"processes"],
+["sfm","The only soil process that always increases fertility is",["Humification","Leaching","Gleying","Laterisation"],0,"Production of humus.","Notes L39","processes"],
+["sfm","Podzol soil of taiga results from",["Podzolisation","Calcification","Laterisation","Gleying"],0,"Silica stays in horizon A; infertile.","Notes L39; "+SB,"processes"],
+["wsl","The most fertile natural soil per the notes is",["Chernozem","Laterite","Podzol","Desert soil"],0,"Steppe soil; 'black earth'; bread baskets.","Notes L39; "+SB,"Zonal"],
+["wsl","Laterite soil is typical of",["Equatorial rain forests","Taiga","Steppes","Tundra"],0,"Leaching + laterisation; acidic.","Notes L39; "+SB,"Zonal"],
+["wsl","The most widespread fertile forest soil is",["Podzolic","Podzol","Laterite","Tundra soil"],0,"Under hardwood deciduous forest.","Notes L39","Zonal"],
+["wsl","Correct fertility order per the notes is",["Steppe > prairie > red-yellow > podzolic","Podzolic > steppe > prairie","Red-yellow > steppe > podzolic","Prairie > steppe > podzolic"],0,"Calcification decreases and laterisation increases along the order.","Notes L39","Zonal"],
+["wsl","Etosha Pan and Makgadikgadi are examples of",["Halomorphic (saline-alkaline) soils","Peat soils","Chernozem","Regur"],0,"Excessive calcification in arid waterlogged areas.","Notes L39","Intrazonal"],
+["wsl","Pantanal, Pripet Marshes and Okavango are examples of",["Peat / bog (hydromorphic) soils","Loess","Laterite","Chernozem"],0,"Formed by gleying.","Notes L39","Intrazonal"],
+["wsl","Rendzina soil develops over",["Limestone","Basalt","Granite","Sand"],0,"Regur develops over basalt.","Notes L39; "+SB,"Intrazonal"],
+["wsl","Among gradational soils, fertility increases in the order",["Glacial < loess < alluvial","Alluvial < loess < glacial","Loess < glacial < alluvial","Glacial < alluvial < loess"],0,"All are azonal and horizon-less.","Notes L39","Intrazonal"],
+["wsl","Adobe is a loess soil found in",["Sacramento, California","Hwang Ho basin","German-Belgian upland","Pampas"],0,"Limon – German–Belgian upland.","Notes L39","Intrazonal"],
+["wsl","The USDA comprehensive soil classification was published in",["1960","1900","1935","1990"],0,"About 10,000 soil types in 6 levels.","Notes L40; "+SB,"USDA"],
+["wsl","Oxisol corresponds to",["Laterite","Podzol","Chernozem","Desert soil"],0,"Spodosol – podzol; alfisol – podzolic.","Notes L40; "+SB,"USDA"],
+["wsl","Mollisol corresponds to",["Temperate grassland soils like chernozem","Laterite","Peat","Desert soil"],0,"Aridisol – desert.","Notes L40; "+SB,"USDA"],
+["wsl","Histosol is",["Peat/bog with excessive decayed O horizon","Desert soil","Laterite","Loess"],0,"Entisol – gradational soils.","Notes L40","USDA"],
+["wsl","Vertisol includes",["Regur and rendzina","Laterite","Podzol","Loess"],0,"Structural (calcimorphic) soils.","Notes L40","USDA"],
+["hea","Pygmies of the Congo basin practise",["Hunting and gathering","Commercial ranching","Wheat farming","Lumbering"],0,"Equatorial region adaptation.","Notes L40; "+N12,""],
+["hea","Conuco, Roca, Tamrai, Jhum and Chena are names of",["Shifting cultivation","Nomadic herding","Plantation farming","Dairy farming"],0,"In monsoon / tropical regions.","Notes L40; "+N12,""],
+["hea","Maasai are associated with",["Nomadic cattle herding in savanna","Camel herding in Sahara","Reindeer herding","Rice farming"],0,"Commercial ranching in Brazil and Australia.","Notes L40; "+N12,""],
+["hea","Bedouins and Kazakhs are",["Nomadic herders of deserts","Hunter-gatherers of rain forests","Fishermen","Lumbermen"],0,"Camel and horse herders.","Notes L40; "+N12,""],
+["hea","The Mediterranean region is called 'gardens of the world' because of",["Horticulture","Wheat farming","Rice culture","Lumbering"],0,"Fruits and vegetables dominate.","Notes L40",""],
+["hea","Bread basket of North America and wheat triangle of Eurasia lie in the",["Temperate grassland region","Taiga","Mediterranean region","Savanna"],0,"Extensive commercial grain farming on mollisols.","Notes L40; "+N12,""],
+["hea","Commercial softwood lumbering is the main activity of the",["Taiga region","Equatorial region","Savanna","Desert"],0,"Canada and Siberia.","Notes L40; "+N12,""],
+["imp","Which is NOT a natural cause of climate change in the notes?",["Industrial emissions","Milankovitch cycle","Volcanic dust","Continental drift"],0,"Industrial emissions are human-induced.","Notes L41",""],
+["imp","Milankovitch cycle includes",["Eccentricity, obliquity and precession","Sunspots, flares and wind","Tides, waves and currents","El Niño, La Niña and ENSO"],0,"Changes in earth's orbit and tilt.","Notes L41; "+SB,"natural causes"],
+["imp","Earth's axial tilt varies between about",["22.1° and 24.5°","0° and 10°","30° and 40°","10° and 15°"],0,"Obliquity component.","Notes L41","natural causes"],
+["imp","Due to precession, earth's axis will point towards",["Vega instead of Polaris","Sirius","Sun","Orion"],0,"NH summer would then occur in December.","Notes L41","natural causes"],
+["imp","IPCC was set up jointly by",["UNEP and WMO","UNESCO and FAO","World Bank and IMF","IUCN and WWF"],0,"Its assessment reports show present change is human-induced.","Notes L41; "+SB,"IPCC"],
+["imp","Long-lived GHGs named in the notes are",["CO₂, CH₄, N₂O","O₂, N₂, Ar","H₂, He, Ne","SO₂, NO, CO"],0,"Ozone depletion by halogenated hydrocarbons.","Notes L41","IPCC"],
+["imp","Per AR3, by 2100 surface temperature could rise up to",["5.8 °C","1 °C","10 °C","0.5 °C"],0,"Sea level up to 0.9 m.","Notes L41","IPCC"],
+["imp","Rhine, Thames and Danube are examples of",["Rivers with invisible pollutants","Unpolluted rivers","Rivers with visible garbage","Dry rivers"],0,"'Clean-looking' but polluted.","Notes L41","Hydrosphere"],
+["imp","Lake Nasser and Poyang Hu are cited as examples of",["Eutrophication","Desertification","Ice-cap melting","Coral bleaching"],0,"Nutrient overload blocks light.","Notes L41","Hydrosphere"],
+["imp","Shrinking of the Aral Sea is due to",["Diversion of Amu Darya and Syr Darya","Volcanic activity","Sea-level rise","Coral growth"],0,"Channelisation for irrigation in Central Asia.","Notes L41; "+SB,"Hydrosphere"],
+["imp","Which is NOT among the five CBD causes of biodiversity loss?",["Ozone stabilisation","Over-exploitation","Invasive alien species","Habitat destruction"],0,"Others: climate change, nutrient overload & pollution.","Notes L41","Biosphere impact"],
+["imp","The most desertified region per the notes is the",["Sahel","Thar","Gobi","Atacama"],0,"Mali, Mauritania, Niger, Chad.","Notes L41; "+SB,"Biosphere impact"],
+["imp","Eucalyptus in India is cited as an example of",["Invasive alien species","Endemic species","Keystone species","Extinct species"],0,"Rabbits in Australia too.","Notes L41","Biosphere impact"],
+["glb","'Limits to Growth' is associated with",["Club of Rome","Sierra Club","IUCN","UNEP"],0,"Earth like a spaceship with no outside supply.","Notes L41","Phases"],
+["glb","'No blind opposition to development, but opposition to blind development' – this idea is linked with",["Sierra Club","Club of Rome","WWF","Greenpeace"],0,"Established sustainability.","Notes L41","Phases"],
+["glb","Agenda 21 was adopted at",["Earth Summit, Rio 1992","Stockholm 1972","Kyoto 1997","Copenhagen 2009"],0,"Began the contemporary (action) phase.","Notes L42; "+SB,"Phases"],
+["glb","The Kyoto Protocol was adopted at",["COP3, 1997","COP1, 1995","COP15, 2009","COP21, 2015"],0,"Introduced CDM.","Notes L42; "+SB,"UNFCCC"],
+["glb","Carbon trading uses",["Certified Emission Reductions (CERs)","IUCN Red Book","Ramsar sites","ODS quotas"],0,"Part of the flexible mechanism.","Notes L42","UNFCCC"],
+["glb","MRV (Monitoring, Reporting, Verification) was added at",["Cancún COP16","Doha COP18","Bonn COP6","Kyoto COP3"],0,"TEEB & REDD+ at Copenhagen COP15.","Notes L42","UNFCCC"],
+["glb","Montreal Protocol was signed in",["1987","1985","1992","1997"],0,"Vienna Convention 1985; protocol in force 1989.","Notes L42; "+SB,"Vienna"],
+["glb","The three objectives of CBD are",["Conservation, sustainable use, fair & equitable benefit sharing","Mitigation, adaptation, finance","Afforestation, irrigation, education","Trade, tariffs, quotas"],0,"CBD in force 1993.","Notes L42; "+SB,"CBD"],
+["glb","The Cartagena Protocol deals with",["Biosafety of living modified organisms","Ozone","Wetlands","Migratory species"],0,"Advance informed agreement; Biosafety Clearing House.","Notes L42","CBD"],
+["glb","Nagoya Protocol concerns",["Access to genetic resources and benefit sharing","GHG emissions","Ozone","Desertification"],0,"Adopted at COP10, 2010.","Notes L42; "+SB,"CBD"],
+["glb","CITES protects species from",["International trade","Climate change","Habitat loss only","Pollution"],0,"In force 1975.","Notes L42; "+SB,"CITES"],
+["glb","The Bonn Convention refers to",["Convention on Migratory Species (CMS)","Ramsar","CITES","UNFCCC"],0,"MoUs for Siberian crane, marine turtles.","Notes L42","CITES"],
+["glb","Ramsar Convention protects",["Wetlands","Deserts","Mountains","Ozone"],0,"Signed 1971 (notes 1981).","Notes L42; "+SB,"CITES"]
+];
+const EXTRA=[];
+Q.forEach(q=>{q[7]=q[6]||"";q[6]=EXTRA.some(e=>q[1].startsWith(e));});
+Q.forEach((q,i)=>{let x=(i+1)*9301+49297;const rnd=()=>{x=(x*9301+49297)%233280;return x/233280};const idx=[0,1,2,3];for(let k=3;k>0;k--){const j=Math.floor(rnd()*(k+1));[idx[k],idx[j]]=[idx[j],idx[k]];}const opts=idx.map(n=>q[2][n]);q[3]=idx.indexOf(q[3]);q[2]=opts;});
+
+/* reference → notes jump */
+let lastQ=null;
+const backBtn=document.createElement("button");backBtn.className="backq";backBtn.textContent="↩ Wapas MCQ pe";backBtn.hidden=true;document.body.appendChild(backBtn);
+backBtn.onclick=()=>{const el=lastQ&&document.getElementById(lastQ);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});backBtn.hidden=true;};
+function goNotes(q,qid){
+  const sec=document.getElementById("t-"+q[0]);if(!sec)return;
+  let target=sec;const kw=q[7]||"";
+  if(kw.startsWith("tab:")){const b=sec.querySelector('[data-tab="'+kw.slice(4)+'"]');if(b)b.click();const p=sec.querySelector('[data-panel="'+kw.slice(4)+'"]');if(p)target=p;}
+  else if(kw){const d=[...sec.querySelectorAll("details")].find(x=>x.querySelector("summary").textContent.toLowerCase().includes(kw.toLowerCase()));if(d){d.open=true;target=d;}}
+  target.scrollIntoView({behavior:"smooth",block:"start"});
+  target.classList.remove("hl");void target.offsetWidth;target.classList.add("hl");
+  lastQ=qid;backBtn.hidden=false;
+}
+let mans=store.get("bgmcq-ans",{}),mf="all",mw=false,mu=false;
+function mChips(){const c=$("#mchips");c.innerHTML="";
+  const mk=(k,l,col)=>{const b=document.createElement("button");b.textContent=l;b.style.setProperty("--qc",col);b.setAttribute("aria-pressed",mf===k);b.onclick=()=>{mf=k;mChips();mRender();};c.appendChild(b);};
+  mk("all","Sab ("+Q.length+")","var(--ink)");
+  Object.entries(T).forEach(([k,[l,v]])=>mk(k,l+" ("+Q.filter(q=>q[0]===k).length+")","var("+v+")"));}
+function mStats(){let r=0,w=0;Q.forEach((q,i)=>{if(mans[i]!==undefined)mans[i]===q[3]?r++:w++;});
+  $("#mtxt").innerHTML="<b>"+r+"</b> sahi · <b>"+w+"</b> galat · "+(Q.length-r-w)+" baaki";
+  $("#mg").style.width=r+"%";$("#mr").style.width=w+"%";}
+function mRender(){const L=$("#mlist");L.innerHTML="";let shown=0;
+  Q.forEach((q,i)=>{
+    if(mf!=="all"&&q[0]!==mf)return;
+    const a=mans[i],done=a!==undefined;
+    if(mw&&!(done&&a!==q[3]))return; if(mu&&done)return; shown++;
+    const d=document.createElement("div");d.className="mq";d.style.setProperty("--qc","var("+T[q[0]][1]+")");d.id="mq"+(i+1);
+    d.innerHTML="<div class='qh'><span class='num'>Q"+(i+1)+"</span><span><span class='tag'>"+T[q[0]][0]+"</span>"+(q[6]?" <span class='xtag'>Textbook extra</span>":"")+"</span></div><p class='qt'></p><div class='mopts'></div>";
+    d.querySelector(".qt").textContent=q[1];
+    const o=d.querySelector(".mopts");
+    q[2].forEach((op,j)=>{const b=document.createElement("button");b.innerHTML="<span>"+"ABCD"[j]+"</span>";b.appendChild(document.createTextNode(op));
+      if(done){b.disabled=true;if(j===q[3])b.className="ok";else if(j===a)b.className="no";}
+      b.onclick=()=>{mans[i]=j;store.set("bgmcq-ans",mans);const y=d.getBoundingClientRect().top;mRender();mStats();const nn=document.getElementById("mq"+(i+1));if(nn)window.scrollBy(0,nn.getBoundingClientRect().top-y);};
+      o.appendChild(b);});
+    if(done){const e=document.createElement("div");e.className="exp";
+      const v=document.createElement("span");v.className="v "+(a===q[3]?"good":"bad");v.textContent=a===q[3]?"Sahi!":"Galat – sahi jawab "+"ABCD"[q[3]]+".";
+      e.appendChild(v);e.appendChild(document.createTextNode(q[4]));
+      const r=document.createElement("div");r.className="ref";r.innerHTML="<b>Reference:</b> ";r.appendChild(document.createTextNode(q[5]));const g=document.createElement("a");g.className="goto";g.href="#t-"+q[0];g.textContent="📖 Notes me padho";g.onclick=ev=>{ev.preventDefault();goNotes(q,"mq"+(i+1));};r.appendChild(g);
+      e.appendChild(r);d.appendChild(e);}
+    L.appendChild(d);});
+  if(!shown)L.innerHTML="<p class='hint'>Is filter me koi question nahi.</p>";}
+$("#mwrong").onclick=e=>{mw=!mw;mu=false;e.target.setAttribute("aria-pressed",mw);$("#mun").setAttribute("aria-pressed",false);mRender();};
+$("#mun").onclick=e=>{mu=!mu;mw=false;e.target.setAttribute("aria-pressed",mu);$("#mwrong").setAttribute("aria-pressed",false);mRender();};
+$("#mreset").onclick=()=>{if(confirm("Saare MCQ answers reset karein?")){mans={};store.set("bgmcq-ans",mans);mRender();mStats();}};
+mChips();mRender();mStats();
+</script>
+</body>
+</html>
