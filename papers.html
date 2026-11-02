@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Previous Papers – topic-wise</title>
+<meta name="theme-color" content="#12324A">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#EAF3F5;--card:#fff;--ink:#12324A;--muted:#4D6A7E;--line:#C9DCE3;--ok:#2E9E6E;--no:#E8505B;--acc:#6A4FC2;--ref:#EEF2FB;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0C1F2C;--card:#13293A;--ink:#E3EFF4;--muted:#9DB7C6;--line:#24435A;--ref:#1A3346;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0C1F2C;--card:#13293A;--ink:#E3EFF4;--muted:#9DB7C6;--line:#24435A;--ref:#1A3346;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 150px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "Source Serif 4",Georgia,serif}
+h1,h2,button,select,input,.tag,.meta,.cnt{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+header{max-width:860px;margin:0 auto;padding:22px 16px 6px}
+.home{display:inline-block;margin-bottom:10px;text-decoration:none;font:700 .9rem "Bricolage Grotesque",sans-serif;color:var(--ink);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px}
+h1{font-size:clamp(1.9rem,7vw,2.8rem);line-height:1.05;margin:0 0 6px;font-weight:800;letter-spacing:-.02em}
+header p{margin:0;color:var(--muted);font-size:.95rem}
+.filters{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--card);border-bottom:1px solid var(--line);padding:10px 14px}
+.row{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding-bottom:6px}
+.row::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;border:2px solid var(--acc);color:var(--acc);background:transparent;border-radius:999px;padding:5px 12px;font-weight:700;font-size:.85rem;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--acc);color:#fff}
+.sel{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:7px}
+select,input[type=search]{width:100%;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;padding:8px 10px;font-size:.9rem}
+.cnt{font-size:.85rem;color:var(--muted);margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.cnt b{color:var(--ink)}
+.bar{flex:1 1 100px;height:7px;border-radius:7px;background:var(--line);overflow:hidden;display:flex}.bar .g{background:var(--ok)}.bar .r{background:var(--no)}
+main{max-width:860px;margin:0 auto;padding:6px 14px 80px}
+h2{font-size:1.15rem;margin:24px 0 6px;color:var(--c,var(--acc));display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+h2 small{font-size:.8rem;color:var(--muted);font-weight:500}
+.q{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c,var(--acc));border-radius:14px;padding:12px;margin:10px 0}
+.meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.tag{font-size:.74rem;font-weight:700;border-radius:999px;padding:2px 9px;background:color-mix(in srgb,var(--c,var(--acc)) 16%,transparent);color:var(--c,var(--acc))}
+.tag.src{background:var(--ink);color:var(--card)}
+.qt{font-weight:600;margin:0 0 8px;white-space:pre-line}
+.opts{display:grid;gap:6px}
+.opts button{text-align:left;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;font:500 .95rem/1.4 "Bricolage Grotesque",sans-serif;display:flex;gap:9px}
+.opts button span{font-weight:800;color:var(--muted)}
+.opts button:disabled{cursor:default}
+.opts button.ok{background:var(--ok);border-color:var(--ok);color:#fff}.opts button.no{background:var(--no);border-color:var(--no);color:#fff}
+.opts button.ok span,.opts button.no span{color:#fff}
+.exp{margin-top:9px;border-radius:10px;padding:9px 11px;background:color-mix(in srgb,var(--c,var(--acc)) 9%,transparent);font-size:.95rem;white-space:pre-line}
+.v{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;margin-right:4px}.v.good{color:var(--ok)}.v.bad{color:var(--no)}
+.refs{margin-top:8px;background:var(--ref);border-radius:9px;padding:7px 10px;display:flex;flex-wrap:wrap;gap:6px 10px;font:600 .82rem "Bricolage Grotesque",sans-serif}
+.refs a{color:var(--c,var(--acc));text-decoration:none;border-bottom:1.5px solid currentColor}
+.refs .lbl{color:var(--muted)}
+.empty{text-align:center;color:var(--muted);padding:40px 10px}
+.howto{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:14px;margin-top:16px;font-size:.92rem}
+.tools{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.tool{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:4px 11px;font-size:.8rem;font-weight:700;cursor:pointer}
+.tool[aria-pressed="true"]{background:var(--ink);color:var(--card)}
+.themebtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:11;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:44px;height:44px;font-size:1.2rem;cursor:pointer}
+:focus-visible{outline:3px solid #E9A23B;outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+  <a class="home" href="./#papers">← Saare notes</a>
+  <h1>Previous Papers · Topic‑wise</h1>
+  <p>Har paper ke questions notes ke topic ke hisaab se. Filter lagao – exam, saal, subject, topic. Answer dabao → paper ki explanation + notes aur PDF ka reference.</p>
+</header>
+
+<div class="filters">
+  <div class="row" id="exams"></div>
+  <div class="sel">
+    <select id="fSession" aria-label="Paper / session"></select>
+    <select id="fSubject" aria-label="Subject"></select>
+    <select id="fTopic" aria-label="Topic"></select>
+    <input type="search" id="fSearch" placeholder="Search question…" aria-label="Search">
+  </div>
+  <div class="tools">
+    <button class="tool" id="tWrong" aria-pressed="false">Sirf galat</button>
+    <button class="tool" id="tUn" aria-pressed="false">Unattempted</button>
+    <button class="tool" id="tGroup" aria-pressed="true">Topic‑wise group</button>
+    <button class="tool" id="tReset">Reset answers</button>
+  </div>
+  <div class="cnt"><span id="cnt"></span><div class="bar"><div class="g" id="bg"></div><div class="r" id="br"></div></div></div>
+</div>
+
+<main id="list"><p class="empty">Loading…</p></main>
+<button class="themebtn" id="theme" aria-label="Toggle dark mode">◐</button>
+
+<script>
+const $=s=>document.querySelector(s);
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const COLORS=["#2F7FD1","#E8505B","#1BA3A3","#2E9E6E","#6A4FC2","#C2414D","#D9822B","#8A6A3F","#3B6FD8","#8E5BB5","#1F8FA3"];
+let TOPICS=[],P={papers:[],questions:[]},ans=store.get("pp-ans",{});
+const qs=new URLSearchParams(location.search);
+const F={exam:qs.get("exam")||"all",session:qs.get("session")||"all",subject:"all",topic:qs.get("topic")||"all",search:"",wrong:false,un:false,group:true};
+if(F.topic!=="all")F.subject=F.topic.split(":")[0];
+
+function fileInfo(file){return TOPICS.find(t=>t.file===file);}
+function topicInfo(file,key){const f=fileInfo(file);return f?f.topics.find(t=>t.key===key):null;}
+function colorOf(file){const i=TOPICS.findIndex(t=>t.file===file);return i<0?"#6A4FC2":COLORS[i%COLORS.length];}
+function paperOf(q){return P.papers.find(p=>p.id===q.paper)||{};}
+function topicId(q){return q.ref&&q.ref.file?q.ref.file+":"+q.ref.topic:"other:"+(q.tag||"Other");}
+function topicLabel(id){const [f,k]=id.split(":");if(f==="other")return "Other · "+k;const fi=fileInfo(f),ti=topicInfo(f,k);return (fi?fi.title:f)+" › "+(ti?ti.label:k);}
+function notesPage(q){const t=q.ref&&topicInfo(q.ref.file,q.ref.topic);if(!t)return null;return (q.ref.kw&&t.kws[q.ref.kw])||t.page;}
+
+function buildFilters(){
+  const ex=[...new Set(P.papers.map(p=>p.exam))];
+  const er=$("#exams");er.innerHTML="";
+  [["all","Sab exams"],...ex.map(e=>[e,e])].forEach(([v,l])=>{const b=document.createElement("button");b.className="chip";b.textContent=l;b.setAttribute("aria-pressed",F.exam===v);b.onclick=()=>{F.exam=v;F.session="all";buildFilters();render();};er.appendChild(b);});
+  const ss=$("#fSession");ss.innerHTML="";const o=(v,l)=>{const x=document.createElement("option");x.value=v;x.textContent=l;return x;};
+  ss.appendChild(o("all","Saare papers / saal"));
+  P.papers.filter(p=>F.exam==="all"||p.exam===F.exam).sort((a,b)=>(b.year-a.year)||String(b.session).localeCompare(a.session)).forEach(p=>ss.appendChild(o(p.id,p.exam+" · "+p.session)));
+  ss.value=F.session;
+  const sb=$("#fSubject");sb.innerHTML="";sb.appendChild(o("all","Saare subjects"));
+  TOPICS.forEach(t=>sb.appendChild(o(t.file,t.title)));
+  if(P.questions.some(q=>!q.ref||!q.ref.file))sb.appendChild(o("other","Other topics"));
+  sb.value=F.subject;
+  const tp=$("#fTopic");tp.innerHTML="";tp.appendChild(o("all","Saare topics"));
+  const used=new Set(P.questions.map(topicId));
+  if(F.subject!=="all"&&F.subject!=="other"){const fi=fileInfo(F.subject);(fi?fi.topics:[]).forEach(t=>{const id=F.subject+":"+t.key;const n=P.questions.filter(q=>topicId(q)===id).length;tp.appendChild(o(id,t.label+" ("+n+")"));});}
+  else [...used].filter(id=>F.subject==="all"||id.startsWith("other:")).sort().forEach(id=>tp.appendChild(o(id,topicLabel(id))));
+  if(![...tp.options].some(x=>x.value===F.topic))F.topic="all";
+  tp.value=F.topic;
+}
+function visible(){
+  const s=F.search.trim().toLowerCase();
+  return P.questions.filter(q=>{const p=paperOf(q);
+    if(F.exam!=="all"&&p.exam!==F.exam)return false;
+    if(F.session!=="all"&&q.paper!==F.session)return false;
+    const id=topicId(q);
+    if(F.subject!=="all"&&id.split(":")[0]!==F.subject)return false;
+    if(F.topic!=="all"&&id!==F.topic)return false;
+    if(s&&!(q.q+" "+q.o.join(" ")+" "+(q.exp||"")).toLowerCase().includes(s))return false;
+    const a=ans[q.id];if(F.wrong&&!(a!==undefined&&a!==q.a))return false;if(F.un&&a!==undefined)return false;
+    return true;});
+}
+function card(q){
+  const p=paperOf(q),col=q.ref?colorOf(q.ref.file):"#6A4FC2",a=ans[q.id],done=a!==undefined;
+  const d=document.createElement("div");d.className="q";d.style.setProperty("--c",col);d.id="q-"+q.id;
+  const meta=document.createElement("div");meta.className="meta";
+  const t1=document.createElement("span");t1.className="tag src";t1.textContent=(p.exam||"")+" · "+(p.session||"")+(q.qno?" · Q"+q.qno:"");meta.appendChild(t1);
+  const t2=document.createElement("span");t2.className="tag";t2.textContent=topicLabel(topicId(q));meta.appendChild(t2);
+  d.appendChild(meta);
+  const qt=document.createElement("p");qt.className="qt";qt.textContent=q.q;d.appendChild(qt);
+  const o=document.createElement("div");o.className="opts";
+  q.o.forEach((op,j)=>{const b=document.createElement("button");b.innerHTML="<span>"+"ABCDE"[j]+"</span>";b.appendChild(document.createTextNode(op));
+    if(done){b.disabled=true;if(j===q.a)b.className="ok";else if(j===a)b.className="no";}
+    b.onclick=()=>{ans[q.id]=j;store.set("pp-ans",ans);const y=d.getBoundingClientRect().top;render();const n=document.getElementById("q-"+q.id);if(n)window.scrollBy(0,n.getBoundingClientRect().top-y);};
+    o.appendChild(b);});
+  d.appendChild(o);
+  if(done){
+    const e=document.createElement("div");e.className="exp";
+    const v=document.createElement("span");v.className="v "+(a===q.a?"good":"bad");v.textContent=a===q.a?"Sahi! ":"Galat – sahi jawab "+"ABCDE"[q.a]+". ";e.appendChild(v);
+    e.appendChild(document.createTextNode(q.exp?q.exp:"(Paper me explanation nahi di gayi.)"));
+    const r=document.createElement("div");r.className="refs";
+    const add=(lbl,txt,href)=>{const s=document.createElement("span");s.className="lbl";s.textContent=lbl;r.appendChild(s);const l=document.createElement("a");l.textContent=txt;l.href=href;r.appendChild(l);};
+    if(q.ref&&q.ref.file){const fi=fileInfo(q.ref.file),ti=topicInfo(q.ref.file,q.ref.topic),pg=notesPage(q);
+      add("📖 Notes:",(fi?fi.title:q.ref.file)+" › "+(ti?ti.label:q.ref.topic)+(q.ref.kw?" › "+q.ref.kw:""),q.ref.file+(q.ref.kw?"?open="+encodeURIComponent(q.ref.kw):"")+"#t-"+q.ref.topic);
+      if(fi&&fi.pdf&&pg)add("📄 Notes PDF:","p."+pg,"pdf.html?f="+encodeURIComponent(fi.pdf)+"&p="+pg+"&t="+encodeURIComponent(fi.title));}
+    if(p.pdf)add("📝 Paper:",(q.page?"p."+q.page:"open"),"pdf.html?f="+encodeURIComponent(p.pdf)+"&p="+(q.page||1)+"&t="+encodeURIComponent(p.exam+" "+p.session));
+    if(r.childNodes.length)e.appendChild(r);
+    d.appendChild(e);
+  }
+  return d;
+}
+function render(){
+  const L=$("#list");L.innerHTML="";
+  if(!P.questions.length){L.innerHTML="<div class='empty'><b>Abhi koi paper add nahi hua.</b><br>Paper ki PDF chat me bhejo – questions topic‑wise yahan lag jayenge.</div>";stats([]);return;}
+  const V=visible();stats(V);
+  if(!V.length){L.innerHTML="<p class='empty'>Is filter me koi question nahi.</p>";return;}
+  if(F.group){
+    const g={};V.forEach(q=>{(g[topicId(q)]=g[topicId(q)]||[]).push(q);});
+    const order=[];TOPICS.forEach(t=>t.topics.forEach(k=>order.push(t.file+":"+k.key)));
+    Object.keys(g).sort((a,b)=>{const ia=order.indexOf(a),ib=order.indexOf(b);return (ia<0?1e4:ia)-(ib<0?1e4:ib)||a.localeCompare(b);}).forEach(id=>{
+      const h=document.createElement("h2");const f=id.split(":")[0];h.style.setProperty("--c",f==="other"?"#6A4FC2":colorOf(f));h.textContent=topicLabel(id)+" ";
+      const sm=document.createElement("small");sm.textContent=g[id].length+" Q";h.appendChild(sm);L.appendChild(h);
+      g[id].forEach(q=>L.appendChild(card(q)));});
+  } else V.forEach(q=>L.appendChild(card(q)));
+}
+function stats(V){let r=0,w=0;V.forEach(q=>{const a=ans[q.id];if(a!==undefined)a===q.a?r++:w++;});
+  $("#cnt").innerHTML="<b>"+V.length+"</b> questions · <b>"+r+"</b> sahi · <b>"+w+"</b> galat";
+  const t=V.length||1;$("#bg").style.width=(r/t*100)+"%";$("#br").style.width=(w/t*100)+"%";}
+$("#fSession").onchange=e=>{F.session=e.target.value;render();};
+$("#fSubject").onchange=e=>{F.subject=e.target.value;F.topic="all";buildFilters();render();};
+$("#fTopic").onchange=e=>{F.topic=e.target.value;render();};
+$("#fSearch").oninput=e=>{F.search=e.target.value;render();};
+$("#tWrong").onclick=e=>{F.wrong=!F.wrong;F.un=false;e.target.setAttribute("aria-pressed",F.wrong);$("#tUn").setAttribute("aria-pressed",false);render();};
+$("#tUn").onclick=e=>{F.un=!F.un;F.wrong=false;e.target.setAttribute("aria-pressed",F.un);$("#tWrong").setAttribute("aria-pressed",false);render();};
+$("#tGroup").onclick=e=>{F.group=!F.group;e.target.setAttribute("aria-pressed",F.group);render();};
+$("#tReset").onclick=()=>{if(confirm("Papers ke saare answers reset karein?")){ans={};store.set("pp-ans",ans);render();}};
+$("#theme").onclick=()=>{const r=document.documentElement,c=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");r.dataset.theme=c==="dark"?"light":"dark";store.set("pp-theme",r.dataset.theme);};
+const th=store.get("pp-theme",null);if(th)document.documentElement.dataset.theme=th;
+Promise.all([fetch("topics.json",{cache:"no-cache"}).then(r=>r.json()),fetch("papers.json",{cache:"no-cache"}).then(r=>r.json())])
+ .then(([t,p])=>{TOPICS=t;P=p;buildFilters();render();})
+ .catch(()=>{$("#list").innerHTML="<p class='empty'>topics.json / papers.json load nahi hui. Repo me upload check karo.</p>";});
+</script>
+</body>
+</html>

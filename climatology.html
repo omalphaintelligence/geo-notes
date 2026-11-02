@@ -1016,6 +1016,14 @@ document.querySelectorAll('section.topic[id^="t-"]').forEach(sec=>{const m=PMAP[
     else{const d=[...sec.querySelectorAll("details")].find(x=>x.querySelector("summary").textContent.toLowerCase().includes(kw.toLowerCase()));if(d)box=d.querySelector(".in");}
     if(!box||box.querySelector(":scope > .pdfmini"))return;const l=document.createElement("a");l.className="pdfmini";l.href=pdfLink(p);l.textContent="📄 Original notes p."+p;box.insertBefore(l,box.firstChild);});
 });
+
+/* deep link: page.html?open=kw#t-topic  +  PYQ links */
+(function(){const op=new URLSearchParams(location.search).get("open"),h=location.hash;
+  document.querySelectorAll('section.topic[id^="t-"]').forEach(sec=>{if(sec.id==="t-fc"||sec.id==="t-quiz")return;const a=document.createElement("a");a.className="pdfbtn";a.style.marginLeft="6px";a.href="papers.html?topic="+encodeURIComponent(location.pathname.split("/").pop()+":"+sec.id.slice(2));a.textContent="📝 PYQs";sec.querySelector("header").appendChild(a);});
+  if(!h||!h.startsWith("#t-"))return;const sec=document.querySelector(h);if(!sec)return;let target=sec;
+  if(op){if(op.startsWith("tab:")){const b=sec.querySelector('[data-tab="'+op.slice(4)+'"]');if(b)b.click();const p=sec.querySelector('[data-panel="'+op.slice(4)+'"]');if(p)target=p;}
+    else{const d=[...sec.querySelectorAll("details")].find(x=>x.querySelector("summary").textContent.toLowerCase().includes(op.toLowerCase()));if(d){d.open=true;target=d;}}}
+  setTimeout(()=>{target.scrollIntoView({block:"start"});target.classList.add("hl");},150);})();
 /* reference → notes jump */
 let lastQ=null;
 const backBtn=document.createElement("button");backBtn.className="backq";backBtn.textContent="↩ Wapas MCQ pe";backBtn.hidden=true;document.body.appendChild(backBtn);

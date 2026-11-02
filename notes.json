@@ -1,5 +1,21 @@
 [
   {
+    "tab": "papers",
+    "subject": "Topic-wise PYQs",
+    "title": "Previous Papers – Topic-wise",
+    "emoji": "📝",
+    "file": "papers.html",
+    "desc": "UGC NET, Assistant Professor aur baaki papers ke questions notes ke topic ke hisaab se; exam, saal, topic filter; paper ki explanation + notes & PDF reference.",
+    "topics": [
+      "pyq",
+      "previous year",
+      "ugc net",
+      "assistant professor",
+      "upessc",
+      "papers"
+    ]
+  },
+  {
     "subject": "Physical Geography",
     "title": "Oceanography",
     "emoji": "🌊",
@@ -159,7 +175,7 @@
     "source": "हिंदी नोट्स"
   },
   {
-    "subject": "UGC-NET PYQ",
+    "subject": "UGC-NET PYQ (Hindi)",
     "title": "भूगोल PYQ एटलस",
     "emoji": "📝",
     "file": "pyq-atlas.html",
@@ -174,7 +190,8 @@
       "geographical thought",
       "hindi"
     ],
-    "source": "UGC-NET 2023–24"
+    "source": "UGC-NET 2023–24",
+    "tab": "papers"
   },
   {
     "tab": "book",

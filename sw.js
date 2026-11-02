@@ -1,5 +1,5 @@
 // Network-first: online ho to hamesha naya version, offline ho to cache se.
-const CACHE = "geo-notes-v3";
+const CACHE = "geo-notes-v4";
 self.addEventListener("install", e => self.skipWaiting());
 self.addEventListener("activate", e => e.waitUntil(
   caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())

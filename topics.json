@@ -1,0 +1,1346 @@
+[
+ {
+  "file": "geomorphology.html",
+  "title": "Geomorphology",
+  "subject": "Physical Geography",
+  "tab": "notes",
+  "pdf": "geomorphology-notes.pdf",
+  "topics": [
+   {
+    "key": "rel",
+    "label": "Relief",
+    "page": 7,
+    "subs": [
+     "Three orders of relief",
+     "Chronological development of relief"
+    ],
+    "kws": {
+     "": 7,
+     "Three orders": 7,
+     "Chronological": 18
+    }
+   },
+   {
+    "key": "inn",
+    "label": "Interior & quakes",
+    "page": 9,
+    "subs": [
+     "Compositional layers",
+     "Mechanical layers",
+     "Earthquakes & seismic waves"
+    ],
+    "kws": {
+     "": 9,
+     "Compositional": 9,
+     "Mechanical": 11,
+     "Earthquakes": 13
+    }
+   },
+   {
+    "key": "gts",
+    "label": "Time scale",
+    "page": 28,
+    "subs": [
+     "Relative time",
+     "Absolute time scale"
+    ],
+    "kws": {
+     "": 28,
+     "Relative": 28,
+     "Absolute": 29
+    }
+   },
+   {
+    "key": "frc",
+    "label": "Folds & faults",
+    "page": 34,
+    "subs": [
+     "Forces shaping the surface",
+     "Folds",
+     "Faults"
+    ],
+    "kws": {
+     "": 34,
+     "Forces shaping": 34,
+     "Folds": 37,
+     "Faults": 40
+    }
+   },
+   {
+    "key": "cdt",
+    "label": "Drift & spreading",
+    "page": 42,
+    "subs": [
+     "Continental drift theory (Wegener 1915)",
+     "Evidence for drift",
+     "Criticism of drift theory",
+     "Sea‑floor spreading (Harry Hess)",
+     "Geomagnetism & paleomagnetism"
+    ],
+    "kws": {
+     "": 42,
+     "Continental drift": 42,
+     "Evidence": 44,
+     "Criticism": 46,
+     "spreading": 47,
+     "Geomagnetism": 48
+    }
+   },
+   {
+    "key": "plt",
+    "label": "Plates & mountains",
+    "page": 52,
+    "subs": [
+     "Plate tectonic theory",
+     "Mountains & relict mountains",
+     "Geosyncline theory",
+     "Plate tectonics & orogenesis"
+    ],
+    "kws": {
+     "": 52,
+     "Plate tectonic": 52,
+     "relict": 66,
+     "Geosyncline": 67,
+     "orogenesis": 70
+    }
+   },
+   {
+    "key": "vol",
+    "label": "Vulcanism",
+    "page": 56,
+    "subs": [
+     "Magma & ejected matter",
+     "Types of eruption (increasing intensity)",
+     "Volcanic cones",
+     "Intrusive features (plutons)"
+    ],
+    "kws": {
+     "": 56,
+     "Magma": 56,
+     "Types of eruption": 57,
+     "Volcanic cones": 61,
+     "Intrusive": 63
+    }
+   },
+   {
+    "key": "flu",
+    "label": "Fluvial cycle",
+    "page": 72,
+    "subs": [
+     "Exogenic forces & agents",
+     "Davis' normal cycle of erosion",
+     "Appraisal of Davis",
+     "Rejuvenation (polycyclic landforms)"
+    ],
+    "kws": {
+     "": 72,
+     "Exogenic forces": 72,
+     "normal cycle": 75,
+     "Appraisal": 82,
+     "Rejuvenation": 83
+    }
+   },
+   {
+    "key": "cyc",
+    "label": "Other cycles",
+    "page": 85,
+    "subs": [],
+    "kws": {
+     "": 85,
+     "tab:gl": 85,
+     "tab:ka": 92,
+     "tab:co": 96,
+     "tab:eo": 101
+    }
+   },
+   {
+    "key": "slp",
+    "label": "Slopes & isostasy",
+    "page": 107,
+    "subs": [
+     "Denudation chronology & erosional surfaces",
+     "Hill slopes",
+     "Isostasy"
+    ],
+    "kws": {
+     "": 107,
+     "Denudation": 107,
+     "Hill slopes": 110,
+     "Isostasy": 115
+    }
+   },
+   {
+    "key": "hum",
+    "label": "Cultural regions",
+    "page": 20,
+    "subs": [
+     "Language families"
+    ],
+    "kws": {
+     "": 20,
+     "Language": 26
+    }
+   }
+  ]
+ },
+ {
+  "file": "climatology.html",
+  "title": "Climatology",
+  "subject": "Physical Geography",
+  "tab": "notes",
+  "pdf": "climatology-notes.pdf",
+  "topics": [
+   {
+    "key": "atm",
+    "label": "Atmosphere",
+    "page": 2,
+    "subs": [
+     "Composition",
+     "Structure (layers)",
+     "Insolation",
+     "Heat budget (100 units)"
+    ],
+    "kws": {
+     "": 2,
+     "Composition": 2,
+     "Structure": 2,
+     "Insolation": 3,
+     "Heat budget": 14
+    }
+   },
+   {
+    "key": "tmp",
+    "label": "Temperature",
+    "page": 5,
+    "subs": [
+     "Latitude – 5 thermal zones (Greek)",
+     "Land–water & temperature anomaly",
+     "Currents, winds, clouds",
+     "Vertical distribution & inversion ★"
+    ],
+    "kws": {
+     "": 5,
+     "Latitude": 6,
+     "Land": 7,
+     "Currents": 8,
+     "Vertical": 9
+    }
+   },
+   {
+    "key": "prs",
+    "label": "Pressure & winds",
+    "page": 16,
+    "subs": [
+     "Pressure systems",
+     "7 pressure belts",
+     "Wind (advection) & its forces",
+     "Prevailing (planetary) winds",
+     "Tri‑cellular meridional circulation"
+    ],
+    "kws": {
+     "": 16,
+     "Pressure systems": 16,
+     "7 pressure": 17,
+     "Wind": 19,
+     "Prevailing": 21,
+     "Tri": 23
+    }
+   },
+   {
+    "key": "jet",
+    "label": "Jets & monsoon",
+    "page": 24,
+    "subs": [
+     "Jet streams (geostrophic flow)",
+     "Exceptional bend of ITCZ & TEJ",
+     "Monsoon mechanism – classical",
+     "Modern: MONEX, Tibetan Plateau, vortices",
+     "ENSO & teleconnections"
+    ],
+    "kws": {
+     "": 24,
+     "Jet streams": 26,
+     "Exceptional bend": 29,
+     "classical": 31,
+     "MONEX": 33,
+     "ENSO": 38
+    }
+   },
+   {
+    "key": "loc",
+    "label": "Local winds",
+    "page": 39,
+    "subs": [],
+    "kws": {
+     "": 39
+    }
+   },
+   {
+    "key": "mst",
+    "label": "Moisture",
+    "page": 41,
+    "subs": [
+     "Humidity",
+     "Condensation forms",
+     "Clouds",
+     "Precipitation – form & process",
+     "Precipitation types",
+     "Stability & instability",
+     "Hydrological cycles"
+    ],
+    "kws": {
+     "": 41,
+     "Humidity": 41,
+     "Condensation": 44,
+     "Clouds": 47,
+     "form": 48,
+     "types": 49,
+     "Stability": 51,
+     "Hydrological": 54
+    }
+   },
+   {
+    "key": "air",
+    "label": "Air masses",
+    "page": 54,
+    "subs": [],
+    "kws": {
+     "": 54
+    }
+   },
+   {
+    "key": "cyc",
+    "label": "Cyclones",
+    "page": 60,
+    "subs": [],
+    "kws": {
+     "": 60,
+     "tab:tc": 60,
+     "tab:tr": 66,
+     "tab:cm": 60
+    }
+   },
+   {
+    "key": "kop",
+    "label": "Köppen",
+    "page": 69,
+    "subs": [
+     "Köppen – level 1 (6 capital letters)",
+     "Level 2 & 3 symbols",
+     "A – Tropical",
+     "B – Dry",
+     "C – Sub‑tropical",
+     "D – Temperate (cold)",
+     "E – Polar & H – Montane",
+     "Trewartha & appraisal of Köppen"
+    ],
+    "kws": {
+     "": 69,
+     "level 1": 70,
+     "Level 2": 71,
+     "A – Tropical": 72,
+     "B – Dry": 73,
+     "C – Sub": 76,
+     "D – Temperate": 77,
+     "E – Polar": 79,
+     "Trewartha": 80
+    }
+   },
+   {
+    "key": "thn",
+    "label": "Thornthwaite",
+    "page": 81,
+    "subs": [
+     "Global precipitation distribution",
+     "Thornthwaite 1931",
+     "Thornthwaite 1948 – potential evapotranspiration"
+    ],
+    "kws": {
+     "1948": 86,
+     "": 81,
+     "Global precipitation": 81,
+     "Thornthwaite 1931": 85
+    }
+   }
+  ]
+ },
+ {
+  "file": "oceanography.html",
+  "title": "Oceanography",
+  "subject": "Physical Geography",
+  "tab": "notes",
+  "pdf": "oceanography-notes.pdf",
+  "topics": [
+   {
+    "key": "topo",
+    "label": "Submarine relief",
+    "page": 3,
+    "subs": [
+     "Continental shelf",
+     "Continental slope & continental rise",
+     "Submarine canyons (3rd‑order relief)",
+     "Abyssal plains"
+    ],
+    "kws": {
+     "": 3,
+     "Continental shelf": 4,
+     "Continental slope": 4,
+     "Submarine canyons": 5,
+     "Abyssal plains": 7
+    }
+   },
+   {
+    "key": "oceans",
+    "label": "3 Oceans",
+    "page": 8,
+    "subs": [
+     "Mid‑Atlantic Ridge",
+     "Atlantic islands",
+     "Mid‑Indian Ocean Ridge",
+     "Southern basin",
+     "Northern basin"
+    ],
+    "kws": {
+     "": 8,
+     "tab:atl": 8,
+     "Atlantic Ridge": 9,
+     "Atlantic islands": 10,
+     "tab:ind": 11,
+     "Indian Ocean Ridge": 12,
+     "tab:pac": 14,
+     "Southern basin": 15,
+     "Northern basin": 16,
+     "tab:cmp": 8
+    }
+   },
+   {
+    "key": "salt",
+    "label": "Salinity",
+    "page": 17,
+    "subs": [
+     "5 controlling factors",
+     "Distribution tree",
+     "Latitudinal pattern (open oceans)",
+     "Regional pattern",
+     "Vertical pattern – S‑diagram"
+    ],
+    "kws": {
+     "": 17,
+     "5 controlling": 18,
+     "Distribution tree": 19,
+     "Latitudinal": 19,
+     "Regional": 20,
+     "Vertical": 22
+    }
+   },
+   {
+    "key": "temp",
+    "label": "Temperature",
+    "page": 23,
+    "subs": [
+     "Ocean water temperature",
+     "Ocean heat budget"
+    ],
+    "kws": {
+     "": 23,
+     "Ocean water temperature": 23,
+     "heat budget": 24
+    }
+   },
+   {
+    "key": "curr",
+    "label": "Currents",
+    "page": 26,
+    "subs": [
+     "Gyre circulation – parts",
+     "Boundary currents (geostrophic)",
+     "Practical gyre – ocean‑wise currents",
+     "El Niño & La Niña",
+     "Thermohaline circulation"
+    ],
+    "kws": {
+     "": 26,
+     "Gyre circulation": 27,
+     "Boundary": 28,
+     "Practical gyre": 30,
+     "El Niño": 31,
+     "Thermohaline": 32
+    }
+   },
+   {
+    "key": "tide",
+    "label": "Tides",
+    "page": 33,
+    "subs": [
+     "Equilibrium concept (Newton)",
+     "Mixed tides: spring & neap",
+     "Dynamic concept (Laplace)"
+    ],
+    "kws": {
+     "": 33,
+     "Equilibrium": 33,
+     "Mixed": 35,
+     "Dynamic": 37
+    }
+   },
+   {
+    "key": "dep",
+    "label": "Deposits",
+    "page": 39,
+    "subs": [
+     "Terrigenous",
+     "Biogenous & ooze",
+     "Hydrogenous (authigenic) & cosmogenous",
+     "Location‑based table"
+    ],
+    "kws": {
+     "": 39,
+     "Terrigenous": 39,
+     "Biogenous": 40,
+     "Hydrogenous": 42,
+     "Location": 43
+    }
+   },
+   {
+    "key": "law",
+    "label": "UNCLOS",
+    "page": 43,
+    "subs": [],
+    "kws": {
+     "": 43
+    }
+   },
+   {
+    "key": "res",
+    "label": "Resources",
+    "page": 45,
+    "subs": [
+     "Fisheries (nektonic = swimmers)",
+     "Plankton, seaweed, pearl, seal",
+     "Abiotic: energy & minerals"
+    ],
+    "kws": {
+     "": 45,
+     "Fisheries": 45,
+     "Plankton": 47,
+     "Abiotic": 48
+    }
+   },
+   {
+    "key": "coral",
+    "label": "Coral reefs",
+    "page": 50,
+    "subs": [
+     "3 types",
+     "Theories",
+     "Coral bleaching"
+    ],
+    "kws": {
+     "": 50,
+     "3 types": 51,
+     "Theories": 53,
+     "bleaching": 55
+    }
+   }
+  ]
+ },
+ {
+  "file": "biogeography.html",
+  "title": "Biogeography",
+  "subject": "Physical Geography",
+  "tab": "notes",
+  "pdf": "biogeography-notes.pdf",
+  "topics": [
+   {
+    "key": "eco",
+    "label": "Ecology basics",
+    "page": 3,
+    "subs": [
+     "Biosphere & Odum's hierarchy",
+     "Components of an ecosystem"
+    ],
+    "kws": {
+     "": 3,
+     "Biosphere": 3,
+     "Components": 4
+    }
+   },
+   {
+    "key": "lnk",
+    "label": "Linkages",
+    "page": 5,
+    "subs": [
+     "Abiotic → biotic: production",
+     "Biotic → biotic: productivity & food pyramid",
+     "Biotic → abiotic: decomposers"
+    ],
+    "kws": {
+     "": 5,
+     "production": 5,
+     "productivity": 6,
+     "decomposers": 8
+    }
+   },
+   {
+    "key": "trb",
+    "label": "Terrestrial biomes",
+    "page": 9,
+    "subs": [
+     "Tundra",
+     "Desert",
+     "Forest biomes",
+     "Mediterranean (sclerophyll)",
+     "Grassland",
+     "Savanna"
+    ],
+    "kws": {
+     "": 9,
+     "Tundra": 10,
+     "Desert": 11,
+     "Forest biomes": 12,
+     "Mediterranean": 16,
+     "Grassland": 17,
+     "Savanna": 18
+    }
+   },
+   {
+    "key": "zoo",
+    "label": "Zoo realms",
+    "page": 22,
+    "subs": [],
+    "kws": {
+     "": 22
+    }
+   },
+   {
+    "key": "aqu",
+    "label": "Aquatic",
+    "page": 23,
+    "subs": [
+     "Basics & habitats",
+     "Fresh water",
+     "Marine"
+    ],
+    "kws": {
+     "": 23,
+     "Basics": 23,
+     "Fresh water": 25,
+     "Marine": 25
+    }
+   },
+   {
+    "key": "sfm",
+    "label": "Soil formation",
+    "page": 28,
+    "subs": [
+     "Weathering (in situ)",
+     "Soil profile",
+     "Soil‑forming processes"
+    ],
+    "kws": {
+     "": 28,
+     "Weathering": 28,
+     "Soil profile": 29,
+     "processes": 32
+    }
+   },
+   {
+    "key": "wsl",
+    "label": "World soils",
+    "page": 35,
+    "subs": [
+     "Zonal soils",
+     "Intrazonal & azonal soils",
+     "USDA comprehensive classification (1960)"
+    ],
+    "kws": {
+     "": 35,
+     "Zonal": 35,
+     "Intrazonal": 39,
+     "USDA": 44
+    }
+   },
+   {
+    "key": "hea",
+    "label": "Human adaptations",
+    "page": 46,
+    "subs": [],
+    "kws": {
+     "": 46
+    }
+   },
+   {
+    "key": "imp",
+    "label": "Human impact",
+    "page": 53,
+    "subs": [
+     "Climate change – natural causes",
+     "Human‑induced factors (IPCC)",
+     "Hydrosphere impact",
+     "Biosphere impact"
+    ],
+    "kws": {
+     "": 53,
+     "natural causes": 55,
+     "IPCC": 58,
+     "Hydrosphere": 59,
+     "Biosphere impact": 64
+    }
+   },
+   {
+    "key": "glb",
+    "label": "Conventions",
+    "page": 67,
+    "subs": [
+     "Phases of environment education",
+     "UNFCCC & Kyoto",
+     "Vienna Convention & Montreal Protocol",
+     "CBD & its protocols",
+     "CITES, CMS, Ramsar"
+    ],
+    "kws": {
+     "": 67,
+     "Phases": 67,
+     "UNFCCC": 70,
+     "Vienna": 73,
+     "CBD": 74,
+     "CITES": 77
+    }
+   }
+  ]
+ },
+ {
+  "file": "geographical-thought.html",
+  "title": "Geographical Thought",
+  "subject": "Human Geography",
+  "tab": "notes",
+  "pdf": "geographical-thought-notes.pdf",
+  "topics": [
+   {
+    "key": "soc",
+    "label": "Social Darwinism",
+    "page": 2,
+    "subs": [
+     "Ratzel's ideas",
+     "Ratzel's legacy"
+    ],
+    "kws": {
+     "": 2,
+     "Ratzel's ideas": 2,
+     "legacy": 3
+    }
+   },
+   {
+    "key": "env",
+    "label": "Neo-environmentalism",
+    "page": 3,
+    "subs": [
+     "Ellen Churchill Semple",
+     "Ellsworth Huntington"
+    ],
+    "kws": {
+     "": 3,
+     "Semple": 3,
+     "Huntington": 4
+    }
+   },
+   {
+    "key": "ndt",
+    "label": "Neo-determinism",
+    "page": 5,
+    "subs": [
+     "Stop‑and‑go determinism"
+    ],
+    "kws": {
+     "": 5,
+     "Stop": 5
+    }
+   },
+   {
+    "key": "cul",
+    "label": "Cultural determinism",
+    "page": 6,
+    "subs": [
+     "Present form of determinism"
+    ],
+    "kws": {
+     "": 6,
+     "Present form": 6
+    }
+   },
+   {
+    "key": "pos",
+    "label": "Possibilism",
+    "page": 7,
+    "subs": [
+     "Basic idea & origin",
+     "Classical possibilism",
+     "Neo‑possibilism",
+     "Probabilism"
+    ],
+    "kws": {
+     "": 7,
+     "Basic idea": 7,
+     "Classical": 8,
+     "Neo": 9,
+     "Probabilism": 10
+    }
+   },
+   {
+    "key": "qnt",
+    "label": "Quantitative revolution",
+    "page": 11,
+    "subs": [
+     "Why it came",
+     "Genesis phase (pre‑1960s)",
+     "Zenith phase (1960s)",
+     "Decline (early 1970s)"
+    ],
+    "kws": {
+     "": 11,
+     "Why it came": 12,
+     "Genesis": 13,
+     "Zenith": 14,
+     "Decline": 16
+    }
+   },
+   {
+    "key": "ind",
+    "label": "India extras",
+    "page": 18,
+    "subs": [
+     "Cement industry centres",
+     "Pipelines",
+     "Region"
+    ],
+    "kws": {
+     "": 18,
+     "Cement": 18,
+     "Pipelines": 18,
+     "Region": 19
+    }
+   }
+  ]
+ },
+ {
+  "file": "geopolitics.html",
+  "title": "Geopolitics & Indian Political Aspects",
+  "subject": "Human Geography",
+  "tab": "notes",
+  "pdf": "geopolitics-notes.pdf",
+  "topics": [
+   {
+    "key": "geo",
+    "label": "Heartland",
+    "page": 2,
+    "subs": [
+     "Two streams of geopolitics",
+     "1904 – \"The Geographical Pivot of History\"",
+     "1919 – \"Democratic Ideals and Reality\"",
+     "1943 – \"The Round World and the Winning of the Peace\""
+    ],
+    "kws": {
+     "1904": 4,
+     "1919": 6,
+     "1943": 8,
+     "": 2,
+     "Two streams": 2
+    }
+   },
+   {
+    "key": "rim",
+    "label": "Rimland",
+    "page": 10,
+    "subs": [
+     "Appraisal of Heartland",
+     "Rimland concept (1944)"
+    ],
+    "kws": {
+     "": 10,
+     "Appraisal": 10,
+     "Rimland": 12
+    }
+   },
+   {
+    "key": "bnd",
+    "label": "Boundaries",
+    "page": 15,
+    "subs": [
+     "Nation, state, frontier, boundary",
+     "Spatial types"
+    ],
+    "kws": {
+     "": 15,
+     "Nation": 15,
+     "Spatial": 16
+    }
+   },
+   {
+    "key": "law",
+    "label": "Boundary laws",
+    "page": 20,
+    "subs": [
+     "Territorial allocation",
+     "Delimitation & demarcation"
+    ],
+    "kws": {
+     "": 20,
+     "allocation": 21,
+     "Delimitation": 24
+    }
+   },
+   {
+    "key": "sro",
+    "label": "States reorg.",
+    "page": 25,
+    "subs": [
+     "Phase 1: Consolidation",
+     "Phase 2: Linguistic (1956 onward)",
+     "Phase 3: Economic (1970s onward)"
+    ],
+    "kws": {
+     "": 25,
+     "Consolidation": 26,
+     "Linguistic": 28,
+     "Economic": 31
+    }
+   },
+   {
+    "key": "nbr",
+    "label": "Neighbours",
+    "page": 33,
+    "subs": [
+     "India–Pakistan",
+     "India–China",
+     "India–Bangladesh & India–Nepal"
+    ],
+    "kws": {
+     "": 33,
+     "Pakistan": 34,
+     "China": 36,
+     "Bangladesh": 38
+    }
+   },
+   {
+    "key": "saa",
+    "label": "SAARC",
+    "page": 39,
+    "subs": [
+     "Background & phases",
+     "Achievements & failure"
+    ],
+    "kws": {
+     "": 39,
+     "Background": 40,
+     "Achievements": 43
+    }
+   },
+   {
+    "key": "ioc",
+    "label": "Indian Ocean",
+    "page": 48,
+    "subs": [
+     "From British Lake to Zone of Peace",
+     "Why the IOR matters",
+     "India–China regional manifestations"
+    ],
+    "kws": {
+     "": 48,
+     "British Lake": 49,
+     "Why the IOR": 51,
+     "regional": 55
+    }
+   },
+   {
+    "key": "fed",
+    "label": "Federation",
+    "page": 61,
+    "subs": [],
+    "kws": {
+     "": 61
+    }
+   },
+   {
+    "key": "sec",
+    "label": "Security",
+    "page": 64,
+    "subs": [
+     "Terrorism",
+     "Left‑wing extremism"
+    ],
+    "kws": {
+     "": 64,
+     "Terrorism": 64,
+     "Left": 71
+    }
+   },
+   {
+    "key": "mpl",
+    "label": "Map lists",
+    "page": 27,
+    "subs": [
+     "Airports",
+     "Textiles",
+     "Sugar & paper"
+    ],
+    "kws": {
+     "": 27,
+     "Airports": 27,
+     "Textiles": 44,
+     "Sugar": 76
+    }
+   }
+  ]
+ },
+ {
+  "file": "india-climate-soils.html",
+  "title": "India: Climate, Biomes, Structure & Soils",
+  "subject": "Geography of India",
+  "tab": "notes",
+  "pdf": "india-climate-soils-notes.pdf",
+  "topics": [
+   {
+    "key": "sea",
+    "label": "Winter & summer",
+    "page": 3,
+    "subs": [
+     "Dry winters",
+     "Dry summers"
+    ],
+    "kws": {
+     "": 3,
+     "Dry winters": 3,
+     "Dry summers": 4
+    }
+   },
+   {
+    "key": "mon",
+    "label": "Monsoon",
+    "page": 6,
+    "subs": [
+     "Arabian Sea branch",
+     "Bay of Bengal branch",
+     "Retreating (NE) monsoon"
+    ],
+    "kws": {
+     "": 6,
+     "Arabian": 6,
+     "Bay of Bengal": 9,
+     "Retreating": 10
+    }
+   },
+   {
+    "key": "reg",
+    "label": "Climatic regions",
+    "page": 12,
+    "subs": [
+     "Kendrew (genetic, rainfall)",
+     "Köppen in India",
+     "Thornthwaite in India",
+     "Stamp (most used)"
+    ],
+    "kws": {
+     "": 12,
+     "Kendrew": 12,
+     "Köppen": 13,
+     "Thornthwaite": 14,
+     "Stamp": 16
+    }
+   },
+   {
+    "key": "bio",
+    "label": "Biomes",
+    "page": 23,
+    "subs": [
+     "Tropical evergreen (4 types)",
+     "Tropical deciduous & thorny",
+     "Sub‑tropical montane (southern hills)"
+    ],
+    "kws": {
+     "": 23,
+     "evergreen": 24,
+     "deciduous": 26,
+     "montane": 28
+    }
+   },
+   {
+    "key": "him",
+    "label": "Himalayan & zoo",
+    "page": 29,
+    "subs": [
+     "Himalayan biome",
+     "Zoogeographic zones"
+    ],
+    "kws": {
+     "": 29,
+     "Himalayan biome": 29,
+     "Zoogeographic": 31
+    }
+   },
+   {
+    "key": "for",
+    "label": "Forest laws",
+    "page": 33,
+    "subs": [
+     "Forest status (2014 report)",
+     "Indian Forest Act 1927 & FCA 1980",
+     "NFP 1988, FRA 2006, REDD+, NEP 2006"
+    ],
+    "kws": {
+     "": 33,
+     "status": 33,
+     "FCA": 34,
+     "NFP": 36
+    }
+   },
+   {
+    "key": "wld",
+    "label": "Wildlife",
+    "page": 39,
+    "subs": [
+     "Wildlife Protection Act 1972",
+     "Biological Diversity Act 2002",
+     "Recovery programmes"
+    ],
+    "kws": {
+     "": 39,
+     "Wildlife Protection": 39,
+     "Biological": 41,
+     "Recovery": 42
+    }
+   },
+   {
+    "key": "epa",
+    "label": "EPA & climate",
+    "page": 44,
+    "subs": [
+     "INCCA",
+     "Montreal Protocol compliance",
+     "EIA, CREP, CEPI",
+     "NAPCC missions"
+    ],
+    "kws": {
+     "": 44,
+     "INCCA": 45,
+     "Montreal": 47,
+     "EIA": 48,
+     "NAPCC": 50
+    }
+   },
+   {
+    "key": "geo",
+    "label": "Archean–Dravidian",
+    "page": 51,
+    "subs": [
+     "Archean system (4000–1400 Ma)",
+     "Purana system (1400–600 Ma)",
+     "Dravidian system (600–300 Ma)"
+    ],
+    "kws": {
+     "": 51,
+     "Archean": 52,
+     "Purana": 55,
+     "Dravidian": 57
+    }
+   },
+   {
+    "key": "ary",
+    "label": "Aryan & quakes",
+    "page": 58,
+    "subs": [
+     "Gondwana series (coal)",
+     "Deccan Trap & seismic highways",
+     "Earthquake zones",
+     "Recent series (Pliocene–Pleistocene)"
+    ],
+    "kws": {
+     "": 58,
+     "Gondwana": 58,
+     "Deccan": 60,
+     "Earthquake": 62,
+     "Recent": 63
+    }
+   },
+   {
+    "key": "soi",
+    "label": "Soils",
+    "page": 65,
+    "subs": [
+     "Alluvial",
+     "Black (regur)",
+     "Red & laterite",
+     "Desert, forest, saline, peat"
+    ],
+    "kws": {
+     "": 65,
+     "Alluvial": 66,
+     "Black": 67,
+     "Red": 68,
+     "Desert": 70
+    }
+   }
+  ]
+ },
+ {
+  "file": "ch22-glaciers.html",
+  "title": "Glaciers & Glaciated Topography",
+  "subject": "Physical Geography",
+  "tab": "book",
+  "pdf": "ch22-glaciers-book.pdf",
+  "topics": [
+   {
+    "key": "ice",
+    "label": "Ice & snow line",
+    "page": 1,
+    "subs": [
+     "Glacier basics",
+     "Snow line",
+     "Snow → glacial ice"
+    ],
+    "kws": {
+     "": 1,
+     "Glacier basics": 1,
+     "Snow line": 1,
+     "Snow": 1
+    }
+   },
+   {
+    "key": "typ",
+    "label": "Types",
+    "page": 1,
+    "subs": [
+     "Ahlmann's classification (1953)",
+     "Ice sheets, ice caps & continental glaciers",
+     "Mountain / valley (Alpine) glaciers – Himalayan examples",
+     "Piedmont, shelf, field, cirque & niche"
+    ],
+    "kws": {
+     "": 1,
+     "Ahlmann": 1,
+     "Ice sheets": 2,
+     "Himalayan": 2,
+     "Piedmont": 2
+    }
+   },
+   {
+    "key": "mov",
+    "label": "Movement",
+    "page": 2,
+    "subs": [
+     "Why and how glaciers move",
+     "Rate of movement"
+    ],
+    "kws": {
+     "": 2,
+     "Why and how": 2,
+     "Rate": 3
+    }
+   },
+   {
+    "key": "ero",
+    "label": "Erosion & valleys",
+    "page": 3,
+    "subs": [
+     "Two views on glacial erosion",
+     "U‑shaped valleys",
+     "Hanging valleys"
+    ],
+    "kws": {
+     "": 3,
+     "Two views": 3,
+     "U‑shaped": 3,
+     "Hanging": 4
+    }
+   },
+   {
+    "key": "crq",
+    "label": "Cirques & horns",
+    "page": 4,
+    "subs": [
+     "Cirque – shape, names, parts",
+     "Theories of cirque formation",
+     "Tarn, col, arête, horn"
+    ],
+    "kws": {
+     "": 4,
+     "Cirque": 4,
+     "Theories": 4,
+     "Tarn": 5
+    }
+   },
+   {
+    "key": "erl",
+    "label": "Other erosional",
+    "page": 5,
+    "subs": [
+     "Nunatak & crag and tail",
+     "Roches moutonnées",
+     "Glacial stairways, paternoster lakes, grooves",
+     "Fiords"
+    ],
+    "kws": {
+     "": 5,
+     "Nunatak": 5,
+     "Roches": 6,
+     "stairways": 6,
+     "Fiords": 6
+    }
+   },
+   {
+    "key": "dep",
+    "label": "Drift & moraines",
+    "page": 7,
+    "subs": [
+     "Glacial drift & till",
+     "Moraines – 4 locational types",
+     "V.K. Prest (1968) – by orientation"
+    ],
+    "kws": {
+     "": 7,
+     "drift": 7,
+     "4 locational": 7,
+     "Prest": 7
+    }
+   },
+   {
+    "key": "drm",
+    "label": "Drumlins",
+    "page": 8,
+    "subs": [
+     "Shape, size, distribution",
+     "Theories of origin"
+    ],
+    "kws": {
+     "": 8,
+     "Shape": 8,
+     "Theories": 8
+    }
+   },
+   {
+    "key": "gfl",
+    "label": "Glacio-fluvial",
+    "page": 9,
+    "subs": [
+     "Ablation & meltwater deposits",
+     "Eskers",
+     "Kames, kettles, outwash"
+    ],
+    "kws": {
+     "": 9,
+     "Ablation": 9,
+     "Eskers": 9,
+     "Kames": 10
+    }
+   },
+   {
+    "key": "glo",
+    "label": "Glossary",
+    "page": 10,
+    "subs": [],
+    "kws": {
+     "": 10
+    }
+   }
+  ]
+ }
+]
