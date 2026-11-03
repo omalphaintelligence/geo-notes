@@ -8,6 +8,33 @@
    "month": "",
    "pdf": "uphesc-2021-geo.pdf",
    "source": "YCT solved paper (UP Assistant Professor 2021 Geography)"
+  },
+  {
+   "id": "upessc-2025-re-s1",
+   "exam": "UP Assistant Professor",
+   "session": "Re-exam 2025 (19 Apr 2026, Shift-I)",
+   "year": 2026,
+   "month": "April",
+   "pdf": "upessc-2025-re-s1.pdf",
+   "source": "YCT solved paper"
+  },
+  {
+   "id": "upessc-2025-cancelled",
+   "exam": "UP Assistant Professor",
+   "session": "2025 (Cancelled exam, 16 Apr 2025)",
+   "year": 2025,
+   "month": "April",
+   "pdf": "upessc-2025-cancelled.pdf",
+   "source": "YCT solved paper"
+  },
+  {
+   "id": "uppsc-gdc-2026",
+   "exam": "UPPSC GDC Lecturer",
+   "session": "31 May 2026",
+   "year": 2026,
+   "month": "May",
+   "pdf": "uppsc-gdc-2026.pdf",
+   "source": "YCT solved paper"
   }
  ],
  "questions": [
@@ -1265,6 +1292,4170 @@
    ],
    "a": 1,
    "exp": "Sambhavya pratichayan ka sahi kram: daiv (random) – stareekrit (stratified) – kramabaddh (systematic) – guchchhit (cluster). Quota aur purposive asambhavya pratichayan hain.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-re-s1-q01",
+   "paper": "upessc-2025-re-s1",
+   "qno": 1,
+   "page": 1,
+   "q": "The progressive reduction of relief through long-term interaction of endogenetic uplift and exogenetic denudation is most appropriately conceptualized as:",
+   "o": [
+    "Parallel slope retreat independent of base level",
+    "Dynamic equilibrium between uplift and denudation",
+    "Pediplanation under humid climate",
+    "Catastrophic planation by tectonic quiescence"
+   ],
+   "a": 1,
+   "exp": "Book: bhootal par do srot ke bal kaam karte hain – antarjat (uthaan, asamanta badhate) aur bahirjat (apardan, asamanta ghatate). Dono ke beech lagatar santulan ki prakriya se hi raahat dheere-dheere kam hoti hai – ise uthaan aur nirakaran ke beech gatisheel santulan kehte hain.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "slp",
+    "kw": "Denudation"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q02",
+   "paper": "upessc-2025-re-s1",
+   "qno": 2,
+   "page": 1,
+   "q": "The geosynclinal theory of mountain building fundamentally assumed:",
+   "o": [
+    "Lateral compression due to mantle convection currents",
+    "Vertical subsidence and sediment accumulation followed by compression",
+    "Transform fault displacement",
+    "Isostatic rebound without sedimentation"
+   ],
+   "a": 1,
+   "exp": "Geosyncline siddhant me pehle lambi, sankri, chhichhli jalpoorn droni me lagatar avsadan aur avtalan (vertical subsidence) hota hai, baad me sampeedan se parvat bante hain. Kober (1925): droni ke dono kinaron ke kathor bhookhand (foreland/agradesh) ek-doosre ki or khisakkar avsadon ko mod dete hain; madhya pind (median mass) ki sankalpana bhi unhi ki.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "plt",
+    "kw": "Geosyncline"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q03",
+   "paper": "upessc-2025-re-s1",
+   "qno": 3,
+   "page": 1,
+   "q": "A coastal stretch showing raised beaches, marine terraces and inland shifted wave-cut platforms indicates:",
+   "o": [
+    "Eustatic rise in sea level",
+    "Isostatic uplift relative to sea level",
+    "Deltaic progradation",
+    "Coral reef subsidence"
+   ],
+   "a": 1,
+   "exp": "Ooonche samudra tat, samudri vedikayein aur andar khiske wave-cut platform batate hain ki tat samudra tal ke sapeksh ooncha utha hai – samasthitik (isostatic) utthaan. Isostasy shabd Greek 'isostasios' se; pehla prayog Dutton (1889). Siddhant: ooncha uthe bhaag kam ghanatva ke aur dhanse bhaag adhik ghanatva ke, taaki 'samtolan tal' par sab santulit rahe.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "slp",
+    "kw": "Isostasy"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q04",
+   "paper": "upessc-2025-re-s1",
+   "qno": 4,
+   "page": 2,
+   "q": "The coexistence of U-shaped valleys, hanging valleys and truncated spurs in a fluvial landscape implies:",
+   "o": [
+    "Structural control by jointing",
+    "Glacial overprinting on pre-existing river valleys",
+    "Karstification under humid climate",
+    "Aeolian modification"
+   ],
+   "a": 1,
+   "exp": "U-aakar ghati, latakti ghati aur kate spurs ek saath milna batata hai ki pehle se bani nadi ghatiyon par baad me himnad ne apna prabhav chhoda (glacial overprinting). Himnad V-ghati ko chauda-gehra karke U banata hai, sahayak ghatiyan oonchi rah jati hain (latakti ghati) aur ghaati ke spurs kat jate hain.",
+   "ref": {
+    "file": "ch22-glaciers.html",
+    "topic": "ero",
+    "kw": "U‑shaped"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q05",
+   "paper": "upessc-2025-re-s1",
+   "qno": 5,
+   "page": 2,
+   "q": "The Principle of isostasy explains post-glacial rebound primarily due to:",
+   "o": [
+    "Orogenic compression",
+    "Sea floor spreading",
+    "Transform faulting",
+    "Elastic lithospheric recovery over asthenosphere"
+   ],
+   "a": 3,
+   "exp": "Isostasy ke anusaar himnad pighalne ke baad bhaar hatne se sthalmandal asthenosphere ke upar lochdar dhang se wapas upar uthta hai (post-glacial rebound). Saamanya arth: prithvi ki satah ke oonche-neeche bhaagon me ek talpar santulan rehta hai; oonchai ke vyutkramanupaat me ghanatva hota hai.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "slp",
+    "kw": "Isostasy"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q06",
+   "paper": "upessc-2025-re-s1",
+   "qno": 6,
+   "page": 2,
+   "q": "A river exhibiting graded profile, floodplain widening and meander cut-offs reflects dominance of:",
+   "o": [
+    "Vertical erosion",
+    "Lateral erosion and deposition",
+    "Headward erosion",
+    "Glacial abrasion"
+   ],
+   "a": 1,
+   "exp": "Shrenibaddh (graded) profile ka arth nadi praudh/vriddh avastha me hai, jahan oordhvadhar apardan lagbhag khatam aur parshv (lateral) apardan tatha nikshep pramukh hote hain. Nadi ghumavdar banti hai, kat-off bante hain aur baadh ka maidan chauda hota jata hai.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "flu",
+    "kw": "normal cycle"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q07",
+   "paper": "upessc-2025-re-s1",
+   "qno": 7,
+   "page": 2,
+   "q": "Karst topography is most intensively developed where limestone areas exhibit:",
+   "o": [
+    "Low rainfall and high evaporation",
+    "Impermeable strata below soluble rocks",
+    "Massive basaltic cover",
+    "Absences of joints"
+   ],
+   "a": 1,
+   "exp": "Karst sabse achha wahan banta hai jahan ghulansheel choona-patthar ke neeche abhedya parat ho. Bhoomigat jal ka kaarya oopar ki ghulansheel chattano tak simit rehta hai aur ghulan (solution) ke kaaran gart, kandaraein ityadi banti hain; neeche abhedya parat hone se jal neeche nahi rishta.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "cyc",
+    "kw": "tab:ka"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q08",
+   "paper": "upessc-2025-re-s1",
+   "qno": 8,
+   "page": 2,
+   "q": "At night in winter at higher latitudes, the net radiation balance at the Earth's surface becomes negative primarily because:",
+   "o": [
+    "High albedo of land surfaces during winter nights",
+    "Outgoing longwave radiation exceeding incoming shortwave radiation",
+    "Sensible heat transfer to upper atmosphere",
+    "Latent heat release during condensation at night time"
+   ],
+   "a": 1,
+   "exp": "Sardi ki raaton me ucch akshanshon par prithvi se jaane wala deerghtarang (longwave) vikiran aane wale laghutarang (shortwave) se zyada ho jata hai, isliye shuddh vikiran santulan rinatmak ho jata hai. Saamanya roop se prithvi aur vayumandal sauryatap aur bahirgami vikiran ke beech santulan banaye rakhte hain.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "atm",
+    "kw": "Heat budget"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q09",
+   "paper": "upessc-2025-re-s1",
+   "qno": 9,
+   "page": 3,
+   "q": "Lowest temperature is recorded at which of the following layer/region in the atmosphere?",
+   "o": [
+    "Tropopause",
+    "Stratosphere",
+    "Stratopause",
+    "Mesopause"
+   ],
+   "a": 3,
+   "exp": "Sabse kam taapmaan mesopause par (~80 km) – lagbhag –100°C se –133°C. Madhyamandal 50–80 km tak, oonchai ke saath taapmaan girta hai. Stratopause par ozone adhiktam; Teisserenc de Bort ne 1902 me samtap mandal khoja.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "atm",
+    "kw": "Structure"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q10",
+   "paper": "upessc-2025-re-s1",
+   "qno": 10,
+   "page": 3,
+   "q": "According to Koppen's classification, the boundary between 'C' and 'D' climates is primarily determined by:",
+   "o": [
+    "Annual precipitation threshold",
+    "Length of dry season",
+    "Temperature of coldest month",
+    "Evapotranspiration ratio"
+   ],
+   "a": 2,
+   "exp": "Köppen me C aur D ke beech seema sabse thande mahine ke taapmaan se tay hoti hai. Book: C me sabse thande mahine ka taapmaan 18°C aur –3°C ke beech; D me sabse thande mahine ka taapmaan –3°C se kam aur sabse garam ka 10°C se adhik. Köppen ka vargikaran 1900 (De Candolle 1874 par aadharit), sanshodhan 1918, 1931, 1936.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "kop",
+    "kw": "level 1"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q11",
+   "paper": "upessc-2025-re-s1",
+   "qno": 11,
+   "page": 4,
+   "q": "The thermal wind relationship explains the formation of upper air westerlies as a function of:",
+   "o": [
+    "Vertical pressure gradient alone",
+    "Horizontal temperature gradient",
+    "Latent heat flux",
+    "Planetary albedo variation"
+   ],
+   "a": 1,
+   "exp": "Taapiya pawan sambandh ke anusaar oopari paschimi hawaayein kshaitij taapmaan pravanata (dhruv aur vishuvat ke taapmaan antar) ka parinaam hain. Jitna zyada taapmaan antar, utni tez paschimi hawa – isliye sardi me jet stream tez hoti hai.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "jet",
+    "kw": "Jet streams"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q12",
+   "paper": "upessc-2025-re-s1",
+   "qno": 12,
+   "page": 4,
+   "q": "In a mature tropical cyclone, the maximum rainfall is generally associated with:",
+   "o": [
+    "Upper tropospheric outflow",
+    "Outer rainbands only",
+    "Central eye",
+    "Eye wall region"
+   ],
+   "a": 3,
+   "exp": "Paripakva ushna katibandhiya chakravat me adhiktam varsha netra-bhitti (eye wall) kshetra me hoti hai. Kendra me shaant 'aankh' (vyas ~10–50 km) hoti hai; uske charon or tez hawaon aur ghane kapasi-varsha meghon ki deewar me sabse tez hawa aur sabse bhaari varsha hoti hai.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "cyc",
+    "kw": "tab:tr"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q13",
+   "paper": "upessc-2025-re-s1",
+   "qno": 13,
+   "page": 4,
+   "q": "The descending limb of the Hadley Cell contributes directly to the formation of:",
+   "o": [
+    "Equatorial low pressure",
+    "Subtropical deserts",
+    "Polar highs",
+    "Monsoon trough"
+   ],
+   "a": 1,
+   "exp": "Hadley cell ki avrohi bhuja 30° akshansh ke paas neeche utarti hai, wahan uposhna ucch dabaav aur shushk sthitiyan banti hain – isliye uposhna katibandhiya registan. G. Hadley ne 1735 me ye sanchalan cell bataya; vishuvat par garm hawa oopar uthkar 8–12 km par dhruvon ki or jaati hai aur 30° par neeche utarti hai.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "prs",
+    "kw": "Tri"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q14",
+   "paper": "upessc-2025-re-s1",
+   "qno": 14,
+   "page": 4,
+   "q": "The lapse rate inversion during winter nights in valleys is mainly attributed to:",
+   "o": [
+    "Advection of warm air",
+    "Strong Coriolis deflection",
+    "Convectional instability",
+    "Radiation cooling of surface air"
+   ],
+   "a": 3,
+   "exp": "Sardi ki raaton me ghati me taap pratilomana mukhyatah satah ki hawa ke vikiran dwara thande hone se hota hai. Pahadi dhalon ki hawa thandi aur bhaari hokar neeche ghati me jama hoti hai, oopar garm hawa rehti hai – ghati ki tali me kohra/pala.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "tmp",
+    "kw": "Vertical"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q15",
+   "paper": "upessc-2025-re-s1",
+   "qno": 15,
+   "page": 5,
+   "q": "The deepest parts of the ocean basins are generally associated with which of the following tectonic settings?",
+   "o": [
+    "Divergent plate margins with mid-oceanic ridges",
+    "Transform plate boundaries with fracture zones",
+    "Convergent plate margins with subduction zones",
+    "Passive continental margins with wide continental shelves"
+   ],
+   "a": 2,
+   "exp": "Mahasagaron ke sabse gehre bhaag (gart) abhisari plate seemaon ke subduction kshetron se jude hain – bhaari plate halki plate ke neeche dhansti hai aur gehri khai banti hai; saath me jwalamukhi dweep chaap bhi.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "plt",
+    "kw": "Plate tectonic"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q16",
+   "paper": "upessc-2025-re-s1",
+   "qno": 16,
+   "page": 5,
+   "q": "The sequential development of fringing, barrier and atoll reefs is primarily associated with:",
+   "o": [
+    "Eustatic rise in sea level without crustal movement",
+    "Emergence of continental shelves",
+    "Subsidence of volcanic islands",
+    "Lateral accretion along transform faults"
+   ],
+   "a": 2,
+   "exp": "Charles Darwin ke avtalan siddhant ke anusaar jwalamukhi dweep ke dheere-dheere doobne se pehle tateey (fringing) bhitti, phir avrodhak (barrier) aur ant me atoll banta hai – beech ka dweep doob jata hai aur lagoon bacha rehta hai.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "coral",
+    "kw": "Theories"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q17",
+   "paper": "upessc-2025-re-s1",
+   "qno": 17,
+   "page": 5,
+   "q": "The global distribution of tropical rainforests corresponds most closely with:",
+   "o": [
+    "Regions of descending air in subtropical highs",
+    "Cold ocean currents along western margins",
+    "Areas under the influence of ITCZ convergence",
+    "Continental interiors with high annual range of temperature"
+   ],
+   "a": 2,
+   "exp": "Ushna katibandhiya varsha van ITCZ (antar-ushna abhisaran kshetra) ke prabhav wale kshetron se mel khaate hain. Vishuvat ke paas sarvadhik suryatap se sanvahan dharayein uthti hain, roz dopahar baad ghanghor varsha hoti hai; ye 10°N–10°S ke beech.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "trb",
+    "kw": "Forest biomes"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q18",
+   "paper": "upessc-2025-re-s1",
+   "qno": 18,
+   "page": 6,
+   "q": "The principle of ecological succession predicts that maximum biomass and species diversity are generally achieved during:",
+   "o": [
+    "Pioneer stage",
+    "Seral stage immediately after disturbance",
+    "Climax community stage",
+    "Retrogressive phase"
+   ],
+   "a": 2,
+   "exp": "Paristhitik uttaradhikar ka siddhant batata hai ki adhiktam jaivbhar aur prajati vividhata charam (climax) samudayik avastha me milti hai. Anukramik vikas ki antim avastha charam samuday hai, jahan tantra santulan me hota hai.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "eco",
+    "kw": "Components"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q19",
+   "paper": "upessc-2025-re-s1",
+   "qno": 19,
+   "page": 6,
+   "q": "Increased sea surface temperature due to climate change is most likely to result in:",
+   "o": [
+    "Enhanced calcification in corals",
+    "Expansion of cold-water reefs",
+    "Coral bleaching through symbiotic breakdown",
+    "Decrease in metabolic stress in reef organisms"
+   ],
+   "a": 2,
+   "exp": "Samudri satah ka taapmaan badhne se praval aur zooxanthellae shaival ka sahjeevi sambandh toot jata hai – shaival bahar nikal jaate hain aur praval safed ho jata hai (praval viranjan). Viranjan ka arth hai shaival ke na rehne se praval ka rang udna.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "coral",
+    "kw": "bleaching"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q20",
+   "paper": "upessc-2025-re-s1",
+   "qno": 20,
+   "page": 6,
+   "q": "The ozone depletion over polar regions is intensified by:",
+   "o": [
+    "Methane oxidation in the troposphere",
+    "Increase in nitrogen fixation",
+    "Polar stratospheric cloud formation",
+    "Enhanced oceanic upwelling"
+   ],
+   "a": 2,
+   "exp": "Dhruvon par ozone kshay dhruviya samtapmandaliya badal (PSC) banne se tez hota hai. Antarctic sardi me taapmaan –84°C tak; nitric acid aur barf ke kan bante hain; August–September me dhoop aane par in badalon par ozone todne wali kriyaein tez hoti hain.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "glb",
+    "kw": "Vienna"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q21",
+   "paper": "upessc-2025-re-s1",
+   "qno": 21,
+   "page": 7,
+   "q": "The concept of sustainable development is best reflected in:",
+   "o": [
+    "Economic growth independent of ecology",
+    "Inter-generational equity and resource conservation",
+    "Unlimited resource extraction",
+    "Industrial expansion without regulation"
+   ],
+   "a": 1,
+   "exp": "Satat vikas ka saar peedhi dar peedhi samanta aur sansadhan sanrakshan hai. Brundtland Commission (1987) ki report 'Our Common Future': aisa vikas jo vartaman ki zarooratein poori kare bina bhavishya ki peedhiyon ki kshamata ko nuksaan pahunchaye.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "glb",
+    "kw": "Phases"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q22",
+   "paper": "upessc-2025-re-s1",
+   "qno": 22,
+   "page": 7,
+   "q": "The geographical description in the Puranas reflects a cosmographic world view characterized by:",
+   "o": [
+    "Empirical cartographic precision",
+    "Mythical-symbolic spatial structuring",
+    "Mercantile navigation mapping",
+    "Astronomical coordinate grid system"
+   ],
+   "a": 1,
+   "exp": "Puranon ka bhaugolik vivaran brahmandiya drishtikon dikhata hai jisme pauranik-prateekatmak sthaniya sanrachana hai – dweep, varsh, parvat, nadiyan dharm-darshan ke saath varnit. Vayu, Matsya, Vishnu, Markandeya aur Bhagavat Puran me bhaugolik vivaran milta hai.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "upessc-2025-re-s1-q23",
+   "paper": "upessc-2025-re-s1",
+   "qno": 23,
+   "page": 7,
+   "q": "The epistemological basis of major dualisms/dichotomies in geography is fundamentally rooted in:",
+   "o": [
+    "Ontological monism",
+    "Marxian dialectics",
+    "Cartesian dualism",
+    "Cultural relativism"
+   ],
+   "a": 2,
+   "exp": "Bhugol ke pramukh dvaitvad (prakriti–sanskriti, bhautik–manav, vishay–vastu) ka gyanmimansa aadhar Descartes ka dvaitvad (Cartesian dualism) hai – mann aur sharir ko alag maanna. Isse bhautik aur manav bhugol ka vibhajan aaya.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "upessc-2025-re-s1-q24",
+   "paper": "upessc-2025-re-s1",
+   "qno": 24,
+   "page": 7,
+   "q": "In locational analysis, the principle of spatial interaction is theoretically grounded in:",
+   "o": [
+    "Gravity model assumptions",
+    "Cultural determinism",
+    "Sacred cosmology",
+    "Regional exceptionalism"
+   ],
+   "a": 0,
+   "exp": "Sthaniya vishleshan me sthaniya antarkriya ka siddhant gurutvakarshan model par aadharit hai – do sthanon ke beech antarkriya unki jansankhya ke anupaat me aur doori ke vyutkramanupaat me. Isme pravas, vastuon aur sevaon ka aadan-pradan, yatayat aadi shamil.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Zenith"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q25",
+   "paper": "upessc-2025-re-s1",
+   "qno": 25,
+   "page": 7,
+   "q": "The Quantitative Revolution in geography redefined spatial analysis primarily through the adoption of:",
+   "o": [
+    "Phenomenological narratives",
+    "Normative ethical reasoning",
+    "Statistical inference and model building",
+    "Mythological cosmography"
+   ],
+   "a": 2,
+   "exp": "Matratmak kranti ne sankhyiki anuman aur model-nirmaan ke madhyam se sthaniya vishleshan ko naya roop diya. USA me Iowa, Wisconsin aur Washington vishwavidyalayon ke bhugolvettaon ne iska netritva kiya; gaanitiya aur sankhyiki vidhiyon se bhugol ko vaigyanik aur tarksangat banaya.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Why it came"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q26",
+   "paper": "upessc-2025-re-s1",
+   "qno": 26,
+   "page": 8,
+   "q": "The behavioural approach in geography emerged as a critique of quantitative geography mainly because of its:",
+   "o": [
+    "Overemphasis on subjective perception",
+    "Rejection of environmental influence",
+    "Neglect of cognitive processes",
+    "Excessive mythological orientation"
+   ],
+   "a": 2,
+   "exp": "Vyavaharvaadi drishtikon matratmak bhugol ki is kami ki aalochana me aaya ki usne manav ki sangyanatmak (cognitive) prakriyaon ki upeksha ki. 1960 ke dashak me mahsoos hua ki matratmak kranti manav jeevan ki vastavikta se kat rahi hai; manasik maanchitron ka adhyayan shuru hua.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Decline"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q27",
+   "paper": "upessc-2025-re-s1",
+   "qno": 27,
+   "page": 8,
+   "q": "Radical geography interprets spatial organization primarily through the lens of:",
+   "o": [
+    "Neo-classical equilibrium",
+    "Functional regionalism",
+    "Political economy and class relations",
+    "Environmental mysticism"
+   ],
+   "a": 2,
+   "exp": "Radical bhugol sthaniya sangathan ko rajneetik arthvyavastha aur varg sambandhon ki drishti se dekhta hai. 1960 ke uttarardh me pratyakshvad ki pratikriya me ubhra; Marxvaad par aadharit – poonjivaad, vargon ka shoshan, gareebi, asamanta ke sthaniya roop.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "upessc-2025-re-s1-q28",
+   "paper": "upessc-2025-re-s1",
+   "qno": 28,
+   "page": 8,
+   "q": "Arrange the following paradigms in chronological order in the evolution of modern geographical thought.\n(A) Determinism (B) Quantitative Revolution (C) Behavioural Approach (D) Possibilism",
+   "o": [
+    "B, A, D, C",
+    "D, A, C, B",
+    "A, B, D, C",
+    "A, D, B, C"
+   ],
+   "a": 3,
+   "exp": "Kram: Nishchayvaad (19vi sadi ant–20vi shuru, ~1880–1920) → Sambhavvaad (~1900–1930) → Matratmak kranti (~1950–1960) → Vyavaharvaadi drishtikon (1960–70 ke dashak).",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "pos",
+    "kw": "Basic idea"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q29",
+   "paper": "upessc-2025-re-s1",
+   "qno": 29,
+   "page": 9,
+   "q": "Population mobility transition theory suggests that types of migration vary systematically with stages of societal development. Identify the stage associated with dominant rural-to-urban migration and rapid urban growth.",
+   "o": [
+    "Early transitional society",
+    "Primitive traditional society",
+    "Advanced society with high mobility",
+    "Future super-advanced society"
+   ],
+   "a": 0,
+   "exp": "Gatisheelta sankraman siddhant (Zelinsky) ke anusaar pramukh gramin-se-shahri pravas aur tez shahri vikas prarambhik sankramanshil samaj ki pehchan hai. Is avastha me krishi sudhar, udyog aur shahron me rozgaar badhte hain; gaon se shahar ki or bada palayan aur jhuggi jaisi samasyayein.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q30",
+   "paper": "upessc-2025-re-s1",
+   "qno": 30,
+   "page": 9,
+   "q": "Identify the migration process that involves movement through a series of intermediate stages rather than a single direct relocation.",
+   "o": [
+    "Cyclic migration",
+    "Forced migration",
+    "Return migration",
+    "Step migration"
+   ],
+   "a": 3,
+   "exp": "Kadam (step) sthanantaran me vyakti seedhe antim gantavya na jaakar beech ke kai padavon se hota hai – jaise gaon → kasba → zila mukhyalay → mahanagar. Har padav par naye vatavaran me dhalta hai aur jaankari jutata hai.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q31",
+   "paper": "upessc-2025-re-s1",
+   "qno": 31,
+   "page": 9,
+   "q": "Population density as an indicator of human pressure on land becomes analytically stronger when combined with which of the following measures?",
+   "o": [
+    "Infant mortality rate",
+    "Arithmetic density",
+    "Crude birth rate",
+    "Physiological density"
+   ],
+   "a": 3,
+   "exp": "Bhoomi par manav dabaav ka sanketak tab zyada majboot hota hai jab ise shaaririk (physiological) ghanatva ke saath joda jaye – kul jansankhya / kul krishi yogya bhoomi. Ye prati ikai krishi bhoomi par logon ka bhaar dikhata hai.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q32",
+   "paper": "upessc-2025-re-s1",
+   "qno": 32,
+   "page": 9,
+   "q": "According to the Lee's migration model, which type of factor at the place of origin is most likely to initiate the migration decision?",
+   "o": [
+    "Assessment of push factors",
+    "Perception of pull factors",
+    "Personal factors influencing decision",
+    "Evaluation of intervening obstacles"
+   ],
+   "a": 0,
+   "exp": "Lee (1966) ke model me mool sthaan par dhakka (push) kaarakon ka moolyankan pravas nirnay shuru karta hai. Chaar kaarak: mool sthaan, gantavya, madhyavarti avrodh, vyaktigat kaarak. Push – praakritik prakop, berozgaari, sansadhan kami; pull – shahron me rozgaar aur suvidhayein.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q33",
+   "paper": "upessc-2025-re-s1",
+   "qno": 33,
+   "page": 10,
+   "q": "In population-resource regionalization, regions categorized as 'United State type' generally display which combination of characteristics?",
+   "o": [
+    "Sparse population with minimal technological development",
+    "Low technology with scarce resources and dense population",
+    "High population pressure with subsistence economy",
+    "High technology with abundant resources and moderate population density"
+   ],
+   "a": 3,
+   "exp": "Jansankhya-sansadhan kshetriyakaran me 'USA prakaar' ke kshetron me ucch praudyogiki, prachur sansadhan aur madhyam jansankhya ghanatva hota hai. Sansadhan jansankhya se adhik, prati vyakti aay aur jeevan star ucch – USA, Canada, Australia, NZ, Russia ke bhaag.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q34",
+   "paper": "upessc-2025-re-s1",
+   "qno": 34,
+   "page": 10,
+   "q": "A country experiencing rapid industrialization records declining death rates followed by delayed fertility decline due to cultural persistence. The demographic outcome is most likely:",
+   "o": [
+    "Population explosion phase",
+    "Population stagnation phase",
+    "Negative population growth phase",
+    "Stable population equilibrium"
+   ],
+   "a": 0,
+   "exp": "Mrityu dar girne ke baad sanskritik kaaranon se janam dar der se girti hai to jansankhya visphot ki avastha aati hai – jansankhyiki sankraman ki doosri avastha. Swasthya-chikitsa sudhar se mrityu dar tez girti hai par janam dar ooncha rehti hai.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q35",
+   "paper": "upessc-2025-re-s1",
+   "qno": 35,
+   "page": 10,
+   "q": "Which one of the following is the simplest measure of population density?",
+   "o": [
+    "Economic density",
+    "Agricultural density",
+    "Physiological density",
+    "Arithmetic density"
+   ],
+   "a": 3,
+   "exp": "Ankganitiya ghanatva sabse saral maap hai = pradesh ki kul jansankhya / kul kshetrafal. Ye prati ikai kshetra me logon ki ausat sankhya batata hai.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q36",
+   "paper": "upessc-2025-re-s1",
+   "qno": 36,
+   "page": 11,
+   "q": "Identify the correct statement regarding the distinction between renewable and non-renewable natural resources within the framework of economic geography and resource conservation.",
+   "o": [
+    "Non-renewable resources are unaffected by technological changes in extraction",
+    "Non-renewable resources regenerate through natural cycles within decades",
+    "Renewable resources are always inexhaustible regardless of consumption rate",
+    "Renewable resources regenerate within a human time scale if properly managed"
+   ],
+   "a": 3,
+   "exp": "Navikarniya sansadhan, agar theek se prabandhit hon, manav samay paimane ke andar punah utpann ho jaate hain. Anavikarniya (jeevashm indhan) bhoovaigyanik samay me bante hain aur praudyogiki se nikasi kshamta badalti hai; akshay sansadhan (saur, pawan) bhi galat prabandhan se ghat sakte hain.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q37",
+   "paper": "upessc-2025-re-s1",
+   "qno": 37,
+   "page": 11,
+   "q": "Match the following industrial characteristics with appropriate industrial type:\n(A) Aluminium smelting (B) Software development (C) Petrochemical industry (D) Diamond cutting\np. Footloose industry q. Resource-based industry r. Skilled labour-oriented industry s. Energy intensive industry",
+   "o": [
+    "A-s, B-p, C-q, D-r",
+    "A-q, B-s, C-p, D-r",
+    "A-s, B-r, C-q, D-p",
+    "A-q, B-p, C-s, D-r"
+   ],
+   "a": 0,
+   "exp": "Aluminium galana – urja gahan; software – footloose; petrochemical – sansadhan aadharit; diamond cutting – kushal shram unmukh.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q38",
+   "paper": "upessc-2025-re-s1",
+   "qno": 38,
+   "page": 11,
+   "q": "Identify the correct relationship between accessibility, connectivity and transport cost within spatial economic systems.",
+   "o": [
+    "Higher accessibility generally reduces effective transport cost in regional economies",
+    "Higher connectivity always increases transport cost due to infrastructure maintenance",
+    "Accessibility and connectivity are unrelated to spatial interaction",
+    "Transport cost remains constant regardless of network density"
+   ],
+   "a": 0,
+   "exp": "Ucch pahunch-kshamta aam taur par prabhavi parivahan laagat ko kam karti hai. Achhi sadak/rail network se samay aur indhan bachta hai; pahunch aur sanyojakta sthaniya antarkriya se gehre jude hain.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q39",
+   "paper": "upessc-2025-re-s1",
+   "qno": 39,
+   "page": 11,
+   "q": "Arrange the following agricultural revolutions in chronological order of their historical emergence.\n(A) Green Revolution (B) Neolithic Agricultural Revolution (C) Second Agricultural Revolution (D) Gene Revolution",
+   "o": [
+    "B - C - A - D",
+    "C - B - A - D",
+    "B - A - C - D",
+    "C - A - B - D"
+   ],
+   "a": 0,
+   "exp": "Kram: Navpashan krishi kranti (~7000 BC) → Doosri krishi kranti (1815–1880, Europe) → Harit kranti (1950s ke baad, Rockefeller aur Ford Foundation) → Jeen kranti (1990s; Bharat me 2002 me Bt kapas ki anumati).",
+   "tag": "Agricultural Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q40",
+   "paper": "upessc-2025-re-s1",
+   "qno": 40,
+   "page": 12,
+   "q": "In Von Thunen's model, agricultural land rent is theoretically obtained by:",
+   "o": [
+    "Dividing market price by transport intensity",
+    "Adding transport cost to production cost and market price",
+    "Multiplying output by distance from market",
+    "Subtracting production and transport costs from the market value of the produce"
+   ],
+   "a": 3,
+   "exp": "Von Thünen ke model me lagaan = bazaar moolya − (utpadan laagat + parivahan laagat). Sootra: P = V − (E + T). Pustak 'The Isolated State' (1826); vibhinn faslein kendriya nagar ke charon or sankendriya pattiyon me.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Genesis"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q41",
+   "paper": "upessc-2025-re-s1",
+   "qno": 41,
+   "page": 12,
+   "q": "Indentify the most appropriate inference when transport cost decline substantially due to technological innovation in a region dominated by resource-based industries.",
+   "o": [
+    "Spatial concentration near resource sites becomes less rigid",
+    "Resource-based industries become strictly immobile",
+    "Market proximity becomes irrelevant",
+    "Industrial location becomes independent of labour supply"
+   ],
+   "a": 0,
+   "exp": "Takniki navachar se parivahan laagat bahut ghatne par sansadhan sthalon ke paas udyogon ka jamav kam kathor ho jata hai – kachcha maal door le jana sasta ho jata hai, isliye udyog sansadhan sthal se door bhi lag sakte hain.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q42",
+   "paper": "upessc-2025-re-s1",
+   "qno": 42,
+   "page": 13,
+   "q": "Arrange the following economic sectors in increasing order of knowledge intensity within modern economic system.\n(A) Primary sector (B) Secondary sector (C) Tertiary sector (D) Quaternary sector",
+   "o": [
+    "B - C - A - D",
+    "B - A - C - D",
+    "A - C - B - D",
+    "A - B - C - D"
+   ],
+   "a": 3,
+   "exp": "Gyan gahanta ka badhta kram: prathamik < dwitiyak < tritiyak < chaturthak. Prathamik (krishi, khanan) – 'laal collar'; dwitiyak (vinirmaan) – 'neela collar'; tritiyak (sevayein) – 'gulabi collar'; chaturthak (shodh, soochna) – 'safed collar'.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q43",
+   "paper": "upessc-2025-re-s1",
+   "qno": 43,
+   "page": 13,
+   "q": "In the context of classical geopolitical theories, the strategic relevance of the Eurasian core area is best expressed by which proposition?",
+   "o": [
+    "Control of the sea routes determines control of the Eurasian interior",
+    "Control of Eastern Europe enables dominance over the Eurasian core and eventually the world",
+    "Control of the Tropical colonies determines global political supremacy",
+    "Control of polar routes determines control of the continental heart"
+   ],
+   "a": 1,
+   "exp": "Mackinder ke anusaar Poorvi Europe ka niyantran Eurasian core (heartland) par prabhutva deta hai aur ant me vishwa par. 'Jo Poorvi Europe par shasan karega wo hrdayasthal par, jo hrdayasthal par wo vishwa dweep par, jo vishwa dweep par wo vishwa par.'",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "geo",
+    "kw": "1919"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q44",
+   "paper": "upessc-2025-re-s1",
+   "qno": 44,
+   "page": 14,
+   "q": "Match the geopolitical thinkers with their major propositions:\n(A) Halford Mackinder (B) Nicholas Spykman (C) Karl Haushofer (D) Alfred Thayer Mahan\ni. Sea power determines world dominance ii. Heartland concept iii. Rimland strategic control iv. Geopolitik and expansion of Lebensraum",
+   "o": [
+    "A-ii, B-iii, C-iv, D-i",
+    "A-iii, B-ii, C-i, D-iv",
+    "A-i, B-iii, C-ii, D-iv",
+    "A-iv, B-ii, C-iii, D-i"
+   ],
+   "a": 0,
+   "exp": "Mackinder – Heartland; Spykman – Rimland; Haushofer – Geopolitik aur Lebensraum ka vistaar; Mahan – samudri shakti vishwa prabhutva tay karti hai.",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "geo",
+    "kw": "Two streams"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q45",
+   "paper": "upessc-2025-re-s1",
+   "qno": 45,
+   "page": 14,
+   "q": "Consider the following statements regarding Rimland theory:\n(A) The Rimland forms a intermediate zone between maritime and continental powers.\n(B) Control of the Rimland determines access to Eurasian interior and seas.\n(C) The theory rejects the strategic significance of maritime routes.\n(D) It emphasizes coastal and peripheral Eurasian regions.\nWhich combination is most consistent with the Rimland thesis?",
+   "o": [
+    "C and D",
+    "A and C",
+    "B and C",
+    "A, B and D"
+   ],
+   "a": 3,
+   "exp": "A, B aur D sahi; C galat. Spykman ne 'The Geography of the Peace' (1944) me rimland ko heartland ke bahar ki tateey-paridhiya patti bataya – samudri aur mahadweepiya shaktiyon ke beech madhyavarti kshetra. 'Jo rimland ko niyantrit karega wo Eurasia par shasan karega.' Samudri marg uske liye mahatvapurn the.",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "rim",
+    "kw": "Rimland"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q46",
+   "paper": "upessc-2025-re-s1",
+   "qno": 46,
+   "page": 15,
+   "q": "Administrative boundaries that coincide with ethnic divisions are most likely to produce which geopolitical outcome?",
+   "o": [
+    "Reduction of identity-based political mobilization",
+    "Intensification of transnational cultural homogeneity",
+    "Stabilization through recognition of identity territories",
+    "Elimination of linguistic regionalism"
+   ],
+   "a": 2,
+   "exp": "Jatiya vibhajan ke saath mel khaane wali prashasanik seemayein pehchan kshetron ki manyata se sthirata laati hain. Nrijatiya seemaon ka uddeshya samuday ki bhaugolik-rajneetik abhivyakti ko vaidhanik roop dena hai; par kabhi alpsankhyak samasya bhi.",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "bnd",
+    "kw": "Spatial"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q47",
+   "paper": "upessc-2025-re-s1",
+   "qno": 47,
+   "page": 15,
+   "q": "In social geography, the concept of social well-being is most appropriately evaluated through which integrated indicator set?",
+   "o": [
+    "Population density and rainfall variability",
+    "Health education and income achievements",
+    "Mineral production and agricultural output",
+    "Urban density and industrial employment"
+   ],
+   "a": 1,
+   "exp": "Samajik kalyan ka moolyankan swasthya, shiksha aur aay ki uplabdhiyon ke ekikrit sanketakon se hota hai. Samajik bhugol ke upshakha: vyavaharvaadi, kalyan, avkash, sanskritik, chikitsa bhugol aadi.",
+   "tag": "Social Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q48",
+   "paper": "upessc-2025-re-s1",
+   "qno": 48,
+   "page": 15,
+   "q": "Administrative areas created primarily for governance efficiency rather than cultural or physical homogeneity are best understood as:",
+   "o": [
+    "Formal regions determined by natural features",
+    "Functional regions determined by economic specialization",
+    "Institutional regions established through administrative authority",
+    "Culture regions defined by linguistic uniformity"
+   ],
+   "a": 2,
+   "exp": "Shasan dakshata ke liye bane prashasanik kshetra sansthagat (institutional) kshetra kehlate hain – ye bhautik ya sanskritik ekroopta par nahi, prashasanik shaktiyon aur niyamon par bante hain.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-re-s1-q49",
+   "paper": "upessc-2025-re-s1",
+   "qno": 49,
+   "page": 15,
+   "q": "The impact of globalization on Indian cultural landscapes is most strongly reflected in which spatial transformation pattern?",
+   "o": [
+    "Replacement of regional identities with ecological zones",
+    "Elimination of traditional occupational structures",
+    "Hybridization of cultural practices across urban networks",
+    "Isolation of tribal communities from external influences"
+   ],
+   "a": 2,
+   "exp": "Vaishvikaran ka prabhav shahri networks me sanskritik prathaon ke sankaran (hybridization) me sabse zyada dikhta hai. Gramin-shahri samajik parampara bade paimane par badli; sanyukt parivar toote; Bharatiya sanskriti ka aakarshan bhi vishwa me badha.",
+   "tag": "Social Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q50",
+   "paper": "upessc-2025-re-s1",
+   "qno": 50,
+   "page": 17,
+   "q": "In the Indian regional planning framework, the concept of 'Planning Region' primarily emphasizes which principle?",
+   "o": [
+    "Administrative convenience as the principle basis",
+    "Uniform population density distribution",
+    "Functional economic integration and spatial coherence",
+    "Climatic homogeneity as the dominant criterion"
+   ],
+   "a": 2,
+   "exp": "Bharatiya kshetriy yojana me 'yojana kshetra' karyatmak aarthik ekikaran aur sthaniya sussangatata par zor deta hai. Paanchvi panchvarshiya yojana me kshetriy/upyojanaon ka nirmaan hua – pahadi, janjatiya, sookha-pravan, command kshetra vikas aadi.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-re-s1-q51",
+   "paper": "upessc-2025-re-s1",
+   "qno": 51,
+   "page": 17,
+   "q": "Identify the correct statement regarding indicators of regional development.",
+   "o": [
+    "Per capita incomes alone adequately reflects balanced regional development",
+    "Composite indices combining social, economic and infrastructural indicators provide a more reliable assessment",
+    "Climatic uniformity serves as the most reliable development indicator",
+    "Population density is the only variable used in development assessment"
+   ],
+   "a": 1,
+   "exp": "Samajik, aarthik aur aadharbhoot sanketakon ko milakar bane samagra soochkank (composite indices) adhik vishwasniya moolyankan dete hain. Kshetriy niyojan ka lakshya aarthik-samajik vikas aur kshetriy vishamtaon ko kam karna hai.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-re-s1-q52",
+   "paper": "upessc-2025-re-s1",
+   "qno": 52,
+   "page": 17,
+   "q": "Consider the following statements regarding Growth Pole Theory in regional planning.\n(A) It suggests development spread uniformly across space.\n(B) It emphasizes concentration of economic activities in strategic centres.\n(C) It assumes development diffuses outward through spread effects.\n(D) It rejects the role of urban centres in regional development.",
+   "o": [
+    "C and D are correct",
+    "A and D are correct",
+    "A and B are correct",
+    "B and C are correct"
+   ],
+   "a": 3,
+   "exp": "B aur C sahi; A aur D galat. Vikas samaan nahi failta balki kendra par kendrit hota hai aur prasar prabhaavon se bahar failta hai. Perroux (1955) ne 'vikas dhruv' siddhant diya; Boudeville (1966) ne ise sanshodhit karke 'vikas kendra' siddhant kaha.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-re-s1-q53",
+   "paper": "upessc-2025-re-s1",
+   "qno": 53,
+   "page": 18,
+   "q": "Match the following regional imbalance indicators with their primary dimension:\n(A) Infrastructure index (B) Literacy rate (C) Per capita industrial output (D) Life expectancy\n1. Economic dimension 2. Social dimension 3. Health dimension 4. Physical infrastructure dimension",
+   "o": [
+    "A-4, B-2, C-1, D-3",
+    "A-2, B-3, C-1, D-4",
+    "A-3, B-1, C-4, D-2",
+    "A-4, B-1, C-2, D-3"
+   ],
+   "a": 0,
+   "exp": "Avsanrachna soochkank – bhautik avsanrachna; saksharta dar – samajik; prati vyakti audyogik utpadan – aarthik; jeevan pratyasha – swasthya aayam.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-re-s1-q54",
+   "paper": "upessc-2025-re-s1",
+   "qno": 54,
+   "page": 18,
+   "q": "Which among the following stages came first in the evolution of urban planning in India?",
+   "o": [
+    "Adoption of master plans",
+    "Post-independence development planning",
+    "Colonial municipal initiatives",
+    "State-level planning legislation"
+   ],
+   "a": 2,
+   "exp": "Bharat me shahri niyojan me sabse pehle aupniveshik nagarpalika pahal aayi. 1915 me Madras ke Governor Lord Pentland ne Patrick Geddes ko bulaya; unke sujhavon se Bombay (1898), Mysore (1903), Kolkata (1911), Lucknow (1919), Kanpur (1919), Allahabad me Improvement Trusts bane.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q55",
+   "paper": "upessc-2025-re-s1",
+   "qno": 55,
+   "page": 18,
+   "q": "Identify the correct principle underlying the concept of 'balanced regional development'.",
+   "o": [
+    "Equal distribution of industries irrespective of resources",
+    "Reduction of inter-regional disparities through targeted development policies",
+    "Concentration of investment in metropolitan regions",
+    "Elimination of rural settlements in favour of urban expansion"
+   ],
+   "a": 1,
+   "exp": "Santulit kshetriy vikas ka mool siddhant lakshit neetiyon se antar-kshetriy asamanta ko kam karna hai – har kshetra ki bhaugolik, khanij, manaviya aur aarthik kshamtaon ka aakalan karke vishesh nivesh, buniyadi dhancha aur kaushal vikas.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-re-s1-q56",
+   "paper": "upessc-2025-re-s1",
+   "qno": 56,
+   "page": 19,
+   "q": "Identify the correct implication of functional regionalization for transport planning.",
+   "o": [
+    "Transport networks should follow administrative boundaries only",
+    "Transport planning is unrelated to regional economic linkages",
+    "Transport planning ignores commuting patterns",
+    "Transport planning must align with flows of goods, services and commuters within nodal regions"
+   ],
+   "a": 3,
+   "exp": "Karyatmak kshetriyakaran ka arth hai ki parivahan yojana nodal kshetron ke bheetar vastuon, sevaon aur yatriyon ke pravah ke anuroop honi chahiye. Parivahan logon aur vastuon ko uplabdhta ke sthaan se upyog ke sthaan tak le jaata hai.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-re-s1-q57",
+   "paper": "upessc-2025-re-s1",
+   "qno": 57,
+   "page": 19,
+   "q": "Identify the correct relationship between Special Economic Zones (SEZs) and export processing in India.",
+   "o": [
+    "SEZs provide duty free enclaves designed to promote export-oriented industries",
+    "SEZs primarily restrict foreign investment in industrial production",
+    "SEZs function only as agricultural export centres",
+    "SEZs operate without infrastructure or fiscal incentives"
+   ],
+   "a": 0,
+   "exp": "SEZ niryat-unmukh udyogon ko badhane ke liye shulk-mukt kshetra hain. Bharat ki SEZ neeti April 2000 me aayi (export processing zone model ki prabhavshilta dekhte hue); uddeshya – atirikt aarthik gatividhi, niryat, nivesh, rozgaar aur buniyadi dhancha.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q58",
+   "paper": "upessc-2025-re-s1",
+   "qno": 58,
+   "page": 20,
+   "q": "Match the following multipurpose river valley projects with the principal river basin in which they are located:\n(A) Hirakud Project (B) Bhakra Nangal Project (C) Nagarjuna Sagar Project (D) Tehri Project\ni. Krishna ii. Sutlej iii. Mahanadi iv. Bhagirathi",
+   "o": [
+    "A-iii, B-ii, C-i, D-iv",
+    "A-ii, B-iii, C-iv, D-i",
+    "A-i, B-ii, C-iii, D-iv",
+    "A-iv, B-i, C-ii, D-iii"
+   ],
+   "a": 0,
+   "exp": "Hirakud – Mahanadi; Bhakra-Nangal – Sutlej; Nagarjuna Sagar – Krishna; Tehri – Bhagirathi.",
+   "tag": "India – Resources"
+  },
+  {
+   "id": "upessc-2025-re-s1-q59",
+   "paper": "upessc-2025-re-s1",
+   "qno": 59,
+   "page": 20,
+   "q": "Match the following energy resources with their principal geographical concentration:\n(A) Wind Energy (B) Solar Energy (C) Hydropower (D) Thermal Coal Energy\ni. Western Rajasthan ii. Western Ghats and Himalayan Rivers iii. Gujarat and Tamil Nadu Coast iv. Damodar Valley",
+   "o": [
+    "A-iii, B-i, C-ii, D-iv",
+    "A-i, B-iii, C-iv, D-ii",
+    "A-iv, B-ii, C-i, D-iii",
+    "A-ii, B-iv, C-iii, D-i"
+   ],
+   "a": 0,
+   "exp": "Pawan urja – Gujarat aur TN tat; saur urja – paschimi Rajasthan; jalvidyut – paschimi ghat aur Himalayi nadiyan; taapiya koyla – Damodar ghati.",
+   "tag": "India – Resources"
+  },
+  {
+   "id": "upessc-2025-re-s1-q60",
+   "paper": "upessc-2025-re-s1",
+   "qno": 60,
+   "page": 20,
+   "q": "Arrange the following stages in the mechanism of tropical cyclone development over the Bay of Bengal.\n(A) Low Pressure formation over warm sea (B) Intensification through latent heat release (C) Development of cyclonic circulation (D) Landfall and Dissipation",
+   "o": [
+    "A → C → B → D",
+    "C → A → B → D",
+    "A → B → C → D",
+    "B → C → A → D"
+   ],
+   "a": 0,
+   "exp": "Kram: garm samudra par kam dabaav → chakravati parisancharan → gupt ushma chhodne se teevrata → bhooskhalan (landfall) aur apaksay. Ye 30°N–30°S me bante hain; ausat vyas ~640 km; Bangladesh aur Bharat ke poorvi tat par bahut vinashkari.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "cyc",
+    "kw": "tab:tr"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q61",
+   "paper": "upessc-2025-re-s1",
+   "qno": 61,
+   "page": 22,
+   "q": "Identify the correct pairing between mineral resource and major producing region in India.",
+   "o": [
+    "Bauxite - Koraput Plateau",
+    "Petroleum - Chotanagpur Plateau",
+    "Manganese - Indo-Gangetic Plain",
+    "Iron Ore - Thar Desert"
+   ],
+   "a": 0,
+   "exp": "Bauxite – Koraput pathar sahi jodi hai. Odisha me desh ka ~41% bauxite bhandar aur ~73% utpadan (book); Kalahandi-Koraput bauxite patti (~300 km lambi). Sahi: petroleum – Ankleshwar, manganese – Nagpur-Bhandara, lauh – Bailadila.",
+   "ref": {
+    "file": "india-climate-soils.html",
+    "topic": "geo",
+    "kw": "Archean"
+   }
+  },
+  {
+   "id": "upessc-2025-re-s1-q62",
+   "paper": "upessc-2025-re-s1",
+   "qno": 62,
+   "page": 22,
+   "q": "Identify the correct sequence of physiographic divisions of India from north to south based on their structural position.",
+   "o": [
+    "Himalayan Mountains → Northern Plains → Peninsular Plateau → Coastal Plains",
+    "Northern Plains → Himalayan Mountains → Coastal Plains → Peninsular Plateau",
+    "Peninsular Plateau → Himalayan Mountains → Northern Plains → Coastal Plains",
+    "Coastal Plains → Northern Plains → Himalayan Mountains → Peninsular Plateau"
+   ],
+   "a": 0,
+   "exp": "Uttar se dakshin kram: Himalaya → Uttari maidan → Prayadweepiya pathar → Tateey maidan. Uttari maidan (Sindhu-Ganga-Brahmaputra, ~7 lakh km²) Himalaya ke dakshin me; pathar ke kinare tateey patti.",
+   "tag": "India – Physiography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q63",
+   "paper": "upessc-2025-re-s1",
+   "qno": 63,
+   "page": 22,
+   "q": "Identify the correct relationship between urbanization and industrialization in India.",
+   "o": [
+    "Industrial clusters attract labour migration leading to metropolitan expansion",
+    "Urban growth occurs independently of industrial development",
+    "Urbanization precedes industrial growth in most Indian regions",
+    "Industrial regions are always located in rural areas"
+   ],
+   "a": 0,
+   "exp": "Audyogik samooh shram pravas ko aakarshit karte hain jisse mahanagaron ka vistaar hota hai. Bharat me kai shahar audyogik kendra ke roop me bade; saath hi shiksha, chikitsa, rozgaar ke liye gramin yuvak shahron ki or aate hain.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "upessc-2025-re-s1-q64",
+   "paper": "upessc-2025-re-s1",
+   "qno": 64,
+   "page": 23,
+   "q": "The Lorenz Curve used in geographical analysis represents spatial inequality through the relationship between which pair of cumulative variables?",
+   "o": [
+    "Cumulative percentage of area and cumulative percentage of rainfall",
+    "Cumulative percentage of distance and cumulative percentage of Travel time",
+    "Cumulative percentage of settlements and cumulative percentage of transport links",
+    "Cumulative percentage of population and cumulative percentage of income/resource"
+   ],
+   "a": 3,
+   "exp": "Lorenz vakra jansankhya ke sanchayi pratishat aur aay/sansadhan ke sanchayi pratishat se sthaniya asamanta dikhata hai. Max Lorenz ne isse dhan ki asamanta dikhayi; vakra samaan-vitaran rekha ke jitna paas, asamanta utni kam.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-re-s1-q65",
+   "paper": "upessc-2025-re-s1",
+   "qno": 65,
+   "page": 23,
+   "q": "The distortion pattern of the Mercator projection becomes extreme toward higher latitudes because which property is preserved in this projection?",
+   "o": [
+    "Area equivalence",
+    "Angular conformity",
+    "Distance equivalence",
+    "Equal spacing of parallels"
+   ],
+   "a": 1,
+   "exp": "Mercator projection me konika anuroopta (conformal – shape sahi) banaye rakhne ke liye ucch akshanshon par kshetrafal bahut fail jata hai. Gerardus Mercator (1569); akshansh rekhaon ke beech doori dhruvon ki or badhti hai; seedhi rekha shuddh disha dikhati hai – nauvahan ke liye upyogi.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-re-s1-q66",
+   "paper": "upessc-2025-re-s1",
+   "qno": 66,
+   "page": 23,
+   "q": "The reliability of accessibility mapping using network analysis in GIS largely depends on which Integrated dataset structure?",
+   "o": [
+    "Raster elevation grid with spectral bands",
+    "Satellite image mosaic without georeferencing",
+    "Gridded climate database",
+    "Topological vector network with attribute tables"
+   ],
+   "a": 3,
+   "exp": "GIS me network vishleshan dwara pahunch-kshamta maanchitran ki vishwasniyata vishesh-tabular ke saath topological vector network par nirbhar karti hai. Vector model dikhata hai ki vastu ki aakriti/sthiti; network vishleshan, shuddh suchi aur topology ke liye upyogi.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "upessc-2025-re-s1-q67",
+   "paper": "upessc-2025-re-s1",
+   "qno": 67,
+   "page": 23,
+   "q": "Consider the following sequence of operations in digital mapping using remote sensing data.\n(A) Geometric correction (B) Image classification (C) Radiometric correction (D) Ground truth verification",
+   "o": [
+    "C - A - B - D",
+    "A - C - B - D",
+    "C - B - A - D",
+    "A - B - C - D"
+   ],
+   "a": 0,
+   "exp": "Sahi kram: radiometric sudhar → jyamitiya sudhar → chhavi vargikaran → zameeni sachchai satyapan.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "upessc-2025-re-s1-q68",
+   "paper": "upessc-2025-re-s1",
+   "qno": 68,
+   "page": 24,
+   "q": "In cartographic representation of migration flows between cities, which combination of mapping technique and variable scaling is most appropriate?",
+   "o": [
+    "Isopleth mapping with equal interval classes",
+    "Flow line map with proportional line thickness",
+    "Choropleth mapping with density ratios",
+    "Chorochromatic map with qualitative symbols"
+   ],
+   "a": 1,
+   "exp": "Shahron ke beech pravas pravah dikhane ke liye anupatik motai wali pravah rekha (flow line) maanchitra sabse upyukt hai. Ise 'gatik maanchitra' bhi kehte hain; yatayat, yatri, vahan sankhya dikhane me upyogi.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-re-s1-q69",
+   "paper": "upessc-2025-re-s1",
+   "qno": 69,
+   "page": 24,
+   "q": "In multiple regression analysis used for regional agricultural productivity studies, the dependent variable usually represents:",
+   "o": [
+    "Standardized coefficient values",
+    "Predicted influence factors",
+    "Agricultural output in indicator",
+    "Residual error component"
+   ],
+   "a": 2,
+   "exp": "Kshetriy krishi utpadakta adhyayan me bahu-pratigaman me aashrit char aam taur par krishi utpadan sanketak hota hai; swatantra char – mrida, sinchai, urvarak, shram, poonji aadi.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-re-s1-q70",
+   "paper": "upessc-2025-re-s1",
+   "qno": 70,
+   "page": 24,
+   "q": "A chorochromatic map differs fundamentally from a choropleth map because it represents:",
+   "o": [
+    "Continuous quantitative gradients",
+    "Qualitative regional categories without statistical ratios",
+    "Statistical density values",
+    "Interpolated climatic surfaces"
+   ],
+   "a": 1,
+   "exp": "Chorochromatic maanchitra sankhyiki anupaat ke bina gunatmak kshetriy shreniyan (jaise mrida, vanaspati prakaar) rangon se dikhata hai; choropleth prashasanik ikaiyon ke sankhyiki aankde (ghanatva, vriddhi dar) dikhata hai.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q01",
+   "paper": "upessc-2025-cancelled",
+   "qno": 1,
+   "page": 1,
+   "q": "Match List-I (Drainage Pattern) with List-II (Area):\n(A) Dendritic (B) Centripetal (C) Radial (D) Trellis\ni. Caspian Sea ii. Amarkantak iii. Appalachian iv. Amazon",
+   "o": [
+    "A-IV, B-I, C-II, D-III",
+    "A-IV, B-II, C-I, D-III",
+    "A-I, B-IV, C-III, D-II",
+    "A-I, B-III, C-IV, D-II"
+   ],
+   "a": 0,
+   "exp": "Vrikshakar – Amazon; kendrabhimukh – Caspian sagar; radial (arieey) – Amarkantak; trellis (jaalinuma) – Appalachian.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "flu",
+    "kw": "normal cycle"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q02",
+   "paper": "upessc-2025-cancelled",
+   "qno": 2,
+   "page": 1,
+   "q": "Which of the following is not a Mission of National Action Plan on climate change?",
+   "o": [
+    "National Mission for Sustainable Agriculture",
+    "National Mission for a Green India",
+    "National Mission for Wildlife Protection",
+    "National Water Mission"
+   ],
+   "a": 2,
+   "exp": "Vanyajeev sanrakshan NAPCC ka mission nahi. NAPCC (30 June 2008) ke 8 mission: saur, urja dakshata, satat aavas, jal, Himalayi paristhitiki tantra, Harit Bharat, satat krishi, jalvayu parivartan par ranneetik gyan.",
+   "ref": {
+    "file": "india-climate-soils.html",
+    "topic": "epa",
+    "kw": "NAPCC"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q03",
+   "paper": "upessc-2025-cancelled",
+   "qno": 3,
+   "page": 2,
+   "q": "Assertion (A): Remote sensing can be used to study changes in land cover.\nReason (R): Remote sensing does not provide a synoptic view of large area of earth surface.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 3,
+   "exp": "(A) sahi, (R) galat. Sudoor samvedan se bhoomi aavaran me badlav ka adhyayan hota hai; ye prithvi ke bade kshetra ka sanyukt (synoptic) drishya deta hai. Shabd ka pehla prayog 1960 ke dashak me.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "upessc-2025-cancelled-q04",
+   "paper": "upessc-2025-cancelled",
+   "qno": 4,
+   "page": 2,
+   "q": "What is the most important cause of coral bleaching?",
+   "o": [
+    "Oceanic pollution",
+    "Global warming",
+    "Marine traffic",
+    "Ocean currents"
+   ],
+   "a": 1,
+   "exp": "Praval viranjan ka sabse pramukh kaaran global warming hai – samudri taapmaan badhne se praval ke andar rehne wale shaival (algae) bahar nikal jaate hain, praval ko bhojan nahi milta aur rang ud jata hai.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "coral",
+    "kw": "bleaching"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q05",
+   "paper": "upessc-2025-cancelled",
+   "qno": 5,
+   "page": 2,
+   "q": "Match List-I (Contribution) with List-II (Name of Scholar):\n(A) First concept of social geography (B) Lieu-Travail Famille (C) Space, Place of Gender (D) The production of Space\ni. Henri Lefebvre ii. Camille Vallaux iii. Frederic Le Play iv. D. Massey",
+   "o": [
+    "A-III, B-I, C-II, D-IV",
+    "A-IV, B-II, C-I, D-III",
+    "A-I, B-III, C-IV, D-II",
+    "A-II, B-III, C-IV, D-I"
+   ],
+   "a": 3,
+   "exp": "Samajik bhugol ki pratham avdharna – Camille Vallaux; Lieu-Travail-Famille – Frederic Le Play; Space, Place and Gender – D. Massey; Production of Space – Henri Lefebvre.",
+   "tag": "Social Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q06",
+   "paper": "upessc-2025-cancelled",
+   "qno": 6,
+   "page": 2,
+   "q": "Who among the following has included both empirical and genetic classification in the world climate classification?",
+   "o": [
+    "Oliver-Hidore",
+    "G.T. Trewartha",
+    "Miller",
+    "Thornthwaite"
+   ],
+   "a": 1,
+   "exp": "G.T. Trewartha ne vishwa jalvayu vargikaran me anubhavik aur jananik dono ko shamil kiya. Köppen aur Thornthwaite ke vargikaran anubhavik hain; Trewartha ne Köppen ko sanshodhit kiya, 6 pratham shreni ke jalvayu (A–F) banaye.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "kop",
+    "kw": "Trewartha"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q07",
+   "paper": "upessc-2025-cancelled",
+   "qno": 7,
+   "page": 3,
+   "q": "Which of the following is an example of convergent boundary between an oceanic and continental plate?",
+   "o": [
+    "East African rift valley",
+    "Andes mountains",
+    "Mid-Atlantic ridge",
+    "San Andreas fault"
+   ],
+   "a": 1,
+   "exp": "Andes parvat mahasagariya (Nazca) aur mahadweepiya (South American) plate ke abhisaran ka udaharan hai. Abhisaran teen prakaar: mahasagariya–mahadweepiya, mahasagariya–mahasagariya, mahadweepiya–mahadweepiya. Mid-Atlantic – apsari; San Andreas – sanrakshi.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "plt",
+    "kw": "Plate tectonic"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q08",
+   "paper": "upessc-2025-cancelled",
+   "qno": 8,
+   "page": 3,
+   "q": "Match List-I (Landforms) with List-II (Formation Process):\n(A) Drumlin (B) Bajada (C) Inselberg (D) Tombolo\ni. Coastal deposition ii. Glacial deposition iii. Fluvial deposition iv. Weathering and wind erosion",
+   "o": [
+    "A-IV, B-I, C-III, D-II",
+    "A-IV, B-III, C-II, D-I",
+    "A-II, B-III, C-IV, D-I",
+    "A-II, B-I, C-III, D-IV"
+   ],
+   "a": 2,
+   "exp": "Drumlin – himnadiya nikshep; Bajada – nadiya nikshep; Inselberg – apakshay aur pawan apardan; Tombolo – tateey nikshep.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "cyc",
+    "kw": "tab:eo"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q09",
+   "paper": "upessc-2025-cancelled",
+   "qno": 9,
+   "page": 3,
+   "q": "Both the poles are shown on which of the following projections?",
+   "o": [
+    "Sinusoidal Projection",
+    "Gall's Projection",
+    "Bonne's Projection",
+    "Polar zenithal Projection"
+   ],
+   "a": 0,
+   "exp": "Sinusoidal projection par dono dhruv bindu ke roop me dikhte hain – poora vishwa dikhaya ja sakta hai. Gall's me dhruv nahi dikhte; polar zenithal me ek golardh; Bonne sanshodhit shankav projection hai (Rigobert Bonne).",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q10",
+   "paper": "upessc-2025-cancelled",
+   "qno": 10,
+   "page": 4,
+   "q": "Who among the following was a key figure in Quantitative Revolution in Geography?",
+   "o": [
+    "Richard Hartshorne",
+    "Peter Haggett",
+    "Carl Sauer",
+    "H. Mackinder"
+   ],
+   "a": 1,
+   "exp": "Peter Haggett matratmak kranti ke pramukh vyakti the – pustak 'Locational Analysis in Human Geography' (1965). Bhugol me matratmak kranti 1950 ke dashak me USA me (McCarty, Berry, Garrison) shuru hui, 1960 ke dashak me charam par.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Zenith"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q11",
+   "paper": "upessc-2025-cancelled",
+   "qno": 11,
+   "page": 4,
+   "q": "Match List-I (Satellites) with List-II (Applications):\n(A) SARAL (B) Cortosat-3 (C) RISAT-2BR-I (D) SCATSAT-I\ni. Climate and environment ii. Disaster management iii. Urban Planning iv. Oceanographic studies",
+   "o": [
+    "A-IV, B-III, C-II, D-I",
+    "A-I, B-IV, C-III, D-II",
+    "A-III, B-II, C-IV, D-I",
+    "A-II, B-I, C-IV, D-III"
+   ],
+   "a": 0,
+   "exp": "SARAL – samudri adhyayan; Cartosat-3 – nagariya niyojan; RISAT-2BR1 – aapda prabandhan; SCATSAT-1 – jalvayu evam paryavaran.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "upessc-2025-cancelled-q12",
+   "paper": "upessc-2025-cancelled",
+   "qno": 12,
+   "page": 4,
+   "q": "If the Standard Deviation (SD) of a data set is 2.83, then what will be its variance?",
+   "o": [
+    "8.00",
+    "5.66",
+    "0.12",
+    "1.68"
+   ],
+   "a": 0,
+   "exp": "Prasaran (variance) = maanak vichalan ka varg = (2.83)² ≈ 8.00. Ise maanak vichalan par aadharit dwitiya apkiran ghaat bhi kehte hain.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q13",
+   "paper": "upessc-2025-cancelled",
+   "qno": 13,
+   "page": 4,
+   "q": "Select from the following quantitative methods used for demarcation of urban planning regions:\nA. Thiessen polygon method B. Graph theory method C. Discriminate analysis D. Nearest neighbour analysis",
+   "o": [
+    "A and B",
+    "Only A",
+    "A, B, C and D",
+    "A, B and C"
+   ],
+   "a": 3,
+   "exp": "Nagar niyojan pradeshon ke seemankan me Thiessen bahubhuj, graph siddhant aur vibhedak vishleshan prayog hote hain; nearest neighbour vishleshan basti vitaran ke prakaar (aakaar-antaran) ke liye hai, seemankan ke liye nahi.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q14",
+   "paper": "upessc-2025-cancelled",
+   "qno": 14,
+   "page": 5,
+   "q": "Which of the following countries produces the most synthetic rubber?",
+   "o": [
+    "China",
+    "United States of America",
+    "Indonesia",
+    "Malaysia"
+   ],
+   "a": 0,
+   "exp": "Vishwa me sabse adhik kritrim rubber China banata hai; prakritik rubber me Thailand aage. Rubber ke liye 25–30°C taapmaan aur 150–200 cm varsha uchit; ushna katibandhiya paudha.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q15",
+   "paper": "upessc-2025-cancelled",
+   "qno": 15,
+   "page": 5,
+   "q": "Who among the following propounded the concept of 'Great Ice Age'?",
+   "o": [
+    "Charles Lyell",
+    "Louis Agassiz",
+    "James Hutton",
+    "John Playfair"
+   ],
+   "a": 1,
+   "exp": "Vrihad him kaal (Great Ice Age) ki sankalpana Louis Agassiz ne 1840 me di. Him yug me prithvi ka bada bhaag lambe samay tak hime chadar se dhaka raha.",
+   "ref": {
+    "file": "ch22-glaciers.html",
+    "topic": "ice",
+    "kw": "Glacier basics"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q16",
+   "paper": "upessc-2025-cancelled",
+   "qno": 16,
+   "page": 5,
+   "q": "Warm and cold-core rings are associated with which oceanic phenomena?",
+   "o": [
+    "Gulf stream",
+    "Ekman spiral",
+    "Conveyor-belt circulation",
+    "Spring tide"
+   ],
+   "a": 0,
+   "exp": "Garm aur thande core rings Gulf Stream se jude hain. Gulf Stream ki khoj Juan Ponce de León ne ki; ye Florida ke paas se uttar-poorv ki or behti hai; 40°N ke paas Labrador ki thandi dhara se milkar Newfoundland ke paas ghana kohra.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "curr",
+    "kw": "Boundary"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q17",
+   "paper": "upessc-2025-cancelled",
+   "qno": 17,
+   "page": 5,
+   "q": "The development of Perox 'Growth Pole Theory' is basically based on which of the following concept?",
+   "o": [
+    "Tangible economic space",
+    "Polarization",
+    "Homogeneous groups",
+    "Abstract economic space"
+   ],
+   "a": 3,
+   "exp": "Perroux ka vikas dhruv siddhant amoort aarthik kshetra (abstract economic space) par aadharit hai. Koi bada firm jo apne aas-paas ki firmon ko gati deta hai 'utprerak' (propulsive) kehlata hai; Perroux ne 1955 me siddhant diya.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-cancelled-q18",
+   "paper": "upessc-2025-cancelled",
+   "qno": 18,
+   "page": 6,
+   "q": "Assertion (A): Antarctica is always covered by snow but receives less than 8 cm of annual precipitation.\nReason (R): Speedy winds constantly blow in Antarctica.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 0,
+   "exp": "Dono sahi par (R) sahi vyakhya nahi. Antarctica hamesha barf se dhaka par varshik varsha 8 cm se kam – kyunki dakshini dhruv par suryatap kam, thandi hawa me nami kam. Tez hawaayein chalti hain par ye kam varsha ka kaaran nahi. ~98% barf se dhaka; vishwa ka sabse thanda mahadweep.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "kop",
+    "kw": "E – Polar"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q19",
+   "paper": "upessc-2025-cancelled",
+   "qno": 19,
+   "page": 6,
+   "q": "If 'R' is the radius of the reduced earth on a scale, the length of the equator on Mollweide's projection would be:",
+   "o": [
+    "2πR cos45°",
+    "2πR",
+    "4×R×√2",
+    "πR cosec 45°"
+   ],
+   "a": 2,
+   "exp": "Mollweide (samkshetra) projection me bhoomadhya rekha ki lambai 4×R×√2 hoti hai. 1805 me Karl Brandan Mollweide ne banaya; 90°E aur 90°W yamottar ek vritt banate hain jiska ardhvyas √2R.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q20",
+   "paper": "upessc-2025-cancelled",
+   "qno": 20,
+   "page": 6,
+   "q": "Which of the following soils contains the most organic matter?",
+   "o": [
+    "Andisol",
+    "Ultisol",
+    "Histosol",
+    "Inceptisol"
+   ],
+   "a": 2,
+   "exp": "Histosol me sabse adhik jaivik padarth hota hai – upari 80 cm me jaivik ansh pramukh; adhikansh peat mitti; jalmagnata ke kaaran vighatan kam. Ultisol aardra-ushna kshetron ki; Inceptisol nayi, kam vikasit mitti.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "wsl",
+    "kw": "USDA"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q21",
+   "paper": "upessc-2025-cancelled",
+   "qno": 21,
+   "page": 7,
+   "q": "Assertion (A): J.T. Hack proposed the concept of dynamic equilibrium in Geomorphology.\nReason (R): J.T. Hack did not emphasize that landscape achieve a balance between tectonic uplift and denudational process.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 3,
+   "exp": "(A) sahi, (R) galat. J.T. Hack ne gatisheel santulan ki avdharna di aur zor diya ki bhudrishya vivartanik utthaan aur anachhadan ke beech santulan prapt karta hai – unke anusaar sthalroop ki aakriti apardan urja aur pratirodh ke santulan par nirbhar.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "flu",
+    "kw": "Appraisal"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q22",
+   "paper": "upessc-2025-cancelled",
+   "qno": 22,
+   "page": 7,
+   "q": "When was the 'smart Cities Mission' launched in India?",
+   "o": [
+    "25 June 2015",
+    "21 June 2015",
+    "27 June 2015",
+    "26 June 2015"
+   ],
+   "a": 0,
+   "exp": "Smart Cities Mission 25 June 2015 ko shuru hua – shahron me buniyadi dhancha, svachh-tikau paryavaran aur behtar jeevan star; anya shahron ke liye model.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q23",
+   "paper": "upessc-2025-cancelled",
+   "qno": 23,
+   "page": 7,
+   "q": "Assertion (A): Fertility rates tend to decline in highly urbanised areas.\nReason (R): Urbanization provides better access to education and employment opportunities especially for women.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 1,
+   "exp": "Dono sahi aur (R) sahi vyakhya. Shahron me mahilaon ko shiksha aur rozgaar ke behtar avsar, swasthya suvidhayein, parivar niyojan saadhan milte hain, vivah ki aayu badhti hai – isliye prajanan dar kam.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q24",
+   "paper": "upessc-2025-cancelled",
+   "qno": 24,
+   "page": 7,
+   "q": "Which type of industry develops due to backward linkage effect?",
+   "o": [
+    "Specific industries",
+    "Basic industries",
+    "Negative industries",
+    "Complementary or supporting industries"
+   ],
+   "a": 3,
+   "exp": "Paschch sahlagnata (backward linkage) se poorak/sahayak udyog viksit hote hain – ek udyog doosre udyog ko kachcha maal, machinery aadi dene ke liye badhta hai.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q25",
+   "paper": "upessc-2025-cancelled",
+   "qno": 25,
+   "page": 8,
+   "q": "The weather map of India is prepared on which projection?",
+   "o": [
+    "Bonne projection",
+    "Mercator's projection",
+    "Polyconic projection",
+    "Sinusoidal projection"
+   ],
+   "a": 1,
+   "exp": "Bharat ka mausam maanchitra Mercator projection par banta hai – apvah, samudri dharaein, taapmaan, pawan disha dikhane me upyogi; nauvahan ke liye bhi.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q26",
+   "paper": "upessc-2025-cancelled",
+   "qno": 26,
+   "page": 8,
+   "q": "Match List-I (Theories) with List-II (Proponents):\n(A) Malthusian theory (B) Demographic transition theory (C) Optimum population theory (D) Cornucopian theory\ni. Warren Thompson ii. Julian Simon iii. Thomas Malthus iv. Edwin cannon",
+   "o": [
+    "A-III, B-IV, C-II, D-I",
+    "A-III, B-I, C-IV, D-II",
+    "A-IV, B-II, C-III, D-I",
+    "A-II, B-III, C-I, D-IV"
+   ],
+   "a": 1,
+   "exp": "Malthus siddhant – Thomas Malthus; jansankhyiki sankraman – Warren Thompson; anukoolatam jansankhya – Edwin Cannan; Cornucopian – Julian Simon.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q27",
+   "paper": "upessc-2025-cancelled",
+   "qno": 27,
+   "page": 8,
+   "q": "Match List-I (Oceanic current) with List-II (Location):\n(A) Humboldt current (B) Agulhas current (C) Benguela current (D) Antilles current\ni. Western Coast of South America ii. Northern Coast of Cuba iii. Western Coast of Africa iv. Eastern Coast of Africa",
+   "o": [
+    "A-I, B-II, C-III, D-IV",
+    "A-II, B-IV, C-III, D-I",
+    "A-I, B-IV, C-III, D-II",
+    "A-II, B-I, C-IV, D-III"
+   ],
+   "a": 2,
+   "exp": "Humboldt – dakshin America ka paschimi tat; Agulhas – Africa ka poorvi tat; Benguela – Africa ka paschimi tat; Antilles – Cuba ka uttari tat.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "curr",
+    "kw": "Practical gyre"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q28",
+   "paper": "upessc-2025-cancelled",
+   "qno": 28,
+   "page": 9,
+   "q": "Which of the following concepts is most closely associated with the spatial organisation of urban systems in regional planning?",
+   "o": [
+    "Central place theory",
+    "Sector theory",
+    "Resource allocation theory",
+    "Dependency theory"
+   ],
+   "a": 0,
+   "exp": "Nagar tantra ke sthaniya sangathan se sabse zyada kendriya sthal siddhant juda hai (Christaller 1933, dakshin Germany). Berry ke shabdon me 'kendra sthalon ki avasthiti, aakaar, prakriti aur antaran ka siddhant'. 'Central place' shabd ka pehla prayog Mark Jefferson (1931).",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Genesis"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q29",
+   "paper": "upessc-2025-cancelled",
+   "qno": 29,
+   "page": 9,
+   "q": "Which one of the following is not correct as per Koppen's Scheme of classification of world climate?",
+   "o": [
+    "Am = Tropical monsoon",
+    "Af = Tropical rain forest",
+    "An = Hot desert",
+    "Aw = Tropical savanna"
+   ],
+   "a": 2,
+   "exp": "An Köppen me ushna marusthal nahi hai – ushna registani BWh hai. Am – ushna mansoon, Af – ushna varsha van, Aw – savanna. Köppen ka vargikaran 1900 (De Candolle 1874 par), sanshodhan 1918, 1931, 1936; paanch mukhya varg.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "kop",
+    "kw": "A – Tropical"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q30",
+   "paper": "upessc-2025-cancelled",
+   "qno": 30,
+   "page": 9,
+   "q": "Arrange the following west flowing rivers in peninsular India from North to South.\nI. Sabarmati II. Tapi III. Kali Nadi IV. Bharathappuzha",
+   "o": [
+    "I, IV, III, II",
+    "I, II, III, IV",
+    "I, III, II, IV",
+    "II, III, IV, I"
+   ],
+   "a": 1,
+   "exp": "Uttar se dakshin: Sabarmati → Tapi → Kali nadi → Bharathappuzha. Sabarmati Aravali (Mewar) se nikalkar Khambhat ki khadi me (371 km); Tapi Betul se (724 km); Kali nadi Karnataka me Karwar ke paas Arab sagar me; Bharathappuzha Kerala ki pramukh nadi.",
+   "tag": "India – Physiography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q31",
+   "paper": "upessc-2025-cancelled",
+   "qno": 31,
+   "page": 10,
+   "q": "Which of the following terms describes the position of a species habitat requirements as well as its functional role?",
+   "o": [
+    "Natural Habitat",
+    "Ecotone",
+    "Home Range",
+    "Ecological Niche"
+   ],
+   "a": 3,
+   "exp": "Ecological niche kisi prajati ki aavas zarooraton aur uski karyatmak bhoomika dono ko batata hai. Do paristhitik tantron ke beech ka sankraman kshetra ecotone; prakritik vaas wo sthan jahan prajati swabhavik roop se paayi jaati hai.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "eco",
+    "kw": "Components"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q32",
+   "paper": "upessc-2025-cancelled",
+   "qno": 32,
+   "page": 10,
+   "q": "Assertion (A): maximum entropy occurs in the old stage of the hydrological erosion cycle.\nReason (R): In the last stage of the hydrological cycle of erosion, the process of peneplanation is the main effective process.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 1,
+   "exp": "Dono sahi aur (R) sahi vyakhya. Jaliya apardan chakra ki vriddhavastha me adhiktam utkram (entropy) hoti hai kyunki is antim avastha me peneplanation pramukh prakriya hoti hai; tarunavastha me entropy kam, kataav adhik.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "flu",
+    "kw": "normal cycle"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q33",
+   "paper": "upessc-2025-cancelled",
+   "qno": 33,
+   "page": 10,
+   "q": "Who among the following propounded the 'Zone Strata Theory'?",
+   "o": [
+    "Griffith Taylor",
+    "Sir Herbert Risley",
+    "Von Eickstedt",
+    "J.H. Hutton"
+   ],
+   "a": 0,
+   "exp": "Katibandh-sanstar siddhant Griffith Taylor ne 1919 me diya. Manav prajatiyon ki utpatti Madhya Asia me maani gayi, jahan se ve lehron me failin; sabse pehle Negrito; kapal soochkank aur baalon ki banawat ke aadhar par 7 prajatiyan.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q34",
+   "paper": "upessc-2025-cancelled",
+   "qno": 34,
+   "page": 11,
+   "q": "Match List-I (Geographers) with List-II (Term used):\n(A) Andre Allix (B) R.E. Dickinson (C) Green (D) Smailes\ni. City region ii. Urban field iii. Umland iv. Urban Hinterland",
+   "o": [
+    "A-III, B-IV, C-II, D-I",
+    "A-II, B-III, C-I, D-IV",
+    "A-IV, B-II, C-I, D-III",
+    "A-III, B-I, C-IV, D-II"
+   ],
+   "a": 3,
+   "exp": "Andre Allix – Umland; R.E. Dickinson – City region; Green – Urban hinterland; Smailes – Urban field.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q35",
+   "paper": "upessc-2025-cancelled",
+   "qno": 35,
+   "page": 11,
+   "q": "Which of the following map projection shows the earth as viewed from space?",
+   "o": [
+    "Orthographic Projection",
+    "Gnomonic Projection",
+    "Sinusoidal Projection",
+    "Mercator Projection"
+   ],
+   "a": 0,
+   "exp": "Lambkoniya (orthographic) projection prithvi ko antariksh se dekhe jaise dikhata hai – prakash srot anant doori par maana jata hai.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q36",
+   "paper": "upessc-2025-cancelled",
+   "qno": 36,
+   "page": 11,
+   "q": "How many indicators have been used by Smith to count social happiness?",
+   "o": [
+    "6",
+    "5",
+    "7",
+    "8"
+   ],
+   "a": 2,
+   "exp": "D.M. Smith ne samajik khushhali ke 7 sanketak liye: aarthik samriddhi, aay vibhajan, nyay aur kanoon, naitik bhavnayein, swatantrata, shiksha-gyan, samajik sthirta.",
+   "tag": "Social Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q37",
+   "paper": "upessc-2025-cancelled",
+   "qno": 37,
+   "page": 11,
+   "q": "Assertion (A): Aleutian Islands are a site of volcanic erutions.\nReason (R): Convergent Plate boundaries are site of volcanic eruptions.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 1,
+   "exp": "Dono sahi aur (R) sahi vyakhya. Aleutian dweep uttari Prashant me abhisari (vinashi) plate seema par hain. Vishwa ki ~80% jwalamukhi kriya vinashi plate kinaron par aur ~15% rachnatmak kinaron par; Prashant ke kinare 'Ring of Fire'.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "vol",
+    "kw": "Magma"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q38",
+   "paper": "upessc-2025-cancelled",
+   "qno": 38,
+   "page": 12,
+   "q": "Shifting cultivation in Malaysia is called:",
+   "o": [
+    "Ladang",
+    "Milpa",
+    "Taunga",
+    "Tamrai"
+   ],
+   "a": 0,
+   "exp": "Malaysia me sthanantarit krishi ko 'Ladang' kehte hain. Shri Lanka – Chena; Madhya America – Milpa; Myanmar – Taungya; Thailand – Tamrai; Brazil – Roca; Poorvottar Bharat – Jhum. Jungle saaf karke kheti, urvarta ghatne par naya sthan.",
+   "tag": "Agricultural Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q39",
+   "paper": "upessc-2025-cancelled",
+   "qno": 39,
+   "page": 12,
+   "q": "Assertion (A): The mesosphere is the layer where meteors burn up upon entering the earth's atmosphere.\nReason (R): The mesosphere's has a high concentration of greenhouse gasses.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 3,
+   "exp": "(A) sahi, (R) galat. Ulkayein madhyamandal (50–80 km) me ghrishan se jal jaati hain; green house gaison ki ucch sandrata kshobhmandal me hoti hai, madhyamandal me nahi. Madhyamandal me noctilucent badal bante hain.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "atm",
+    "kw": "Structure"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q40",
+   "paper": "upessc-2025-cancelled",
+   "qno": 40,
+   "page": 12,
+   "q": "When do the heat Islands develop the most in the cities?",
+   "o": [
+    "At noon",
+    "In the morning at sunrise",
+    "At night",
+    "At sunset"
+   ],
+   "a": 2,
+   "exp": "Nagar ushma dweep sabse zyada raat me viksit hota hai. Shahar ke kendriya kshetra ki hawa aas-paas ke gramin kshetra se garm rehti hai – oonchi imaratein-sadkein din ki garmi sokhkar raat me chhodti hain, ped kam, vahan-AC se garmi.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "tmp",
+    "kw": ""
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q41",
+   "paper": "upessc-2025-cancelled",
+   "qno": 41,
+   "page": 13,
+   "q": "Which of the following is the driving force behind Mass Wasting?",
+   "o": [
+    "Wind pressure",
+    "Glacial activity",
+    "Plate tectonic",
+    "Gravity"
+   ],
+   "a": 3,
+   "exp": "Vrihad kshran (mass wasting) ki pramukh prerak shakti gurutvakarshan hai – chattano ke chure/malbe ka samoohik roop se dhaal ke neeche sarakna; vayu-jal-hime bhi prabhav dalte hain par mukhya bal gurutva hai.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "slp",
+    "kw": "Denudation"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q42",
+   "paper": "upessc-2025-cancelled",
+   "qno": 42,
+   "page": 13,
+   "q": "Lorenz curve is linear expression of which of the following measurement?",
+   "o": [
+    "Standard deviation",
+    "Median",
+    "Dispersion",
+    "Mode"
+   ],
+   "a": 2,
+   "exp": "Lorenz vakra prasar/apkiran (dispersion) maap ki rekhiya abhivyakti hai. Max Lorenz ke naam par; kisi shreni ke apkiran ko aalekhi vidhi se dikhane ka tarika.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q43",
+   "paper": "upessc-2025-cancelled",
+   "qno": 43,
+   "page": 13,
+   "q": "The book 'A New Soviet Heartland' is related to who among the following?",
+   "o": [
+    "Seversky",
+    "Cohen",
+    "Mackinder",
+    "Hooson"
+   ],
+   "a": 3,
+   "exp": "'A New Soviet Heartland' (1964) David Hooson ki pustak hai – Mackinder ke heartland model ko Soviet sandarbh me punarparibhashit kiya. Cohen ki 'Geography and Politics in a Divided World' (1973); Seversky ki 'Victory Through Air Power' (1942).",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "rim",
+    "kw": "Appraisal"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q44",
+   "paper": "upessc-2025-cancelled",
+   "qno": 44,
+   "page": 13,
+   "q": "Arrange the following straits of Indian Ocean from East to west.\nI. Malacca Strait II. Bab-el-Mandep III. Strait of Hormuz IV. Palk Strait",
+   "o": [
+    "I, IV, III, II",
+    "I, II, IV, III",
+    "I, III, II, IV",
+    "II, III, IV, I"
+   ],
+   "a": 0,
+   "exp": "Poorv se paschim: Malacca → Palk → Hormuz → Bab-el-Mandeb. Malacca – Malay prayadweep aur Sumatra ke beech; Palk – Bharat aur Shri Lanka; Hormuz – Oman aur Faras ki khadi; Bab-el-Mandeb – Adan ki khadi aur Lal sagar.",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "ioc",
+    "kw": "Why the IOR"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q45",
+   "paper": "upessc-2025-cancelled",
+   "qno": 45,
+   "page": 14,
+   "q": "Which of the following diagram is best for showing trends over time?",
+   "o": [
+    "Ogive",
+    "Pie Chart",
+    "Star diagram",
+    "Line graph"
+   ],
+   "a": 3,
+   "exp": "Samay ke saath pravritti dikhane ke liye rekha aalekh (line graph) sabse achha hai – jaise rajyon me prati vyakti aay ke aankde.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q46",
+   "paper": "upessc-2025-cancelled",
+   "qno": 46,
+   "page": 14,
+   "q": "Assertion (A): Loss of earth crust occurs in the convergence zone of plate.\nReason (R): The subduction of heavy plate occurs in the Benioff zone.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 1,
+   "exp": "Dono sahi aur (R) sahi vyakhya. Abhisaran mandal me bhaari plate Benioff zone me halki plate ke neeche subduct hoti hai, isliye bhoo-parpati ka kshay hota hai; jwalamukhi, gehre bhookamp, valit parvat, gart bante hain. Book note: aayog ne pehle (a) maana, sahi uttar (b).",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "plt",
+    "kw": "Plate tectonic"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q47",
+   "paper": "upessc-2025-cancelled",
+   "qno": 47,
+   "page": 14,
+   "q": "Who among the following said that 'Regions are shorthand way of describing the variable character of an area in an efficient manner'?",
+   "o": [
+    "Richard Hartshorne",
+    "Alfred Hettner",
+    "Peter Haggett",
+    "T.T. Woofer"
+   ],
+   "a": 2,
+   "exp": "Ye kathan Peter Haggett ka hai. Haggett ki pustakein: Locational Analysis in Human Geography (1965), Geography – A Modern Synthesis (1975); unhone geography me ganitiya-sankhyiki vidhiyon aur model nirmaan me yogdan diya.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Zenith"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q48",
+   "paper": "upessc-2025-cancelled",
+   "qno": 48,
+   "page": 14,
+   "q": "Which of the following is/are a vector file format for spatial data?\na. MDB b. TAB c. DLG d. PNG",
+   "o": [
+    "a and b",
+    "Only a",
+    "All a, b, c and d",
+    "a, b and c"
+   ],
+   "a": 3,
+   "exp": "MDB, TAB aur DLG vector file format hain; PNG raster/chhavi format hai. Vector model bindu, rekha, bahubhuj se vastu ki aakriti-sthiti dikhata hai.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "upessc-2025-cancelled-q49",
+   "paper": "upessc-2025-cancelled",
+   "qno": 49,
+   "page": 15,
+   "q": "Which one of the following gasses is not the cause of urban smog?",
+   "o": [
+    "Nitrogen oxide",
+    "Sulphur dioxide",
+    "Carbon monoxide",
+    "Ozone"
+   ],
+   "a": 2,
+   "exp": "Carbon monoxide nagariya dhoom kohre (smog) ka kaaran nahi. NOx, SO₂ aur ozone smog banate hain. 'Smog' shabd Dr. Henry Antoine Des Voeux ne 1905 me diya; dhuan + kohra; sooraj ki roshni me rasayanik kriya se ozone banta hai.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "imp",
+    "kw": ""
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q50",
+   "paper": "upessc-2025-cancelled",
+   "qno": 50,
+   "page": 15,
+   "q": "The halo formed around the moon at night is caused by:",
+   "o": [
+    "Alto-cumulus clouds",
+    "Cirro-cumulus clouds",
+    "Alto-stratus clouds",
+    "Cirrus and Cirro-stratus clouds"
+   ],
+   "a": 3,
+   "exp": "Chandrama ke charon or prabhamandal (halo) pakshabh aur pakshabh stari (cirrus/cirrostratus) meghon se banta hai – safed, patli doodhiya chadar; ye nikat bhavishya me chakravat aane ka sanket bhi.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "mst",
+    "kw": "Clouds"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q51",
+   "paper": "upessc-2025-cancelled",
+   "qno": 51,
+   "page": 15,
+   "q": "Which region in Puranas is referred to as Shalmali Dwipa?",
+   "o": [
+    "Middle East",
+    "East Africa",
+    "Borneo",
+    "East Asia"
+   ],
+   "a": 1,
+   "exp": "Puranon me Shalmali dweep Poorvi Africa ko kaha gaya. Puranon me prithvi saat dweepon me: Jambu, Plaksha, Shalmali, Kusha, Krauncha, Shaka, Pushkar – sab Meru parvat (Pamir) ke charon or.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "upessc-2025-cancelled-q52",
+   "paper": "upessc-2025-cancelled",
+   "qno": 52,
+   "page": 15,
+   "q": "Match List-I (Local Wind) with List-II (Country/Region):\n(A) Harmattan (B) Haboob (C) Bora (D) Zonda\ni. Argentina ii. Adriatic Coast iii. West Africa iv. Sudan",
+   "o": [
+    "A-I, B-IV, C-II, D-III",
+    "A-I, B-II, C-III, D-IV",
+    "A-III, B-II, C-IV, D-I",
+    "A-III, B-IV, C-II, D-I"
+   ],
+   "a": 3,
+   "exp": "Harmattan – Paschim Africa; Haboob – Sudan; Bora – Adriatic tat; Zonda – Argentina.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "loc",
+    "kw": ""
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q53",
+   "paper": "upessc-2025-cancelled",
+   "qno": 53,
+   "page": 16,
+   "q": "Which type of vegetation is Same times called Sclerophyllous forest?",
+   "o": [
+    "Taiga forest",
+    "Evergreen rain forest",
+    "Tidal forest",
+    "Mediterranean Scrub"
+   ],
+   "a": 3,
+   "exp": "Bhoomadhya sagariya jhadiyon ko sclerophyll van kehte hain – patte mote, kathor; tane ki chhal moti; garmi ki shushkta sehne ke liye anukoolit. Sthaniya naam: Europe me maquis/macchia, California me chaparral, dakshin Africa me fynbos.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "trb",
+    "kw": "Mediterranean"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q54",
+   "paper": "upessc-2025-cancelled",
+   "qno": 54,
+   "page": 16,
+   "q": "Which of the following Indian Geographer is known for his work on regional development and rural planning?",
+   "o": [
+    "R.P. Mishra",
+    "S.P. Chatterjee",
+    "B.N. Goswami",
+    "G.S. Gosal"
+   ],
+   "a": 3,
+   "exp": "G.S. Gosal pradeshik vikas aur gramin niyojan par kaam ke liye jaane jaate hain (krishi bhugol me bhi yogdan). R.P. Mishra kshetriy niyojan ke liye; S.P. Chatterjee bhautik bhugol aur bhaugolik vibhajan ke liye. Book note: aayog ne pehle (a) maana, sahi (d).",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "upessc-2025-cancelled-q55",
+   "paper": "upessc-2025-cancelled",
+   "qno": 55,
+   "page": 16,
+   "q": "Match List-I (Techniques) with List-II (Digital Image Processing):\n(A) De-Striping (B) Histogram Equalisation (C) NDVI (D) Maximum Likelihood\ni. Image enhancement ii. Image classification iii. Radiometric correction iv. Image transformation",
+   "o": [
+    "A-I, B-II, C-III, D-IV",
+    "A-IV, B-II, C-III, D-I",
+    "A-III, B-I, C-IV, D-II",
+    "A-IV, B-III, C-II, D-I"
+   ],
+   "a": 2,
+   "exp": "De-striping – radiometric sanshodhan; histogram equalisation – chhavi udbhavan; NDVI – chhavi roopantaran; maximum likelihood – chhavi vargikaran.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "upessc-2025-cancelled-q56",
+   "paper": "upessc-2025-cancelled",
+   "qno": 56,
+   "page": 16,
+   "q": "Which of the following is not correctly matched? (Tribes – Race)",
+   "o": [
+    "American Indian – Mongoloid",
+    "Vedda – Caucasoid",
+    "Dinaric – Secondary Negroid",
+    "Bushman Hottentot – Negroid"
+   ],
+   "a": 2,
+   "exp": "Dinaric – 'Secondary Negroid' galat hai; book ke anusaar Dinaric uttarvarti Caucasoid hain. Baaki sahi: American Indian – Mongoloid, Vedda – Caucasoid (Indo-Dravid), Bushman-Hottentot – Negroid.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q57",
+   "paper": "upessc-2025-cancelled",
+   "qno": 57,
+   "page": 17,
+   "q": "Which one of the following books is not related to Ptolemy?",
+   "o": [
+    "Almagest",
+    "Geographike Syntaxis",
+    "Geographica",
+    "Anaelema"
+   ],
+   "a": 2,
+   "exp": "'Geographica' Strabo ka granth hai (Eratosthenes ne bhi likha), Ptolemy ka nahi. Ptolemy ki pustakein: Almagest, Geographia (Geographike Syntaxis), Analemma, Planetary Hypothesis.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "upessc-2025-cancelled-q58",
+   "paper": "upessc-2025-cancelled",
+   "qno": 58,
+   "page": 17,
+   "q": "Assertion (A): The areas where warm and cold ocean currents meet, are the major fishing areas of the world.\nReason (R): The temperature of water of the area where warm and cold ocean currents meet, is most suitable for the breeding of fishes.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 1,
+   "exp": "Dono sahi aur (R) sahi vyakhya. Garm aur thandi dharaon ke milan sthal par jal ka taapmaan machhliyon ke prajanan ke liye anukool, plankton badhta hai – Grand Banks, Dogger Bank jaise pramukh matsya kshetra. Book note: aayog ne (d) maana, sahi (b).",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "res",
+    "kw": "Fisheries"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q59",
+   "paper": "upessc-2025-cancelled",
+   "qno": 59,
+   "page": 17,
+   "q": "Which is the most abundant pelagic deposit found in the Indian Ocean?",
+   "o": [
+    "Red clay",
+    "Siliceous ooze",
+    "Diatom ooze",
+    "Globigerina ooze"
+   ],
+   "a": 3,
+   "exp": "Hind mahasagar me sabse adhik pelagic nikshep Globigerina ooze hai – choona pradhan; ~64% calcium. Pelagic Greek 'pelagos' (samudra) se. Ye 2000–4000 fathom tak; Hind mahasagar ke poorvi aur paschimi bhaag tatha paschimi Prashant me.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "dep",
+    "kw": "Biogenous"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q60",
+   "paper": "upessc-2025-cancelled",
+   "qno": 60,
+   "page": 18,
+   "q": "Katabatic wind is:",
+   "o": [
+    "Down slope wind",
+    "Up slope wind",
+    "Stable wind",
+    "Horizontal wind"
+   ],
+   "a": 0,
+   "exp": "Katabatic pawan adho-dhaal (down slope) pawan hai – raat me parvatiya dhalon par vikiran se hawa thandi-bhaari hokar ghatiyon me utarti hai; ghatiyon me taap pratilomana aur pala.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "loc",
+    "kw": ""
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q61",
+   "paper": "upessc-2025-cancelled",
+   "qno": 61,
+   "page": 18,
+   "q": "Who among the following proposed the concentric zone model of urban development?",
+   "o": [
+    "Homer Hoyt",
+    "Walter Christaller",
+    "Harris and Ullman",
+    "Ernest Burgess"
+   ],
+   "a": 3,
+   "exp": "Sankendriya kshetra model Ernest Burgess (1925) ka hai. Nagar 5 karyatmak pattiyon me: CBD, sankraman kshetra, swatantra shramikon ka aavas, behtar aavas, abhigaman (commuter) kshetra.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q62",
+   "paper": "upessc-2025-cancelled",
+   "qno": 62,
+   "page": 18,
+   "q": "Match List-I (Oceanic Features) with List-II (Location):\n(A) Mid Atlantic Ridge (B) Mariana Trench (C) Great barrier Reef (D) Java Trench\ni. Indian Ocean ii. Atlantic Ocean iii. Pacific Ocean iv. Coral Sea",
+   "o": [
+    "A-II, B-III, C-IV, D-I",
+    "A-IV, B-III, C-II, D-I",
+    "A-I, B-II, C-III, D-IV",
+    "A-II, B-IV, C-I, D-III"
+   ],
+   "a": 0,
+   "exp": "Mid-Atlantic Ridge – Atlantic; Mariana Trench – Prashant; Great Barrier Reef – Coral Sea; Java Trench – Hind mahasagar.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "oceans",
+    "kw": ""
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q63",
+   "paper": "upessc-2025-cancelled",
+   "qno": 63,
+   "page": 18,
+   "q": "Who supported that 'the geographical distribution of man depends on climate and weather more than any other factor'?",
+   "o": [
+    "F. Ratzel",
+    "G. Taylor",
+    "E. Huntington",
+    "E. Semple"
+   ],
+   "a": 2,
+   "exp": "Ye vichar Ellsworth Huntington ka hai – manav ka bhaugolik vitaran kisi bhi anya kaarak se zyada jalvayu aur mausam par nirbhar. Huntington paristhitikivaadi aur jalvayu vaigyanik; Ratzel ne 'Anthropogeographie' shabd diya.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "env",
+    "kw": "Huntington"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q64",
+   "paper": "upessc-2025-cancelled",
+   "qno": 64,
+   "page": 19,
+   "q": "Arrange the following from South to North Sequence.\nI. Pirpanjal range II. Zanskar range III. Greater Himalayas IV. Ladakh range",
+   "o": [
+    "I, IV, III, II",
+    "I, II, IV, III",
+    "I, III, II, IV",
+    "II, III, IV, I"
+   ],
+   "a": 2,
+   "exp": "Dakshin se uttar: Pir Panjal → Mahan Himalaya → Zaskar → Ladakh. Himalaya me teen samantar shreniyan – Shivalik, Laghu (Pir Panjal), Mahan; trans-Himalaya me Zaskar, Ladakh, Kailash, Karakoram.",
+   "tag": "India – Physiography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q65",
+   "paper": "upessc-2025-cancelled",
+   "qno": 65,
+   "page": 19,
+   "q": "Which one of the following methods is used to identify spatial pattern of a geographical data?",
+   "o": [
+    "Correlation analysis",
+    "Sampling",
+    "Nearest neighbour analysis",
+    "Regression"
+   ],
+   "a": 2,
+   "exp": "Bhaugolik aankdon ke sthaniya pratiroop ki pehchan nearest neighbour vishleshan se hoti hai – Clark aur Evans (1954). Basti vitaran ke aakaar-antaran ke vishleshan ke liye; Rn = vastavik ausat doori / prayashit ausat doori.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "upessc-2025-cancelled-q66",
+   "paper": "upessc-2025-cancelled",
+   "qno": 66,
+   "page": 19,
+   "q": "Assertion (A): Coastal odisha is highly cyclone prone area of India.\nReason (R): Mangrove trees do not get uprooted by storms and tides because of their extensive roots.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 0,
+   "exp": "Dono sahi par (R) sahi vyakhya nahi. Odisha tat chakravat pravan hai kyunki Bangal ki khadi me chakravat (10–15°N) bante hain; mangrove ki faili jadein toofan-jwaar se ukhadti nahi aur chakravat ka prabhav kam karti hain, par ye chakravat pravanata ka kaaran nahi.",
+   "ref": {
+    "file": "india-climate-soils.html",
+    "topic": "mon",
+    "kw": "Retreating"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q67",
+   "paper": "upessc-2025-cancelled",
+   "qno": 67,
+   "page": 20,
+   "q": "Who is the author of book 'The Pulse of Asia'?",
+   "o": [
+    "Ellsworth Huntington",
+    "Isaiah Bowman",
+    "Carl O. Sauer",
+    "Griffith Taylor"
+   ],
+   "a": 0,
+   "exp": "'The Pulse of Asia' Ellsworth Huntington ki pustak hai. Anya pustakein: Civilization and Climate, Principles of Human Geography, Climatic Changes, Earth and Sun, Mainsprings of Civilization.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "env",
+    "kw": "Huntington"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q68",
+   "paper": "upessc-2025-cancelled",
+   "qno": 68,
+   "page": 20,
+   "q": "Which of the following States of India is called Molasses Basin?",
+   "o": [
+    "Mizoram",
+    "Nagaland",
+    "Tripura",
+    "Manipur"
+   ],
+   "a": 0,
+   "exp": "Mizoram ko 'Molasses basin' kaha jata hai – mridul aur asangathit chattano se bana. Mizoram ke poorv me Myanmar, paschim me Bangladesh, uttar me Manipur, Assam aur Tripura.",
+   "tag": "India – Physiography"
+  },
+  {
+   "id": "upessc-2025-cancelled-q69",
+   "paper": "upessc-2025-cancelled",
+   "qno": 69,
+   "page": 20,
+   "q": "Which of the following is the minimum deviation method in crop combination analysis?",
+   "o": [
+    "Kostroviki Method",
+    "Rafiullah Method",
+    "K. Doi's Method",
+    "Weaver's Method"
+   ],
+   "a": 3,
+   "exp": "Fasal sanyojan me nyuntam vichalan vidhi Weaver (1954) ki hai – 'Crop Combination Regions in the Middle West USA'. Sootra me vichalan ke sthan par prasaran σ² = Σd²/n; Kikukazu Doi ne 1959 me ise sanshodhit kiya.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Zenith"
+   }
+  },
+  {
+   "id": "upessc-2025-cancelled-q70",
+   "paper": "upessc-2025-cancelled",
+   "qno": 70,
+   "page": 20,
+   "q": "Who put forth the idea of compage?",
+   "o": [
+    "Whittlesey",
+    "Hartshorne",
+    "Unstead",
+    "Herbertson"
+   ],
+   "a": 0,
+   "exp": "Compage ka vichar Whittlesey ne diya – pradesh ke jitne tatva, utne prakaar ke pradesh; tatvon ki samanta par aadharit pradesh ko compage kaha. Chaar shreniyan: ekal vishay, bahul vishay, sampoorn vishay aur vishisht pradesh (compage).",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "uppsc-gdc-2026-q01",
+   "paper": "uppsc-gdc-2026",
+   "qno": 1,
+   "page": 1,
+   "q": "According to 'Malthusian Theory' how does population growth compared to food supply?",
+   "o": [
+    "Both growth arithmetically",
+    "Both growth geometrically",
+    "Population growth geometrically and food supply grow arithmetically",
+    "Population growth arithmetically and food supply grow geometrically"
+   ],
+   "a": 2,
+   "exp": "Malthus ke anusaar jansankhya jyamitiya (1, 2, 4, 8, 16…) aur khadya aapoorti ankganitiya (1, 2, 3, 4…) roop se badhti hai. Rok na ho to har 25 saal me jansankhya dugni; 200 saal me 256 guna.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q02",
+   "paper": "uppsc-gdc-2026",
+   "qno": 2,
+   "page": 1,
+   "q": "If a central place system operates in a region under the K = 7 principle, what does this value represents is the context of Chrisataller's central place theory?",
+   "o": [
+    "Transport principle",
+    "Marketing principle",
+    "Marginal population principle",
+    "Administrative principle"
+   ],
+   "a": 3,
+   "exp": "K = 7 prashasanik siddhant hai. Christaller ke teen siddhant: bazaar (K=3), yatayat (K=4), prashasan (K=7). K maan ek shreni se agli me kendron ki sankhya ka sthir anupaat.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Genesis"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q03",
+   "paper": "uppsc-gdc-2026",
+   "qno": 3,
+   "page": 1,
+   "q": "Which approach in geography studies how human perceive and interact with space?",
+   "o": [
+    "Behavioural geography",
+    "Quantitative revolution",
+    "Humanism",
+    "Positivism"
+   ],
+   "a": 0,
+   "exp": "Vyavaharik bhugol adhyayan karta hai ki manav sthan ko kaise samajhte hain aur usse kaise antarkriya karte hain – abhiruchi, aavashyakta, chetna, kshamta jaise manasik gun mahatvapurn.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Decline"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q04",
+   "paper": "uppsc-gdc-2026",
+   "qno": 4,
+   "page": 1,
+   "q": "Which one of the following pairs is NOT correctly matched? (Theories of urban morphology – Geographers)",
+   "o": [
+    "Sector theory – Homer Hoyt",
+    "Concentric zone theory – E.W. Burgess",
+    "Multi-nuclei theory – C.D. Harris",
+    "Gradient theory – J. Garrison"
+   ],
+   "a": 3,
+   "exp": "Dhalan (gradient) siddhant J. Garrison ka nahi; book ke anusaar Davie, Peck, King, Hartshorne se juda. Sahi: khand siddhant – Hoyt; sankendriya – Burgess; bahunabhik – C.D. Harris (Harris & Ullman).",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q05",
+   "paper": "uppsc-gdc-2026",
+   "qno": 5,
+   "page": 2,
+   "q": "According to the 2011 census, which of the following States has a better female literacy rate than Uttar Pradesh?",
+   "o": [
+    "Jharkhand",
+    "Bihar",
+    "Arunachal Pradesh",
+    "Rajasthan"
+   ],
+   "a": 2,
+   "exp": "2011 jangarna me Arunachal Pradesh ki mahila saksharta (57.7%) UP (57.2%) se behtar thi. Jharkhand 55.4%, Rajasthan 52.1%, Bihar 51.5%.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q06",
+   "paper": "uppsc-gdc-2026",
+   "qno": 6,
+   "page": 2,
+   "q": "Which one of the following is NOT a resolution related to radar system?",
+   "o": [
+    "Ground Resolution",
+    "Azimuth Resolution",
+    "Range Resolution",
+    "None of the above"
+   ],
+   "a": 3,
+   "exp": "Ground, azimuth aur range – teeno radar ke vibhedan hain, isliye uttar 'none of the above'. Range vibhedan prasar disha me; azimuth vibhedan radar beam ki chaudai par nirbhar.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "uppsc-gdc-2026-q07",
+   "paper": "uppsc-gdc-2026",
+   "qno": 7,
+   "page": 2,
+   "q": "Which of the following statement with reference to A.T. Mahan is/are correct?\n1. He gave more importance to Air power than sea power.\n2. His famous book is 'The life of Nelson'.",
+   "o": [
+    "Only 1",
+    "Neither 1 nor 2",
+    "Both 1 and 2",
+    "Only 2"
+   ],
+   "a": 3,
+   "exp": "Sirf 2 sahi. Mahan ne samudri shakti ko vayu shakti se zyada mahatva diya (kathan 1 galat). Unki pustakein: 'The Influence of Sea Power upon History', 'The Life of Nelson', 'The Problem of Asia'. Unke anusaar samudri shakti hi vishwa prabhutva ka aadhar.",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "geo",
+    "kw": "Two streams"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q08",
+   "paper": "uppsc-gdc-2026",
+   "qno": 8,
+   "page": 2,
+   "q": "Arrange the following rivers in order from East to West:\n1. Sutlej 2. Beas 3. Ravi 4. Chenab 5. Jhelum",
+   "o": [
+    "1, 3, 2, 4, 5",
+    "1, 2, 3, 4, 5",
+    "1, 2, 4, 3, 5",
+    "1, 4, 2, 3, 5"
+   ],
+   "a": 1,
+   "exp": "Poorv se paschim: Sutlej → Beas → Ravi → Chenab → Jhelum. Sutlej Tibet me Mansarovar ke paas Rakas Tal se; Beas Rohtang ke paas Beas Kund se; Ravi Kullu pahadiyon se; Chenab Chandra-Bhaga ke milan se; Jhelum Verinag jharne se.",
+   "tag": "India – Physiography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q09",
+   "paper": "uppsc-gdc-2026",
+   "qno": 9,
+   "page": 3,
+   "q": "Which of the following ocean currents are found along coastline of Africa?\n1. Humboldt current 2. Agulhas current 3. Canary current 4. Benguela current",
+   "o": [
+    "2, 3 and 4",
+    "1, 2 and 3",
+    "1, 2 and 4",
+    "1, 3 and 4"
+   ],
+   "a": 0,
+   "exp": "Agulhas, Canary aur Benguela Africa ke tat par hain; Humboldt dakshin America ke paschimi tat ki thandi dhara (Peru dhara). Agulhas – Mozambique channel se dakshin; Canary – uttar-paschim Africa thandi; Benguela – dakshin-paschim Africa thandi.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "curr",
+    "kw": "Practical gyre"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q10",
+   "paper": "uppsc-gdc-2026",
+   "qno": 10,
+   "page": 3,
+   "q": "With reference to Christaller's central place theory, which of the following statements is/are correct?\n1. Regions must be an isotropic plain with homogeneous purchasing power.\n2. Christaller's theory is known as 'Fixed K' theory.\n3. Christaller's theory is known as 'Variable K' theory",
+   "o": [
+    "1 and 2",
+    "1, 2 and 3",
+    "2 and 3",
+    "1 and 3"
+   ],
+   "a": 0,
+   "exp": "1 aur 2 sahi. Pradesh samaan kray shakti wala samdesh maidan maana jata hai; har shreni me sthir K maan hone se ise 'Fixed K' siddhant kehte hain (Lösch ka 'variable K').",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Genesis"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q11",
+   "paper": "uppsc-gdc-2026",
+   "qno": 11,
+   "page": 3,
+   "q": "Who coined the terms 'Spread effects' and 'backwash effects'?",
+   "o": [
+    "Gunnar Myrdal",
+    "F.Perroux",
+    "D. C. North",
+    "A.O. Hirschman"
+   ],
+   "a": 0,
+   "exp": "'Prasar prabhav' aur 'paschch pravah prabhav' shabd Gunnar Myrdal ne diye – sanchayi karanatmak siddhant (circular and cumulative causation). Vikasit kendra se pichhde kshetron me prasar ki tulna me backwash adhik hota hai.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "uppsc-gdc-2026-q12",
+   "paper": "uppsc-gdc-2026",
+   "qno": 12,
+   "page": 4,
+   "q": "Edward Ullman's concept of spatial interaction was based on the economy of which country?",
+   "o": [
+    "U.S.A.",
+    "Kazakhstan",
+    "France",
+    "China"
+   ],
+   "a": 0,
+   "exp": "Ullman ki sthaniya antarkriya ki avdharna USA ki arthvyavastha par aadharit thi. Teen aadhar: poorakata (complementarity), madhyavarti avsar, sthanantaran yogyata (1956 ka lekh 'The role of transportation and the bases for interaction').",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q13",
+   "paper": "uppsc-gdc-2026",
+   "qno": 13,
+   "page": 4,
+   "q": "Which geographer emphasized on the concept of 'unity of nature'?",
+   "o": [
+    "Humboldt",
+    "Ritter",
+    "Carl Sauer",
+    "Ratzel"
+   ],
+   "a": 0,
+   "exp": "'Prakriti ki ekta' (unity of nature) ki avdharna Humboldt ki hai – prithvi ke jaivik-ajaivik tatva ek-doosre se jude aur prabhavit; isliye prithvi ka adhyayan samagra drishti se.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "uppsc-gdc-2026-q14",
+   "paper": "uppsc-gdc-2026",
+   "qno": 14,
+   "page": 4,
+   "q": "'Dykes' structure is associated with which of the following regions?",
+   "o": [
+    "Northern Gujarat",
+    "Eastern Maharashtra",
+    "Western Gujarat",
+    "Western Maharashtra"
+   ],
+   "a": 3,
+   "exp": "'Dyke' sanrachna paschimi Maharashtra se sambandhit hai. Lava daraaron me jamkar deewar jaisi aakriti banata hai; paschimi Maharashtra ki antarvedhit aagneya chattano (Deccan trap) me ye aakriti bahutayat me milti hai.",
+   "ref": {
+    "file": "india-climate-soils.html",
+    "topic": "ary",
+    "kw": "Deccan"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q15",
+   "paper": "uppsc-gdc-2026",
+   "qno": 15,
+   "page": 4,
+   "q": "In which of the following ocean red clay deposition is widely found?",
+   "o": [
+    "Atlantic Ocean",
+    "Arctic Ocean",
+    "Pacific Ocean",
+    "Indian Ocean"
+   ],
+   "a": 2,
+   "exp": "Laal mrittika (red clay) ka sarvadhik nikshep Prashant mahasagar me hai – ye mahasagaron ke lagbhag aadhe bhaag me failti hai; 40°N–40°S ke beech; lohe ke oxide aur aluminium silicate se banti hai; mukhyatah gehre saagar ka nikshep.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "dep",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q16",
+   "paper": "uppsc-gdc-2026",
+   "qno": 16,
+   "page": 4,
+   "q": "Who was the proponent of the concept of 'Lebensraum'?",
+   "o": [
+    "Oscar Peschel",
+    "Friedrich Ratzel",
+    "Carl Ritter",
+    "Alfred Hettner"
+   ],
+   "a": 1,
+   "exp": "'Lebensraum' (rehne ki jagah) ki sankalpana Friedrich Ratzel ki hai. Rajya ek jaivik avayav ki tarah badhta hai aur use rehne ki jagah chahiye; Ratzel ko rajneetik bhugol ka janak bhi kehte hain.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "soc",
+    "kw": "Ratzel's ideas"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q17",
+   "paper": "uppsc-gdc-2026",
+   "qno": 17,
+   "page": 5,
+   "q": "Which of the following islands or countries do/does NOT belong to Norwegian Cultural realm?",
+   "o": [
+    "Denmark and Iceland",
+    "Norway and Sweden",
+    "Arctic Island group",
+    "Finland"
+   ],
+   "a": 3,
+   "exp": "Finland Norwegian sanskritik pradesh me nahi aata – Finno-Ugric bhasha parivar aur bhinn sanskritik prishthabhoomi ke kaaran. Denmark, Iceland, Norway, Sweden aur Arctic dweep (Svalbard) Scandinavian sanskritik virasat ka hissa.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "hum",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q18",
+   "paper": "uppsc-gdc-2026",
+   "qno": 18,
+   "page": 5,
+   "q": "Spencer and Thomas have divided the world into how many cultural world and cultural realms?",
+   "o": [
+    "7 Cultural World and 27 Cultural Realms",
+    "11 Cultural World and 50 Cultural Realms",
+    "10 Cultural World and 13 Cultural Realms",
+    "15 Cultural World and 50 Cultural Realms"
+   ],
+   "a": 1,
+   "exp": "Spencer aur Thomas ne vishwa ko 11 sanskritik vishwa aur 50 sanskritik parimandal me baanta – Anglo-America, Latin America, Paschimi Europe, Poorvi Europe-Soviet, Arab-Muslim, Africa, Dakshin Asia, Dakshin-Poorv Asia, Cheen, Australia, Prashant.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "hum",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q19",
+   "paper": "uppsc-gdc-2026",
+   "qno": 19,
+   "page": 5,
+   "q": "The geography of 1990's and of subsequent period is included in which paradigm?",
+   "o": [
+    "Post-modernism",
+    "Positivism",
+    "Radicalism",
+    "Modernism"
+   ],
+   "a": 0,
+   "exp": "1990 ke dashak aur baad ka bhugol uttar-adhunikvaad me aata hai – adhunikta ki pratikriya; satya, saundarya, naitikta saapeksh; vividhta, samajik upekshit vargon aur sthaniyata par zor.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "uppsc-gdc-2026-q20",
+   "paper": "uppsc-gdc-2026",
+   "qno": 20,
+   "page": 5,
+   "q": "Which one of the following statements about the coriolis force is NOT correct?",
+   "o": [
+    "It is absent at the equator",
+    "It is maximum at the pole",
+    "It deflects the wind to the right direction in the northern hemisphere",
+    "It deflects the winds to the right direction in the southern hemisphere"
+   ],
+   "a": 3,
+   "exp": "Coriolis bal dakshini golardh me hawa ko baayin or modta hai, daayin nahi – isliye (d) galat. Ye vishuvat par shoonya aur dhruvon par adhiktam; uttari golardh me daayin or. Ye pawan ke veg ko nahi, disha ko prabhavit karta hai.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "prs",
+    "kw": "Wind"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q21",
+   "paper": "uppsc-gdc-2026",
+   "qno": 21,
+   "page": 6,
+   "q": "The altitude of GPS satellites in 'high orbit' is:",
+   "o": [
+    "About 36,000 km",
+    "About 12,000 km",
+    "About 1,000 km",
+    "About 20,200 km"
+   ],
+   "a": 3,
+   "exp": "GPS upgrahon ki ucch kaksha ki oonchai lagbhag 20,200 km hai; parikrama kaal ~12 ghante. GPS (NAVSTAR) USA ne banaya; prithvi aur vayumandal me vastuon ke nauvahan ke liye.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "uppsc-gdc-2026-q22",
+   "paper": "uppsc-gdc-2026",
+   "qno": 22,
+   "page": 6,
+   "q": "Which of the following local winds is called 'doctor'?",
+   "o": [
+    "Harmattan",
+    "Santa Ana",
+    "Mistral",
+    "Yamo"
+   ],
+   "a": 0,
+   "exp": "Harmattan ko 'doctor' kehte hain. Sahara se Guinea tat ki or chalne wali garm-shushk hawa; tat ki umas aur bimariyon se rahat deti hai, isliye Guinea tat par 'doctor pawan'.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "loc",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q23",
+   "paper": "uppsc-gdc-2026",
+   "qno": 23,
+   "page": 6,
+   "q": "When is the balance between incoming solar radiation and outgoing terrestrial radiation usually marked?",
+   "o": [
+    "Between 2:00 and 4:00 pm",
+    "12:00 Noon",
+    "10 minutes before sunset",
+    "3:00 pm"
+   ],
+   "a": 0,
+   "exp": "Pravishti saur vikiran aur bahirgami parthiv vikiran me santulan aam taur par dopahar 2 se 4 baje ke beech hota hai – dopahar tak satah garm hoti rehti hai, 2–4 baje ke baad aane wala vikiran ghatne lagta hai. Book note: aayog ne (c) maana, sahi (a).",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "atm",
+    "kw": "Heat budget"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q24",
+   "paper": "uppsc-gdc-2026",
+   "qno": 24,
+   "page": 6,
+   "q": "Which of the following is the India's first zero waste airport?",
+   "o": [
+    "Rajiv Gandhi International Airport Hyderabad",
+    "Kempegowda International Airport Bengaluru",
+    "Sardar Vallabhbhai Patel International Airport Ahmedabad",
+    "Devi Ahilyabai Hollker Airport Indore"
+   ],
+   "a": 3,
+   "exp": "Devi Ahilyabai Holkar hawai adda, Indore Bharat ka pehla shoonya apshisht (zero waste) hawai adda ghoshit hua – lagbhag 99% kachre ka landfill se bahar prabandhan; Indore ki svachhata ke saath.",
+   "tag": "India – General"
+  },
+  {
+   "id": "uppsc-gdc-2026-q25",
+   "paper": "uppsc-gdc-2026",
+   "qno": 25,
+   "page": 7,
+   "q": "Which of the following information can be used to calculate the air photo scale?\n1. Flying height of the aircraft 2. Focal length of the camera 3. Speed of the aircraft 4. Ground principal point",
+   "o": [
+    "1 and 2",
+    "Only 1",
+    "1, 2, 3 and 4",
+    "Only 2"
+   ],
+   "a": 0,
+   "exp": "Vayu photo ka maapak camera ki focal length (f) aur udaan oonchai (H) se nikalta hai: scale = f/H. Vimaan ki gati aur ground principal point maapak ke liye zaroori nahi.",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "uppsc-gdc-2026-q26",
+   "paper": "uppsc-gdc-2026",
+   "qno": 26,
+   "page": 7,
+   "q": "Which of the following rivers has the largest catchment area?",
+   "o": [
+    "Kavery",
+    "Tapi",
+    "Sabarmati",
+    "Subarnarekha"
+   ],
+   "a": 0,
+   "exp": "Inme Kaveri ka jalgrahan kshetra sabse bada (~81,155 km²). Tapi ~65,145 km², Subarnarekha ~29,196 km², Sabarmati ~21,674 km².",
+   "tag": "India – Physiography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q27",
+   "paper": "uppsc-gdc-2026",
+   "qno": 27,
+   "page": 7,
+   "q": "Which one of the following pair is NOT correctly matched? (UP minerals)",
+   "o": [
+    "Limestone – Sonbhadra",
+    "Copper – Lalitpur",
+    "Dolomite – Mirzapur",
+    "Glass sand – Meerut"
+   ],
+   "a": 3,
+   "exp": "Glass sand – Meerut galat; glass sand Prayagraj (aur Shankargarh) me. Sahi: choona patthar – Sonbhadra, tamba – Lalitpur, dolomite – Mirzapur.",
+   "tag": "India – Resources"
+  },
+  {
+   "id": "uppsc-gdc-2026-q28",
+   "paper": "uppsc-gdc-2026",
+   "qno": 28,
+   "page": 7,
+   "q": "Who is the propounder of 'behaviour matrix'?",
+   "o": [
+    "Kirk",
+    "Pred",
+    "P.R. Gould",
+    "White"
+   ],
+   "a": 1,
+   "exp": "'Vyavaharik matrix' Pred ne diya – vyakti ke nirnay ko gyan ki matra aur upyog kshamta ke aadhar par samjhaane ka model (Behavior and Location, 1967–69). Kirk – aacharanparak paryavaran.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "uppsc-gdc-2026-q29",
+   "paper": "uppsc-gdc-2026",
+   "qno": 29,
+   "page": 7,
+   "q": "The gravity model of spatial interaction is related to:",
+   "o": [
+    "Brown",
+    "John Q. Stewart",
+    "Gould",
+    "Taaffe"
+   ],
+   "a": 1,
+   "exp": "Sthaniya antarkriya ka gurutva model John Q. Stewart se juda hai – Newton ke gurutvakarshan niyam par aadharit; do sthanon ke beech antarkriya unki jansankhya ke gunanfal ke anupaat me aur doori ke varg ke vyutkramanupaat me (1940 ke dashak).",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Zenith"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q30",
+   "paper": "uppsc-gdc-2026",
+   "qno": 30,
+   "page": 8,
+   "q": "Non-oscillation ecological stability is?",
+   "o": [
+    "Stability in the number of species in the ecosystem",
+    "A balance in the production and consumption of each element in ecosystem",
+    "The smooth functioning of all biogeo-chemical cycles and stable concentration of all elements",
+    "Established adjustments in the ecosystem"
+   ],
+   "a": 0,
+   "exp": "Dolanrahit (non-oscillation) paristhitik sthirata = paristhitik tantra me prajatiyon ki sankhya me sthirata. M.J. Dunbar (1973) ne ise ye naam diya – prajatiyon ki sankhya me utaar-chadhaav nahi.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "eco",
+    "kw": "Components"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q31",
+   "paper": "uppsc-gdc-2026",
+   "qno": 31,
+   "page": 8,
+   "q": "Arrange the following regions in order of increasing population size.\n(1) Eastern Africa (2) Middle Africa (3) Northern Africa (4) Southern Africa",
+   "o": [
+    "3, 4, 2, 1",
+    "4, 2, 1, 3",
+    "4, 3, 1, 2",
+    "4, 3, 2, 1"
+   ],
+   "a": 3,
+   "exp": "Book ke aankde: dakshini Africa 6.8 crore, madhya 19 crore, uttari 25 crore, poorvi 44 crore – sahi badhta kram 4, 2, 3, 1 hai jo kisi vikalp me nahi. Aayog ne (d) maana; book ke anusaar koi vikalp sahi nahi (*).",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q32",
+   "paper": "uppsc-gdc-2026",
+   "qno": 32,
+   "page": 8,
+   "q": "Which of the following scholars coined the term 'megalopolis'?",
+   "o": [
+    "Jean Gottman",
+    "M. Jefferson",
+    "Prestar James",
+    "J. Carter"
+   ],
+   "a": 0,
+   "exp": "'Megalopolis' (vrihannagar) shabd Jean Gottmann ne 1957 me diya – USA ke uttar-poorvi tat par Boston se Washington tak faile vishal nagariya kshetra ke liye. Mark Jefferson ne 1939 me 'primate city' diya.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q33",
+   "paper": "uppsc-gdc-2026",
+   "qno": 33,
+   "page": 8,
+   "q": "Where does the 'Alberta Low' cyclone originate?",
+   "o": [
+    "On the North-East coast of North America",
+    "On the West coast of North America",
+    "The Gulf of Mexico",
+    "In the eastern part of the Canadian Rocky mountains"
+   ],
+   "a": 3,
+   "exp": "'Alberta Low' chakravat Canadian Rockies ke poorvi bhaag (Alberta) me banta hai – madhya akshanshiya chakravat; Prashant se aayi aardra hawaon ka Rockies par chadhkar poorv me utarna (downslope) neeche dabaav banata hai.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "cyc",
+    "kw": "tab:tc"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q34",
+   "paper": "uppsc-gdc-2026",
+   "qno": 34,
+   "page": 8,
+   "q": "'The fringing reefs, barrier reefs and atolls are successive stages of the development of coral reefs.' It is explained in which theory?",
+   "o": [
+    "Daly's subsidence theory",
+    "Daly's glacial control theory",
+    "Darwin's glacial control theory",
+    "Darwin's subsidence theory"
+   ],
+   "a": 3,
+   "exp": "Ye Darwin ka avtalan (subsidence) siddhant hai – 1837 me pratipadit, 1842 me sanshodhit. Praval sirf chhichhle saagar me jeevit; dweep ke dheere-dheere doobne se tateey → avrodhak → atoll.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "coral",
+    "kw": "Theories"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q35",
+   "paper": "uppsc-gdc-2026",
+   "qno": 35,
+   "page": 9,
+   "q": "'Golden quadrilateral' connects which four major cities of India?",
+   "o": [
+    "Delhi, Hyderabad, Bengaluru, Pune",
+    "Delhi, Mumbai, Chennai, Kolkata",
+    "Lucknow, Jaipur, Bhopal, Nagpur",
+    "Mumbai, Ahmedabad, Bhopal, Patna"
+   ],
+   "a": 1,
+   "exp": "Swarnim chaturbhuj Delhi, Mumbai, Chennai aur Kolkata ko jodta hai (6-lane). Iske saath North-South (Srinagar–Kanyakumari) aur East-West (Silchar–Porbandar) corridor; NHAI ke adhikaar kshetra me.",
+   "tag": "India – General"
+  },
+  {
+   "id": "uppsc-gdc-2026-q36",
+   "paper": "uppsc-gdc-2026",
+   "qno": 36,
+   "page": 9,
+   "q": "Which of the following was NOT considered by Whittlesey as a basis for delimiting the agricultural regions of the world?",
+   "o": [
+    "Land use capacity and production method",
+    "Combination of crop and livestock farming",
+    "Quality of life",
+    "Consumption of agricultural products"
+   ],
+   "a": 2,
+   "exp": "Whittlesey ne jeevan star (quality of life) ko aadhar nahi maana. Unke 5 aadhar (1936): fasal-pashu sahcharya, bhoomi upyog ki gahanta, krishi utpad ka sansadhan-vipanan, mashinikaran ka star, krishi bhavan aur sanrachnayein. Inse vishwa ko 13 krishi pradesh.",
+   "tag": "Agricultural Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q37",
+   "paper": "uppsc-gdc-2026",
+   "qno": 37,
+   "page": 9,
+   "q": "Which one of the source region for the formation of air masses?",
+   "o": [
+    "The Himalayas",
+    "The equatorial forest",
+    "The Deccan Plateau",
+    "Very cold snow covered continents in high altitudes"
+   ],
+   "a": 3,
+   "exp": "Vayuraashiyon ka udgam kshetra ucch akshanshon ke ati-thande himachhadit mahadweep hain – vishaal samtal, samroop satah jahan hawa lambe samay tak thahar kar taap-aardrata ke gun le leti hai. Pramukh: dhruviya mahadweepiya/mahasagariya, ushna katibandhiya mahadweepiya/mahasagariya, vishuvatiya, mansoon.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "air",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q38",
+   "paper": "uppsc-gdc-2026",
+   "qno": 38,
+   "page": 9,
+   "q": "Arrange the following gases in the increasing order of their contribution to atmospheric composition.\n1. Xenon 2. Hydrogen 3. Helium 4. Krypton",
+   "o": [
+    "2, 3, 4, 1",
+    "3, 4, 2, 1",
+    "2, 1, 4, 3",
+    "1, 2, 4, 3"
+   ],
+   "a": 3,
+   "exp": "Book ka uttar: Xenon (0.000009) → Hydrogen (0.00005) → Krypton (0.00011) → Helium (0.0005), yani 1, 2, 4, 3.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "atm",
+    "kw": "Composition"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q39",
+   "paper": "uppsc-gdc-2026",
+   "qno": 39,
+   "page": 10,
+   "q": "Which of the following are correctly matched?\n1. M.A. Busteed – Geography and voting behaviour 2. Mackinder – Democratic ideals and reality 3. Cohen – Geography of peace 4. Seversky – Air power: Key to survival",
+   "o": [
+    "1, 2 and 4",
+    "2, 3 and 4",
+    "1, 2 and 3",
+    "None of the above"
+   ],
+   "a": 0,
+   "exp": "1, 2 aur 4 sahi; 'Geography of the Peace' Spykman ki hai, Cohen ki nahi.",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "geo",
+    "kw": "Two streams"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q40",
+   "paper": "uppsc-gdc-2026",
+   "qno": 40,
+   "page": 10,
+   "q": "Assertion (A): River capture is the most characteristic feature of the juvenile stage of the normal cycle of erosion.\nReason (R): During the youthful stage, river's capture the water of other smaller streams through headward erosion.",
+   "o": [
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 0,
+   "exp": "Dono sahi aur (R) sahi vyakhya. Saamanya apardan chakra ki tarunavastha me nadiyan sheersh apardan (headward erosion) se doosri chhoti dharaon ka jal apharan kar leti hain – sarita apharan; apharan karne wali nadi 'apharak' aur jiska apharan hota hai 'apahrit'.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "flu",
+    "kw": "normal cycle"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q41",
+   "paper": "uppsc-gdc-2026",
+   "qno": 41,
+   "page": 10,
+   "q": "In which of the following continents birth rate and death rate both are very high?",
+   "o": [
+    "Australia",
+    "South America",
+    "Asia",
+    "Africa"
+   ],
+   "a": 3,
+   "exp": "Africa me janam aur mrityu dar dono ucch hain – vikasshil-alpvikasit desh, chikitsa suvidha kam, kuposhan, sankramak rog; bal vivah, shiksha kami, parivar niyojan suvidha ka abhav.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q42",
+   "paper": "uppsc-gdc-2026",
+   "qno": 42,
+   "page": 11,
+   "q": "The concept of 'Paradigm' was propounded by:",
+   "o": [
+    "Thomas S. Kuhn",
+    "Karl poper",
+    "Imre Lakatos",
+    "Auguste Comte"
+   ],
+   "a": 0,
+   "exp": "'Paradigm' ki avdharna Thomas S. Kuhn ki hai – 'The Structure of Scientific Revolutions' (1962); doosre sanskaran (1970) me paribhasha: kisi samuday ke sadasyon dwara saajhe vishwas, moolya, takneekon ka poorn punj.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Zenith"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q43",
+   "paper": "uppsc-gdc-2026",
+   "qno": 43,
+   "page": 11,
+   "q": "Calcareous ooze which is pelagic sea deposit found between 2000-4000 fathoms deep. It is called a:",
+   "o": [
+    "Pteropod ooze",
+    "Diatom ooze",
+    "Radiolarian ooze",
+    "Red clay"
+   ],
+   "a": 2,
+   "exp": "Book ka uttar (c) Radiolarian ooze – 2000–4000 fathom par milne wala, radiolarian jeevon ke kankal se bana; Prashant me 5°–25° akshansh. Pteropod ooze 1500–2000 fathom tak; diatom 600–2000 fathom; laal mrittika 2700 fathom se adhik.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "dep",
+    "kw": "Biogenous"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q44",
+   "paper": "uppsc-gdc-2026",
+   "qno": 44,
+   "page": 11,
+   "q": "Boundaries formed by mountains are:",
+   "o": [
+    "Relict",
+    "Consequent",
+    "Subsequent",
+    "Antecedent"
+   ],
+   "a": 1,
+   "exp": "Book ke anusaar parvaton se bani seemayein anuvarti (consequent) kehlati hain. Book ki vyakhya: poorvavarti (antecedent) seemayein wo hain jinka nirmaan maujooda sanskritik roop banne se pehle hua; avashisht (relict) wo jo ab kaam nahi karti.",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "bnd",
+    "kw": "Spatial"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q45",
+   "paper": "uppsc-gdc-2026",
+   "qno": 45,
+   "page": 11,
+   "q": "Arrange the following Indian languages in increasing order of number of people speaking them and select the correct answer from the code given below.\n(1) Oriya (2) Maithili (3) Assamese (4) Kashmiri",
+   "o": [
+    "4, 3, 2, 1",
+    "1, 2, 3, 4",
+    "4, 3, 1, 2",
+    "4, 2, 3, 1"
+   ],
+   "a": 3,
+   "exp": "Badhta kram: Kashmiri (~68 lakh) → Maithili (~1.36 crore) → Assamese (~1.53 crore) → Oriya (~3.75 crore).",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q46",
+   "paper": "uppsc-gdc-2026",
+   "qno": 46,
+   "page": 11,
+   "q": "Which one of the following pairs (Regional development model–scholar) is NOT correctly matched?",
+   "o": [
+    "Cumulative Causation Theory – G. Myrdal",
+    "Core-Periphery Theory – John Friedman",
+    "Unbalanced Growth Theory – A.O. Hirschman",
+    "Input-Output model – W.W. Rostow"
+   ],
+   "a": 3,
+   "exp": "Input-output model W.W. Rostow ka nahi, W.W. Leontief ka hai; Rostow – aarthik vriddhi ki avasthayein. Baaki sahi.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "uppsc-gdc-2026-q47",
+   "paper": "uppsc-gdc-2026",
+   "qno": 47,
+   "page": 12,
+   "q": "Which type of graph is mostly suitable for displaying the average monthly rainfall and temperature for a particular place?",
+   "o": [
+    "Climograph",
+    "Clinograph",
+    "Line graph",
+    "Hythergraph"
+   ],
+   "a": 3,
+   "exp": "Kisi sthan ke ausat masik taapmaan aur varsha dikhane ke liye hythergraph upyukt hai – taapmaan aur varsha ko koti-bhuj ke roop me plot karke 12 bindu jode jaate hain. Griffith Taylor ne climograph diya.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "uppsc-gdc-2026-q48",
+   "paper": "uppsc-gdc-2026",
+   "qno": 48,
+   "page": 12,
+   "q": "According to UNEP (United Nations Environment Programme), the Aridity Index (A.I.) for semi-arid region are",
+   "o": [
+    "0.20-0.50",
+    "0.05-0.20",
+    "More than 0.65",
+    "0.50-0.65"
+   ],
+   "a": 0,
+   "exp": "UNEP ke anusaar ardh-shushk kshetra ka shushkata soochkank 0.20–0.50. Ati-shushk < 0.05, shushk 0.05–0.20, shushk upaardra 0.50–0.65.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "thn",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q49",
+   "paper": "uppsc-gdc-2026",
+   "qno": 49,
+   "page": 12,
+   "q": "Arrange the following elements in the descending order of their occurrence in the earth crust\n1. Oxygen 2. Aluminium 3. Magnesium 4. Iron 5. Silicon",
+   "o": [
+    "1, 5, 2, 4, 3",
+    "5, 1, 2, 4, 3",
+    "5, 1, 2, 3, 4",
+    "1, 5, 3, 2, 4"
+   ],
+   "a": 0,
+   "exp": "Ghatta kram: Oxygen (46.8%) > Silicon (27.72%) > Aluminium (8.13%) > Iron (5.00%) > Magnesium (2.09%).",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "inn",
+    "kw": "Compositional"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q50",
+   "paper": "uppsc-gdc-2026",
+   "qno": 50,
+   "page": 12,
+   "q": "The term 'Horst' and 'Graben' are associated with which of the following tectonic features?",
+   "o": [
+    "Volcanoes",
+    "Earthquake",
+    "Folded mountains",
+    "Rift valley"
+   ],
+   "a": 3,
+   "exp": "Horst aur graben bhransh ghati (rift valley) ke vivartanik lakshan hain – bhranshan se kuch khand oopar uthte (horst) aur kuch neeche dhanste (graben); do samantar bhransh ke beech ka bhaag dhanse to rift valley.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "frc",
+    "kw": "Faults"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q51",
+   "paper": "uppsc-gdc-2026",
+   "qno": 51,
+   "page": 13,
+   "q": "Who firstly propounded the theory of 'Mantle plume'?",
+   "o": [
+    "Alan Guth",
+    "J. Tuzo Wilson",
+    "W. Jason Morgan",
+    "Von Vischer"
+   ],
+   "a": 1,
+   "exp": "Mantle plume siddhant sabse pehle J. Tuzo Wilson ne 1963 me diya; W. Jason Morgan ne 1971 me vistaar kiya. ~2900 km gehrai par core-mantle seema se garm padarth oopar uthkar hotspot banata hai – jwalamukhi kriya ka srot.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "plt",
+    "kw": "Plate tectonic"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q52",
+   "paper": "uppsc-gdc-2026",
+   "qno": 52,
+   "page": 13,
+   "q": "Which is NOT a quantitative method of the regional delineation?",
+   "o": [
+    "Distance minimization method",
+    "Thiessen polygon method",
+    "Overlapping on map method",
+    "Graph theory method"
+   ],
+   "a": 2,
+   "exp": "Maanchitra par adhyaropan (overlapping) vidhi matratmak nahi hai. Haggett ki chaar matratmak vidhiyan: Thiessen bahubhuj, doori nyuntamikaran, vishishtikaran pradarshak vishleshan, graph siddhant.",
+   "tag": "Regional Planning"
+  },
+  {
+   "id": "uppsc-gdc-2026-q53",
+   "paper": "uppsc-gdc-2026",
+   "qno": 53,
+   "page": 13,
+   "q": "Assertion (A): Despite its high altitude the North sea has high salinity.\nReason (R): The Gulf stream adds salinity to the North sea.",
+   "o": [
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 1,
+   "exp": "Dono sahi aur (R) sahi vyakhya. Ucch akshansh par hote hue bhi Uttari sagar me lavanta adhik hai kyunki Gulf Stream yahan khara garm jal laati hai; Atlantic ki khule saagar se jude hone se bhi.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "salt",
+    "kw": "Regional"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q54",
+   "paper": "uppsc-gdc-2026",
+   "qno": 54,
+   "page": 13,
+   "q": "Assertion (A): Social structure influences voting pattern.\nReason (R): Many scholars have analyzed the influence of socio-economic factors on voting patterns.",
+   "o": [
+    "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "(A) is false but (R) is true",
+    "(A) is true but (R) is false"
+   ],
+   "a": 1,
+   "exp": "Dono sahi par (R) sahi vyakhya nahi. Matdan pratiroop par samajik sanrachna ka prabhav padta hai (praant, varg, jaati, dharm); Krehbiel ne 1885–1910 ke chunavon par paryavaran-samajik prabhav ka adhyayan kiya. (R) sirf ye batata hai ki vidwanon ne vishleshan kiya.",
+   "tag": "Political Geography (other)"
+  },
+  {
+   "id": "uppsc-gdc-2026-q55",
+   "paper": "uppsc-gdc-2026",
+   "qno": 55,
+   "page": 14,
+   "q": "According to E.W. Burgess, urban expansion occurs in concentric belts around the urban centre. The correct order of the zones is from the centre outwards:\nI. Central Business District II. Zone of Transition III. Zone of independent working men's houses IV. Zone of better residence V. The commuter's zone",
+   "o": [
+    "I, III, IV, V, II",
+    "I, II, III, IV, V",
+    "IV, I, III, II, V",
+    "I, III, II, IV, V"
+   ],
+   "a": 1,
+   "exp": "Burgess (1925) ke anusaar kram: CBD → sankraman kshetra → swatantra shramikon ke aavas → behtar aavas → abhigaman (commuter) kshetra.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q56",
+   "paper": "uppsc-gdc-2026",
+   "qno": 56,
+   "page": 14,
+   "q": "Which of the following pairs is NOT correctly matched?",
+   "o": [
+    "Kalbaisakhi – Assam and West Bengal",
+    "Mango shower – Kerala and Coastal areas of Karnataka",
+    "Bardoli Chheerha – Punjab",
+    "Blossom shower – Kerala and nearby areas"
+   ],
+   "a": 2,
+   "exp": "Bardoli Chheerha Assam se juda hai, Punjab se nahi. Kalbaisakhi – Assam aur paschim Bangal; aam varsha – Kerala aur tateey Karnataka; phoolon wali bauchhar – Kerala aur aas-paas.",
+   "ref": {
+    "file": "india-climate-soils.html",
+    "topic": "sea",
+    "kw": "Dry summers"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q57",
+   "paper": "uppsc-gdc-2026",
+   "qno": 57,
+   "page": 15,
+   "q": "Which one of the earthquake waves is more destructive?",
+   "o": [
+    "P waves",
+    "Surface waves",
+    "S waves",
+    "None of the above"
+   ],
+   "a": 1,
+   "exp": "Dharatleey (surface/L) tarangein sabse vinashkari hain – inka veg kam par aayam aur avadhi zyada; prithvi ki satah ke sahare chalti hain, imaratein girti hain. P aur S tarangein pehle pahunchti hain.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "inn",
+    "kw": "Earthquakes"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q58",
+   "paper": "uppsc-gdc-2026",
+   "qno": 58,
+   "page": 15,
+   "q": "Arrange the following oceans in the decreasing order of their percentage of continental shelf areas.\n1. Indian ocean 2. Atlantic ocean 3. Pacific ocean",
+   "o": [
+    "2, 3, 1",
+    "2, 1, 3",
+    "3, 2, 1",
+    "3, 1, 2"
+   ],
+   "a": 0,
+   "exp": "Mahadweepiya magntat ke pratishat ka ghatta kram: Atlantic (13.3%) > Prashant (5.7%) > Hind (4.2%). Magntat mahadweep ka jalmagn kinara – ~100 fathom gehra, dhaal 1°–3°, ausat chaudai ~48 km.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "topo",
+    "kw": "Continental shelf"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q59",
+   "paper": "uppsc-gdc-2026",
+   "qno": 59,
+   "page": 15,
+   "q": "Arrange the following in terms of increasing albedo.\n1. Forest 2. Water 3. Sand 4. Snow cover",
+   "o": [
+    "2, 3, 1, 4",
+    "2, 1, 3, 4",
+    "2, 1, 4, 3",
+    "4, 1, 2, 3"
+   ],
+   "a": 1,
+   "exp": "Albedo ka badhta kram: jal (3–5%) < van (5–10%) < ret (20–30%) < him aavaran (70–90%). Albedo = satah se paravartit vikiran ka pratishat.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "atm",
+    "kw": "Heat budget"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q60",
+   "paper": "uppsc-gdc-2026",
+   "qno": 60,
+   "page": 15,
+   "q": "Which one of the following is most effective factor of coral bleaching?",
+   "o": [
+    "Increased salinity of water",
+    "Marine pollution",
+    "Rise in normal temperature of ocean water",
+    "Over fishing"
+   ],
+   "a": 2,
+   "exp": "Praval viranjan ka sabse prabhavi kaarak samudri jal ke saamanya taapmaan me vriddhi hai – zooxanthellae shaival bahar nikal jaate hain, praval safed. 1997–98 me ~2°C vriddhi se 60 se adhik deshon me bade paimane par viranjan.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "coral",
+    "kw": "bleaching"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q61",
+   "paper": "uppsc-gdc-2026",
+   "qno": 61,
+   "page": 16,
+   "q": "In a food chain, what percentage of energy is transferred from one trophic level to next trophic level?",
+   "o": [
+    "20 percent",
+    "10 percent",
+    "25 percent",
+    "30 percent"
+   ],
+   "a": 1,
+   "exp": "Ek poshan star se agle star tak lagbhag 10% urja jaati hai (Lindeman ka 10% niyam); baaki shvasan aur upapachay me kho jaati hai, isliye aahar shrinkhala chhoti hoti hai.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "lnk",
+    "kw": "productivity"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q62",
+   "paper": "uppsc-gdc-2026",
+   "qno": 62,
+   "page": 16,
+   "q": "Match List-I (Economy) with List-II (Activities):\n(A) Primary (B) Secondary (C) Tertiary (D) Quaternary\n1. Mining 2. Manufacturing 3. Information based 4. Financial Banking",
+   "o": [
+    "A-2, B-1, C-4, D-3",
+    "A-1, B-2, C-3, D-4",
+    "A-1, B-2, C-4, D-3",
+    "A-4, B-3, C-2, D-1"
+   ],
+   "a": 2,
+   "exp": "Prathamik – khanan; dwitiyak – vinirmaan; tritiyak – vittiya banking; chaturthak – soochna aadharit.",
+   "tag": "Economic & Resource Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q63",
+   "paper": "uppsc-gdc-2026",
+   "qno": 63,
+   "page": 16,
+   "q": "'Inca culture' is associated with which of the following region?",
+   "o": [
+    "Central American highlands",
+    "Inaccessible mountainous region on the western coast of South America",
+    "Caribbean Islands",
+    "Fertile Nile Valley"
+   ],
+   "a": 1,
+   "exp": "Inca sanskriti dakshin America ke paschimi tateey durgam parvatiya kshetra (Andes) se sambandhit hai – ~3000 BC Peru me sabhyata; 14–15vi sadi me charam; Huari aur Tiahuanaco samrajya poorvagaami.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "hum",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q64",
+   "paper": "uppsc-gdc-2026",
+   "qno": 64,
+   "page": 17,
+   "q": "Which of the following maps accurately display the distribution of population data?",
+   "o": [
+    "Dot map",
+    "Choropleth map",
+    "Isopleth map",
+    "Dynamic map"
+   ],
+   "a": 0,
+   "exp": "Bindukit (dot) maanchitra jansankhya vitaran ko sabse sahi dikhata hai – har bindu ek nishchit sankhya; vitaran ke vaastavik sthan dikhte hain. Choropleth – ghanatva/dar; isopleth – taapmaan, varsha aadi.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "uppsc-gdc-2026-q65",
+   "paper": "uppsc-gdc-2026",
+   "qno": 65,
+   "page": 17,
+   "q": "Which of the following statements is incorrect?",
+   "o": [
+    "The amount of energy lost through respiration increases with increasing trophic levels",
+    "Species with increasing trophic level are most efficient at utilizing available energy",
+    "Higher trophic levels tend to be less discrete than the lower ones",
+    "Food chain usually try to be large"
+   ],
+   "a": 3,
+   "exp": "Aahar shrinkhala aam taur par chhoti hoti hai, badi nahi – isliye (d) galat. Har agle star par urja ka bada bhaag shvasan me kho jaata hai, isliye 4–5 star se zyada sambhav nahi.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "lnk",
+    "kw": "productivity"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q66",
+   "paper": "uppsc-gdc-2026",
+   "qno": 66,
+   "page": 17,
+   "q": "Which of the following is NOT a Geo-Bio-Chemical cycle?",
+   "o": [
+    "Phosphorus cycle",
+    "Hydrological cycle",
+    "Ozone cycle",
+    "Nitrogen cycle"
+   ],
+   "a": 2,
+   "exp": "Ozone chakra bhoo-jaiv-rasayan chakra nahi hai. Ajaivik tatvon ka jaivik aur phir ajaivik avastha me aana-jaana bhoo-jaiv-rasayan chakra hai – hydrogen, carbon, oxygen, nitrogen, phosphorus, sulphur, jaliya, khanij chakra.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "lnk",
+    "kw": "decomposers"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q67",
+   "paper": "uppsc-gdc-2026",
+   "qno": 67,
+   "page": 17,
+   "q": "Russel and Kniffen divided the world into how many cultural world?",
+   "o": [
+    "7",
+    "6",
+    "8",
+    "9"
+   ],
+   "a": 0,
+   "exp": "Russell aur Kniffen ne vishwa ko 7 sanskritik vishwa me baanta ('Culture Worlds', 1951): dhruviya, Europiya, America, shushk, prachya (Asiai), Africa, Prashant.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "hum",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q68",
+   "paper": "uppsc-gdc-2026",
+   "qno": 68,
+   "page": 17,
+   "q": "According to Weber, the most important factor in locating a factory is:",
+   "o": [
+    "Raw material",
+    "Agglomeration",
+    "Labour cost",
+    "Transportation cost"
+   ],
+   "a": 3,
+   "exp": "Weber ke anusaar kaarkhane ki avasthiti me sabse mahatvapurn kaarak parivahan laagat hai. Pustak 'Über den Standort der Industrien' (1909); pehle nyuntam parivahan laagat bindu, phir shram aur ekatrikaran ka prabhav.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "qnt",
+    "kw": "Genesis"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q69",
+   "paper": "uppsc-gdc-2026",
+   "qno": 69,
+   "page": 18,
+   "q": "Which of the following in India is NOT associated with production of coal?",
+   "o": [
+    "Bokaro",
+    "Giridih",
+    "Karanpura",
+    "Bailadila"
+   ],
+   "a": 3,
+   "exp": "Bailadila lauh ayask utpadan se juda hai, koyle se nahi (Chhattisgarh). Bokaro, Giridih, Karanpura (Jharkhand) koyla kshetra; Damodar ghati me desh ka ~80% koyla.",
+   "ref": {
+    "file": "india-climate-soils.html",
+    "topic": "ary",
+    "kw": "Gondwana"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q70",
+   "paper": "uppsc-gdc-2026",
+   "qno": 70,
+   "page": 18,
+   "q": "Which one of the following pairs is NOT correctly matched? (Landform – Process)",
+   "o": [
+    "Inselberg – Groundwater",
+    "Moraine – Glacier",
+    "Canyon – River",
+    "Zeugen – Wind"
+   ],
+   "a": 0,
+   "exp": "Inselberg – bhoomijal galat; inselberg pawan/apakshay se banta hai. Sahi: himod – himnadi, canyon – nadi, zeugen – pawan.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "cyc",
+    "kw": "tab:eo"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q71",
+   "paper": "uppsc-gdc-2026",
+   "qno": 71,
+   "page": 18,
+   "q": "Arrange the following remote sensing platforms/sensors in order of increasing spatial resolution.\n1. Geo Eye-I (Pan) 2. IRS (Pan) 3. NOAA 4. IKONOS (MS)",
+   "o": [
+    "2, 3, 4, 1",
+    "3, 2, 4, 1",
+    "3, 2, 1, 4",
+    "1, 2, 3, 4"
+   ],
+   "a": 1,
+   "exp": "Sthaniya vibhedan ka badhta kram: NOAA (1.1 km) → IRS Pan (5.8 m) → IKONOS MS (4.0 m) → GeoEye-1 (0.41 m).",
+   "tag": "Remote Sensing & GIS"
+  },
+  {
+   "id": "uppsc-gdc-2026-q72",
+   "paper": "uppsc-gdc-2026",
+   "qno": 72,
+   "page": 18,
+   "q": "Which of the following geographers has given first the concept of 'Social Darwinism'?",
+   "o": [
+    "Immanuel Kant",
+    "Varenius",
+    "Friedrich Ratzel",
+    "Von Humboldt"
+   ],
+   "a": 2,
+   "exp": "'Samajik Darwinvaad' ki sankalpana sabse pehle Friedrich Ratzel ne di – 'Anthropogeographie' me Darwin ke vikasvaad jaisa vichar manav samaj par lagaya; Bernhard Varenius aur Kant ko aadhunik bhugol ka sansthapak maana jata hai.",
+   "ref": {
+    "file": "geographical-thought.html",
+    "topic": "soc",
+    "kw": "Ratzel's ideas"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q73",
+   "paper": "uppsc-gdc-2026",
+   "qno": 73,
+   "page": 18,
+   "q": "Altering the boundaries of a constituency in order to benefit a particular political party. Which of the following terms is used for this?",
+   "o": [
+    "Gerrymandering",
+    "Desired area",
+    "Homogeneous",
+    "Salamander"
+   ],
+   "a": 0,
+   "exp": "Gerrymandering – nirvachan kshetra ki seemayein badalna taaki kisi dal ko laabh mile. Shabd Massachusetts ke Governor Elbridge Gerry ke naam par; vipaksh ke samarthak kuch kshetron me kendrit kar diye jaate hain.",
+   "tag": "Political Geography (other)"
+  },
+  {
+   "id": "uppsc-gdc-2026-q74",
+   "paper": "uppsc-gdc-2026",
+   "qno": 74,
+   "page": 19,
+   "q": "Which one of the following pairs is NOT correctly matched?",
+   "o": [
+    "Isocline – Lines of equal slope",
+    "Isoneph – Lines of equal sonw",
+    "Isohel – Lines of equal sunshine",
+    "Isobar – Lines of equal pressure"
+   ],
+   "a": 1,
+   "exp": "Isoneph samaan megh (cloud) ki rekha hai, him (snow) ki nahi – isliye (b) galat. Isocline – samaan dhaal; isohel – samaan dhoop; isobar – samaan dabaav.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "uppsc-gdc-2026-q75",
+   "paper": "uppsc-gdc-2026",
+   "qno": 75,
+   "page": 19,
+   "q": "Arrange the following seas and lakes in increasing order of their salinity.\n(1) Dead Sea (2) Lake Von of Turkey (3) Caspian Sea (4) Great Salt Lake",
+   "o": [
+    "1, 2, 3, 4",
+    "3, 1, 2, 4",
+    "3, 4, 2, 1",
+    "3, 4, 1, 2"
+   ],
+   "a": 3,
+   "exp": "Lavanta ka badhta kram: Caspian sagar → Great Salt Lake → Mrit sagar → Lake Van. Book ke aankde: Caspian ~14–17‰, Great Salt Lake ~220‰, Dead Sea ~238‰, Lake Van ~330‰.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "salt",
+    "kw": "Regional"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q76",
+   "paper": "uppsc-gdc-2026",
+   "qno": 76,
+   "page": 19,
+   "q": "The functional aspect of an ecosystem mainly refers to",
+   "o": [
+    "Only biodiversity",
+    "Population genetics",
+    "Structure of organism",
+    "Flow of energy"
+   ],
+   "a": 3,
+   "exp": "Paristhitik tantra ka karyatmak pahlu mukhyatah urja pravah hai – tantra ki karyakshamata urja pravah aur poshak padarthon ke chakran par nirbhar; urja ek disha me bahti hai, padarth chakriya margon se.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "lnk",
+    "kw": "productivity"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q77",
+   "paper": "uppsc-gdc-2026",
+   "qno": 77,
+   "page": 19,
+   "q": "The 'Tidal bores' of which of the following rivers is known as 'Pororoca'?",
+   "o": [
+    "Amazon river",
+    "Seine river",
+    "Trent river",
+    "Severn river"
+   ],
+   "a": 0,
+   "exp": "Amazon nadi ki jwarbhitti 'Pororoca' kehlati hai. Amazon Peru ke Andes se nikalkar ~6450 km behti hai; jwar ka asar 1600 km andar tak; muhane ke paas Marajó dweep.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "tide",
+    "kw": ""
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q78",
+   "paper": "uppsc-gdc-2026",
+   "qno": 78,
+   "page": 19,
+   "q": "Which of the following geographers coined the term 'Geopolitics'?",
+   "o": [
+    "Rudolf Kjellen",
+    "Robert Grandmann",
+    "Alfred Hettner",
+    "Oscar Peschel"
+   ],
+   "a": 0,
+   "exp": "'Geopolitics' shabd Rudolf Kjellén (Swedish) ne diya – rajya ko bhaugolik jeev/sthaniya parighatna ke roop me; unke baad Haushofer ne German bhoo-rajneeti ko aage badhaya.",
+   "ref": {
+    "file": "geopolitics.html",
+    "topic": "geo",
+    "kw": "Two streams"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q79",
+   "paper": "uppsc-gdc-2026",
+   "qno": 79,
+   "page": 20,
+   "q": "Which one of the following pair is NOT correctly matched?",
+   "o": [
+    "Joel Garreau – Edge city",
+    "Patrick Geddes – World city",
+    "Jean Gottmann – Metropolis",
+    "John Friedman – Core-periphery model"
+   ],
+   "a": 2,
+   "exp": "Jean Gottmann – 'Megalopolis' hai, 'Metropolis' nahi – isliye (c) galat. Edge city – Joel Garreau; world city – Patrick Geddes; core-periphery – John Friedmann.",
+   "tag": "Settlement Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q80",
+   "paper": "uppsc-gdc-2026",
+   "qno": 80,
+   "page": 20,
+   "q": "If the correlation coefficient (r) is + 0.9 what does this indicate?",
+   "o": [
+    "High positive correlationship",
+    "Low negative correlationship",
+    "High negative correlationship",
+    "No correlationship"
+   ],
+   "a": 0,
+   "exp": "r = +0.9 ucch dhanatmak sahsambandh dikhata hai. r ka maan –1 se +1 ke beech; 0 = koi sambandh nahi; +1 = poorn dhanatmak; –1 = poorn rinatmak.",
+   "tag": "Cartography & Statistics"
+  },
+  {
+   "id": "uppsc-gdc-2026-q81",
+   "paper": "uppsc-gdc-2026",
+   "qno": 81,
+   "page": 20,
+   "q": "Which of the following is NOT a rapid type of mass movement?",
+   "o": [
+    "Solifluction",
+    "Rock fall",
+    "Bed rock slump",
+    "Mud flow"
+   ],
+   "a": 0,
+   "exp": "Mridaprarpan (solifluction) teevra prakaar ka vrihad sanchalan nahi, mand gati ka hai. Teevra: avpatan (rock fall), bhooskhalan, mud flow, rock slump; mand: soil creep, solifluction, talus creep.",
+   "ref": {
+    "file": "geomorphology.html",
+    "topic": "slp",
+    "kw": "Denudation"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q82",
+   "paper": "uppsc-gdc-2026",
+   "qno": 82,
+   "page": 20,
+   "q": "Which of the following regions comes under Mediterranean type of climate?",
+   "o": [
+    "South-East United states",
+    "Danube Basin",
+    "Middle Chili",
+    "Eastern Brazil"
+   ],
+   "a": 2,
+   "exp": "Madhya Chile bhoomadhya sagariya jalvayu me aata hai. Ye jalvayu 30°–40° akshansh ke beech mahadweepon ke paschimi bhaag me – Rum sagar ke charon or, California, Chile, dakshin Africa ka Cape, dakshin-paschim Australia.",
+   "ref": {
+    "file": "climatology.html",
+    "topic": "kop",
+    "kw": "C – Sub"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q83",
+   "paper": "uppsc-gdc-2026",
+   "qno": 83,
+   "page": 21,
+   "q": "Match List-I (Steel Plant) with List-II (Nearest Iron ore mine/Region):\n(A) Bhilai Steel plant (B) Rourkela Steel Plant (C) Vijaynagar Steel Plant (D) Salem Steel Plant\n1. Salem 2. Hospet 3. Barsua 4. Dhalli-Rajhara",
+   "o": [
+    "A-3, B-2, C-1, D-4",
+    "A-4, B-3, C-2, D-1",
+    "A-4, B-2, C-3, D-1",
+    "A-2, B-4, C-3, D-1"
+   ],
+   "a": 1,
+   "exp": "Bhilai – Dalli-Rajhara; Rourkela – Barsua; Vijayanagar – Hospet; Salem – Salem.",
+   "tag": "India – Resources"
+  },
+  {
+   "id": "uppsc-gdc-2026-q84",
+   "paper": "uppsc-gdc-2026",
+   "qno": 84,
+   "page": 21,
+   "q": "In which stage of the demographic transition model, the population growth is highest?",
+   "o": [
+    "Second Stage",
+    "First stage",
+    "Fourth stage",
+    "Third stage"
+   ],
+   "a": 0,
+   "exp": "Jansankhyiki sankraman ki doosri avastha (prarambhik vardhaman) me jansankhya vriddhi sabse zyada – janam dar ucch rehti hai par mrityu dar tez girti hai. Notestein (1945) ne siddhant ko roop diya; chaar avasthayein: ucch sthir, prarambhik vardhaman, uttar vardhaman, nimn sthir.",
+   "tag": "Population Geography"
+  },
+  {
+   "id": "uppsc-gdc-2026-q85",
+   "paper": "uppsc-gdc-2026",
+   "qno": 85,
+   "page": 21,
+   "q": "Which one of the following term describes the position of a species within an ecosystem, comprising species habitat requirements as well as its functional role?",
+   "o": [
+    "Habitat",
+    "Ecoton",
+    "Home range",
+    "Ecological Niche"
+   ],
+   "a": 3,
+   "exp": "Ecological niche – paristhitik tantra me prajati ki sthiti, uski aavas zarooratein aur karyatmak bhoomika. Avdharna J. Grinnell (1917); Charles Elton (1927) ne vikas kiya. Ecotone – do tantron ke beech sankraman kshetra.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "eco",
+    "kw": "Components"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q86",
+   "paper": "uppsc-gdc-2026",
+   "qno": 86,
+   "page": 21,
+   "q": "Match List-I (Books) with List-II (Authors):\n(A) Radical Geography (B) Regional Geography (C) Human Geography-A Welfare Approach (D) Problems of Geography\n1. W. Kirk 2. D.M. Smith 3. R. Peet 4. R. Minshull",
+   "o": [
+    "A-3, B-4, C-2, D-1",
+    "A-4, B-3, C-2, D-1",
+    "A-1, B-2, C-3, D-4",
+    "A-3, B-2, C-4, D-1"
+   ],
+   "a": 0,
+   "exp": "Radical Geography – R. Peet; Regional Geography – R. Minshull; Human Geography: A Welfare Approach – D.M. Smith; Problems of Geography – W. Kirk.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "uppsc-gdc-2026-q87",
+   "paper": "uppsc-gdc-2026",
+   "qno": 87,
+   "page": 22,
+   "q": "Who among the following geographers laid the foundation of the dichotomy of 'General Vs Special Geography'?",
+   "o": [
+    "Sebastian Munster",
+    "Immanuel Kant",
+    "Bernhard Varenius",
+    "Peter Apian"
+   ],
+   "a": 2,
+   "exp": "'Saamanya banam vishesh bhugol' ke dvait ki neev Bernhard Varenius ne rakhi – saamanya bhugol me vishwa ke saamanya siddhant aur niyam; vishesh/pradeshik me pradeshon ke vishisht swaroop. Kant ko 'aaram kursi wala bhugolvetta' kaha gaya.",
+   "tag": "Geographical Thought (other)"
+  },
+  {
+   "id": "uppsc-gdc-2026-q88",
+   "paper": "uppsc-gdc-2026",
+   "qno": 88,
+   "page": 22,
+   "q": "On which of the following does the effect of the weathering is most slow?",
+   "o": [
+    "Granite",
+    "Clastic Rocks",
+    "Marble",
+    "Iron"
+   ],
+   "a": 0,
+   "exp": "Granite par apakshay ka prabhav sabse dheema hota hai; khandit chattanon, sangmarmar aur lohe par tez. Mausam ki vibhinn kriyaon se chattanon ka toot-foot apakshay kehlata hai.",
+   "ref": {
+    "file": "biogeography.html",
+    "topic": "sfm",
+    "kw": "Weathering"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q89",
+   "paper": "uppsc-gdc-2026",
+   "qno": 89,
+   "page": 22,
+   "q": "Oozes are broadly classified as siliceous and calcareous ooze. Choose the siliceous ooze from the following.\n1. Diatom 2. Radiolarian 3. Pteropod 4. Foraminifera",
+   "o": [
+    "1, 2 and 3",
+    "1 and 2",
+    "1, 2, 3 and 4",
+    "1, 2 and 4"
+   ],
+   "a": 3,
+   "exp": "Book ka uttar (d) – diatom, radiolarian aur foraminifera ko silica pradhan maana. Book: silica ansh adhik hone se silica yukt ooze; choone ke kaaran calcareous; pteropod choona pradhan, diatom ooze atyant sookshm paudhon se.",
+   "ref": {
+    "file": "oceanography.html",
+    "topic": "dep",
+    "kw": "Biogenous"
+   }
+  },
+  {
+   "id": "uppsc-gdc-2026-q90",
+   "paper": "uppsc-gdc-2026",
+   "qno": 90,
+   "page": 22,
+   "q": "Which one of the following pairs is NOT correctly matched? (Instrument – Use)",
+   "o": [
+    "Opisometer – Measurement of distance on map",
+    "Planimeter – Measurement of area on map",
+    "Barometer – Measurement of air pressure",
+    "Nanometer – Measurement of wind velocity"
+   ],
+   "a": 3,
+   "exp": "Nanometer pawan veg maapne ka yantra nahi – ye lambai ki atyant sookshm ikai hai; pawan veg anemometer se. Opisometer – maanchitra par doori; planimeter – kshetrafal; barometer – vayudaab.",
    "tag": "Cartography & Statistics"
   }
  ]
