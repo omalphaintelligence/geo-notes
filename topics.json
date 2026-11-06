@@ -993,6 +993,428 @@
   ]
  },
  {
+  "file": "regional-planning.html",
+  "title": "Regional Planning",
+  "subject": "Human Geography",
+  "tab": "notes",
+  "pdf": "regional-planning-notes.pdf",
+  "topics": [
+   {
+    "key": "reg",
+    "label": "Regions",
+    "page": 2,
+    "subs": [
+     "Whittlesey Committee (1956) – 3 regions",
+     "Regional geography & disparity"
+    ],
+    "kws": {
+     "": 2,
+     "Whittlesey": 2,
+     "Regional geography": 4
+    }
+   },
+   {
+    "key": "ros",
+    "label": "Rostow",
+    "page": 6,
+    "subs": [
+     "Five stages",
+     "Limitations"
+    ],
+    "kws": {
+     "": 6,
+     "Five stages": 6,
+     "Limitations": 10
+    }
+   },
+   {
+    "key": "grw",
+    "label": "Growth pole",
+    "page": 11,
+    "subs": [
+     "Growth pole",
+     "Growth centre",
+     "Critics"
+    ],
+    "kws": {
+     "": 11,
+     "Growth pole": 11,
+     "Growth centre": 14,
+     "Critics": 18
+    }
+   },
+   {
+    "key": "rur",
+    "label": "Rural development",
+    "page": 21,
+    "subs": [
+     "Approach",
+     "Rural development schemes"
+    ],
+    "kws": {
+     "": 21,
+     "Approach": 21,
+     "schemes": 22
+    }
+   },
+   {
+    "key": "tri",
+    "label": "Tribal areas",
+    "page": 34,
+    "subs": [
+     "ST population & categories",
+     "Panchsheel & plans"
+    ],
+    "kws": {
+     "": 34,
+     "ST population": 34,
+     "Panchsheel": 36
+    }
+   },
+   {
+    "key": "isl",
+    "label": "Island & hill",
+    "page": 42,
+    "subs": [
+     "Island territories",
+     "Hill area development"
+    ],
+    "kws": {
+     "": 42,
+     "Island": 42,
+     "Hill": 45
+    }
+   },
+   {
+    "key": "wat",
+    "label": "Flood & drought",
+    "page": 49,
+    "subs": [
+     "Flood-prone area programme (5th Plan)",
+     "Drought-prone area programme (5th Plan)"
+    ],
+    "kws": {
+     "": 49,
+     "Flood": 50,
+     "Drought": 55
+    }
+   },
+   {
+    "key": "cad",
+    "label": "Command area",
+    "page": 59,
+    "subs": [
+     "Command area development (5th Plan)",
+     "Problems",
+     "Watershed management"
+    ],
+    "kws": {
+     "": 59,
+     "Command area": 59,
+     "Problems": 64,
+     "Watershed": 68
+    }
+   },
+   {
+    "key": "mpl",
+    "label": "Map lists",
+    "page": 20,
+    "subs": [],
+    "kws": {
+     "": 20
+    }
+   }
+  ]
+ },
+ {
+  "file": "population.html",
+  "title": "Population Geography – World & India",
+  "subject": "Geography of India",
+  "tab": "notes",
+  "pdf": "population-notes.pdf",
+  "topics": [
+   {
+    "key": "thy",
+    "label": "Malthus & Marx",
+    "page": 2,
+    "subs": [
+     "Malthusian concept",
+     "Criticism & Marxian concept"
+    ],
+    "kws": {
+     "": 2,
+     "Malthusian": 2,
+     "Criticism": 5
+    }
+   },
+   {
+    "key": "dtm",
+    "label": "DTM",
+    "page": 8,
+    "subs": [
+     "Basics",
+     "Five stages"
+    ],
+    "kws": {
+     "": 8,
+     "Basics": 8,
+     "Five stages": 9
+    }
+   },
+   {
+    "key": "glb",
+    "label": "World population",
+    "page": 15,
+    "subs": [
+     "Growth",
+     "Distribution & density"
+    ],
+    "kws": {
+     "": 15,
+     "Growth": 15,
+     "Distribution": 17
+    }
+   },
+   {
+    "key": "cmp",
+    "label": "Composition",
+    "page": 21,
+    "subs": [],
+    "kws": {
+     "": 21
+    }
+   },
+   {
+    "key": "pol",
+    "label": "Policies",
+    "page": 25,
+    "subs": [
+     "Over-population & anti-natalism",
+     "India's anti-natalism (since 1952)",
+     "China & pro-natalism"
+    ],
+    "kws": {
+     "": 25,
+     "Over-population": 25,
+     "India": 28,
+     "China": 32
+    }
+   },
+   {
+    "key": "ind",
+    "label": "India population",
+    "page": 37,
+    "subs": [
+     "Growth phases",
+     "Density (2011: 382/km²)"
+    ],
+    "kws": {
+     "": 37,
+     "Growth phases": 37,
+     "Density": 40
+    }
+   },
+   {
+    "key": "div",
+    "label": "Dividend & sex ratio",
+    "page": 45,
+    "subs": [
+     "Demographic dividend",
+     "Sex ratio & GII",
+     "Literacy"
+    ],
+    "kws": {
+     "": 45,
+     "Dividend": 45,
+     "Sex ratio": 47,
+     "Literacy": 55
+    }
+   },
+   {
+    "key": "mig",
+    "label": "Migration theories",
+    "page": 56,
+    "subs": [
+     "Basics & Ravenstein",
+     "Lee & Zelinsky"
+    ],
+    "kws": {
+     "": 56,
+     "Ravenstein": 56,
+     "Lee": 58
+    }
+   },
+   {
+    "key": "mgt",
+    "label": "Migration flows",
+    "page": 61,
+    "subs": [
+     "International migration",
+     "Indian migration"
+    ],
+    "kws": {
+     "": 61,
+     "International": 61,
+     "Indian": 67
+    }
+   }
+  ]
+ },
+ {
+  "file": "economic-geography.html",
+  "title": "Economic Geography – Location, Industry, Transport & Trade",
+  "subject": "Human Geography",
+  "tab": "notes",
+  "pdf": "economic-geography-notes.pdf",
+  "topics": [
+   {
+    "key": "loc",
+    "label": "Von Thünen",
+    "page": 2,
+    "subs": [
+     "Assumptions & land use",
+     "Economic rent & applications"
+    ],
+    "kws": {
+     "": 2,
+     "Assumptions": 2,
+     "Economic rent": 6
+    }
+   },
+   {
+    "key": "web",
+    "label": "Weber",
+    "page": 8,
+    "subs": [
+     "Weber's three tools",
+     "Appraisal & later scholars"
+    ],
+    "kws": {
+     "": 8,
+     "three tools": 8,
+     "Appraisal": 12
+    }
+   },
+   {
+    "key": "wir",
+    "label": "World regions",
+    "page": 15,
+    "subs": [
+     "Anglo-American",
+     "Europe",
+     "East Asia"
+    ],
+    "kws": {
+     "": 15,
+     "Anglo-American": 15,
+     "Europe": 21,
+     "East Asia": 25
+    }
+   },
+   {
+    "key": "txt",
+    "label": "Textiles",
+    "page": 30,
+    "subs": [
+     "Cotton",
+     "Jute & wool"
+    ],
+    "kws": {
+     "": 30,
+     "Cotton": 30,
+     "Jute": 35
+    }
+   },
+   {
+    "key": "agr",
+    "label": "Sugar & MSME",
+    "page": 40,
+    "subs": [
+     "Sugar",
+     "Paper, leather, food",
+     "MSMEs"
+    ],
+    "kws": {
+     "": 40,
+     "Sugar": 40,
+     "Paper": 43,
+     "MSMEs": 47
+    }
+   },
+   {
+    "key": "chm",
+    "label": "Chemicals",
+    "page": 51,
+    "subs": [
+     "Fertiliser",
+     "Pharmaceuticals",
+     "Cement"
+    ],
+    "kws": {
+     "": 51,
+     "Fertiliser": 51,
+     "Pharmaceuticals": 55,
+     "Cement": 59
+    }
+   },
+   {
+    "key": "met",
+    "label": "Metals",
+    "page": 64,
+    "subs": [
+     "Iron & steel",
+     "Aluminium"
+    ],
+    "kws": {
+     "": 64,
+     "Iron": 65,
+     "Aluminium": 72
+    }
+   },
+   {
+    "key": "inr",
+    "label": "Indian regions",
+    "page": 74,
+    "subs": [],
+    "kws": {
+     "": 74
+    }
+   },
+   {
+    "key": "trn",
+    "label": "Transport",
+    "page": 83,
+    "subs": [
+     "Roads",
+     "Maritime & waterways"
+    ],
+    "kws": {
+     "": 83,
+     "Roads": 83,
+     "Maritime": 91
+    }
+   },
+   {
+    "key": "trd",
+    "label": "Trade",
+    "page": 97,
+    "subs": [],
+    "kws": {
+     "": 97
+    }
+   },
+   {
+    "key": "dua",
+    "label": "Dualism",
+    "page": 105,
+    "subs": [],
+    "kws": {
+     "": 105
+    }
+   }
+  ]
+ },
+ {
   "file": "india-climate-soils.html",
   "title": "India: Climate, Biomes, Structure & Soils",
   "subject": "Geography of India",
