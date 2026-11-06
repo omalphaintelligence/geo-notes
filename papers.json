@@ -684,7 +684,12 @@
    ],
    "a": 3,
    "exp": "UN anuman ke anusaar 2015–20 me Bahrain ki varshik jansankhya vriddhi dar sabse zyada thi. Book: duniya ki jansankhya har saal ~8.3 crore (1.1%) badh rahi hai; 2017 me 7.6 arab, 2030 tak 8.6 arab aur 2050 tak 9.8 arab hone ka anuman.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uphesc-2021-geo-q33",
@@ -908,7 +913,12 @@
    ],
    "a": 0,
    "exp": "UNDP ke 2021 me jaari HDI me Bharat 0.645 maan ke saath 189 deshon me 131ve sthaan par tha. Norway 0.957 maan ke saath sheersh par, Ireland aur Switzerland sanyukt doosre sthaan par.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "div",
+    "kw": "Sex ratio"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uphesc-2021-geo-q46",
@@ -972,7 +982,12 @@
    ],
    "a": 0,
    "exp": "L.S. Bhat aur V.L.S. Prakasa Rao ne sansadhan vikas hetu niyojan pradesh banaye; pramukh sansadhanon ke vitaran ke gunatmak maanchitron ki sahayata se. Rajya seemaon ke aar-paar faile 7 pramukh aur 51 sookshm pradesh – dakshin bharat, poorvi bharat, uttar-poorvi bharat, madhya Ganga maidan, uttar-paschimi bharat aadi.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uphesc-2021-geo-q50",
@@ -988,7 +1003,12 @@
    ],
    "a": 3,
    "exp": "Rashtriya Rajdhani Kshetra (NCR) kendriya (nodal) pradesh ka udaharan hai. D. Whittlesey ke anusaar nodal pradesh ek mool sthaan (kendra) ke chaaron or vikasit hota hai jahan kendra ka sevaon par adhikaar hota hai.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uphesc-2021-geo-q51",
@@ -1004,7 +1024,12 @@
    ],
    "a": 0,
    "exp": "Sthaan-lok-karya (place-folk-work) ki sankalpana Patrick Geddes ki hai: kisi sthaan ka paryavaran, wahan ke log aur unki aarthik kriya ek trayi banate hain. Geddes ne Britain me pradeshik sarvekshan aur niyojan ko vyavharik roop diya; 'conurbation' shabd bhi unhone diya.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uphesc-2021-geo-q52",
@@ -1020,7 +1045,12 @@
    ],
    "a": 2,
    "exp": "R.C. Chandna ne 'Regional Planning' (2002) me 7 aadharbhoot siddhant bataye: oordhvadhar ekta, kshetriy sthaniyata, desh-kaal santulan, samagra vikas, samajik vanchana aur aarthik vyavaharikta ke beech santulan, samuday vikas, paristhitik santulan.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uphesc-2021-geo-q53",
@@ -1036,7 +1066,12 @@
    ],
    "a": 3,
    "exp": "Adhivasiya padanukram – Walter Christaller; kshetriy vishleshan – Walter Isard; vikas dhruv siddhant – F. Perroux; aarthik vriddhi ki avasthayein – W.W. Rostow.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "ros",
+    "kw": "Five stages"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uphesc-2021-geo-q54",
@@ -1068,7 +1103,12 @@
    ],
    "a": 3,
    "exp": "Pradeshik niyojan ko adhinagariya kshetra me gatividhiyon ki vyavastha me samajik uddeshyon ko tay aur spasht karne ki prakriya ke roop me John Friedmann ne paribhashit kiya. Unhone 1966 me Venezuela ke vikas neeti ke vishleshan me 'kendra-paridhi model' diya.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uphesc-2021-geo-q56",
@@ -1892,7 +1932,12 @@
    ],
    "a": 0,
    "exp": "Gatisheelta sankraman siddhant (Zelinsky) ke anusaar pramukh gramin-se-shahri pravas aur tez shahri vikas prarambhik sankramanshil samaj ki pehchan hai. Is avastha me krishi sudhar, udyog aur shahron me rozgaar badhte hain; gaon se shahar ki or bada palayan aur jhuggi jaisi samasyayein.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-re-s1-q30",
@@ -1908,7 +1953,12 @@
    ],
    "a": 3,
    "exp": "Kadam (step) sthanantaran me vyakti seedhe antim gantavya na jaakar beech ke kai padavon se hota hai – jaise gaon → kasba → zila mukhyalay → mahanagar. Har padav par naye vatavaran me dhalta hai aur jaankari jutata hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-re-s1-q31",
@@ -1924,7 +1974,12 @@
    ],
    "a": 3,
    "exp": "Bhoomi par manav dabaav ka sanketak tab zyada majboot hota hai jab ise shaaririk (physiological) ghanatva ke saath joda jaye – kul jansankhya / kul krishi yogya bhoomi. Ye prati ikai krishi bhoomi par logon ka bhaar dikhata hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-re-s1-q32",
@@ -1940,7 +1995,12 @@
    ],
    "a": 0,
    "exp": "Lee (1966) ke model me mool sthaan par dhakka (push) kaarakon ka moolyankan pravas nirnay shuru karta hai. Chaar kaarak: mool sthaan, gantavya, madhyavarti avrodh, vyaktigat kaarak. Push – praakritik prakop, berozgaari, sansadhan kami; pull – shahron me rozgaar aur suvidhayein.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "mig",
+    "kw": "Lee"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-re-s1-q33",
@@ -1956,7 +2016,12 @@
    ],
    "a": 3,
    "exp": "Jansankhya-sansadhan kshetriyakaran me 'USA prakaar' ke kshetron me ucch praudyogiki, prachur sansadhan aur madhyam jansankhya ghanatva hota hai. Sansadhan jansankhya se adhik, prati vyakti aay aur jeevan star ucch – USA, Canada, Australia, NZ, Russia ke bhaag.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-re-s1-q34",
@@ -1972,7 +2037,12 @@
    ],
    "a": 0,
    "exp": "Mrityu dar girne ke baad sanskritik kaaranon se janam dar der se girti hai to jansankhya visphot ki avastha aati hai – jansankhyiki sankraman ki doosri avastha. Swasthya-chikitsa sudhar se mrityu dar tez girti hai par janam dar ooncha rehti hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "div",
+    "kw": "Sex ratio"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-re-s1-q35",
@@ -1988,7 +2058,12 @@
    ],
    "a": 3,
    "exp": "Ankganitiya ghanatva sabse saral maap hai = pradesh ki kul jansankhya / kul kshetrafal. Ye prati ikai kshetra me logon ki ausat sankhya batata hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-re-s1-q36",
@@ -2020,7 +2095,12 @@
    ],
    "a": 0,
    "exp": "Aluminium galana – urja gahan; software – footloose; petrochemical – sansadhan aadharit; diamond cutting – kushal shram unmukh.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "upessc-2025-re-s1-q38",
@@ -2036,7 +2116,12 @@
    ],
    "a": 0,
    "exp": "Ucch pahunch-kshamta aam taur par prabhavi parivahan laagat ko kam karti hai. Achhi sadak/rail network se samay aur indhan bachta hai; pahunch aur sanyojakta sthaniya antarkriya se gehre jude hain.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trn",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "upessc-2025-re-s1-q39",
@@ -2088,7 +2173,12 @@
    ],
    "a": 0,
    "exp": "Takniki navachar se parivahan laagat bahut ghatne par sansadhan sthalon ke paas udyogon ka jamav kam kathor ho jata hai – kachcha maal door le jana sasta ho jata hai, isliye udyog sansadhan sthal se door bhi lag sakte hain.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trn",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "upessc-2025-re-s1-q42",
@@ -2216,7 +2306,12 @@
    ],
    "a": 2,
    "exp": "Shasan dakshata ke liye bane prashasanik kshetra sansthagat (institutional) kshetra kehlate hain – ye bhautik ya sanskritik ekroopta par nahi, prashasanik shaktiyon aur niyamon par bante hain.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-re-s1-q49",
@@ -2248,7 +2343,12 @@
    ],
    "a": 2,
    "exp": "Bharatiya kshetriy yojana me 'yojana kshetra' karyatmak aarthik ekikaran aur sthaniya sussangatata par zor deta hai. Paanchvi panchvarshiya yojana me kshetriy/upyojanaon ka nirmaan hua – pahadi, janjatiya, sookha-pravan, command kshetra vikas aadi.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-re-s1-q51",
@@ -2264,7 +2364,12 @@
    ],
    "a": 1,
    "exp": "Samajik, aarthik aur aadharbhoot sanketakon ko milakar bane samagra soochkank (composite indices) adhik vishwasniya moolyankan dete hain. Kshetriy niyojan ka lakshya aarthik-samajik vikas aur kshetriy vishamtaon ko kam karna hai.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-re-s1-q52",
@@ -2280,7 +2385,12 @@
    ],
    "a": 3,
    "exp": "B aur C sahi; A aur D galat. Vikas samaan nahi failta balki kendra par kendrit hota hai aur prasar prabhaavon se bahar failta hai. Perroux (1955) ne 'vikas dhruv' siddhant diya; Boudeville (1966) ne ise sanshodhit karke 'vikas kendra' siddhant kaha.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-re-s1-q53",
@@ -2296,7 +2406,12 @@
    ],
    "a": 0,
    "exp": "Avsanrachna soochkank – bhautik avsanrachna; saksharta dar – samajik; prati vyakti audyogik utpadan – aarthik; jeevan pratyasha – swasthya aayam.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-re-s1-q54",
@@ -2328,7 +2443,12 @@
    ],
    "a": 1,
    "exp": "Santulit kshetriy vikas ka mool siddhant lakshit neetiyon se antar-kshetriy asamanta ko kam karna hai – har kshetra ki bhaugolik, khanij, manaviya aur aarthik kshamtaon ka aakalan karke vishesh nivesh, buniyadi dhancha aur kaushal vikas.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-re-s1-q56",
@@ -2344,7 +2464,12 @@
    ],
    "a": 3,
    "exp": "Karyatmak kshetriyakaran ka arth hai ki parivahan yojana nodal kshetron ke bheetar vastuon, sevaon aur yatriyon ke pravah ke anuroop honi chahiye. Parivahan logon aur vastuon ko uplabdhta ke sthaan se upyog ke sthaan tak le jaata hai.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-re-s1-q57",
@@ -2360,7 +2485,12 @@
    ],
    "a": 0,
    "exp": "SEZ niryat-unmukh udyogon ko badhane ke liye shulk-mukt kshetra hain. Bharat ki SEZ neeti April 2000 me aayi (export processing zone model ki prabhavshilta dekhte hue); uddeshya – atirikt aarthik gatividhi, niryat, nivesh, rozgaar aur buniyadi dhancha.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trd",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "upessc-2025-re-s1-q58",
@@ -2884,7 +3014,12 @@
    ],
    "a": 3,
    "exp": "Perroux ka vikas dhruv siddhant amoort aarthik kshetra (abstract economic space) par aadharit hai. Koi bada firm jo apne aas-paas ki firmon ko gati deta hai 'utprerak' (propulsive) kehlata hai; Perroux ne 1955 me siddhant diya.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-cancelled-q18",
@@ -2992,7 +3127,12 @@
    ],
    "a": 1,
    "exp": "Dono sahi aur (R) sahi vyakhya. Shahron me mahilaon ko shiksha aur rozgaar ke behtar avsar, swasthya suvidhayein, parivar niyojan saadhan milte hain, vivah ki aayu badhti hai – isliye prajanan dar kam.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "div",
+    "kw": "Sex ratio"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-cancelled-q24",
@@ -3008,7 +3148,12 @@
    ],
    "a": 3,
    "exp": "Paschch sahlagnata (backward linkage) se poorak/sahayak udyog viksit hote hain – ek udyog doosre udyog ko kachcha maal, machinery aadi dene ke liye badhta hai.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trn",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "upessc-2025-cancelled-q25",
@@ -3040,7 +3185,12 @@
    ],
    "a": 1,
    "exp": "Malthus siddhant – Thomas Malthus; jansankhyiki sankraman – Warren Thompson; anukoolatam jansankhya – Edwin Cannan; Cornucopian – Julian Simon.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "thy",
+    "kw": "Malthusian"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "upessc-2025-cancelled-q27",
@@ -3556,7 +3706,12 @@
    ],
    "a": 3,
    "exp": "G.S. Gosal pradeshik vikas aur gramin niyojan par kaam ke liye jaane jaate hain (krishi bhugol me bhi yogdan). R.P. Mishra kshetriy niyojan ke liye; S.P. Chatterjee bhautik bhugol aur bhaugolik vibhajan ke liye. Book note: aayog ne pehle (a) maana, sahi (d).",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "upessc-2025-cancelled-q55",
@@ -3844,7 +3999,12 @@
    ],
    "a": 0,
    "exp": "Compage ka vichar Whittlesey ne diya – pradesh ke jitne tatva, utne prakaar ke pradesh; tatvon ki samanta par aadharit pradesh ko compage kaha. Chaar shreniyan: ekal vishay, bahul vishay, sampoorn vishay aur vishisht pradesh (compage).",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2026-q01",
@@ -3860,7 +4020,12 @@
    ],
    "a": 2,
    "exp": "Malthus ke anusaar jansankhya jyamitiya (1, 2, 4, 8, 16…) aur khadya aapoorti ankganitiya (1, 2, 3, 4…) roop se badhti hai. Rok na ho to har 25 saal me jansankhya dugni; 200 saal me 256 guna.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "thy",
+    "kw": "Malthusian"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2026-q02",
@@ -3932,7 +4097,12 @@
    ],
    "a": 2,
    "exp": "2011 jangarna me Arunachal Pradesh ki mahila saksharta (57.7%) UP (57.2%) se behtar thi. Jharkhand 55.4%, Rajasthan 52.1%, Bihar 51.5%.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "div",
+    "kw": "Sex ratio"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2026-q06",
@@ -4040,7 +4210,12 @@
    ],
    "a": 0,
    "exp": "'Prasar prabhav' aur 'paschch pravah prabhav' shabd Gunnar Myrdal ne diye – sanchayi karanatmak siddhant (circular and cumulative causation). Vikasit kendra se pichhde kshetron me prasar ki tulna me backwash adhik hota hai.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2026-q12",
@@ -4056,7 +4231,12 @@
    ],
    "a": 0,
    "exp": "Ullman ki sthaniya antarkriya ki avdharna USA ki arthvyavastha par aadharit thi. Teen aadhar: poorakata (complementarity), madhyavarti avsar, sthanantaran yogyata (1956 ka lekh 'The role of transportation and the bases for interaction').",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trn",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "uppsc-gdc-2026-q13",
@@ -4328,7 +4508,12 @@
    ],
    "a": 3,
    "exp": "Glass sand – Meerut galat; glass sand Prayagraj (aur Shankargarh) me. Sahi: choona patthar – Sonbhadra, tamba – Lalitpur, dolomite – Mirzapur.",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2026-q28",
@@ -4676,7 +4861,12 @@
    ],
    "a": 3,
    "exp": "Input-output model W.W. Rostow ka nahi, W.W. Leontief ka hai; Rostow – aarthik vriddhi ki avasthayein. Baaki sahi.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "ros",
+    "kw": "Five stages"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2026-q47",
@@ -4788,7 +4978,12 @@
    ],
    "a": 2,
    "exp": "Maanchitra par adhyaropan (overlapping) vidhi matratmak nahi hai. Haggett ki chaar matratmak vidhiyan: Thiessen bahubhuj, doori nyuntamikaran, vishishtikaran pradarshak vishleshan, graph siddhant.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2026-q53",
@@ -5368,7 +5563,12 @@
    ],
    "a": 1,
    "exp": "Bhilai – Dalli-Rajhara; Rourkela – Barsua; Vijayanagar – Hospet; Salem – Salem.",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2026-q84",
@@ -5384,7 +5584,12 @@
    ],
    "a": 0,
    "exp": "Jansankhyiki sankraman ki doosri avastha (prarambhik vardhaman) me jansankhya vriddhi sabse zyada – janam dar ucch rehti hai par mrityu dar tez girti hai. Notestein (1945) ne siddhant ko roop diya; chaar avasthayein: ucch sthir, prarambhik vardhaman, uttar vardhaman, nimn sthir.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2026-q85",
@@ -6384,7 +6589,12 @@
    ],
    "a": 0,
    "exp": "Ucch sthir avastha alpvikas dikhati hai. Jansankhyiki sankraman siddhant Thompson aur Notestein ne diya; ye vikasit deshon (Europe, America, Australia) ke janam dar, mrityu dar, prakritik vriddhi dar ki pravritti par aadharit hai. Iske anusaar jansankhya visphot ka purvaanuman lagaya ja sakta hai; jansankhyiki ucch sthir avastha alpvikas darshati hai. (Srot: Jansankhya Bhugol, Chandna – book).",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uphesc-2014-geo-q49",
@@ -6568,7 +6778,12 @@
    ],
    "a": 2,
    "exp": "Jal parivahan ki terminal laagat nyuntam hoti hai. Desh ka lagbhag 99% vyapar samudri marg se hota hai; vikasshil deshon me Bharat ke paas vyaparik jahazon ka sabse bada bedha hai; vyaparik jahazrani me Bharat vishwa me 17ve sthaan par (book). Parivahan ke prakaron me jal parivahan ki terminal laagat anya ki tulna me kam.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trn",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "uphesc-2014-geo-q60",
@@ -6584,7 +6799,12 @@
    ],
    "a": 1,
    "exp": "UAE, Algeria, Libya, Iraq OPEC sadasya hain. OPEC 1960 me petroleum ke moolyon sambandhi neetiyon ko lagu karne ke liye petroleum utpadak deshon dwara banaya gaya; book ke samay 13 sadasya – Algeria, Ecuador, Gabon, Indonesia, Iran, Iraq, Kuwait, Libya, Nigeria, Qatar, Saudi Arab, UAE, Venezuela; mukhyalay Vienna (Austria).",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trd",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "uphesc-2014-geo-q61",
@@ -6980,7 +7200,12 @@
    ],
    "a": 1,
    "exp": "Kirkuk Iraq me hai. Petroleum tertiary yug ki jalaj avsadi shailon ki 'chattani tel' hai, jo hydrocarbon yaugikon ka mishran; isse petrol, diesel, ether, mom aadi praapt hote hain. Vishwa me sarvadhik tel vitaran ke kshetra: Iraq – Kirkuk, Mosul, Rumaila, Basra; Kuwait – Burgan, Rudhan; Saudi Arab – Abqaiq, Qatif, Ghawar, Dammam, Abu Saafa; Iran – Gach Saran, Marun, Aghajari, Lali; CIS – Baku, Grozny.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trn",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "uppsc-gdc-2021-q13",
@@ -7056,7 +7281,12 @@
    ],
    "a": 2,
    "exp": "Book ka uttar (c) – 1 aur 3 sumelit nahi. Book ka sahi sumelan: tamba – Malanjkhand, Taregaon; lauh ayask – Bellary; manganese – Keonjhar, Bonai; bauxite – Katni.",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2021-q17",
@@ -7108,7 +7338,12 @@
    ],
    "a": 1,
    "exp": "Koraput – bauxite; Sundargarh – lauh ayask; Khetri – tamba; Giridih – koyla.",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2021-q20",
@@ -7196,7 +7431,12 @@
    ],
    "a": 3,
    "exp": "Pravas se sambandhit 'gatisheelta sankraman siddhant' Zelinsky dwara pratipadit kiya gaya. Pravasan niyamon ko banane wale pehle vidwan E.G. Ravenstein the. Pravasan kisi ek sthan, kshetra, desh ya mahadweep se manushyon ke doosre sthan me jaakar basne ki prakriya hai. Pravas se sambandhit kuch mahatvapurn siddhant: nyuntam prayas – G.K. Zipf; gurutva model – W.J. Reilly; spardhatmak sthanantaran model – Stouffer; sthanantaran siddhant – E.S. Lee.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2021-q25",
@@ -7212,7 +7452,12 @@
    ],
    "a": 0,
    "exp": "Bharat me purush pravas ki apeksha mahila pravas gaon se gaon ki or adhik hai. Ye pravas mukhya roop se krishi pradhan arthvyavastha wale deshon me hota hai; is pravas ka ek kaaran mahilaon ka vivah ke baad sthanantaran. Saamanyatah pravasan ke chaar pravah: gramin se gramin, gramin se nagariya, nagariya se gramin, nagariya se nagariya.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "mig",
+    "kw": "Lee"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2021-q26",
@@ -7344,7 +7589,12 @@
    ],
    "a": 3,
    "exp": "Rashtriya Jansankhya Neeti (2000) ka deerghkaalik uddeshya 2045 tak sthir jansankhya prapt karna hai. Rashtriya jansankhya neeti ki ghoshna garbh-nirodh, swasthya sambandhi aadhaarbhoot dhancha, swasthya karmiyon ki sankhya tatha ekikrit seva delivery ki maangon ko pooran karne ke atyavashyak lakshya ko haasil karne ke liye ki gayi thi. Is neeti ka uddeshya kul prajanan dar ko pratisthapan star yaani 2 bachche prati jodi tak laana hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "pol",
+    "kw": ""
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2021-q34",
@@ -7392,7 +7642,12 @@
    ],
    "a": 3,
    "exp": "Edward Ackerman ne vishwa ko paanch jansankhya-sansadhan pradeshon me vibhajit kiya: 1. Sanyukt Rajya America prakaar; 2. Europiya prakaar; 3. Brazilian prakaar; 4. Egyptian prakaar; 5. Arctic-marusthal prakaar. Jansankhyiki sankraman model W.S. Thompson ne 1929 me prastut kiya aur 1945 me Frank W. Notestein naamak janankikivid ne sanshodhit kiya.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2021-q37",
@@ -8004,7 +8259,12 @@
    ],
    "a": 1,
    "exp": "Boudeville – 'transport model' galat sumelan hai; book ke anusaar parivahan model Rimmer ka hai. Sahi: Myrdal – sanchayi kaaran model; Friedmann – kendra-upanth model; Frank – nirbharta model.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2021-q69",
@@ -8088,7 +8348,12 @@
    ],
    "a": 0,
    "exp": "Kyanite – sheesha; dolomite – ispat; steatite – sabun; apatite – urvarak.",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2021-q74",
@@ -8120,7 +8385,12 @@
    ],
    "a": 0,
    "exp": "Anukooltam jansankhya ka siddhant sarvapratham Sidgwick dwara prastut kiya gaya. Is siddhant ke anusaar 'jansankhya badhne se desh me karyasheel jansankhya me vriddhi hone lagti hai, iske falswaroop utpatti vriddhi niyam laagu hone lagta hai, parantu is bindu ke pashchat, jab uplabdh sansadhanon ka poorn upyog ho chuka hota hai, tab shram ki ausat utpadakta arthat prati vyakti aay adhiktam hoti hai. Yahi bindu jansankhya ka anukool bindu hai.'",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "pol",
+    "kw": ""
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2021-q76",
@@ -8240,7 +8510,12 @@
    ],
    "a": 3,
    "exp": "Big-Inch pipeline dwara petroleum ka parivahan kiya jaata hai. Yah pipeline USA me Mexico ki khaadi ke tateey kuon se khanij tel ko uttari-poorvi bhaagon tak pahunchane ke liye bichhaayi gayi hai.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trn",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "uppsc-gdc-2021-q83",
@@ -8580,7 +8855,12 @@
    ],
    "a": 3,
    "exp": "Sasti tatha paryapt shakti (urja) Renukoot (U.P.) me Hindalco ki avasthiti ka sabse mahatvapurn kaarak hai. Hindalco ki sthapana USA ki sahayata se 1958 me hui; Jharkhand ke Lohardaga khaan se bauxite aur Rihand pariyojana se sasti vidyut milti hai. Pramukh aluminium companiyan: Balco (1965) – Korba (Chhattisgarh) – Soviet sangh; Nalco (1981) – Damanjodi (Odisha) – France; Indalco (1938) – J.K. Nagar (Paschim Bangal) – Canada; Vedanta (1976) – Jharkhand – Germany; Malco (1965) – Salem (Tamil Nadu) – Italy.",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2017-q012",
@@ -8632,7 +8912,12 @@
    ],
    "a": 2,
    "exp": "Pearl Reed ne jansankhya vriddhi ke logistic vakra siddhant ka pratipadan kiya. Sadler ka jansankhya sambandhi siddhant Malthus ke siddhant ke theek vipreet; Sadler ke anusaar jansankhya ghanatva ke saath manushya ke vaanchhit swabhaav ki prakriti ghatti hai – manushya ki ichchha aur prajanan kshamta tatha jansankhya ghanatva me pratilomanupaatik sah-sambandh. D. Castro ne bataya bhojan me ucch protein ki matra ka prajanan kshamta ke saath rinatmak sambandh hota hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "thy",
+    "kw": "Malthusian"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q015",
@@ -8876,7 +9161,12 @@
    ],
    "a": 3,
    "exp": "Book ka uttar (d) – (A) galat, (R) sahi. Bharat ki prabhavi saksharta dar 73.0 pratishat hai. Gramin kshetra me sarvadhik saakshar jansankhya Uttar Pradesh me tatha nagariya kshetra me sarvadhik saakshar jansankhya Maharashtra me hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q028",
@@ -9080,7 +9370,12 @@
    ],
    "a": 1,
    "exp": "Jansankhya vriddhi ke swaroop me ek deergh kaalavadhi me ghatit kramik parivartan ko janankikiya sankraman kaha jaata hai. Janankikiya sankraman siddhant ka mool pratipadan Notestein ne 1945 me kiya. Saamanyatah janankikiya sankraman ki nimn paanch avasthayein: (1) ucch sthayi avastha – janmdar tatha mrityudar dono ucch; (2) prarambhik vardhaman avastha – janmdar ucch par mrityudar me haas; (3) uttar vardhaman avastha – janmdar aur mrityudar me haas aur mrityudar nimn; (4) nimn sthayi avastha – janmdar aur mrityudar dono nimn star par sthir; (5) rinatmak jansankhya avastha – janmdar, mrityudar se kam ho jaati hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q039",
@@ -9296,7 +9591,12 @@
    ],
    "a": 1,
    "exp": "John Friedmann ne pradeshik niyojan ko 'adhinagariya kshetra me gatividhiyon ke vyavasthapan me samajik uddeshyon ke sootrikaran evam spashtikaran ki prakriya' ke roop me paribhashit kiya. Pradeshik niyojan ka uddeshya sarvangeen vikas hai. Iske prapt karne ke liye sthaniya star par vishesh paryavaran ke sandarbh me manviya kriyaon ki vyavastha is prakaar sangathit karna ki usse adhiktam aarthik utpadan, utpadan prakriya me sabki sahbhagita rahe tatha paryavaran santulan bhi bana rahe, taaki bhavishya me manviya kriyaon ka sangathan laabhprad bana rahe.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2017-q051",
@@ -9472,7 +9772,12 @@
    ],
    "a": 2,
    "exp": "(A) sahi, (R) galat. Janganana 2011 ke antim aankdon ke anusaar 2001–2011 ke dauraan Bharat ki dashakiya vriddhi dar 17.7% rahi hai. Grameen kshetron me sarvadhik dashakiya vriddhi dar Bihar me tatha nagariya kshetron me sarvadhik dashakiya vriddhi dar Daman evam Diu me rahi hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q060",
@@ -9672,7 +9977,12 @@
    ],
    "a": 0,
    "exp": "Abheesht jansankhya model ke pravartak Carr Saunders the. Carr Saunders ne aay tatha utpadan se adhik vistrit drishtikon apnaya aur manav ke samast kalyan ki baat ki. Carr Saunders ne anukooltam jansankhya ka ullekh 1922 me apni pustak 'Jansankhya ki samasya – Manav ka udbhav' me kiya. Inke anusaar 'manav sadaiv hi anukoolit jansankhya prapt karne ki cheshta karta hai'; yah aisi sankhya hai jo vatavaran ke swaroop, prayukt utpadan pravidhi tatha samajik reeti-rivaajon ko dhyaan me rakhte hue adhiktam ausat aay pradaan karti hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "pol",
+    "kw": ""
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q071",
@@ -9708,7 +10018,12 @@
    ],
    "a": 2,
    "exp": "Bharat me gramin se nagar pravasan (pravas) me sabse prabhavi kaarak tatva rozgaar hai. Gramin kshetron me udyogon tatha anya rozgaar ke saadhanon ke abhaav ke kaaran nagar ki taraf vyaktiyon ka pravas ho raha hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "mig",
+    "kw": "Lee"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q073",
@@ -9724,7 +10039,12 @@
    ],
    "a": 1,
    "exp": "Edward Ackerman ke jansankhya sansaadhan pradesh ke vargikaran ke anusaar Israel Europe sadrish pradesh me aata hai. Europe tulya praudyogiki ke drishti se unnat kintu jansankhya adhik hone tatha sansadhan seemit hone ke kaaran in pradeshon me sansadhan jansankhya anupaat ucch nahi paaya jaata hai; in pradeshon me sanyukt rajya tulya pradeshon ki tulna me prati vyakti aay kam aur maanav jeevan star thoda neecha hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q074",
@@ -9816,7 +10136,12 @@
    ],
    "a": 1,
    "exp": "Aathvi panchvarshiya yojana ne udyogon ke pradeshik prakeernan hetu vikas kendron ki sthapna ka gunatmak prastaav laaya.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2017-q079",
@@ -9868,7 +10193,12 @@
    ],
    "a": 1,
    "exp": "New England USA ke uttar-poorvi bhaag me sthit ek pramukh audyogik pradesh hai. Is desh ki pehli sooti mill isi pradesh ke Rhode Island par Pawtucket me san 1790 me sthapit ki gayi. New England USA ka 50% sooti vastra ka bhi utpaadan karta tha. New England pradesh apne sooti aur oonee vastron ke liye vishwavikhyat tha, lekin atyadhik nagarikaran ke kaaran shram mahanga, udyogon ki adhik saghanta ke kaaran bhoomi ka bahut adhik kiraya, jisse sooti vastra udyog ka uttar-poorv se madhya-paschim ki or sthanantaran ho gaya. Ab New England me pramukhtaya dhaatu, mashinari, rasayan evam chhapaai udyog ki pradhanta hai.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "wir",
+    "kw": ""
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "uppsc-gdc-2017-q082",
@@ -9904,7 +10234,12 @@
    ],
    "a": 0,
    "exp": "Pradeshik niyojan shaakha ki darshanik prishthbhoomi ki neev Benton MacKaye ne daali thi. Friedmann ke kendra paridhi model me kendra tatha paridhi ke sambandh ko is tarah se samjhaaya gaya hai ki kendra ameer ho jaata hai tatha paridhi gareeb.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2017-q084",
@@ -9920,7 +10255,12 @@
    ],
    "a": 1,
    "exp": "Prashnagat rajyon ki kul saksharta (2011) ke anusaar avrohi kram: Mizoram > Uttarakhand > Rajasthan > Bihar. Janganana 2011 ke anusaar sarvadhik saksharta pratishat wale 5 rajya: Kerala > Mizoram > Goa > Tripura > Himachal Pradesh.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "div",
+    "kw": "Sex ratio"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q085",
@@ -10108,7 +10448,12 @@
    ],
    "a": 2,
    "exp": "Mizoram – 52; Sikkim – 86; Manipur – 115; Nagaland – 119; (book: Arunachal Pradesh – 17; Andaman Nicobar – 46). (Is prashn ke vikalp kod scan me dhundhle the; sahi vikalp (c) book ke sumelan ke anusaar.)",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q095",
@@ -10196,7 +10541,12 @@
    ],
    "a": 0,
    "exp": "Pradeshik niyojan ke kshetra me prasiddh kaarya jiska sheershak hai 'New Exploration – A Philosophy of Regional Planning' ke lekhak Benton MacKaye the. Perroux ne vikas dhruv siddhant ka pratipadan kiya.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "grw",
+    "kw": "Growth pole"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2017-q100",
@@ -10320,7 +10670,12 @@
    ],
    "a": 3,
    "exp": "Jab jansankhya ghanatva, kul jansankhya ko krishi yogya bhoomi se vibhajit karke prapt kiya jaata hai to use kayik ghanatva kehte hain. Krishi ghanatva = krishakon ki sankhya / krishi yogya bhoomi ka kshetrafal.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q107",
@@ -10408,7 +10763,12 @@
    ],
    "a": 2,
    "exp": "Book ka uttar (c). Book ke anusaar kendrashasit pradeshon ka jansankhya ghanatva (2011) ke anusaar aarohi kram: Dadra-Nagar Haveli, Puducherry, Lakshadweep, Daman aur Diu. (Dhyan do: ye kram (iii), (i), (iv), (ii) banta hai jo diye gaye vikalp (c) se mel nahi khata.)",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2017-q112",
@@ -10804,7 +11164,12 @@
    ],
    "a": 0,
    "exp": "Book ka sahi sumelan: aarthik pradesh – Rashtriya Atlas evam Thematic Mapping Sangathan (NATMO); aarthik niyojan pradesh – P. Sengupta; Bharat ke niyojan pradesh – R.P. Mishra; krishi jalvayu pradesh – Bharat ka Yojana Aayog. (Book ke kod 'kram 1 2 3 4' me chhape hain; sahi vikalp book ke anusaar rakha gaya hai.)",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2013-q013",
@@ -10888,7 +11253,12 @@
    ],
    "a": 0,
    "exp": "Niyojan kisi kshetra ya desh ke sansaadhanon ke ishtatam upyog dwara aarthik samriddhi prapt karne ki pranali hai. Yah vishisht lakshyon ki prapti ke liye ek sangathit, sachet tatha satat prayas hai jisse vaastavikta tatha pratyasha ke madhya ke antar ko kam kiya ja sakta hai. Saath hi yah aatmanirbharta prapt karne, antar-pradeshik vishamtaon ko door karne tatha logon ke jeevan star sudharne ke prayas hain. Lekin rajneetik vikendrikaran niyojan ka ghatak nahi hai.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2013-q018",
@@ -10904,7 +11274,12 @@
    ],
    "a": 2,
    "exp": "Book ka sahi sumelan: aarthik vriddhi ki avasthaein – W.W. Rostow; bazaar kshetra siddhant – C.J. Galpin; krod-seemant pratimaan – J. Friedmann; sanchayi udbhavna pratimaan – G. Myrdal. (Book ke kod 'kram 1 2 3 4' me chhape hain; sahi vikalp book ke anusaar rakha gaya hai.)",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "ros",
+    "kw": "Five stages"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2013-q019",
@@ -10984,7 +11359,12 @@
    ],
    "a": 1,
    "exp": "Niyojan kisi kshetra ya desh ke sansaadhanon ke ishtatam upyog dwara aarthik samriddhi prapt karne ki pranali hai. Yah vishisht lakshyon ki prapti ke liye ek sangathit, sachet tatha satat prayas hai jisse vaastavikta tatha pratyasha ke madhya ke antar ko kam kiya ja sakta hai. Saath hi yah aatmanirbharta prapt karne, antar-pradeshik vishamtaon ko door karne tatha logon ke jeevan star sudharne ke prayas hain. Niyojan ka taatparya desh ke vividh aarthik evam samajik vikas se hai. Laghu-stareey niyojan vikendrikrit niyojan ka abhinn ang hai.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2013-q024",
@@ -11000,7 +11380,12 @@
    ],
    "a": 2,
    "exp": "Prakritik kaarakon me ekroopta, krishi bhoomi upyog evam shasya pratiroop ke aadhar par Bharat ke sansaadhan vikas pradeshon ko 7 vrihad khand hetu ek niyojan pradesh R.P. Mishra dwara taiyaar kiya gaya. Iske kai pradesh rajya seemaon ke aar-paar faile hain; jahan khand ke andar pradesh smaahit kiye gaye hain. Inme pramukh sansaadhan vikas pradesh ye hain: 1. paschimi Himalay 2. poorvi Himalay 3. nichli Ganga ka maidan 4. madhya Ganga maidan 5. dakshini pathar evam pahadiyan 6. paschimi tateey maidan 7. paschimi shushk pradesh 8. dweep samooh.",
-   "tag": "Regional Planning"
+   "ref": {
+    "file": "regional-planning.html",
+    "topic": "reg",
+    "kw": "Whittlesey"
+   },
+   "oldtag": "Regional Planning"
   },
   {
    "id": "uppsc-gdc-2013-q025",
@@ -11204,7 +11589,12 @@
    ],
    "a": 3,
    "exp": "Ackerman dwara varsh 1970 ee. me jansankhya, sansaadhan evam takneeki ko dhyaan me rakhte hue sampoorn vishwa ko 5 jansankhya sansaadhan pradeshon me vibhajit kiya. Uprokt teen kaarakon me unhone sarvadhik mahatva takneeki ko diya. Bharat Misra prakaar ki shreni me aata hai. Ackerman dwara diye gaye jansankhya sansaadhan pradesh nimn hain: 1. Sanyukt Rajya America prakaar ke kshetra; 2. Europe prakaar ke kshetra; 3. Brazil prakaar ke kshetra; 4. Misra prakaar ke kshetra; 5. Arctic prakaar ke kshetra. 1. USA prakaar: is prakaar ke kshetra me jansankhya kshamta evam sansaadhan anupaat nimn hai. Sanyukt Rajya America ko sansaadhan ki drishti se sarvadhik uttam kshetra hai. Samajik aur aarthik sansaadhanon ki prachurta ke kaaran logon ka jeevan star ati ucch hai. USA prakaar ke kshetra me jansankhya sansaadhan sambandh sarvadhik naveen hai. Canada, Australia, New Zealand, USA aadi desh is varg me sammilit kiye jaate hain. 2. Europe prakaar: is prakaar ke kshetra me jansankhya kshamta evam sansaadhan anupaat ucch hai. Jansankhya, sansaadhan evam takneeki ki drishti se is prakaar ke kshetra ki sthiti ati uttam hai. Is kshetra me Europe ke deshon ke alawa Japan, Israel aadi desh aate hain.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "glb",
+    "kw": "Distribution"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2013-q036",
@@ -11220,7 +11610,12 @@
    ],
    "a": 1,
    "exp": "Karl Marx ke anusaar samaaj vargon me banta hai, jisme pratyek varg apne pradhan sansaadhan ke saath shareer ki pratyek bhaag ki kshamta ke anusaar ek alag maahaul ka nirmaan karta hai aur jo sansaadhan prapt karta hai uske adheen kaarya karta hai. Iske kaaran samaaj me vargon ka vibhajan hai. Marx ke anusaar aarthik varg tatha niji sampatti ki vyavastha ke kaaran gareebi, berozgaari tatha teevra jansankhya vriddhi jaisi samasyaein utpann hoti hain. Karl Marx ki prasiddh pustak 'Das Kapital' 1867 ee. me prakashit hui. Varg sangharsh ka siddhant Karl Marx ke vaigyanik samajvaad ka merudand hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "thy",
+    "kw": "Malthusian"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2013-q037",
@@ -11236,7 +11631,12 @@
    ],
    "a": 0,
    "exp": "Carr Saunders ke anusaar anukooltam jansankhya ka abhipraay jansankhya ki us aadarsh maatra se hai jo kisi deshkaal me uplabdh sansaadhanon tatha praudyogiki ki dasha me aarthik roop se adhiktam kalyan pradaan karti hai. Anukooltam jansankhya model ka pratipadan Carr Saunders dwara kiya gaya tha.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "pol",
+    "kw": ""
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2013-q038",
@@ -11352,7 +11752,12 @@
    ],
    "a": 0,
    "exp": "Jansankhya vriddhi ka 'janankikiya sankraman pratimaan' Frank Notestein ne viksit kiya jabki janankikiya sankraman siddhant ka pratipadan W.S. Thompson ne viksit kiya. Unhone paschimi Europe ke deshon ke anubhavon ka prayog karke jansankhya ke kaalik pratiroop ka saamaanyikaran janmdar aur mrityudar me hone wale kaalanukramik parivartanon ke aadhar par kiya. Janankikiya sankraman ki janankikiya itihaas ki sarvadhik mahatvapurn evam abhilekhpoorn ghatna maana jaata hai.",
-   "tag": "Population Geography"
+   "ref": {
+    "file": "population.html",
+    "topic": "dtm",
+    "kw": "Five stages"
+   },
+   "oldtag": "Population Geography"
   },
   {
    "id": "uppsc-gdc-2013-q045",
@@ -11604,7 +12009,12 @@
    ],
    "a": 1,
    "exp": "Dwitiya vishwa yuddh ke pashchat vibhajit paschimi Germany aur poorvi Germany ka 1990 me ekikaran hua. Is desh ke uttar me Baltic saagar, Uttari saagar aur Denmark aur poorv me Poland aur Czechoslovakia, dakshin me Austria tatha Switzerland aur paschim me France, Luxembourg, Belgium tatha Netherlands seemaein banate hain. Is desh ki rajdhani Berlin hai. Yahan Wuppertal sooti vastra ka mukhya kendra hai.",
-   "tag": "Economic & Resource Geography"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "txt",
+    "kw": "Cotton"
+   },
+   "oldtag": "Economic & Resource Geography"
   },
   {
    "id": "uppsc-gdc-2013-q059",
@@ -11672,7 +12082,12 @@
    ],
    "a": 0,
    "exp": "Book ka sahi sumelan: Andhra Pradesh – Hindustan Shipyard; Maharashtra – Mazagaon Docks; Paschim Bangal – Garden Reach; Kerala – Cochin Shipyard. (Book ke kod 'kram 1 2 3 4' me chhape hain; sahi vikalp book ke anusaar rakha gaya hai.)",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "trn",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2013-q063",
@@ -12236,7 +12651,12 @@
    ],
    "a": 3,
    "exp": "Kollam (Kerala) me graphite paryaapt maatra me paayi jaati hai, taamba nahi.",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2013-q096",
@@ -12300,7 +12720,12 @@
    ],
    "a": 2,
    "exp": "Book ka sahi sumelan: Katihar – jute udyog; Burnpur – loha evam ispat udyog; Bansberia – jute udyog; Korba – aluminium udyog. Isliye Bansberia – engineering udyog galat.",
-   "tag": "India – Resources"
+   "ref": {
+    "file": "economic-geography.html",
+    "topic": "met",
+    "kw": ""
+   },
+   "oldtag": "India – Resources"
   },
   {
    "id": "uppsc-gdc-2013-q100",
