@@ -35,3 +35,4 @@ Book chapters `notes.json` me `"tab": "book"` ke saath jaate hain:
 
 ## Original PDF links
 Har notes page me `PDFSRC` (PDF ka naam) aur `PMAP` (topic → page number) hota hai. PDF repo ke root me rakho; `pdf.html?f=<file>.pdf&p=<page>` us page ko kholta hai.
+update
