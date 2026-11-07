@@ -58,7 +58,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:10px 16px 3
 <header>
   <h1>Geography<br>Notes</h1>
   <p>Saare interactive notes, flashcards aur MCQs ek jagah. Offline bhi chalega.</p>
-  <div class="mtabs" id="mainTabs" role="tablist"><button role="tab" data-mt="notes">📒 Notes</button><button role="tab" data-mt="book">📖 Book</button><button role="tab" data-mt="papers">📝 Papers</button></div>
+  <div class="mtabs" id="mainTabs" role="tablist"><button role="tab" data-mt="notes">📒 Notes</button><button role="tab" data-mt="book">📖 Book</button><button role="tab" data-mt="papers">📝 Papers</button><button role="tab" data-mt="self">✍️ Self</button></div>
   <input class="search" id="q" type="search" placeholder="Topic search karo… (jaise tides, coral, monsoon)" aria-label="Search notes">
   <div class="chips" id="chips"></div>
 </header>
@@ -70,16 +70,16 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:10px 16px 3
 const $=s=>document.querySelector(s);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const COLORS=["#2F7FD1","#E8505B","#1BA3A3","#6A4FC2","#E9A23B","#2E9E6E","#E2607E","#8A6A3F","#2E5E8C"];
-let DATA=[],sub="all",mt=(location.hash==="#book")?"book":(location.hash==="#papers")?"papers":(store.get("hub-tab","notes"));
+let DATA=[],sub="all",mt=["#book","#papers","#self"].includes(location.hash)?location.hash.slice(1):(store.get("hub-tab","notes"));
 const inTab=n=>(n.tab||"notes")===mt;
-function setTab(t){mt=t;sub="all";store.set("hub-tab",t);history.replaceState(null,"",t==="notes"?"#":"#"+t);document.querySelectorAll("#mainTabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.mt===t));$("#q").placeholder=t==="book"?"Chapter search karo… (jaise glacier, cirque)":t==="papers"?"Paper search karo… (jaise UGC NET)":"Topic search karo… (jaise tides, coral, monsoon)";chips();render();}
+function setTab(t){mt=t;sub="all";store.set("hub-tab",t);history.replaceState(null,"",t==="notes"?"#":"#"+t);document.querySelectorAll("#mainTabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.mt===t));$("#q").placeholder=t==="book"?"Chapter search karo… (jaise glacier, cirque)":t==="papers"?"Paper search karo… (jaise UGC NET)":t==="self"?"Apna material search karo…":"Topic search karo… (jaise tides, coral, monsoon)";chips();render();}
 
 function colorOf(s){const subs=[...new Set(DATA.map(n=>n.subject))];return COLORS[subs.indexOf(s)%COLORS.length];}
 function chips(){
   const c=$("#chips");c.innerHTML="";
   const subs=[...new Set(DATA.filter(inTab).map(n=>n.subject))];
   const mk=(k,l,col)=>{const b=document.createElement("button");b.className="chip";b.textContent=l;b.style.setProperty("--c",col);b.setAttribute("aria-pressed",sub===k);b.onclick=()=>{sub=k;chips();render();};c.appendChild(b);};
-  mk("all",mt==="book"?"Saari books":mt==="papers"?"Saare papers":"Sab","var(--ink)");
+  mk("all",mt==="book"?"Saari books":mt==="papers"?"Saare papers":mt==="self"?"Sab material":"Sab","var(--ink)");
   subs.forEach(s=>mk(s,s,colorOf(s)));
 }
 function render(){
