@@ -407,5 +407,35 @@
     "file": "climatology-neetu-singh-part-2.html",
     "mcq": 100,
     "source": "Neetu Singh Notes"
+  },
+  {
+    "tab": "self",
+    "subject": "Geomorphology",
+    "title": "Geomorphology · Neetu Singh (Part 1 of 14)",
+    "desc": "7 detailed topic chapters • bilingual notes, 10 offline diagrams, 100 interactive MCQs and advanced revision.",
+    "topics": [
+      "Relief",
+      "Earth Interior",
+      "Earthquakes",
+      "P Waves",
+      "S Waves",
+      "Love Waves",
+      "Rayleigh Waves",
+      "Geological Time Scale",
+      "Folding",
+      "Faulting",
+      "Continental Drift",
+      "Wegener",
+      "Sea-floor Spreading",
+      "Plate Tectonics",
+      "Volcanism",
+      "Weathering",
+      "Mass Wasting",
+      "River Landforms"
+    ],
+    "emoji": "🏔️",
+    "file": "geomorphology-neetu-singh-part-1.html",
+    "mcq": 100,
+    "source": "Neetu Singh Notes"
   }
 ]
